@@ -1,0 +1,24 @@
+{
+  "batch_id": "corpus-20261014-08",
+  "sources": [
+    {
+      "source_id": "who-hypertension-pharmacological-2021",
+      "source_family_id": "who-hypertension-pharmacological-2021",
+      "title": "Guideline for the pharmacological treatment of hypertension in adults",
+      "original_url": "https://www.ncbi.nlm.nih.gov/books/NBK573631/",
+      "publisher": null,
+      "publication_date": null,
+      "version": null,
+      "jurisdiction": "Global",
+      "population": null,
+      "language": "en",
+      "access_status": "unavailable",
+      "reuse_status": "unconfirmed",
+      "body_file": null,
+      "raw_bytes_sha256": null,
+      "normalized_text_sha256": null,
+      "target_eligible": false,
+      "reason": "Opened Bookshelf page returned Checking your browser - reCAPTCHA, not medical body. Stop route; no CAPTCHA solved and no alternate fulltext route attempted. Metadata from search not verified. Restore only through authorized access without bypass."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "summary": {
+    "batch_id": "dot-ledger-20261014-v5-sources",
+    "sha256": "81798bb29c33619f181e5993fc3a2f963b57087358d35cad944b54f865253688",
+    "source_candidates": 7,
+    "point_audits": 0,
+    "status": "staged_for_review",
+    "validation": "structure_and_case_scope_only",
+    "clinical_review": "not_run",
+    "corpus_update": "not_applied",
+    "dataset_update": "not_applied"
+  },
+  "batch": {
+    "schema_version": "medical-handoff-v1",
+    "batch_id": "dot-ledger-20261014-v5-sources",
+    "created_at": "2026-10-14T02:44:38.389973Z",
+    "sources": [
+      {
+        "id": "cn-nhc-hypertension-diet-2023",
+        "title": "成人高血压食养指南（2023年版）",
+        "url": "https://www.nhc.gov.cn/cms-search/downFiles/63f752a17cfd4b4781f744477561866f.pdf",
+        "publisher": "国家卫生健康委办公厅",
+        "publication_date": null,
+        "version": "2023年版",
+        "jurisdiction": "中国",
+        "population": "成人高血压患者及基层卫生工作者（包括营养指导人员）；其他合并症需专业人员个体化指导",
+        "reuse_status": "unconfirmed",
+        "reuse_evidence_url": null,
+        "access_status": "opened",
+        "notes": "来源于Dot台账的声明，尚未本地独立核对正文与许可；opened表示Dot报告已读，不是本地复核。发布日期暂保留null，原日期/署名声明见快照。\ncn-nhc-hypertension-diet-2023\n\n成人高血压食养指南（2023年版）\n\n- 机构：国家卫生健康委办公厅\n\n- 版本：2023年版；原站发布日期：null；已打开疾控镜像页显示日期：2023-01-12（不混同通知落款或原站网页发布日期）\n\n- 地区：中国；人群：成人高血压患者及基层卫生工作者（包括营养指导人员）；其他合并症需专业人员个体化指导\n\n- URL：https://www.nhc.gov.cn/cms-search/downFiles/63f752a17cfd4b4781f744477561866f.pdf\n\n- 实际正文：True；访问状态：available\n\n- 已读位置：封面、目录；印刷p1-2 前言及适用范围；p2 高血压定义与分类；p4-7 食养原则和建议\n\n- 复用：已读疾控镜像版权声明；转载稿需保留来源并自负版权责任。未确认本PDF用于LLM语料、改编和再次分发的明确授权，只保留候选链接及审查元数据。"
+      },
+      {
+        "id": "cn-nhc-diabetes-diet-2023",
+        "title": "成人糖尿病食养指南（2023年版）",
+        "url": "https://www.nhc.gov.cn/cms-search/downFiles/4fcbecd2c18e46baaf291bf46c2b79cd.pdf",
+        "publisher": "国家卫生健康委办公厅",
+        "publication_date": null,
+        "version": "2023年版",
+        "jurisdiction": "中国",
+        "population": "主要面向成人2型糖尿病患者及基层卫生工作者；1型、妊娠期及其他类型仅可参考，需专业人员个体化设计",
+        "reuse_status": "unconfirmed",
+        "reuse_evidence_url": null,
+        "access_status": "opened",
+        "notes": "来源于Dot台账的声明，尚未本地独立核对正文与许可；opened表示Dot报告已读，不是本地复核。发布日期暂保留null，原日期/署名声明见快照。\ncn-nhc-diabetes-diet-2023\n\n成人糖尿病食养指南（2023年版）\n\n- 机构：国家卫生健康委办公厅\n\n- 版本：2023年版；原站发布日期：null；已打开疾控镜像页显示日期：2023-01-12（不混同通知落款或原站网页发布日期）\n\n- 地区：中国；人群：主要面向成人2型糖尿病患者及基层卫生工作者；1型、妊娠期及其他类型仅可参考，需专业人员个体化设计\n\n- URL：https://www.nhc.gov.cn/cms-search/downFiles/4fcbecd2c18e46baaf291bf46c2b79cd.pdf\n\n- 实际正文：True；访问状态：available\n\n- 已读位置：封面、目录；印刷p1-2 前言及适用范围；p2-3 疾病特点与分型；p3-7 食养原则与营养/主食\n\n- 复用：未核实本PDF可用于LLM语料/改编/再次分发；仅候选链接和审查元数据。"
+      },
+      {
+        "id": "cn-hypertension-guideline-2024",
+        "title": "中国高血压防治指南（2024年修订版）",
+        "url": "https://cjournal.hep.com.cn/1673-7245/CN/1160171857581368285",
+        "publisher": "['中国高血压防治指南修订委员会', '高血压联盟（中国）', '中国医疗保健国际交流促进会高血压病学分会', '中国老年医学学会高血压分会', '中国老年保健协会高血压分会', '中国卒中学会', '中国疾病预防控制中心慢性非传染性疾病预防控制中心']",
+        "publication_date": null,
+        "version": "2024年修订版",
+        "jurisdiction": "中国",
+        "population": "中国高血压防治专业实践；包含成年人及特殊人群，不宜把全篇统一为单一成人处置规则",
+        "reuse_status": "unconfirmed",
+        "reuse_evidence_url": null,
+        "access_status": "opened",
+        "notes": "来源于Dot台账的声明，尚未本地独立核对正文与许可；opened表示Dot报告已读，不是本地复核。发布日期暂保留null，原日期/署名声明见快照。\ncn-hypertension-guideline-2024\n\n中国高血压防治指南（2024年修订版）\n\n- 机构：['中国高血压防治指南修订委员会', '高血压联盟（中国）', '中国医疗保健国际交流促进会高血压病学分会', '中国老年医学学会高血压分会', '中国老年保健协会高血压分会', '中国卒中学会', '中国疾病预防控制中心慢性非传染性疾病预防控制中心']\n\n- 版本：2024年修订版；日期：null\n\n- 地区：中国；人群：中国高血压防治专业实践；包含成年人及特殊人群，不宜把全篇统一为单一成人处置规则\n\n- URL：https://cjournal.hep.com.cn/1673-7245/CN/1160171857581368285\n\n- 实际正文：True；访问状态：available\n\n- 已读位置：印刷p603 标题/署名/前言/推荐类别与证据等级表；p604-607 流行及防控、风险\n\n- 复用：原刊页面标版权，未确认开放许可；不复制打包正文。"
+      },
+      {
+        "id": "cn-diabetes-guideline-2024",
+        "title": "中国糖尿病防治指南（2024版）",
+        "url": "https://diab.cma.org.cn/cn/ncontent.aspx?oid=3042",
+        "publisher": "中华医学会糖尿病学分会",
+        "publication_date": null,
+        "version": "2024版",
+        "jurisdiction": "中国",
+        "population": null,
+        "reuse_status": "unconfirmed",
+        "reuse_evidence_url": null,
+        "access_status": "unavailable",
+        "notes": "来源于Dot台账的声明，尚未本地独立核对正文与许可；opened表示Dot报告已读，不是本地复核。发布日期暂保留null，原日期/署名声明见快照。\ncn-diabetes-guideline-2024\n\n中国糖尿病防治指南（2024版）\n\n- 机构：中华医学会糖尿病学分会\n\n- 版本：2024版；日期：2025-01-20\n\n- 地区：中国；人群：null\n\n- URL：https://diab.cma.org.cn/cn/ncontent.aspx?oid=3042\n\n- 实际正文：False；访问状态：unavailable\n\n- 已读位置：学会发布页标题与发布时间\n\n- 复用：学会网页All rights reserved；临床全文许可未核实，仅候选链接。"
+      },
+      {
+        "id": "who-hypertension-factsheet-2025",
+        "title": "Hypertension",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/hypertension",
+        "publisher": "World Health Organization",
+        "publication_date": null,
+        "version": null,
+        "jurisdiction": "全球",
+        "population": "公众健康信息；流行率数据特指30–79岁成人",
+        "reuse_status": "unconfirmed",
+        "reuse_evidence_url": null,
+        "access_status": "opened",
+        "notes": "来源于Dot台账的声明，尚未本地独立核对正文与许可；opened表示Dot报告已读，不是本地复核。发布日期暂保留null，原日期/署名声明见快照。\nwho-hypertension-factsheet-2025\n\nHypertension\n\n- 机构：World Health Organization\n\n- 版本：null；日期：2025-09-25\n\n- 地区：全球；非中国临床指南；人群：公众健康信息；流行率数据特指30–79岁成人\n\n- URL：https://www.who.int/news-room/fact-sheets/detail/hypertension\n\n- 实际正文：True；访问状态：available\n\n- 已读位置：Overview；Risk factors；Symptoms；Treatment；Prevention\n\n- 复用：WHO版权政策区分CC BY-NC-SA 3.0 IGO材料、其他材料及商业使用；本事实页未显示专用许可，不能直接假定商业知识库或重分发获准，暂仅链接/元数据。"
+      },
+      {
+        "id": "niddk-hypoglycemia-candidate",
+        "title": "NIDDK低血糖（Dot台账标签）",
+        "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia",
+        "publisher": null,
+        "publication_date": null,
+        "version": null,
+        "jurisdiction": null,
+        "population": null,
+        "reuse_status": "unconfirmed",
+        "reuse_evidence_url": null,
+        "access_status": "opened",
+        "notes": "Dot台账称已读取正文；仅接收链接/标签，未通过本地独立核查，尚无正文交付和复用确认。"
+      },
+      {
+        "id": "nhs-hypoglycemia-candidate",
+        "title": "NHS低血糖（Dot台账标签）",
+        "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
+        "publisher": null,
+        "publication_date": null,
+        "version": null,
+        "jurisdiction": null,
+        "population": null,
+        "reuse_status": "unconfirmed",
+        "reuse_evidence_url": null,
+        "access_status": "opened",
+        "notes": "Dot台账称已读取正文；仅接收链接/标签，未通过本地独立核查，尚无正文交付和复用确认。"
+      }
+    ],
+    "audits": []
+  }
+}

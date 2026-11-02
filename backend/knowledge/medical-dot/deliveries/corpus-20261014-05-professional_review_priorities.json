@@ -1,0 +1,8 @@
+{
+ "batch_id":"corpus-20261014-05",
+ "status":"pending_professional_review",
+ "items":[
+  {"item_id":"ketone-testing-condition-difference","type":"scope_or_version_mismatch","sources":[{"source_id":"cdc-manage-blood-sugar","url":"https://www.cdc.gov/diabetes/treatment/","section":"What causes high blood sugar?","short_quote":"If you're sick and your blood sugar is 240 mg/dL or above"},{"source_id":"cdc-diabetic-ketoacidosis","url":"https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html","section":"Testing / Test for ketones","short_quote":"you're sick or your blood sugar is 250 mg/dL or above"}],"issue":"Both numerical threshold and conjunction differ between CDC educational pages. Preserve conditions separately, not interchangeable universal rules. DKA page also advises ketone testing when symptoms occur and immediate emergency care for listed danger signs.","suggestion":"Professional reviewer should reconcile intended populations, illness context, symptoms and action. Do not use absence of either glucose threshold to exclude an emergency."},
+  {"item_id":"sick-day-medication-generality","type":"scope_or_version_mismatch","source_id":"cdc-diabetes-sick-days","url":"https://www.cdc.gov/diabetes/living-with/managing-sick-days.html","section":"More tips if you get sick","short_quote":"Continue taking your insulin and diabetes pills as usual.","issue":"Generic source wording does not name drug classes, dehydration, renal function or individualized sick-day plan. No opposite source has been adjudicated here.","suggestion":"Do not convert into individualized instruction to continue every medication under every illness condition; retain original and request professional review of drug-specific applicability."}
+ ]
+}

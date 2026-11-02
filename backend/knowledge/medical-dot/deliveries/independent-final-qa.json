@@ -1,0 +1,48 @@
+{
+  "schema_version": "medical-corpus-independent-qa-summary-v1",
+  "reviewed_at": "2026-10-14T06:32:33.557657+00:00",
+  "batch_reports": [
+    "batch01/independent_qa.json",
+    "batch02/independent_qa.json",
+    "batch03/independent_qa.json",
+    "batch04/independent_qa.json",
+    "batch05/independent_qa.json",
+    "batch06/independent_qa.json",
+    "batch07/independent_qa.json",
+    "batch08/independent_qa.json",
+    "batch09/independent_qa.json",
+    "batch10/independent_qa.json",
+    "china_hypertension_existing_family/independent_qa.json"
+  ],
+  "prepared_manifest_counts": {
+    "baseline_families": 20,
+    "retained_body_families": 102,
+    "target_eligible_body_families": 100,
+    "body_documents": 103,
+    "canonical_url_duplicates": 0,
+    "clinical_rule_quarantined_source_ids": [
+      "cdc-hypertension-risk",
+      "cdc-diabetes-testing"
+    ]
+  },
+  "count_definitions": [
+    "Preparedmanifest counts require separate final cloudpersistence/readback proof.",
+    "NIDDKtype2/prediabetes two completepages groupedonefamily; ChinaEnglish3parts oneexistingfamilyupgrade.",
+    "WHO2020 is selectedChapter5prose partialwork withnoncommerciallicense, notfull72pagebook.",
+    "Publiclyreadable candidates without confirmedbody/reuse notcounted."
+  ],
+  "resolved_blockers": [
+    "Batch02 NHLBI originalintro L101 accidentallyremovedalongsidecopyrightcaptionL100; restoredandrehashverifiedbeforeupload.",
+    "Batch07 copiedCDC agencyrationale onFDA/NEI/NIDCR metadata correctedbeforeupload."
+  ],
+  "verification_depth": [
+    "Everynewbody comparedagainst captured openedoriginalpage extraction ranges orrenderedDOMsnapshot; hashes/bytes/UTF8LF verified.",
+    "China largeDOM mechanicalcapture verifiedallheading/tablecellcoverage; notPDFequivalence norfullclinicalreview.",
+    "Publisherpolicies independentlyopened forMedlinePlus,NIDDK,NHLBI,CDC,FDA,NEI,NIDCR; NCCIHitemlicense andWHOcopyrightcapturedoriginals checked.",
+    "No test40semantics, nooriginaldatasetedits, noembedding/development/localcomputer orsecretuse."
+  ],
+  "professional_review": "pending",
+  "medical_accuracy": "not_computed",
+  "library_readback_verification": "owned by source-delivery worker; not repeated by independentQA",
+  "local_received": "must follow actualreceipts; prepared/uploaded isnotreceipt"
+}

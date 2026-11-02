@@ -1,0 +1,84 @@
+{
+  "status": "warn",
+  "pool_name": "Tier 2 Medical Textbooks Independent Vector Store (Master Full Set)",
+  "built_at": "2026-10-27T07:57:05Z",
+  "collection_name": "textbooks_internal_med_10th",
+  "database_file": "knowledge_textbooks_v1.db",
+  "total_books": 10,
+  "total_chapters": 35,
+  "total_chunks": 91,
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "reranker_model": "BAAI/bge-reranker-v2-m3",
+  "curriculum_textbooks_ingested": [
+    {
+      "title": "内科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 10
+    },
+    {
+      "title": "外科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 3
+    },
+    {
+      "title": "诊断学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 3
+    },
+    {
+      "title": "药理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 3
+    },
+    {
+      "title": "妇产科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 3
+    },
+    {
+      "title": "儿科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 3
+    },
+    {
+      "title": "病理生理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 3
+    },
+    {
+      "title": "病理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 3
+    },
+    {
+      "title": "生理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 2
+    },
+    {
+      "title": "生物化学与分子生物学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "topics_count": 2
+    }
+  ]
+}

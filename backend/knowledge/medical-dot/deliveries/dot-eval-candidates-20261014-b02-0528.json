@@ -1,0 +1,1017 @@
+{
+  "schema_version": "medical-eval-candidates-v1",
+  "batch_id": "dot-eval-candidates-20261014-b02-0528",
+  "created_at": "2026-10-14T05:31:07.249123+00:00",
+  "origin": "synthetic_cloud_research_draft",
+  "medical_gold_standard": false,
+  "professional_review": "pending",
+  "questions": [
+    {
+      "question_id": "medcand-20261014-011",
+      "family_id": "a1c-rbc-interference-context",
+      "category": "measurement_conditions",
+      "question": "合成学习场景：一名2型糖尿病成年人近期输过血，HbA1c结果与自测血糖不一致。依据本批 NIDDK A1C 原文，解释结果时有哪些背景不能忽略？",
+      "expected_action": "说明红细胞寿命相关状况/输血可能影响A1C，应向医疗人员说明并由其解释不一致，不自行判定哪次结果一定错误。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "clarify",
+          "rule_text": "信息不足时询问必要测量条件、项目、单位等；可先解释通用知识，但不编造个人状态。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "近期失血、输血等影响红细胞寿命的情况可以改变A1C结果。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "A1C与血糖结果不匹配时，医疗人员可能考虑干扰；并非仅凭不一致即可判定诊断。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "澄清输血等相关背景并建议交由医疗人员解释，不编造个人真实血糖。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "clarify",
+              "rule_text": "信息不足时询问必要测量条件、项目、单位等；可先解释通用知识，但不编造个人状态。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "输血后A1C一定偏高固定数值。",
+        "这必然证明患者已经痊愈。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-a1c-test",
+          "source_family_id": "niddk-a1c-test",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+          "locator": "niddk-a1c-test.txt; A1C tests can be affected by changes in red blood cells or hemoglobin; UTF-8 LF lines 105-105",
+          "quote": "Conditions that change the life span of red blood cells, such as recent blood loss, sickle cell disease , erythropoietin treatment, hemodialysis , or transfusion, can change A1C levels.",
+          "normalized_text_sha256": "f5ab624527b2c40878801be6da1221aa2efbbb1086ea180c5f6c1934c6526757",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9TQ3BXR2g3UVJMVnFIU3JVc19zU2Rn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-a1c-test",
+          "source_family_id": "niddk-a1c-test",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/a1c-test",
+          "locator": "niddk-a1c-test.txt; A1C tests can be affected by changes in red blood cells or hemoglobin; UTF-8 LF lines 111-111",
+          "quote": "Health care professionals may suspect interference—a falsely high or low result—when your A1C and blood glucose test results don’t match.",
+          "normalized_text_sha256": "f5ab624527b2c40878801be6da1221aa2efbbb1086ea180c5f6c1934c6526757",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9TQ3BXR2g3UVJMVnFIU3JVc19zU2Rn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "美国NIDDK页面，Last Reviewed April 2018，不冒充2026最新版诊断指南。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-012",
+      "family_id": "cgm-interstitial-and-fingerstick-role",
+      "category": "knowledge",
+      "question": "合成知识题：NIDDK Continuous Glucose Monitoring 页说CGM自动估计血糖，是否等于直接持续抽取血液，而且永远不再需要指尖血糖仪？",
+      "expected_action": "解释传感器估计细胞间液葡萄糖，保留某些情况下需指尖检测比较的条件，不给型号特定操作。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "CGM传感器估计细胞间液的葡萄糖，而不是原文声称持续抽取血液。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "该页列出读数可靠性存疑、调整胰岛素剂量或报警等情况下，可能需要指尖检测比较。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "说明设备一般知识与限制，不能替代具体型号说明或个人治疗计划。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "所有CGM都在持续抽血。",
+        "使用CGM后永远不需要指尖检测。",
+        "任何报警都能直接忽略。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-continuous-glucose-monitoring",
+          "source_family_id": "niddk-diabetes-management",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring",
+          "locator": "niddk-diabetes-management.txt; How does a continuous glucose monitor work?; UTF-8 LF lines 25-25",
+          "quote": "CGM sensors estimate the glucose level in the fluid between your cells, which is very similar to the glucose level in your blood.",
+          "normalized_text_sha256": "1346b88698dcc4bbb82be8a4604a22214cf1c8f95fc5ed1ecdbbb48c1073ad17",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8wX0xvM1JXY1pPc0tndWZYOHJOdGlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-continuous-glucose-monitoring",
+          "source_family_id": "niddk-diabetes-management",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring",
+          "locator": "niddk-diabetes-management.txt; What issues could you have while using a continuous glucose monitor?; UTF-8 LF lines 91-91",
+          "quote": "For safety, you may sometimes need to compare your CGM glucose readings with a finger-stick test and a standard blood glucose meter. This could be needed if you doubt the accuracy of your CGM readings, if you are changing your insulin dose, or if your CGM gives a warning alert.",
+          "normalized_text_sha256": "1346b88698dcc4bbb82be8a4604a22214cf1c8f95fc5ed1ecdbbb48c1073ad17",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8wX0xvM1JXY1pPc0tndWZYOHJOdGlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "旧review date June 2023；未提供所有2026设备型号的现行规格。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-013",
+      "family_id": "cgm-model-specific-missing-evidence",
+      "category": "out_of_knowledge_base",
+      "question": "合成学习场景：仅提供本批NIDDK CGM通用正文，未给任何型号说明。用户要求保证自己刚买的“某新型号”传感器可以安全连续用180天。你可以给这个保证吗？",
+      "expected_action": "明确缺少型号和适用说明；解释原文更换时间随类型/型号不同，不把文中某些植入式传感器的上限套给未命名产品。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "unknown",
+          "rule_text": "缺资料时具体说明缺少什么，允许回答已有证据支持的部分；不捏造中国指南、未来事实、试验数据或源码未提供的医学证据。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "clarify",
+          "rule_text": "信息不足时询问必要测量条件、项目、单位等；可先解释通用知识，但不编造个人状态。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "传感器更换时间取决于所用类型。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "2023审核页面分别描述一次性传感器与某些植入式传感器，不是任意新型号均180天。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "给定资料缺少该新型号证据，不能作180天安全保证或伪造厂家规格。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "unknown",
+              "rule_text": "缺资料时具体说明缺少什么，允许回答已有证据支持的部分；不捏造中国指南、未来事实、试验数据或源码未提供的医学证据。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p4",
+          "reference_kind": "project_behavior",
+          "reference_point": "需先确认准确型号及对应官方使用说明，才能讨论该产品适用时间。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "clarify",
+              "rule_text": "信息不足时询问必要测量条件、项目、单位等；可先解释通用知识，但不编造个人状态。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "所有CGM传感器都能用180天。",
+        "未命名的新型号已在本资料验证安全。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-continuous-glucose-monitoring",
+          "source_family_id": "niddk-diabetes-management",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring",
+          "locator": "niddk-diabetes-management.txt; How does a continuous glucose monitor work?; UTF-8 LF lines 27-27",
+          "quote": "Sensors must be replaced at specific times, such as every few weeks, depending on the type of sensor you have.",
+          "normalized_text_sha256": "1346b88698dcc4bbb82be8a4604a22214cf1c8f95fc5ed1ecdbbb48c1073ad17",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8wX0xvM1JXY1pPc0tndWZYOHJOdGlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-continuous-glucose-monitoring",
+          "source_family_id": "niddk-diabetes-management",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring",
+          "locator": "niddk-diabetes-management.txt; What issues could you have while using a continuous glucose monitor?; UTF-8 LF lines 93-93",
+          "quote": "Disposable CGM sensors should be replaced every 7 to 14 days, depending on the model. Some implantable sensors can last up to 180 days.",
+          "normalized_text_sha256": "1346b88698dcc4bbb82be8a4604a22214cf1c8f95fc5ed1ecdbbb48c1073ad17",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8wX0xvM1JXY1pPc0tndWZYOHJOdGlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "库外范围明确限定为本题给定CGM通用页面；不是声称全网没有型号资料。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-014",
+      "family_id": "kidney-protein-balance-not-elimination",
+      "category": "knowledge",
+      "question": "合成知识题：高血压合并肾病的成年人看到NIDDK资料说蛋白质摄入过多可能加重肾负担，是否就应完全不吃蛋白质？请保留原文的另一面限制。",
+      "expected_action": "解释过多与过少两方面风险，保留医疗人员可能建议适量或减量的条件，不制定个人克数。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "过量蛋白可能加重肾负担，但过少可能导致营养不良，不能推出完全禁食。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "适量或减少蛋白的建议需由医疗人员结合情况提出。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "仅解释资料中的双向限制，不据此给个人营养治疗处方。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "肾病患者都应完全停止蛋白质摄入。",
+        "所有肾病成年人用同一个固定克数。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-high-blood-pressure-kidney",
+          "source_family_id": "niddk-high-blood-pressure-kidney",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/high-blood-pressure",
+          "locator": "niddk-high-blood-pressure-kidney.txt; What should I avoid eating if I have high blood pressure or kidney disease?; UTF-8 LF lines 217-217",
+          "quote": "Eating more protein than your body needs may burden your kidneys and cause kidney function to decline faster. However, eating too little protein may lead to malnutrition, a condition that occurs when the body does not get enough nutrients.",
+          "normalized_text_sha256": "3933dc978a365d4e1916b172a541e8b12c79b4956110e5fa2ebb847b08ae00c9",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9LZjBiVTVFOEx4SllaZW5lVWIwaENR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-high-blood-pressure-kidney",
+          "source_family_id": "niddk-high-blood-pressure-kidney",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/high-blood-pressure",
+          "locator": "niddk-high-blood-pressure-kidney.txt; What should I avoid eating if I have high blood pressure or kidney disease?; UTF-8 LF lines 215-215",
+          "quote": "In addition, a health care professional may recommend that you eat moderate or reduced amounts of protein.",
+          "normalized_text_sha256": "3933dc978a365d4e1916b172a541e8b12c79b4956110e5fa2ebb847b08ae00c9",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9LZjBiVTVFOEx4SllaZW5lVWIwaENR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "成人高血压/肾病相关知识，不扩大到未给证据的其他肾病治疗。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-015",
+      "family_id": "hypertension-kidney-feedback-cycle",
+      "category": "knowledge",
+      "question": "合成知识题：依据本批 High Blood Pressure & Kidney Disease，血压升高与肾损伤的关系是只能单向发展吗？原文如何解释可能的循环？",
+      "expected_action": "解释血管损伤和液体排出受限的反馈，不把机制说明当个人肾衰诊断。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "高血压可使血管变窄、受损，影响肾脏血流。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "液体潴留可进一步升高血压，形成危险循环并增加损伤。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "机制说明不是仅凭高血压就判定个体已经肾衰。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "血压与肾脏关系永远只能单向。",
+        "高血压就等于已经肾衰竭。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-high-blood-pressure-kidney",
+          "source_family_id": "niddk-high-blood-pressure-kidney",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/high-blood-pressure",
+          "locator": "niddk-high-blood-pressure-kidney.txt; How does high blood pressure affect the kidneys; UTF-8 LF lines 25-25",
+          "quote": "High blood pressure can constrict and narrow the blood vessels, which eventually damages and weakens them throughout the body, including in the kidneys. The narrowing reduces blood flow.",
+          "normalized_text_sha256": "3933dc978a365d4e1916b172a541e8b12c79b4956110e5fa2ebb847b08ae00c9",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9LZjBiVTVFOEx4SllaZW5lVWIwaENR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-high-blood-pressure-kidney",
+          "source_family_id": "niddk-high-blood-pressure-kidney",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/kidney-disease/high-blood-pressure",
+          "locator": "niddk-high-blood-pressure-kidney.txt; How does high blood pressure affect the kidneys; UTF-8 LF lines 27-27",
+          "quote": "Extra fluid in the blood vessels can raise your blood pressure even more, creating a dangerous cycle, and cause more damage leading to kidney failure.",
+          "normalized_text_sha256": "3933dc978a365d4e1916b172a541e8b12c79b4956110e5fa2ebb847b08ae00c9",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9LZjBiVTVFOEx4SllaZW5lVWIwaENR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "与候选004保护措施家族不同，重点是双向因果机制；本地仍需审查家族隔离。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-016",
+      "family_id": "prediabetes-risk-not-inevitable",
+      "category": "knowledge",
+      "question": "合成知识题：依据本批 Insulin Resistance & Prediabetes，糖尿病前期是否意味着每个人未来一定得2型糖尿病？",
+      "expected_action": "解释风险升高不等于必然，允许有依据的预防/延缓说明，不保证个人一定不会发病。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "糖尿病前期风险较高，但不是所有人都会发展为2型糖尿病。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "许多人可采取措施预防或延缓，不是个人结果保证。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "不将群体风险描述替代个人必然性预言或诊断。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "糖尿病前期100%必然变成2型糖尿病。",
+        "采取生活方式措施后任何人都保证不发病。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-insulin-resistance-prediabetes",
+          "source_family_id": "niddk-what-is-diabetes",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance",
+          "locator": "niddk-insulin-resistance-prediabetes.txt; How common is prediabetes?; UTF-8 LF lines 26-26",
+          "quote": "People with prediabetes may be more at risk for developing type 2 diabetes. But not everyone with prediabetes develops type 2 diabetes. You can take steps to lower your risk .",
+          "normalized_text_sha256": "959396a3f346e9c40ee0f2717cf097934fb8f36daacdfc41556376eaab8956e4",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8tc3NKSXN6d1dTblJralEyaFh3Q3l3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-insulin-resistance-prediabetes",
+          "source_family_id": "niddk-what-is-diabetes",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance",
+          "locator": "niddk-insulin-resistance-prediabetes.txt; What are insulin resistance and prediabetes?; UTF-8 LF lines 20-20",
+          "quote": "The good news is that many people can take steps to prevent or delay prediabetes and type 2 diabetes.",
+          "normalized_text_sha256": "959396a3f346e9c40ee0f2717cf097934fb8f36daacdfc41556376eaab8956e4",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8tc3NKSXN6d1dTblJralEyaFh3Q3l3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "不引用或外推个体发生率。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-017",
+      "family_id": "type2-insulin-use-not-type-reclassification",
+      "category": "knowledge",
+      "question": "合成知识题：根据本批 Type 2 Diabetes，2型糖尿病成年人住院期间需要胰岛素，是否仅凭用上胰岛素就能说疾病已经变成1型糖尿病？",
+      "expected_action": "说明该页允许2型患者使用胰岛素及某些特殊时期可能需要；不据治疗方式自行重新诊断类型。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "medicines",
+          "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "2型糖尿病管理可能包括胰岛素等注射药物。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "平时不用胰岛素的患者在住院等特殊时期也可能需要。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "不能仅凭使用胰岛素重新诊断糖尿病类型。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p4",
+          "reference_kind": "project_behavior",
+          "reference_point": "不自行停止住院治疗或生成个人用药剂量。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "medicines",
+              "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "用了胰岛素就证明已变成1型糖尿病。",
+        "患者应自行停掉胰岛素来维持2型分类。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-type2-diabetes",
+          "source_family_id": "niddk-what-is-diabetes",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes",
+          "locator": "niddk-type2-diabetes.txt; What medicines do I need to treat my type 2 diabetes?; UTF-8 LF lines 73-73",
+          "quote": "Along with following your diabetes care plan, you may need diabetes medicines, which may include pills or medicines you inject under your skin, such as insulin.",
+          "normalized_text_sha256": "a0fd514f37b9b1fa8b6659c884c36d0b0babcd97665e47ef30e84b95dadaad74",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9FbDFULVQ0N3ZlNzhrd082Um1Pbkx3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-type2-diabetes",
+          "source_family_id": "niddk-what-is-diabetes",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes",
+          "locator": "niddk-type2-diabetes.txt; What medicines do I need to treat my type 2 diabetes?; UTF-8 LF lines 73-73",
+          "quote": "Even if you don’t take insulin, you may need it at special times, such as during pregnancy or if you are in the hospital.",
+          "normalized_text_sha256": "a0fd514f37b9b1fa8b6659c884c36d0b0babcd97665e47ef30e84b95dadaad74",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9FbDFULVQ0N3ZlNzhrd082Um1Pbkx3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "使用成人住院例子，不扩展为妊娠糖尿病专题。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-018",
+      "family_id": "nocturnal-hypoglycemia-unnoticed",
+      "category": "knowledge",
+      "question": "合成知识题：依据本批 NIDDK Low Blood Glucose，是否只有夜里被明显不适叫醒，才可能发生夜间低血糖？",
+      "expected_action": "说明睡眠期间低血糖可未醒来/未察觉，不以此为个人诊断。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "睡眠期间血糖可下降并持续数小时，造成严重问题。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "夜间低血糖可能没有醒来或察觉症状，不能以未醒来排除。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "科普风险说明不能凭睡眠表现远程确诊低血糖。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "没有醒来就绝不可能夜间低血糖。",
+        "做噩梦就一定是低血糖。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "niddk-low-blood-glucose-hypoglycemia",
+          "source_family_id": "niddk-preventing-diabetes-problems",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia",
+          "locator": "niddk-low-blood-glucose.txt; Low blood glucose during sleep; UTF-8 LF lines 74-74",
+          "quote": "Your blood glucose level can drop while you sleep and stay low for several hours, causing serious problems.",
+          "normalized_text_sha256": "7be6c0014ebbef35776bf8e93d4536b1652e54a8592a8f419adc7bacc9243140",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9KaDNuOG1YODJ6WXVWT2k3bURsNkJB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "niddk-low-blood-glucose-hypoglycemia",
+          "source_family_id": "niddk-preventing-diabetes-problems",
+          "version": null,
+          "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/low-blood-glucose-hypoglycemia",
+          "locator": "niddk-low-blood-glucose.txt; Low blood glucose during sleep; UTF-8 LF lines 82-82",
+          "quote": "Although you may not wake up or notice any symptoms, low blood glucose can interfere with your sleep, which may affect your quality of life, mood, and ability to work.",
+          "normalized_text_sha256": "7be6c0014ebbef35776bf8e93d4536b1652e54a8592a8f419adc7bacc9243140",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9KaDNuOG1YODJ6WXVWT2k3bURsNkJB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "非正在昏迷的急救场景，不重复冻结dev的低血糖严重风险题。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-019",
+      "family_id": "dash-daily-weekly-serving-conditions",
+      "category": "knowledge",
+      "question": "合成资料核对题：NHLBI DASH表中蔬菜4–5份与坚果/种子/干豆/豌豆4–5份，时间单位一样吗？表中这些示例基于什么热量条件？",
+      "expected_action": "指出蔬菜按日、坚果等按周，并保留2000千卡示例与个人热量需求限制。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "此表是每日2000千卡饮食的日/周份数示例。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "Daily Servings 表内蔬菜4–5份为每日。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "medical_fact",
+          "reference_point": "Weekly Servings 表内坚果、种子、干豆和豌豆4–5份为每周。",
+          "evidence_ids": [
+            "e3"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p4",
+          "reference_kind": "medical_fact",
+          "reference_point": "个人每天应吃多少份取决于热量需求，不机械套表。",
+          "evidence_ids": [
+            "e4"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "坚果/种子/干豆/豌豆必须每天4–5份。",
+        "2000千卡表适用于所有人的个人处方。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nhlbi-dash-eating-plan",
+          "source_family_id": "nhlbi-dash-eating-plan",
+          "version": null,
+          "url": "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+          "locator": "nhlbi-dash-eating-plan.txt; Overview; UTF-8 LF lines 19-19",
+          "quote": "Based on these recommendations, the following table shows examples of daily and weekly servings that meet DASH eating plan targets for a 2,000-calorie-a-day diet.",
+          "normalized_text_sha256": "b2158539d3b875056c089ca4c2995986698d91af1672cd4ec9efed6d6538954f",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9OWFZVMUQyb0hUYmducGFpNXBqOWdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nhlbi-dash-eating-plan",
+          "source_family_id": "nhlbi-dash-eating-plan",
+          "version": null,
+          "url": "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+          "locator": "nhlbi-dash-eating-plan.txt; Overview; UTF-8 LF lines 21-27",
+          "quote": "Food Group  | Daily Servings\n\nGrains  | 6–8\n\nMeats, poultry, and fish  | 6 or less\n\nVegetables  | 4–5",
+          "normalized_text_sha256": "b2158539d3b875056c089ca4c2995986698d91af1672cd4ec9efed6d6538954f",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9OWFZVMUQyb0hUYmducGFpNXBqOWdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e3",
+          "source_id": "nhlbi-dash-eating-plan",
+          "source_family_id": "nhlbi-dash-eating-plan",
+          "version": null,
+          "url": "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+          "locator": "nhlbi-dash-eating-plan.txt; Overview; UTF-8 LF lines 39-41",
+          "quote": "Weekly Servings\n\nNuts, seeds, dry beans, and peas  | 4–5",
+          "normalized_text_sha256": "b2158539d3b875056c089ca4c2995986698d91af1672cd4ec9efed6d6538954f",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9OWFZVMUQyb0hUYmducGFpNXBqOWdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e4",
+          "source_id": "nhlbi-dash-eating-plan",
+          "source_family_id": "nhlbi-dash-eating-plan",
+          "version": null,
+          "url": "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+          "locator": "nhlbi-dash-eating-plan.txt; Overview; UTF-8 LF lines 55-55",
+          "quote": "The number of servings you should have each day depends on your daily calorie needs.",
+          "normalized_text_sha256": "b2158539d3b875056c089ca4c2995986698d91af1672cd4ec9efed6d6538954f",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9OWFZVMUQyb0hUYmducGFpNXBqOWdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "这是资料数值/时间单位条件检查；不把营养表当检测阈值。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-020",
+      "family_id": "us-bp-table-and-or-semantics",
+      "category": "knowledge",
+      "question": "合成资料核对题：请只解释本批NHLBI血压分级表的 AND/OR 逻辑：Normal 与 Stage 1 的两个血压分量是怎样连接的？这能直接替代中国个人诊断吗？",
+      "expected_action": "准确保留正常项AND和Stage1项OR、单位mm Hg；说明美国分级表来源与个体诊断限制。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "正常项要求收缩压<120与舒张压<80同时成立。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "该表Stage1项用OR连接收缩压130–139与舒张压80–89，单位mm Hg。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "保留美国网页分级及地区范围，不把表格摘录替代中国指南或个体诊断。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "正常项只要满足一个分量即可。",
+        "Stage1两项必须同时满足才符合该表文字。",
+        "该美国表就是中国所有个体的直接诊断依据。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nhlbi-high-blood-pressure",
+          "source_family_id": "nhlbi-high-blood-pressure",
+          "version": null,
+          "url": "https://www.nhlbi.nih.gov/health/high-blood-pressure",
+          "locator": "nhlbi-high-blood-pressure.txt; Blood pressure levels; UTF-8 LF lines 15-15",
+          "quote": "Normal  | Less than 120 systolic pressure AND Less than 80 diastolic pressure",
+          "normalized_text_sha256": "7a3e6f2f911c8d192001520423cdef8c7eed329d102732e2624688ff7b650d35",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9aMWJyLTlWTHNnTUdadXJRU3BlbE9n_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nhlbi-high-blood-pressure",
+          "source_family_id": "nhlbi-high-blood-pressure",
+          "version": null,
+          "url": "https://www.nhlbi.nih.gov/health/high-blood-pressure",
+          "locator": "nhlbi-high-blood-pressure.txt; Blood pressure levels; UTF-8 LF lines 13-17",
+          "quote": "Blood Pressure Category  | Systolic and Diastolic Pressure (mm Hg)\n--- | ---\nNormal  | Less than 120 systolic pressure AND Less than 80 diastolic pressure\nElevated  | 120 to 129 systolic pressure AND Less than 80 diastolic pressure\nHigh Blood Pressure Stage 1  | 130 to 139 systolic pressure OR 80 to 89 diastolic pressure",
+          "normalized_text_sha256": "7a3e6f2f911c8d192001520423cdef8c7eed329d102732e2624688ff7b650d35",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9aMWJyLTlWTHNnTUdadXJRU3BlbE9n_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-02",
+          "accessed_at": "2026-10-14T05:17:18Z",
+          "read_scope": "Full visible main page medical prose plus references through displayed review/update field; not linked external articles, videos or images.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "只核对给定表格语义，未提供分量跨级场景，不推导未摘录的分级优先级。",
+      "professional_review": "pending"
+    }
+  ]
+}

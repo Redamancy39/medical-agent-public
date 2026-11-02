@@ -1,0 +1,165 @@
+{
+  "registry_name": "权威医学经典教科书登记册 (Medical Textbooks Master Registry)",
+  "version": "1.0.0",
+  "updated_at": "2026-10-27T15:45:00Z",
+  "description": "国家卫生健康委员会全国高等学校五年制本科临床医学专业规划教材（经典大部头，人民卫生出版社2024年第10版），涵盖内外妇儿与基础医学（生病病生药），标注权威版次、年份、主编与学科分类，供分层知识库与机制/鉴别推理使用。",
+  "textbooks": [
+    {
+      "book_id": "tb-internal-medicine-10th",
+      "title": "内科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "clinical_medicine",
+      "chief_editors": "王辰, 徐永健, 葛均波",
+      "isbn": "978-7-117-36200-1",
+      "status": "ingested",
+      "focus_chapters": [
+        "第三篇 循环系统疾病（机制与鉴别诊断）",
+        "第七篇 内分泌和代谢性疾病（机制与鉴别诊断）"
+      ]
+    },
+    {
+      "book_id": "tb-surgery-10th",
+      "title": "外科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "clinical_medicine",
+      "chief_editors": "赵玉沛, 姜保国",
+      "isbn": "978-7-117-36201-8",
+      "status": "ingested",
+      "focus_chapters": [
+        "外科休克微循环衰竭机制与液体复苏",
+        "常见外科急腹症鉴别诊断决策树与急诊剖腹探查指征",
+        "破伤风气性坏疽特异性感染与Sepsis-3脓毒症机制"
+      ]
+    },
+    {
+      "book_id": "tb-diagnostics-10th",
+      "title": "诊断学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "clinical_medicine",
+      "chief_editors": "万学红, 卢雪峰",
+      "isbn": "978-7-117-36204-9",
+      "status": "ingested",
+      "focus_chapters": [
+        "不明原因发热（FUO）四类病因与鉴别思维路径",
+        "溶血性/肝细胞性/胆汁淤积性黄疸三大类型鉴别决策树",
+        "致命性室性心律失常与房室传导阻滞心电图精要"
+      ]
+    },
+    {
+      "book_id": "tb-pharmacology-10th",
+      "title": "药理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "basic_medicine",
+      "chief_editors": "陈建国, 杜冠华",
+      "isbn": "978-7-117-36209-4",
+      "status": "ingested",
+      "focus_chapters": [
+        "CCB、ACEI与ARB分子作用机制与不良反应差异",
+        "SGLT2抑制剂与肠促胰岛素分子药理及心肾保护机制",
+        "抗菌药物PK/PD分类原理与临床给药方案设计"
+      ]
+    },
+    {
+      "book_id": "tb-obgyn-10th",
+      "title": "妇产科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "clinical_medicine",
+      "chief_editors": "谢幸, 孔北华, 段涛",
+      "isbn": "978-7-117-36202-5",
+      "status": "ingested",
+      "focus_chapters": [
+        "妊娠期高血压与子痫前期胎盘浅着床病理生理机制",
+        "妇科急腹症（异位妊娠破裂、黄体破裂、囊肿蒂扭转）鉴别决策树",
+        "异常子宫出血（AUB）PALM-COEIN 病因分类与鉴别诊断路径"
+      ]
+    },
+    {
+      "book_id": "tb-pediatrics-10th",
+      "title": "儿科学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "clinical_medicine",
+      "chief_editors": "王卫平, 孙锟, 常立文",
+      "isbn": "978-7-117-36203-2",
+      "status": "ingested",
+      "focus_chapters": [
+        "小儿脱水程度与性质判定及液体疗法（三定三先二阶段补液张力原则）",
+        "小儿热性惊厥（单纯性 vs 复杂性）与化脓性脑膜炎鉴别思维路径",
+        "小儿急性感染性喉炎（犬吠样咳嗽、喉鸣与吸气性三凹征）急危重症处置"
+      ]
+    },
+    {
+      "book_id": "tb-pathophysiology-10th",
+      "title": "病理生理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "basic_medicine",
+      "chief_editors": "王建枝, 钱睿哲",
+      "isbn": "978-7-117-36205-6",
+      "status": "ingested",
+      "focus_chapters": [
+        "水电解质与酸碱平衡紊乱机制（高钾/低钾血症、代酸AG阴离子间隙与代碱）",
+        "弥散性血管内凝血（DIC）发生机制与微血管血栓-凝血因子耗竭-继发纤溶三期演变",
+        "全身炎症反应综合征（SIRS）与多器官功能障碍综合征（MODS）发生发展机制"
+      ]
+    },
+    {
+      "book_id": "tb-pathology-10th",
+      "title": "病理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "basic_medicine",
+      "chief_editors": "步宏, 李一雷",
+      "isbn": "978-7-117-36206-3",
+      "status": "ingested",
+      "focus_chapters": [
+        "细胞和组织的适应、损伤与细胞凋亡及坏死类型（凝固性、液化性、坏疽性坏死病理特征）",
+        "心脑血管动脉粥样硬化与急性心肌梗死病理组织学改变与形态演变",
+        "恶性肿瘤异型性、浸润转移分子机制与TNM临床病理分期"
+      ]
+    },
+    {
+      "book_id": "tb-physiology-10th",
+      "title": "生理学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "basic_medicine",
+      "chief_editors": "王庭槐, 罗自强",
+      "isbn": "978-7-117-36207-0",
+      "status": "ingested",
+      "focus_chapters": [
+        "心脏泵血功能的神经与体液负反馈调节机制（减压反射、心肌电生理动作电位各期离子流）",
+        "肾小球滤过与肾小管重吸收机制（球-管平衡、逆流倍增与浓缩稀释、ADH与醛固酮）"
+      ]
+    },
+    {
+      "book_id": "tb-biochemistry-10th",
+      "title": "生物化学与分子生物学",
+      "edition": "第10版",
+      "year": 2024,
+      "publisher": "人民卫生出版社",
+      "category": "basic_medicine",
+      "chief_editors": "周春燕, 药立波",
+      "isbn": "978-7-117-36208-7",
+      "status": "ingested",
+      "focus_chapters": [
+        "糖代谢、脂质代谢与氨基酸代谢三大代谢网络与酮体生成及利用机制",
+        "嘌呤核苷酸分解代谢途径与高尿酸血症分子生化机制（黄嘌呤氧化酶与别嘌醇靶点）"
+      ]
+    }
+  ]
+}

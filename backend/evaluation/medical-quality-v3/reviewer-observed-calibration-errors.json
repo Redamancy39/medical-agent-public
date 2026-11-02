@@ -1,0 +1,81 @@
+{
+  "clinical_review": "not_run",
+  "findings": [
+    {
+      "case_id": "basic-16",
+      "text": "UACR反映身体是否在加速排出白蛋白。",
+      "model_status": "partially_supported",
+      "independent_status": "supported",
+      "note": "对应同一原文段落直接支持中文意译；不是医学专业复核。",
+      "evidence": [
+        {
+          "id": "e0",
+          "source_id": "9eba6504a040bc563088bb1bd3069f3ba75daa4a6fac13b237033f38023d1571",
+          "document_id": "nlm-uacr-test",
+          "source_sha256": "3772202d3291e1828d35291338b1af2ccdbd7e8264959fbc0cdb1ecdc1670946",
+          "start": 764,
+          "end": 1177,
+          "quote": "Creatinine, however, often appears in your urine. It is a waste product that comes from daily wear and tear on your muscles. Your kidneys usually get rid of this protein at a steady rate. The microalbumin creatinine ratio test compares the levels of albumin in your urine to your levels of creatinine. This ratio can help your health care provider tell if your body is getting rid of albumin at an increased rate.",
+          "url": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/"
+        }
+      ]
+    },
+    {
+      "case_id": "basic-16",
+      "text": "早期肾病通常没有任何症状。",
+      "model_status": "partially_supported",
+      "independent_status": "supported",
+      "note": "对应同一原文段落直接支持中文意译；不是医学专业复核。",
+      "evidence": [
+        {
+          "id": "e2",
+          "source_id": "9eba6504a040bc563088bb1bd3069f3ba75daa4a6fac13b237033f38023d1571",
+          "document_id": "nlm-uacr-test",
+          "source_sha256": "3772202d3291e1828d35291338b1af2ccdbd7e8264959fbc0cdb1ecdc1670946",
+          "start": 1965,
+          "end": 2239,
+          "quote": "Early kidney disease usually doesn't have any symptoms. So, if you have a high risk for kidney disease, you need a microalbumin creatinine ratio test so you can determine if you have early signs of kidney disease. If you do, treating it early can keep it from getting worse.",
+          "url": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/"
+        }
+      ]
+    },
+    {
+      "case_id": "basic-16",
+      "text": "UACR异常时通常需要更多检查来确认结果。",
+      "model_status": "unsupported",
+      "independent_status": "supported",
+      "note": "对应同一原文段落直接支持中文意译；不是医学专业复核。",
+      "evidence": [
+        {
+          "id": "e61",
+          "source_id": "9eba6504a040bc563088bb1bd3069f3ba75daa4a6fac13b237033f38023d1571",
+          "document_id": "nlm-uacr-test",
+          "source_sha256": "3772202d3291e1828d35291338b1af2ccdbd7e8264959fbc0cdb1ecdc1670946",
+          "start": 6133,
+          "end": 6414,
+          "quote": "If your microalbumin creatinine ratio shows an abnormal amount of albumin in your urine, you will likely need more tests to confirm your results. That's because temporary increases in albumin levels may be caused by exercise, certain medicines, fever, and inflammation in the body.",
+          "url": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/"
+        }
+      ]
+    },
+    {
+      "case_id": "comparison-06",
+      "text": "指尖毛细血管血糖反映采血当时的即时血糖。",
+      "model_status": "supported",
+      "independent_status": "partially_supported",
+      "note": "指尖/即时测量有支持；绑定原文未明确毛细血管术语。核心时间尺度覆盖不等于该条全部措辞已验证。",
+      "evidence": [
+        {
+          "id": "e25",
+          "source_id": "26e3b2de1fed61dbc1c309abea983a69bea4e0a3d523d2695302e3bcc54a88c7",
+          "document_id": "nlm-a1c-test",
+          "source_sha256": "88534028573f92f5cacdba47c1c63bdd767886bcb5547bb8f1644b935256016a",
+          "start": 1384,
+          "end": 1628,
+          "quote": "Your blood glucose level changes all the time. If you're checking it at home, you are measuring what your blood glucose level is at that time. An A1C test gives you an average level of your blood glucose level over the past two to three months.",
+          "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/"
+        }
+      ]
+    }
+  ]
+}

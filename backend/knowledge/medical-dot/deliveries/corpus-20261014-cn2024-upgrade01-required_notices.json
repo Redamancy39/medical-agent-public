@@ -1,0 +1,8 @@
+{
+  "attribution": "WANG J-G and the listed Task Force and collaborating author groups. Chinese Guidelines for the Prevention and Treatment of Hypertension (2024 revision). Journal of Geriatric Cardiology.2025;22(1):1–149. DOI:10.26599/1671-5411.2025.01.008. ©2025JGC.",
+  "source_url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+  "license": "CC BY4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "extraction_changes": "Rendered original English text, LF normalized, eight image-control lines removed, eight images omitted, split into3parts. No intentional clinical rewriting. Tables are preserved as rendered text with original cell-structure JSON; no inferred reconstruction.",
+  "no_endorsement": "No author, journal or institutional endorsement implied. Independent technical review is not professional medical validation."
+}

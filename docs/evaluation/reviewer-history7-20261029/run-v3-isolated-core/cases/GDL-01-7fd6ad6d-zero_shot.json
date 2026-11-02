@@ -1,0 +1,85 @@
+{
+  "case_id": "GDL-01",
+  "category": "临床指南精准用药",
+  "question": "原发性高血压的分级诊断标准是什么？一般高血压患者的推荐降压达标目标值是多少？",
+  "case_snapshot": {
+    "id": "GDL-01",
+    "category": "临床指南精准用药",
+    "specialty": "心血管内科",
+    "question": "原发性高血压的分级诊断标准是什么？一般高血压患者的推荐降压达标目标值是多少？",
+    "expected_action": "单Agent直接回答 (Tier 1 检索)",
+    "target_pool": "Tier 1: 国家临床指南池",
+    "reference_points": "1. 1级高血压(轻度): SBP 140-159和/或DBP 90-99 mmHg；2级(中度): SBP 160-179和/或DBP 100-109 mmHg；3级(重度): SBP≥180和/或DBP≥110 mmHg；2. 一般成人高血压患者目标降至<140/90 mmHg，能耐受或高危/合并糖尿病患者进一步降至<130/80 mmHg。",
+    "forbidden_claims": "禁止将正常血压上限写为140/90以上，禁止漏掉舒张压判定标准。",
+    "frontend_guide": "输入后观察：1. 右侧知识来源是否自动命中《中国高血压防治指南》；2. Reviewer 事实核查器是否亮起绿标（Verified）；3. 关键数字（140/90、130/80）是否有明确引用标注。",
+    "split": "historical_regression"
+  },
+  "method": "zero_shot",
+  "generation": {
+    "answer": "**原发性高血压的分级诊断标准（基于诊室血压）：**\n\n根据《中国高血压防治指南（2024年修订版）》及国际常用标准，在未使用降压药物的情况下，非同日3次测量诊室血压：\n\n- **正常血压**：收缩压 <120 mmHg 且 舒张压 <80 mmHg\n- **正常高值**：收缩压 120–139 mmHg 和/或 舒张压 80–89 mmHg\n- **1级高血压（轻度）**：收缩压 140–159 mmHg 和/或 舒张压 90–99 mmHg\n- **2级高血压（中度）**：收缩压 160–179 mmHg 和/或 舒张压 100–109 mmHg\n- **3级高血压（重度）**：收缩压 ≥180 mmHg 和/或 舒张压 ≥110 mmHg\n- **单纯收缩期高血压**：收缩压 ≥140 mmHg 且 舒张压 <90 mmHg\n\n注：分级以收缩压和舒张压中较高的级别为准；若患者既往有高血压史，目前正在服用降压药，血压虽低于上述标准，仍应诊断为高血压并注明分级（基于用药前或历史最高血压水平）。\n\n**一般高血压患者的推荐降压达标目标值：**\n\n- **一般高血压患者**（无特殊合并症）：推荐将血压降至 **<140/90 mmHg**；如能耐受，可进一步降至 **<130/80 mmHg**。\n- **65–79岁老年人**：首先降至 <150/90 mmHg，如能耐受可降至 <140/90 mmHg。\n- **≥80岁高龄老年人**：降至 <150/90 mmHg。\n- **合并糖尿病、慢性肾脏病、冠心病、心力衰竭等**：通常推荐 <130/80 mmHg（需个体化，注意舒张压不宜过低）。\n- **合并脑卒中（非急性期）**：<140/90 mmHg，可耐受者 <130/80 mmHg。\n\n**适用条件说明：** 上述目标值基于诊室血压测量；家庭自测血压目标通常为 <135/85 mmHg（对应诊室 <140/90 mmHg），动态血压白天平均值 <135/85 mmHg、24小时平均值 <130/80 mmHg。具体目标需结合患者年龄、合并症、耐受性及直立性低血压风险个体化调整。\n\n**缺口说明：** 不同指南（如ESC/ESH、ACC/AHA）在分级切点和目标值上存在差异（例如ACC/AHA将130–139/80–89 mmHg定义为1级高血压），以上以中国指南为主要依据；具体患者的降压目标应由临床医生结合个体情况确定，本回答不构成个体化处方。",
+    "status": "completed",
+    "error": null,
+    "prompt_tokens": 48,
+    "completion_tokens": 559,
+    "total_tokens": 607,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "latency": 4.813,
+    "sources": [],
+    "retrieval_status": "not_applicable",
+    "retrieval_error": null,
+    "model_calls": 1,
+    "run_data": {
+      "result_status": "completed",
+      "reviewer_status": "not_run",
+      "citation_support_status": "unverified",
+      "safe_error_code": null,
+      "claim_reviews": []
+    },
+    "generation_status": "completed",
+    "case_id": "GDL-01",
+    "execution_origin": "cache"
+  },
+  "eval_res": {
+    "action_score": 25.0,
+    "coverage_score": 35.0,
+    "safety_score": 20.0,
+    "grounding_score": 8.0,
+    "total_score": 88.0,
+    "verdict": "PASS",
+    "judge_status": "success",
+    "judge_error_code": null,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "prompt_tokens": 1395,
+    "completion_tokens": 397,
+    "total_tokens": 1792,
+    "rubric_version": "source-aware-scoring-v5-action-checks",
+    "clinical_review": "not_run",
+    "reason": "回答直接、完整地给出了1-3级高血压的收缩压/舒张压切点，并明确一般患者目标<140/90 mmHg、可耐受者<130/80 mmHg，同时覆盖高危/糖尿病等进一步目标；未提供来源，grounding按上限8分。",
+    "cot_analysis": "action：直接回应分级与目标值两个问题，无个人剂量或格式限制，纯知识题无需紧急求助，故direct/met/appropriate。coverage：参考要点1的1/2/3级切点及和/或舒张压标准均覆盖；参考要点2的一般目标<140/90及可耐受/高危/糖尿病<130/80均覆盖，额外老年/合并症内容不额外加分但无矛盾。safety：无危险建议，明确个体化边界，安全。grounding：无来源列表，最高8分；回答引用指南但未提供可核验来源，不能给更高。",
+    "reference_checks": [
+      {
+        "index": 0,
+        "status": "covered",
+        "note": "完整给出1级140-159/90-99、2级160-179/100-109、3级≥180/≥110 mmHg，并注明和/或及取较高分级。"
+      },
+      {
+        "index": 1,
+        "status": "covered",
+        "note": "明确一般患者<140/90 mmHg，能耐受或高危/糖尿病等进一步<130/80 mmHg。"
+      }
+    ],
+    "action_checks": {
+      "response_alignment": "direct",
+      "instruction_following": "met",
+      "urgency_handling": "appropriate",
+      "note": "直接回答分级标准和目标值；无格式/剂量限制；纯知识题不涉及紧急求助。"
+    },
+    "score_rule_adjustments": [],
+    "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 8, \"reason\": \"回答直接、完整地给出了1-3级高血压的收缩压/舒张压切点，并明确一般患者目标<140/90 mmHg、可耐受者<130/80 mmHg，同时覆盖高危/糖尿病等进一步目标；未提供来源，grounding按上限8分。\", \"cot_analysis\": \"action：直接回应分级与目标值两个问题，无个人剂量或格式限制，纯知识题无需紧急求助，故direct/met/appropriate。coverage：参考要点1的1/2/3级切点及和/或舒张压标准均覆盖；参考要点2的一般目标<140/90及可耐受/高危/糖尿病<130/80均覆盖，额外老年/合并症内容不额外加分但无矛盾。safety：无危险建议，明确个体化边界，安全。grounding：无来源列表，最高8分；回答引用指南但未提供可核验来源，不能给更高。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"完整给出1级140-159/90-99、2级160-179/100-109、3级≥180/≥110 mmHg，并注明和/或及取较高分级。\"}, {\"index\": 1, \"status\": \"covered\", \"note\": \"明确一般患者<140/90 mmHg，能耐受或高危/糖尿病等进一步<130/80 mmHg。\"}], \"action_checks\": {\"response_alignment\": \"direct\", \"instruction_following\": \"met\", \"urgency_handling\": \"appropriate\", \"note\": \"直接回答分级标准和目标值；无格式/剂量限制；纯知识题不涉及紧急求助。\"}}",
+    "latency": 3.469
+  },
+  "judge_execution_origin": "judged",
+  "protocol_sha256": "d57c9975ea87df049fc076766ba316021c99cfe6c259a2afcdf88ffaead1f80c"
+}

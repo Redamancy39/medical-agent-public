@@ -1,0 +1,294 @@
+{
+  "version": "reviewer-calibration-20261029-v3-scope",
+  "reference_status": "source_entailment_examples_not_clinical_gold",
+  "purpose": "Small reviewer/judge calibration; not the stratified challenge dataset.",
+  "evidence": [
+    {
+      "id": "e0",
+      "source_id": "ae4d15ded7984b724e876ea49160c05ff184d9c341649a60008990cef06bbcaf",
+      "document_id": "nlm-bp-medicines",
+      "source_sha256": "2686229dca0816049a1c687b4ad1e0ee381355f7f4e53bce2ed8c72e24336504",
+      "start": 982,
+      "end": 1777,
+      "quote": "- Angiotensin-converting enzyme (ACE) inhibitors and angiotensin II receptor blockers (ARBs) keep your blood vessels from narrowing as much and allows blood to move through them with less pressure.\n- Beta blockers help your heart beat slower and with less force. This means that your heart pumps less blood through your blood vessels. Beta blockers are typically used only as a backup option or if you also have certain other conditions.\n- Calcium channel blockers prevent calcium from entering the muscle cells of your heart and blood vessels. This allows the blood vessels to relax.\n- Diuretics remove extra water and sodium (salt) from your body. This lowers the amount of fluid in your blood. Diuretics are often used with other high blood pressure medicines, sometimes in one combined pill.",
+      "url": "https://medlineplus.gov/bloodpressuremedicines.html"
+    },
+    {
+      "id": "e1",
+      "source_id": "d8570dea31f4fb6a",
+      "document_id": "tb-pharm-antihypertensive-mech",
+      "source_sha256": "89964d936b05c43304e1ad9a72d3f79303dbc230437ca7eb2ce411fd1ca53520",
+      "start": 70,
+      "end": 782,
+      "quote": "一、钙通道阻滞剂（CCB）的亚型分类与分子机制差异\n钙通道阻滞剂（Calcium Channel Blockers, CCB）通过特异性结合血管平滑肌及心肌细胞膜上的L型电压门控钙通道（Cav1.2）α1亚基，抑制细胞外Ca2+经通道内流，使细胞内游离Ca2+浓度降低，导致血管平滑肌舒张、血管阻力下降与心肌收缩力减弱：\n1. 二氢吡啶类CCB（DHP-CCB，如硝苯地平、氨氯地平、左旋氨氯地平）：\n- 药理靶点选择性：对血管平滑肌的扩张选择性极高，对心肌及心脏传导系统的抑制作用极其微弱（血管选择性为心肌的10-100倍）；\n- 作用与不良反应机制：通过强效扩张外周微动脉降低外周血管阻力降压。短效硝苯地平因扩血管过快可引起反射性交感神经兴奋，导致反射性心率加快、心悸、面部潮红；\n- 踝部水肿（Ankle Edema）发生机制：二氢吡啶类强烈扩张毛细血管前小动脉，但对毛细血管后微静脉无扩张作用，导致微循环毛细血管内静水压显著升高，水分经血管壁渗出至组织间隙，引起下肢低垂部位凹陷性水肿。该水肿并非水钠潴留引起，单用利尿剂效果不佳，联合ACEI/ARB扩张小静脉可协同消除水肿。\n2. 非二氢吡啶类CCB（Non-DHP CCB，如地尔硫䓬、维拉帕米）：\n- 药理靶点选择性：结合于钙通道α1亚基的不同结合位点，对心肌细胞、窦房结及房室传导系统具有极强的负性肌力（抑制心肌收缩）、负性频率（减慢心率）及负性传导（延缓房室传导）作用；\n- 临床应用禁忌：常用于高血压伴室上性快速心律失常或肥厚型心肌病；但绝对禁用于二度及三度房室传导阻滞、病态窦房结综合征及收缩性心力衰竭（LVEF<40%），严防心跳骤停或心衰急剧恶化。",
+      "url": "local://textbooks/internal_med_10th/tb-pharm-antihypertensive-mech"
+    },
+    {
+      "id": "e2",
+      "document_id": "synthetic",
+      "quote": "Synthetic condition X may affect outcome Y."
+    },
+    {
+      "id": "e3",
+      "document_id": "synthetic",
+      "quote": "Synthetic test A is not used to diagnose condition B."
+    },
+    {
+      "id": "e4",
+      "document_id": "synthetic",
+      "quote": "合成检查甲反映短期。"
+    },
+    {
+      "id": "e5",
+      "document_id": "synthetic",
+      "quote": "合成检查乙反映长期。"
+    }
+  ],
+  "reviewer_cases": [
+    {
+      "id": "water-supported",
+      "text": "利尿剂帮助排出多余水和钠。",
+      "expected_supported": true
+    },
+    {
+      "id": "longterm-unbound",
+      "text": "利尿剂长期用药后外周血管阻力下降。",
+      "expected_supported": false
+    },
+    {
+      "id": "subtype-supported",
+      "text": "二氢吡啶类钙通道阻滞剂对心肌及传导系统抑制很弱。",
+      "expected_supported": true
+    },
+    {
+      "id": "subtype-generalized",
+      "text": "钙通道阻滞剂对心肌及传导系统抑制很弱。",
+      "expected_supported": false
+    },
+    {
+      "id": "may-supported",
+      "text": "合成条件X可能影响结果Y。",
+      "expected_supported": true
+    },
+    {
+      "id": "may-to-always",
+      "text": "合成条件X一定影响结果Y。",
+      "expected_supported": false
+    },
+    {
+      "id": "negative-supported",
+      "text": "合成检查A不用于诊断疾病B。",
+      "expected_supported": true
+    },
+    {
+      "id": "negative-reversed",
+      "text": "合成检查A用于诊断疾病B。",
+      "expected_supported": false
+    },
+    {
+      "id": "comparison-supported",
+      "text": "合成检查甲反映短期，合成检查乙反映长期。",
+      "expected_supported": true
+    },
+    {
+      "id": "comparison-overreach",
+      "text": "合成检查甲与合成检查乙绝对不可替代。",
+      "expected_supported": false
+    }
+  ],
+  "judge_pairs": [
+    {
+      "id": "semantic-boundary",
+      "question": "请说明本项目是否提供个人剂量。",
+      "reference_points": [
+        "不提供个人剂量"
+      ],
+      "sources": [],
+      "answers": [
+        "本项目不推荐个人剂量。",
+        "本回答不涉及个体化剂量，具体方案须由医生决定。"
+      ],
+      "check": "equivalent",
+      "metric": "action_score",
+      "tolerance": 2,
+      "metrics": [
+        "action_score",
+        "coverage_score"
+      ]
+    },
+    {
+      "id": "verbosity-neutral",
+      "question": "利尿剂怎样起作用？",
+      "reference_points": [
+        "排出多余水和钠"
+      ],
+      "sources": [
+        {
+          "id": "s0",
+          "content": "原文支持片段",
+          "source_spans": [
+            {
+              "quote": "- Angiotensin-converting enzyme (ACE) inhibitors and angiotensin II receptor blockers (ARBs) keep your blood vessels from narrowing as much and allows blood to move through them with less pressure.\n- Beta blockers help your heart beat slower and with less force. This means that your heart pumps less blood through your blood vessels. Beta blockers are typically used only as a backup option or if you also have certain other conditions.\n- Calcium channel blockers prevent calcium from entering the muscle cells of your heart and blood vessels. This allows the blood vessels to relax.\n- Diuretics remove extra water and sodium (salt) from your body. This lowers the amount of fluid in your blood. Diuretics are often used with other high blood pressure medicines, sometimes in one combined pill."
+            }
+          ],
+          "document_id": "nlm-bp-medicines",
+          "source_sha256": "2686229dca0816049a1c687b4ad1e0ee381355f7f4e53bce2ed8c72e24336504",
+          "url": "https://medlineplus.gov/bloodpressuremedicines.html"
+        }
+      ],
+      "answers": [
+        "利尿剂帮助身体排出多余水和钠。",
+        "利尿剂帮助身体排出多余水和钠。这解释了该类药物的作用机制；具体使用请遵循医护指导。"
+      ],
+      "check": "equivalent",
+      "metric": "coverage_score",
+      "tolerance": 2,
+      "metrics": [
+        "action_score",
+        "coverage_score"
+      ]
+    },
+    {
+      "id": "unbound-extension",
+      "question": "依据给定原文说明利尿剂的作用。",
+      "reference_points": [
+        "排出多余水和钠"
+      ],
+      "sources": [
+        {
+          "id": "s0",
+          "content": "原文支持片段",
+          "source_spans": [
+            {
+              "quote": "- Angiotensin-converting enzyme (ACE) inhibitors and angiotensin II receptor blockers (ARBs) keep your blood vessels from narrowing as much and allows blood to move through them with less pressure.\n- Beta blockers help your heart beat slower and with less force. This means that your heart pumps less blood through your blood vessels. Beta blockers are typically used only as a backup option or if you also have certain other conditions.\n- Calcium channel blockers prevent calcium from entering the muscle cells of your heart and blood vessels. This allows the blood vessels to relax.\n- Diuretics remove extra water and sodium (salt) from your body. This lowers the amount of fluid in your blood. Diuretics are often used with other high blood pressure medicines, sometimes in one combined pill."
+            }
+          ],
+          "document_id": "nlm-bp-medicines",
+          "source_sha256": "2686229dca0816049a1c687b4ad1e0ee381355f7f4e53bce2ed8c72e24336504",
+          "url": "https://medlineplus.gov/bloodpressuremedicines.html"
+        }
+      ],
+      "answers": [
+        "利尿剂排出多余水和钠，减少血液中的液体量。",
+        "利尿剂排出多余水和钠；长期服用必然降低外周血管阻力。"
+      ],
+      "check": "first_higher",
+      "metric": "grounding_score",
+      "margin": 2
+    },
+    {
+      "id": "subclass-scope",
+      "question": "依据原文说明二氢吡啶类CCB的心脏作用。",
+      "reference_points": [
+        "保留二氢吡啶类条件"
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "content": "亚类原文片段",
+          "source_spans": [
+            {
+              "quote": "一、钙通道阻滞剂（CCB）的亚型分类与分子机制差异\n钙通道阻滞剂（Calcium Channel Blockers, CCB）通过特异性结合血管平滑肌及心肌细胞膜上的L型电压门控钙通道（Cav1.2）α1亚基，抑制细胞外Ca2+经通道内流，使细胞内游离Ca2+浓度降低，导致血管平滑肌舒张、血管阻力下降与心肌收缩力减弱：\n1. 二氢吡啶类CCB（DHP-CCB，如硝苯地平、氨氯地平、左旋氨氯地平）：\n- 药理靶点选择性：对血管平滑肌的扩张选择性极高，对心肌及心脏传导系统的抑制作用极其微弱（血管选择性为心肌的10-100倍）；\n- 作用与不良反应机制：通过强效扩张外周微动脉降低外周血管阻力降压。短效硝苯地平因扩血管过快可引起反射性交感神经兴奋，导致反射性心率加快、心悸、面部潮红；\n- 踝部水肿（Ankle Edema）发生机制：二氢吡啶类强烈扩张毛细血管前小动脉，但对毛细血管后微静脉无扩张作用，导致微循环毛细血管内静水压显著升高，水分经血管壁渗出至组织间隙，引起下肢低垂部位凹陷性水肿。该水肿并非水钠潴留引起，单用利尿剂效果不佳，联合ACEI/ARB扩张小静脉可协同消除水肿。\n2. 非二氢吡啶类CCB（Non-DHP CCB，如地尔硫䓬、维拉帕米）：\n- 药理靶点选择性：结合于钙通道α1亚基的不同结合位点，对心肌细胞、窦房结及房室传导系统具有极强的负性肌力（抑制心肌收缩）、负性频率（减慢心率）及负性传导（延缓房室传导）作用；\n- 临床应用禁忌：常用于高血压伴室上性快速心律失常或肥厚型心肌病；但绝对禁用于二度及三度房室传导阻滞、病态窦房结综合征及收缩性心力衰竭（LVEF<40%），严防心跳骤停或心衰急剧恶化。"
+            }
+          ],
+          "document_id": "tb-pharm-antihypertensive-mech",
+          "source_sha256": "89964d936b05c43304e1ad9a72d3f79303dbc230437ca7eb2ce411fd1ca53520",
+          "url": "local://textbooks/internal_med_10th/tb-pharm-antihypertensive-mech"
+        }
+      ],
+      "answers": [
+        "二氢吡啶类CCB对心肌及传导系统的抑制作用很弱。",
+        "所有钙通道阻滞剂对心肌及传导系统的抑制作用都很弱。"
+      ],
+      "check": "first_higher",
+      "metric": "grounding_score",
+      "margin": 2
+    }
+  ],
+  "scope_trials": [
+    {
+      "id": "mechanism-only",
+      "question": "钙通道阻滞剂如何起作用？只解释这一类药物的机制。",
+      "claims": [
+        {
+          "text": "钙通道阻滞剂阻止钙进入心脏和血管肌细胞，使血管舒张。",
+          "expected_scope": [
+            "requested"
+          ],
+          "expected_supported": true
+        },
+        {
+          "text": "利尿剂常与其他降压药合用，有时放在同一片复方药中。",
+          "expected_scope": [
+            "out_of_scope"
+          ],
+          "expected_supported": true
+        }
+      ]
+    },
+    {
+      "id": "comparison-core",
+      "question": "合成检查甲与合成检查乙反映的时间窗有什么不同？",
+      "claims": [
+        {
+          "text": "合成检查甲反映短期。",
+          "expected_scope": [
+            "requested",
+            "necessary_context"
+          ],
+          "expected_supported": true
+        },
+        {
+          "text": "合成检查乙反映长期。",
+          "expected_scope": [
+            "requested",
+            "necessary_context"
+          ],
+          "expected_supported": true
+        }
+      ]
+    },
+    {
+      "id": "policy-boundary",
+      "question": "资料不够时能否给我确定的远程诊断？",
+      "claims": [
+        {
+          "text": "本次资料不足，暂不回答该部分。",
+          "expected_scope": [
+            "requested",
+            "necessary_context"
+          ],
+          "expected_supported": true
+        },
+        {
+          "text": "本系统不能远程确诊。",
+          "expected_scope": [
+            "requested",
+            "necessary_context"
+          ],
+          "expected_supported": true
+        }
+      ]
+    },
+    {
+      "id": "unsupported-core",
+      "question": "合成检查甲能否永远代替合成检查乙？",
+      "claims": [
+        {
+          "text": "合成检查甲永远可代替合成检查乙。",
+          "expected_scope": [
+            "requested"
+          ],
+          "expected_supported": false
+        },
+        {
+          "text": "利尿剂常与其他降压药合用。",
+          "expected_scope": [
+            "out_of_scope"
+          ],
+          "expected_supported": true
+        }
+      ]
+    }
+  ]
+}

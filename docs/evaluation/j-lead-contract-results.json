@@ -1,0 +1,703 @@
+{
+  "date": "2026-10-14",
+  "source_run": "backend\\evaluation\\medical-v1\\runs\\20261014-110851-fadf3853",
+  "report_hashes": {
+    "real-pilot.json": "72b097f46ede8292bcea7d6eb6944cd30bb4dcea1b9363c1d530a6a3b5695231",
+    "retrieval.json": "585cb70981aa998d9227c2689516fcf9c796436d3c3be4405f0d8149deb4f480"
+  },
+  "backend_tests": {
+    "passed": 161,
+    "failed": 0,
+    "mode": "offline",
+    "elapsed_seconds": 45.79
+  },
+  "real": {
+    "summary": {
+      "mode": "real_lead_auto",
+      "cases": 4,
+      "completed": 4,
+      "http_attempts": 17,
+      "answer_quality": "pending_review",
+      "clinical_review": "not_run",
+      "mem0": "disabled",
+      "web": "disabled",
+      "test_split": "not_run"
+    },
+    "total_tokens": 50412,
+    "cases": [
+      {
+        "case_id": "basic-01",
+        "elapsed_seconds": 13.875,
+        "actual_plan": {
+          "tasks": [
+            {
+              "task_id": "explain_bp_readings",
+              "agent_id": "consultation_agent",
+              "description": "依据资料解释收缩压与舒张压各指什么、测量读数中两个数字分别对应哪一项，并说明资料适用范围与不能替代个人诊疗的边界。",
+              "depends_on": [],
+              "require_sources": true
+            }
+          ],
+          "reason": "用户请求的是血压基础概念的科普解释，属于健康知识说明，需要依据NLM成人高血压科普资料作答以保证准确性，故安排一次带出处的咨询解释任务，无需诊断核查或拆分。"
+        },
+        "answer_review": "pending_source_and_medical_review",
+        "result": {
+          "result_status": "completed",
+          "plan_status": "completed",
+          "plan_reason": "用户请求的是血压基础概念的科普解释，属于健康知识说明，需要依据NLM成人高血压科普资料作答以保证准确性，故安排一次带出处的咨询解释任务，无需诊断核查或拆分。",
+          "knowledge_profile": "medical",
+          "safe_error_code": null,
+          "task_count": 1,
+          "planned_agent_count": 1,
+          "distinct_agent_count": null,
+          "model_calls": 3,
+          "tool_calls": 1,
+          "evidence_status": "not_run",
+          "schema_repair_count": 0,
+          "contract_repair_counts": {},
+          "contract_diagnostics": []
+        },
+        "sources": [
+          {
+            "id": "ac1a0537a3ba8932f1b581a0ade448c6392dcbdf8d169ba64bd698b52a5c46a3",
+            "document_id": "nlm-hypertension",
+            "version": "6ef444154364-zh-ef835d098111",
+            "url": "https://medlineplus.gov/highbloodpressure.html",
+            "source_sha256": "6ef444154364630f65a7934b794d754cff2a841ba77becaee2995afac4245dba",
+            "start": 0,
+            "end": 226,
+            "source_spans": [
+              {
+                "end": 279,
+                "quote": "This is called systolic pressure.",
+                "start": 246
+              },
+              {
+                "end": 384,
+                "quote": "This is called diastolic pressure.",
+                "start": 350
+              },
+              {
+                "end": 576,
+                "quote": "120/80 means a systolic of 120 and a diastolic of 80.",
+                "start": 523
+              }
+            ]
+          },
+          {
+            "id": "16db276a7003701deb5fde2af332ec969774cd74cea315e3b5f403be39dea66a",
+            "document_id": "nlm-bp-test",
+            "version": "3605f16f26b8-zh-1123b25addaa",
+            "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+            "source_sha256": "3605f16f26b8d7e9b90bc28b81899c1087f316e5e7b09d78aff92f295c6c3d75",
+            "start": 226,
+            "end": 535,
+            "source_spans": [
+              {
+                "end": 6074,
+                "quote": "Blood pressure is measured in millimeters of mercury",
+                "start": 6022
+              },
+              {
+                "end": 6736,
+                "quote": "two or more high blood pressure readings on different days",
+                "start": 6678
+              },
+              {
+                "end": 6844,
+                "quote": "your medical and family history",
+                "start": 6813
+              },
+              {
+                "end": 6500,
+                "quote": "seek medical care right away",
+                "start": 6472
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "scenario-03",
+        "elapsed_seconds": 24.390999999828637,
+        "actual_plan": {
+          "tasks": [
+            {
+              "task_id": "clarify_glucose",
+              "agent_id": "consultation_agent",
+              "description": "解释血糖数值需结合单位、采血情境（空腹/餐后/随机）与重复检测才能解读，说明仅凭报告中一个无单位、情境不明的数值无法判断是否为糖尿病，并提示应就医复核。",
+              "depends_on": [],
+              "require_sources": true
+            },
+            {
+              "task_id": "verify_dx_boundary",
+              "agent_id": "diagnostic_agent",
+              "description": "核查现有资料对血糖指标判断糖尿病适用范围的界定，明确远程不可确诊、需结合临床评估的边界，并说明资料局限（仅美国NLM成人科普，非中国指南或个人处方）。",
+              "depends_on": [
+                "clarify_glucose"
+              ],
+              "require_sources": true
+            }
+          ],
+          "reason": "用户问的是\"单次血糖8.0、无单位、不知是否空腹能否诊断糖尿病\"，属于健康知识解释与诊断条件边界的澄清，需先解释为什么不能判断，再核查证据适用范围与安全边界（不能远程确诊），故拆两个任务；后者依赖前者的澄清结论。任务要求医学事实，标记 require_sources=true。"
+        },
+        "answer_review": "pending_source_and_medical_review",
+        "result": {
+          "result_status": "completed",
+          "plan_status": "completed",
+          "plan_reason": "用户问的是\"单次血糖8.0、无单位、不知是否空腹能否诊断糖尿病\"，属于健康知识解释与诊断条件边界的澄清，需先解释为什么不能判断，再核查证据适用范围与安全边界（不能远程确诊），故拆两个任务；后者依赖前者的澄清结论。任务要求医学事实，标记 require_sources=true。",
+          "knowledge_profile": "medical",
+          "safe_error_code": null,
+          "task_count": 2,
+          "planned_agent_count": 2,
+          "distinct_agent_count": 2,
+          "model_calls": 5,
+          "tool_calls": 2,
+          "evidence_status": "passed",
+          "schema_repair_count": 0,
+          "contract_repair_counts": {},
+          "contract_diagnostics": []
+        },
+        "sources": [
+          {
+            "id": "fc9127cc166c1d78c56f5a11623bd28bd8f4b31c39977ff5fca1f93f4234d30c",
+            "document_id": "nlm-diabetes-tests",
+            "version": "00eea6f5d7e0-zh-45efb32fab43",
+            "url": "https://medlineplus.gov/lab-tests/diabetes-tests/",
+            "source_sha256": "00eea6f5d7e0c01800693826cf672d4b8630e2745f2117798b563940da2534c9",
+            "start": 289,
+            "end": 564,
+            "source_spans": [
+              {
+                "end": 6054,
+                "quote": "No fasting is required for this test.",
+                "start": 6017
+              },
+              {
+                "end": 6054,
+                "quote": "No fasting is required for this test.",
+                "start": 6017
+              },
+              {
+                "end": 835,
+                "quote": "If it drops very low, you could lose consciousness or have a seizure.",
+                "start": 766
+              }
+            ]
+          },
+          {
+            "id": "b286bdb501fb296a0c9a1061af3949ef36cee314edb6efbc4eb5c8e6f5b34fa3",
+            "document_id": "nlm-diabetes-tests",
+            "version": "00eea6f5d7e0-zh-45efb32fab43",
+            "url": "https://medlineplus.gov/lab-tests/diabetes-tests/",
+            "source_sha256": "00eea6f5d7e0c01800693826cf672d4b8630e2745f2117798b563940da2534c9",
+            "start": 0,
+            "end": 287,
+            "source_spans": [
+              {
+                "end": 5701,
+                "quote": "Random blood sugar. This test can be taken at any time.",
+                "start": 5646
+              },
+              {
+                "end": 6054,
+                "quote": "No fasting is required for this test.",
+                "start": 6017
+              },
+              {
+                "end": 6163,
+                "quote": "Urine tests are not often used to diagnose or monitor diabetes",
+                "start": 6101
+              }
+            ]
+          },
+          {
+            "id": "9100b16f5fcec9acf2383412330ab89e0a0f1fe048acab0d539c7c2352319b14",
+            "document_id": "nlm-prediabetes",
+            "version": "68719b122e0d-zh-f66d24a217c0",
+            "url": "https://medlineplus.gov/prediabetes.html",
+            "source_sha256": "68719b122e0df5c3a341bae51da5d1ee2cccfd7a06ebddc48dbde0beff6cc394",
+            "start": 256,
+            "end": 551,
+            "source_spans": [
+              {
+                "end": 2453,
+                "quote": "A normal level is 99 or below Prediabetes is 100 to 125 Type 2 diabetes is 126 and above",
+                "start": 2365
+              },
+              {
+                "end": 2750,
+                "quote": "Type 2 diabetes is above 6.5%",
+                "start": 2721
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "comparison-03",
+        "elapsed_seconds": 31.938000000081956,
+        "actual_plan": {
+          "tasks": [
+            {
+              "task_id": "verify_sources",
+              "agent_id": "research_agent",
+              "description": "核查NLM糖尿病前期科普页与HbA1c检测页关于糖尿病诊断边界的原文表述，确认两处用词差异是否真实存在、是否属于同一语境，并明确资料覆盖范围与来源类型。",
+              "depends_on": [],
+              "require_sources": true
+            },
+            {
+              "task_id": "assess_boundary",
+              "agent_id": "diagnostic_agent",
+              "description": "基于核查结果评估这两处表述差异在证据上如何界定（阈值包含性问题、语境与适用人群差异），说明可报告的范围与不确定性，不作个体诊断或处方建议。",
+              "depends_on": [
+                "verify_sources"
+              ],
+              "require_sources": true
+            },
+            {
+              "task_id": "draft_report",
+              "agent_id": "consultation_agent",
+              "description": "向用户说明如何客观报告该差异：区分两处原文表述、说明差异性质与不可外推之处，并提示限于美国NLM科普资料，不替代中国指南或个体诊疗。",
+              "depends_on": [
+                "assess_boundary"
+              ],
+              "require_sources": false
+            }
+          ],
+          "reason": "该问题涉及医学事实比对与差异表述规范：需先核实两页原文（检索证据），再由证据角色界定差异性质与适用边界，最后由咨询角色给出客观报告方式。串行依赖确保不把未核实结论当事实，且不作个体诊断。"
+        },
+        "answer_review": "pending_source_and_medical_review",
+        "result": {
+          "result_status": "completed",
+          "plan_status": "completed",
+          "plan_reason": "该问题涉及医学事实比对与差异表述规范：需先核实两页原文（检索证据），再由证据角色界定差异性质与适用边界，最后由咨询角色给出客观报告方式。串行依赖确保不把未核实结论当事实，且不作个体诊断。",
+          "knowledge_profile": "medical",
+          "safe_error_code": null,
+          "task_count": 3,
+          "planned_agent_count": 3,
+          "distinct_agent_count": 3,
+          "model_calls": 6,
+          "tool_calls": 2,
+          "evidence_status": "passed",
+          "schema_repair_count": 0,
+          "contract_repair_counts": {},
+          "contract_diagnostics": []
+        },
+        "sources": [
+          {
+            "id": "9100b16f5fcec9acf2383412330ab89e0a0f1fe048acab0d539c7c2352319b14",
+            "document_id": "nlm-prediabetes",
+            "version": "68719b122e0d-zh-f66d24a217c0",
+            "url": "https://medlineplus.gov/prediabetes.html",
+            "source_sha256": "68719b122e0df5c3a341bae51da5d1ee2cccfd7a06ebddc48dbde0beff6cc394",
+            "start": 256,
+            "end": 551,
+            "source_spans": [
+              {
+                "end": 2453,
+                "quote": "A normal level is 99 or below Prediabetes is 100 to 125 Type 2 diabetes is 126 and above",
+                "start": 2365
+              },
+              {
+                "end": 2750,
+                "quote": "Type 2 diabetes is above 6.5%",
+                "start": 2721
+              }
+            ]
+          },
+          {
+            "id": "784f41de56811ca3741391817578fd7aa37c4e68a58fdd902b9002ba16f66aa4",
+            "document_id": "nlm-a1c-test",
+            "version": "88534028573f-zh-2369744f56c1",
+            "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+            "source_sha256": "88534028573f92f5cacdba47c1c63bdd767886bcb5547bb8f1644b935256016a",
+            "start": 275,
+            "end": 645,
+            "source_spans": [
+              {
+                "end": 5002,
+                "quote": "The ranges are just a guide",
+                "start": 4975
+              },
+              {
+                "end": 5323,
+                "quote": "Diabetes: A1C of 6.5% or higher",
+                "start": 5292
+              },
+              {
+                "end": 5978,
+                "quote": "such as anemia",
+                "start": 5964
+              },
+              {
+                "end": 6132,
+                "quote": "Kidney failure and liver disease can also affect A1C results.",
+                "start": 6071
+              },
+              {
+                "end": 4570,
+                "quote": "don't stop taking any medicines unless your provider tells you to.",
+                "start": 4504
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case_id": "unknown-01",
+        "elapsed_seconds": 20.969000000040978,
+        "actual_plan": {
+          "tasks": [
+            {
+              "task_id": "scope_clarify_cn_guideline",
+              "agent_id": "consultation_agent",
+              "description": "说明当前可检索资料范围（仅美国NLM成人高血压与2型糖尿病科普，非中国指南全文），无法提供中国指南条款原文与页码；告知用户可获取权威指南原文的正当途径（如官方发布渠道），并提示不应将科普内容当作中国指南条款或个人诊断处方依据。",
+              "depends_on": [],
+              "require_sources": true
+            }
+          ],
+          "reason": "用户要求逐条引用中国高血压指南的诊断条款和页码，而可用资料仅限美国NLM成人高血压与2型糖尿病科普，无法提供中国指南原文或页码。需一个任务说明资料范围限制与可替代的科普信息来源，并给出安全提示，避免编造条款页码。"
+        },
+        "answer_review": "pending_source_and_medical_review",
+        "result": {
+          "result_status": "completed",
+          "plan_status": "completed",
+          "plan_reason": "用户要求逐条引用中国高血压指南的诊断条款和页码，而可用资料仅限美国NLM成人高血压与2型糖尿病科普，无法提供中国指南原文或页码。需一个任务说明资料范围限制与可替代的科普信息来源，并给出安全提示，避免编造条款页码。",
+          "knowledge_profile": "medical",
+          "safe_error_code": null,
+          "task_count": 1,
+          "planned_agent_count": 1,
+          "distinct_agent_count": null,
+          "model_calls": 3,
+          "tool_calls": 2,
+          "evidence_status": "not_run",
+          "schema_repair_count": 0,
+          "contract_repair_counts": {},
+          "contract_diagnostics": []
+        },
+        "sources": [
+          {
+            "id": "1df5ec9f8dcfbaa8bc79c427bce84de4eab02d5ef1958e6fc1d510d9f8701f14",
+            "document_id": "nlm-hypertension",
+            "version": "6ef444154364-zh-ef835d098111",
+            "url": "https://medlineplus.gov/highbloodpressure.html",
+            "source_sha256": "6ef444154364630f65a7934b794d754cff2a841ba77becaee2995afac4245dba",
+            "start": 228,
+            "end": 750,
+            "source_spans": [
+              {
+                "end": 661,
+                "quote": "High blood pressure usually has no symptoms.",
+                "start": 617
+              },
+              {
+                "end": 932,
+                "quote": "two or more readings at separate appointments",
+                "start": 887
+              },
+              {
+                "end": 1181,
+                "quote": "High Blood Pressure Stage 1 | 130 - 139 | or | 80 - 89",
+                "start": 1127
+              },
+              {
+                "end": 2298,
+                "quote": "heart attack, stroke, heart failure, and kidney failure",
+                "start": 2243
+              },
+              {
+                "end": 1681,
+                "quote": "Primary, or essential, high blood pressure.",
+                "start": 1638
+              },
+              {
+                "end": 1933,
+                "quote": "This is caused by another medical condition or use of certain medicines.",
+                "start": 1861
+              }
+            ]
+          },
+          {
+            "id": "16db276a7003701deb5fde2af332ec969774cd74cea315e3b5f403be39dea66a",
+            "document_id": "nlm-bp-test",
+            "version": "3605f16f26b8-zh-1123b25addaa",
+            "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+            "source_sha256": "3605f16f26b8d7e9b90bc28b81899c1087f316e5e7b09d78aff92f295c6c3d75",
+            "start": 226,
+            "end": 535,
+            "source_spans": [
+              {
+                "end": 6074,
+                "quote": "Blood pressure is measured in millimeters of mercury",
+                "start": 6022
+              },
+              {
+                "end": 6736,
+                "quote": "two or more high blood pressure readings on different days",
+                "start": 6678
+              },
+              {
+                "end": 6844,
+                "quote": "your medical and family history",
+                "start": 6813
+              },
+              {
+                "end": 6500,
+                "quote": "seek medical care right away",
+                "start": 6472
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provider_calls": [
+      {
+        "provider": "deepseek",
+        "operation": "plan",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 872,
+          "completion_tokens": 157,
+          "total_tokens": 1029
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 1136,
+          "completion_tokens": 64,
+          "total_tokens": 1200
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 3632,
+          "completion_tokens": 244,
+          "total_tokens": 3876
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "plan",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 877,
+          "completion_tokens": 287,
+          "total_tokens": 1164
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 1156,
+          "completion_tokens": 133,
+          "total_tokens": 1289
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 5429,
+          "completion_tokens": 282,
+          "total_tokens": 5711
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 3722,
+          "completion_tokens": 307,
+          "total_tokens": 4029
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "synthesize",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 2071,
+          "completion_tokens": 475,
+          "total_tokens": 2546
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "plan",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 892,
+          "completion_tokens": 342,
+          "total_tokens": 1234
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 1170,
+          "completion_tokens": 140,
+          "total_tokens": 1310
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 8556,
+          "completion_tokens": 293,
+          "total_tokens": 8849
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 3104,
+          "completion_tokens": 295,
+          "total_tokens": 3399
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 3105,
+          "completion_tokens": 336,
+          "total_tokens": 3441
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "synthesize",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 2151,
+          "completion_tokens": 469,
+          "total_tokens": 2620
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "plan",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 868,
+          "completion_tokens": 210,
+          "total_tokens": 1078
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 1162,
+          "completion_tokens": 80,
+          "total_tokens": 1242
+        }
+      },
+      {
+        "provider": "deepseek",
+        "operation": "worker",
+        "status": "completed",
+        "http_status": 200,
+        "safe_error_code": null,
+        "usage": {
+          "prompt_tokens": 6125,
+          "completion_tokens": 270,
+          "total_tokens": 6395
+        }
+      }
+    ]
+  },
+  "retrieval_sweep": "not_run",
+  "milvus": [
+    {
+      "path": "knowledge_medical_v1.db",
+      "chunks": 40,
+      "documents": 20
+    },
+    {
+      "path": "knowledge_medical_candidates_v1.db",
+      "chunks": 38,
+      "documents": 4
+    }
+  ],
+  "dot": {
+    "receipt": "backend\\knowledge\\medical-handoff\\inbox\\dot-ledger-20261014-v5-sources.json",
+    "summary": {
+      "batch_id": "dot-ledger-20261014-v5-sources",
+      "sha256": "81798bb29c33619f181e5993fc3a2f963b57087358d35cad944b54f865253688",
+      "source_candidates": 7,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied"
+    },
+    "local_adapter_from_page": true,
+    "new_bodies": 0,
+    "ledger_receipt_readback": "passed"
+  },
+  "preservation": {
+    "reference_files_checked": 153,
+    "changed": 0,
+    "old_sql_rows_preserved": 674,
+    "dataset_structure": "passed",
+    "frozen_cases": 60
+  },
+  "clinical_review": "not_run",
+  "test_answer_evaluation": "not_run",
+  "existing_demo_service": "not_restarted",
+  "historical_failure_payloads": "not_available"
+}

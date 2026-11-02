@@ -1,0 +1,933 @@
+[
+  {
+    "path": "deliveries/final-cumulative-index.json",
+    "reference": "library-file:fde1_bGliZmlsZV8tTUFUTl9TeGNJUG9sakV0UzFpdkZB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "4f728998f388add5d0f71d0be91210db753bb3bc63aa2bbf5e7fa0f7654fb5ef",
+    "byte_size": 64057,
+    "bytes": 64057
+  },
+  {
+    "path": "deliveries/cumulative-source-records-01.json",
+    "reference": "library-file:fde1_bGliZmlsZV96SW5WWXhfTnQtd1lUTjMtUmFFVFhn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "c37a893a22da8e8c810535c8d90c1c2dc59880b80fcae4ae0ddb4f36c5a21c7a",
+    "byte_size": 105082,
+    "bytes": 105082
+  },
+  {
+    "path": "deliveries/cumulative-source-records-02.json",
+    "reference": "library-file:fde1_bGliZmlsZV93VFNwa0hLWXBMZGQxY2ZiMjhFbkdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "e1be0c7e6925376a8071d8af42d680c6204501ba4fd0b8c4e7368d795e8df20e",
+    "byte_size": 132508,
+    "bytes": 132508
+  },
+  {
+    "path": "deliveries/coverage-gap-summary.json",
+    "reference": "library-file:fde1_bGliZmlsZV9pakstZjI1MGtaS3VKZG1ielNpTzJ3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "cb30da5ea8283380070bb35c295db23fc0c7e7df05bb0b0ea2fc1e9983c12186",
+    "byte_size": 29702,
+    "bytes": 29702
+  },
+  {
+    "path": "deliveries/independent-final-qa.json",
+    "reference": "library-file:fde1_bGliZmlsZV94YURaNVZCVEFINF9uc3ppUU5CY1ZR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "d4ed87ac3bf4b68f1b56858fbd216eea2e58f4c70f7439bc97aad802c2b73eb2",
+    "byte_size": 2313,
+    "bytes": 2313
+  },
+  {
+    "path": "deliveries/local-receipt-l-evidence.json",
+    "reference": "library-file:fde1_bGliZmlsZV80aUprazFuM2hqZ3JtSVU5VUFpTVZR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "b905f3a10fd7b27ef853bef447e5a491d265ba3de1caca8e49824228b37075af",
+    "byte_size": 2123,
+    "bytes": 2123
+  },
+  {
+    "path": "deliveries/final-root-integrity.json",
+    "reference": "library-file:fde1_bGliZmlsZV9xSjdpbDd1amV4dmNWbl9Hb2ZwWEpn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "13656f9289ff1abe2c6c6ec7b91a14608dd33cf44cf4bf7237a832d4ade09788",
+    "byte_size": 687,
+    "bytes": 687
+  },
+  {
+    "path": "deliveries/research-schedule-completion.json",
+    "reference": "library-file:fde1_bGliZmlsZV9OUW9DUVpWbElWUkVsN0ZxRzVfeUh3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "cfc9cfc651b1807a79eeb264061e8d548ec0883e24a5d4dab0ffd423613dc33c",
+    "byte_size": 829,
+    "bytes": 829
+  },
+  {
+    "path": "deliveries/source-review-digest.json",
+    "reference": "library-file:fde1_bGliZmlsZV9LVTAyOV9mbXZ6MkwwSmJrd01OalFR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "4ce8d0280aca5ee9b80231861d0c5febf367b25180310c2a3a9d97983524c9c7",
+    "byte_size": 18545,
+    "bytes": 18545
+  },
+  {
+    "path": "deliveries/candidate-final-index.json",
+    "reference": "library-file:fde1_bGliZmlsZV9vd3VyMEVsVkZHQ0NiQjM2OU44QXZ3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "aa78d8c1bfb728efcc6f63d722f9e3d0cf63334983b1d1ce5b0e81d3f7866d1f",
+    "byte_size": 58170,
+    "bytes": 58170
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9CT3ZLSjZxWlZVblM4Z29BS3l2QVNR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "add2dcdcae2deb37f0a40c1790b3e0e31ee43e1bf12ae37c1bafb91c4d2e82d9",
+    "bytes": 6719,
+    "path": "raw/nlm-c-peptide-test-add2dcdcae2d.txt",
+    "source_id": "nlm-c-peptide-test"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV8wQ0p0NUJUR2xYTnN4eXZlM3JiZXhn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "62f526f63558cda70d51893f387fb7c00ff90eeb2d78be0060295f180e7872b7",
+    "bytes": 6645,
+    "path": "raw/nlm-glucose-in-urine-test-62f526f63558.txt",
+    "source_id": "nlm-glucose-in-urine-test"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9pVDBsd1FGa19QWVRWOGdqN2o1OHpR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "9cd019309c67625e32b89670e8fca78894187bda6d9140ef6961b4d3449c2bd4",
+    "bytes": 8740,
+    "path": "raw/nlm-diabetic-foot-exam-9cd019309c67.txt",
+    "source_id": "nlm-diabetic-foot-exam"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9WdGxmRE5IQlJ5WGRxR25SUmVUOE93_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "8fa3acb663f0f3fea6408305926df38736c2d7981ea6b739179deee6638f443c",
+    "bytes": 8796,
+    "path": "raw/nlm-creatinine-test-8fa3acb663f0.txt",
+    "source_id": "nlm-creatinine-test"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV81RzQ3T3FpQ1lKbVpPRlo0cGtZSzdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "89f38c98db38bead861f4b1309338e5358d30dfac9370c951dce40d8216aa040",
+    "bytes": 4050,
+    "path": "raw/nlm-bun-blood-urea-nitrogen-89f38c98db38.txt",
+    "source_id": "nlm-bun-blood-urea-nitrogen"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9MZVR3RFFCcjNPTklxN2hJMnVGZ3VR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "5ebbc82a6eb6cddc121523c16a7188f6fe883e64e837ee22d76fe499f285f805",
+    "bytes": 8040,
+    "path": "raw/nlm-cholesterol-levels-5ebbc82a6eb6.txt",
+    "source_id": "nlm-cholesterol-levels"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9nOTdKWmVYN1huRTF6bG1leFZXbkxR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "344f02e62c80b277e83447255f12a328bb37d308829b350300d70e5243095a08",
+    "bytes": 7016,
+    "path": "raw/nlm-triglycerides-test-344f02e62c80.txt",
+    "source_id": "nlm-triglycerides-test"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9QUUhtOXRqdllWZDFOR2dlX1pkd3p3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "cf2c0a2f6282e15b43ef2c58fe90d050b4e51e24c768db64ede79391e830a995",
+    "bytes": 4935,
+    "path": "raw/nlm-sodium-blood-test-cf2c0a2f6282.txt",
+    "source_id": "nlm-sodium-blood-test"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV90SktvWjJqbXhZZzU3TFZEdjc1UHdB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "1d96987b43bc220defd745384eaa06f8823d97d6bb0ee8d70122ed98908c1153",
+    "bytes": 5149,
+    "path": "raw/nlm-potassium-blood-test-1d96987b43bc.txt",
+    "source_id": "nlm-potassium-blood-test"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9oTk9yM1E1NUkyU0VpVjJycnotbWp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "7c05537997dfb20b5b89b53570e39601eddccccaa8c23d51e9b6b748b858bc38",
+    "bytes": 6636,
+    "path": "raw/nlm-electrolyte-panel-7c05537997df.txt",
+    "source_id": "nlm-electrolyte-panel"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9kSTMxWmxSVXVsRkRmR1FkTlZRdWln_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "c0c698eacd30950bdba1df338e39fbd91b436edbe6245c4cdb7f10de1f527e84",
+    "bytes": 5207,
+    "path": "raw/cdc-blood-pressure-measurement-c0c698eacd30.txt",
+    "source_id": "cdc-blood-pressure-measurement"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9DOFlPRHBLREk0Zmp0VXVBOTlWSHJR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "880c31d42add86a22423dead753fe975c705909bb53c13cddbe9618d0c73856e",
+    "bytes": 3720,
+    "path": "raw/cdc-manage-blood-sugar-880c31d42add.txt",
+    "source_id": "cdc-manage-blood-sugar"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9lcDVpR01iUzlUU0x3V1ZiVmRNNHp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "253316deaa601ee96167ac249be48159e5a5e3be170163c6cdd38d1efd71bb70",
+    "bytes": 3629,
+    "path": "raw/cdc-diabetes-physical-activity-253316deaa60.txt",
+    "source_id": "cdc-diabetes-physical-activity"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9ZWlBNZFBVMHJlSl9VdnIzTXJ3WHVB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "cd9e64c348466dace8042153c03ec84db1d6b9d76140e9c3f97dd00794dcd52d",
+    "bytes": 3800,
+    "path": "raw/cdc-diabetes-healthy-eating-budget-cd9e64c34846.txt",
+    "source_id": "cdc-diabetes-healthy-eating-budget"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9oMkJSN0h5NjRwOEF0eHRuZ25FVmNR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "45b9ce39cdc0833e9590cb2e8491a4ce7ca9ceae549192d01ebdb8b1e6d1992e",
+    "bytes": 3933,
+    "path": "raw/cdc-diabetes-low-blood-sugar-treatment-45b9ce39cdc0.txt",
+    "source_id": "cdc-diabetes-low-blood-sugar-treatment"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9JZE5XZS1UUmx5eWhXcVY3dVpPNUtR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "3cabed593d43fdb1ad2eb05b411c9beef0e07e3cf73f7598a0e524b2871ef19e",
+    "bytes": 4392,
+    "path": "raw/cdc-diabetes-meal-planning-3cabed593d43.txt",
+    "source_id": "cdc-diabetes-meal-planning"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV90ZVdIby1JRFlpQU9ndFZUUUV4SWVn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "0b9db4dc414e02a94330166e673a0bb26db73570d177d94a3a7431c0e62c6357",
+    "bytes": 3105,
+    "path": "raw/cdc-living-with-diabetes-0b9db4dc414e.txt",
+    "source_id": "cdc-living-with-diabetes"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV80QjFaV0ZLbUJ5Zi1QZ3VrQzd3X3NB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "00084fd3c6e5b6d11864a60129ef6b6a5520589ea6cd1f3970f473dddff763cf",
+    "bytes": 4334,
+    "path": "raw/cdc-diabetic-ketoacidosis-00084fd3c6e5.txt",
+    "source_id": "cdc-diabetic-ketoacidosis"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9WVWtVazBlTktsVTJpMEVyM1FKekdB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "c95136366b5bc9f7c9be25fa3958d39719724942cd6c8545f6edd7c99459e870",
+    "bytes": 3022,
+    "path": "raw/cdc-carb-counting-c95136366b5b.txt",
+    "source_id": "cdc-carb-counting"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9BTmt6cThxdDdEZk5mamlYVklHcTB3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "f1b89073e08fc20452dd7ca0bd87351c21fa5f9c0f9ea590253b939de517fbb1",
+    "bytes": 3054,
+    "path": "raw/cdc-diabetes-sick-days-f1b89073e08f.txt",
+    "source_id": "cdc-diabetes-sick-days"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV96blNmX2VXZUdpT3Z2TVJJSkttMlp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "1f50a106add90e21d71f2737afa181a2ffc84e76a54adf3ab7e7b542a041f076",
+    "bytes": 5347,
+    "path": "raw/cdc-diabetes-foot-care-1f50a106add9.txt",
+    "source_id": "cdc-diabetes-foot-care"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9KTHo2N281c2tTLW5LTUs3cHpfYzZB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "3e788e0614dbed00ff15890d744e741cf6c24f389450dc606d27890d069decfb",
+    "bytes": 4996,
+    "path": "raw/cdc-diabetes-heart-3e788e0614db.txt",
+    "source_id": "cdc-diabetes-heart"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9qNTJ2TF91LUdnS2VGdWNnbmJ4bkln_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "4c767005a0d95a42d6524853d475ca95ced67f456cf3bfdafa3baaadc545cc13",
+    "bytes": 5653,
+    "path": "raw/cdc-diabetes-vision-loss-4c767005a0d9.txt",
+    "source_id": "cdc-diabetes-vision-loss"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9WNy1maFJucjN1N2dhZF8wTlRueG9B_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "2616ae0700e2f49d5453c5cc89cbef5ab24ff6ab1d88cc5585e8ce2f337c2969",
+    "bytes": 2622,
+    "path": "raw/cdc-diabetes-kidney-2616ae0700e2.txt",
+    "source_id": "cdc-diabetes-kidney"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9rZS10SHhhU0FKS3FOamZFNHBQWk5R_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "36de37771124ece265b76f378181bd19db85c5c80dc5296837d6ed1345f328cb",
+    "bytes": 2498,
+    "path": "raw/cdc-diabetes-oral-health-36de37771124.txt",
+    "source_id": "cdc-diabetes-oral-health"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9FUy1wSzIzVUt2b1RLVXB5U3dPSWJn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "3463a88a9659dd32049ed5f47a6afda0d5ef9b4d20389973b5dc98d09e25991c",
+    "bytes": 6951,
+    "path": "raw/cdc-hypertension-about-3463a88a9659.txt",
+    "source_id": "cdc-hypertension-about"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9RaWtRUC1XdDNXSUJ5cjNZMTdlSmt3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "a13d96b7f22dcc6360ba3049a66f2d6221c6a86a6ea6fa8f328977bd489da488",
+    "bytes": 3326,
+    "path": "raw/cdc-hypertension-prevention-a13d96b7f22d.txt",
+    "source_id": "cdc-hypertension-prevention"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV93eDJUTUZ6M0IwWGhCWGY2dTZsekx3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "a011cebc770d6bd3b3b19cd84bd637ea1770f270a55e94ee3d2134ff1a03b544",
+    "bytes": 5979,
+    "path": "raw/cdc-hypertension-risk-a011cebc770d.txt",
+    "source_id": "cdc-hypertension-risk"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9qdGZ6YlBJdDJLb0VOZW9kNzJ4X3pn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "99eef621500351f6f206b6b954529f6cb5fef6f575fc8dcc4e87b5e5c57c932b",
+    "bytes": 7033,
+    "path": "raw/cdc-hypertension-management-99eef6215003.txt",
+    "source_id": "cdc-hypertension-management"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9MNUN0bHNsdzlVVXlfYWpWYmVlT3N3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "5ed3e722b55a0c757f98455b0da152ee5ed84196de99bb91c26bbee4b46434a6",
+    "bytes": 3720,
+    "path": "raw/cdc-type2-diabetes-5ed3e722b55a.txt",
+    "source_id": "cdc-type2-diabetes"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9PVkJ6Q18zT2tTenZFNGhzZlJXZDBB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "3c1cc24338c59c0f982224c36c532692fbe5679f750544dedff3caeee33ec45e",
+    "bytes": 5386,
+    "path": "raw/cdc-diabetes-testing-3c1cc24338c5.txt",
+    "source_id": "cdc-diabetes-testing"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV8xNkpuaFJGYmRLeHVXeXQ3SGxWd1Vn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "f4f6d1bd0105539644ad2edd29555524ab4af3960bb241bd756119663670d1b3",
+    "bytes": 3053,
+    "path": "raw/cdc-prediabetes-prevention-f4f6d1bd0105.txt",
+    "source_id": "cdc-prediabetes-prevention"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9MemFnUWxNU2U5MC04QjF2ajdXV1pR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "e0fbe40647008212412a401e60e452899e0c4b17e7c8aded0fb817b172f31b0f",
+    "bytes": 3657,
+    "path": "raw/cdc-blood-sugar-monitoring-e0fbe4064700.txt",
+    "source_id": "cdc-blood-sugar-monitoring"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9TYnFVWnVIUzc0Rm5WUVNUdTQyWE1R_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "8b4ddcf04d67cd2a9ac3a7afe04bc9acea98dae3a8e92abc632b7f379c25a86a",
+    "bytes": 2395,
+    "path": "raw/cdc-insulin-types-8b4ddcf04d67.txt",
+    "source_id": "cdc-insulin-types"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9LbkNzYTdZYkJjSnlsMzdaNWdSa3Zn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "9f9fe4aa6d60bdad48bd2b228cb0a28f90b433ef3430d5991d7307fa2249c17d",
+    "bytes": 3888,
+    "path": "raw/cdc-a1c-test-9f9fe4aa6d60.txt",
+    "source_id": "cdc-a1c-test"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9MeTJHSDZFbU1oQVRqd1g3SjdpVlFR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "1d4b003eb8be02fe35d2361c98100f3d4893401f3274d9960a5eb18dcb8a68d9",
+    "bytes": 9409,
+    "path": "raw/fda-glucose-monitoring-devices-1d4b003eb8be.txt",
+    "source_id": "fda-glucose-monitoring-devices"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9hMmJTS1lnSkdld3NUT2pyN0VoUXBR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "952416be84535c834c4f3d79fc11edeee52c13f497ab6ee43312e420a23e76ff",
+    "bytes": 8047,
+    "path": "raw/nei-diabetic-retinopathy-952416be8453.txt",
+    "source_id": "nei-diabetic-retinopathy"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9HcWYzNzRuXzRnUTlCTmh3azFEMG9B_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "83cbd7050284ee4416b4be30917db47808f87511c8baa27afb6b6b67bcb2cdf5",
+    "bytes": 2771,
+    "path": "raw/nidcr-diabetes-oral-health-83cbd7050284.txt",
+    "source_id": "nidcr-diabetes-oral-health"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9uZWw4UE85QlBlc0xQSmFlMUVJYTFB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "31eccf681f72002fe8ea7181064a7dd63cd85f008625e0f1a9689bb2243577af",
+    "bytes": 4501,
+    "path": "raw/fda-safe-glucose-meters-31eccf681f72.txt",
+    "source_id": "fda-safe-glucose-meters"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9tRDl4WXdGUlJQZ1dRSTZxWG9lT2p3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "6187c36a13f2498edb72acddd32d4c5ead8f5a4667300b2eb15a0b7ffd0918b9",
+    "bytes": 3071,
+    "path": "raw/fda-diabetes-overview-6187c36a13f2.txt",
+    "source_id": "fda-diabetes-overview"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV8tU3FRUmxHQ29yMk1lUkhPVHdOOE53_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "5ee6784f7c563907e317d27ba136eb68728e98bd804509f9d9bf3d302ed21b86",
+    "bytes": 4599,
+    "path": "raw/cdc-continuous-glucose-monitors-5ee6784f7c56.txt",
+    "source_id": "cdc-continuous-glucose-monitors"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV93UkRxYWEycDlaN0tucFhaMHRYQTdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "a1ee74ff5290594609aaf8ab4fe39b4fd1a973a1d92407d727d858c99cb89fb0",
+    "bytes": 3223,
+    "path": "raw/fda-diabetes-sharps-safety-a1ee74ff5290.txt",
+    "source_id": "fda-diabetes-sharps-safety"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9lMTJfUGdRcFBCT05ha2VTdHJhVTB3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "6e39981ed3cb6e484bd259d8997287e0c42957f3e90169bf40ca777c3606a6cd",
+    "bytes": 21811,
+    "path": "raw/fda-insulin-pump-safety-6e39981ed3cb.txt",
+    "source_id": "fda-insulin-pump-safety"
+  },
+  {
+    "file": "cn-hypertension-guideline-2024_en2025_part-01.txt",
+    "reference": "library-file:fde1_bGliZmlsZV9UdXo4Q0h6UTItN2tXcjFaX3R5ZENn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "7e366d574983b8e5a7c7d594852057ab72da487716fbb44e907c751950defa99",
+    "byte_size": 229861,
+    "readback_verified": true,
+    "bytes": 229861,
+    "path": "raw/cn-hypertension-guideline-2024-en-jgc2025-part1-7e366d574983.txt",
+    "source_id": "cn-hypertension-guideline-2024-en-jgc2025"
+  },
+  {
+    "file": "cn-hypertension-guideline-2024_en2025_part-02.txt",
+    "reference": "library-file:fde1_bGliZmlsZV85aXR2YUFZWlJoc0U5WlcwQkdkNXpn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "5659f011d0cec9e1e042cfd1f781b8a5e0430d21478eae1a2488b2c760df2548",
+    "byte_size": 229976,
+    "readback_verified": true,
+    "bytes": 229976,
+    "path": "raw/cn-hypertension-guideline-2024-en-jgc2025-part2-5659f011d0ce.txt",
+    "source_id": "cn-hypertension-guideline-2024-en-jgc2025"
+  },
+  {
+    "file": "cn-hypertension-guideline-2024_en2025_part-03.txt",
+    "reference": "library-file:fde1_bGliZmlsZV93dkxHcjFuTzdFT21hOGcyS1dCZjdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "4928c11b98363ed17da58985735806fe920a553344e4e509c7b99882d8051b5b",
+    "byte_size": 215241,
+    "readback_verified": true,
+    "bytes": 215241,
+    "path": "raw/cn-hypertension-guideline-2024-en-jgc2025-part3-4928c11b9836.txt",
+    "source_id": "cn-hypertension-guideline-2024-en-jgc2025"
+  },
+  {
+    "file": "rendered_headings_01.json",
+    "reference": "library-file:fde1_bGliZmlsZV9XTGNYVlRyZmhxWVdnTm5qUndzY2ZB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "e10066022e47057c88ee4c65fa6bb6893e1eb4af4b2fd51ddef88255e085196e",
+    "byte_size": 28256,
+    "readback_verified": true,
+    "bytes": 28256,
+    "path": "deliveries/cn2024-rendered_headings_01.json",
+    "source_id": "cn-hypertension-guideline-2024-en-jgc2025"
+  },
+  {
+    "file": "rendered_tables_01.json",
+    "reference": "library-file:fde1_bGliZmlsZV9NRC1RM1phaHlwM2szenVVeUJRVktB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "097802fb99c51bd7694ba28f3f77ec0f8e8f4f77cb8ad8bdee19d39db8c7f577",
+    "byte_size": 169894,
+    "readback_verified": true,
+    "bytes": 169894,
+    "path": "deliveries/cn2024-rendered_tables_01.json",
+    "source_id": "cn-hypertension-guideline-2024-en-jgc2025"
+  },
+  {
+    "file": "rendered_tables_02.json",
+    "reference": "library-file:fde1_bGliZmlsZV9pWnhOczR0SHNkRkxxdFZua0k5TVRn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "1ad0793be50a31f4ff16c4bf73685a33b362f4c731028ecd917101e4c3d85e53",
+    "byte_size": 90823,
+    "readback_verified": true,
+    "bytes": 90823,
+    "path": "deliveries/cn2024-rendered_tables_02.json",
+    "source_id": "cn-hypertension-guideline-2024-en-jgc2025"
+  },
+  {
+    "file": "source_locators_and_rights.json",
+    "reference": "library-file:fde1_bGliZmlsZV9vX0FTUHhfcS1JQVZYWE10T1d3Z0tR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "77efd3f45e4c63df2fdaa4e9fff43d4cfbd7a80263e3dbc3dd6912672283d9ee",
+    "byte_size": 26500,
+    "readback_verified": true,
+    "bytes": 26500,
+    "path": "deliveries/cn2024-source_locators_and_rights.json",
+    "source_id": "cn-hypertension-guideline-2024-en-jgc2025"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9UeEE5d3BMYUpYLVhNTjdaUHY1S0hR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "0ca0416b4971b63db5a54fffe7c39b752ab746708a5887a6e3184bbaeecf428f",
+    "bytes": 37172,
+    "path": "raw/nccih-diabetes-supplements-0ca0416b4971.txt",
+    "source_id": "nccih-diabetes-supplements"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9PMkZFbG0zRlZocC0tX2RyNkZaZFd3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "b26e23a88538db6da67b975418c96faa7d2e541c9e368844dd94edcc373aea0f",
+    "bytes": 3176,
+    "path": "raw/cdc-diabetes-nerve-damage-b26e23a88538.txt",
+    "source_id": "cdc-diabetes-nerve-damage"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV84eGFBMnc2R2RITHNObmpiWUJPXy1R_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "b2846ce58184c0314f2ac3443d7a8af9fd70644115048145adcb884b42038504",
+    "bytes": 6209,
+    "path": "raw/cdc-diabetes-shift-work-b2846ce58184.txt",
+    "source_id": "cdc-diabetes-shift-work"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9QNzhLYlJjamg0T00tbmtZeGJwbXVR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "d6f840bfb6d0e18f001fc6d32d67aeb166e91ae4773df297c7c2ab4acc14959d",
+    "bytes": 3784,
+    "path": "raw/cdc-diabetes-travel-d6f840bfb6d0.txt",
+    "source_id": "cdc-diabetes-travel"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9vZFE5Nkd0U185SDRpcGtjQjJXaFNn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "8cfe1e641840efc578b0dbd428ecd52bf360a16421ebee7b1836efb9c289403d",
+    "bytes": 2940,
+    "path": "raw/cdc-diabetes-smoking-8cfe1e641840.txt",
+    "source_id": "cdc-diabetes-smoking"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9UX1EyVU9tZVVyRUNUY29IYmlURlpn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "fae60c926ba8d3a51fe7b9b55a7b92b0cad2d4eda15655fb7e7cebf44603899a",
+    "bytes": 5638,
+    "path": "raw/cdc-diabetes-skin-fae60c926ba8.txt",
+    "source_id": "cdc-diabetes-skin"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV84ZzVPa3pqV0ZHb1lZZG10ZUI3azN3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "f9f63bd6304a722fac7bb331e2bc15bb0e9a5d033d132d5e0e89990d49e83907",
+    "bytes": 4938,
+    "path": "raw/cdc-diabetes-ear-health-f9f63bd6304a.txt",
+    "source_id": "cdc-diabetes-ear-health"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9SRWN0aURzX3g3U1NibXo2N3RaVUd3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "04d0f2b72229f28b7bb736193b78fe66d127e5f77342c5628046a793846e298a",
+    "bytes": 1709,
+    "path": "raw/cdc-diabetes-eating-out-04d0f2b72229.txt",
+    "source_id": "cdc-diabetes-eating-out"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV85cGcwZlNvbV9QeG1UN3lkQWZpZ0pR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "2019c3b76e018a2339369bcb9a815a72a24bc50772375c47bfdd55ed90720fae",
+    "bytes": 13357,
+    "path": "raw/who-bp-device-specifications-2020-2019c3b76e01.txt",
+    "source_id": "who-bp-device-specifications-2020"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9tMXdTMUllUGR4Zmt4Y0lkOGE1ZDd3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "f9ec82e278489b581c59d5c20badc486f009a62af0099ee26f5d4074b60f3982",
+    "bytes": 3895,
+    "path": "raw/cdc-insulin-delivery-methods-f9ec82e27848.txt",
+    "source_id": "cdc-insulin-delivery-methods"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9teVVsTmZyVW90cUhvVS1jMlpPZHlB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "f5fcce68e101b7cbb3de1e9eb38143d055a98b6f3d4293acbd4fbe1032af71c5",
+    "bytes": 3753,
+    "path": "raw/cdc-insulin-resistance-f5fcce68e101.txt",
+    "source_id": "cdc-insulin-resistance"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV91d3N6bk1xdjVFRER3M3d3bjBSSXZB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "ca931901828b9393a8c0dc21951595c67d73398c8970564fc680e01bde0e4788",
+    "bytes": 6947,
+    "path": "raw/cdc-diabetes-healthy-weight-ca931901828b.txt",
+    "source_id": "cdc-diabetes-healthy-weight"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV8yaTB1aGkzSTVxN3ZtUnJSRXQ0dWxn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "ae09d18c6544eb3f0cc0190203252f8ebefdd912c2c5fac012746e549137e1dc",
+    "bytes": 2810,
+    "path": "raw/cdc-diabetes-statins-ae09d18c6544.txt",
+    "source_id": "cdc-diabetes-statins"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9SWUtBQ2ROdk50Y1U4WU1yNWtlVE53_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "0d10283e7f3770815e948da37e9b55265f7b97085dc89966751b4c8c8e4f3e2b",
+    "bytes": 2146,
+    "path": "raw/cdc-diabetes-digestion-0d10283e7f37.txt",
+    "source_id": "cdc-diabetes-digestion"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV82S1ktWXdYcWlybHJIQjBPeVFBTGd3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "4b44c616340533a9abce868f17a2ac18ad59381bf32dd1ad53f905d6e7774cc0",
+    "bytes": 5284,
+    "path": "raw/cdc-diabetes-kidney-diet-4b44c6163405.txt",
+    "source_id": "cdc-diabetes-kidney-diet"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9IeElZYVl0clVCLUQ3SWZURElTUjlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "c86be19b34ae1a5baab888c1b39fcd9a300b2d6cc0eb47bbfba17e3a73753d50",
+    "bytes": 3731,
+    "path": "raw/cdc-diabetes-fiber-c86be19b34ae.txt",
+    "source_id": "cdc-diabetes-fiber"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV8zeEZ5VUdVNFczSl90S3d4WWRJR0Rn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "0f2f4ac81cf71d6a7969d741e6497614ebb296a52fe7b028f2d4fa5e607e69dc",
+    "bytes": 3957,
+    "path": "raw/cdc-diabetes-emergency-preparation-0f2f4ac81cf7.txt",
+    "source_id": "cdc-diabetes-emergency-preparation"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV8tWFh6b3ltcHUySGwySTJDRi1ORnRR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "c507baca1cde94367f5cd7ad2676c4b91609dc693d44a931cbd7f1f49f878e7b",
+    "bytes": 4885,
+    "path": "raw/cdc-diabetes-heat-c507baca1cde.txt",
+    "source_id": "cdc-diabetes-heat"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9IbHY4ZjFlOXBOaUVXeDhnR2p2WWNR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "67e35684d0c43a426b6fc03563ac20629281c3ecc3fa78be168bd8216e852293",
+    "bytes": 2566,
+    "path": "raw/cdc-diabetes-medicine-literacy-67e35684d0c4.txt",
+    "source_id": "cdc-diabetes-medicine-literacy"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV81UTRxSE9HUnNZXzd1NXVfbXppcGxB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "8844702459d1cec832018a6f012e2e240787becf845c960d14aef7988c6a8e8e",
+    "bytes": 4465,
+    "path": "raw/cdc-diabetes-distress-8844702459d1.txt",
+    "source_id": "cdc-diabetes-distress"
+  },
+  {
+    "reference": "library-file:fde1_bGliZmlsZV9LUVI5Mk1EdUhtbi1SUkEwSGhwMEdR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "59ec5bb4dd65c3f8a6410d658c9a76e66a4f157e9106ba6dff54a41f0f0b0c98",
+    "bytes": 5118,
+    "path": "raw/cdc-diabetes-care-team-59ec5bb4dd65.txt",
+    "source_id": "cdc-diabetes-care-team"
+  },
+  {
+    "file": "source_manifest.json",
+    "reference": "library-file:fde1_bGliZmlsZV9oRnlMZzViR2M5WHlUcFJiWHI2RTVn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "3744ffee0784e40c71a527779f9240f79bb64535d7cbc502ea75ab939c459281",
+    "byte_size": 32350,
+    "readback_verified": true,
+    "bytes": 32350,
+    "path": "deliveries/corpus-20261014-03-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "reference": "library-file:fde1_bGliZmlsZV90MjFET0ZFaDNaS0lyWFRWTFFVRkFR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "aaec49aa12a70bc04e6cc8523e72250bf22f6df348783f554e0b349db11f69dd",
+    "byte_size": 9186,
+    "readback_verified": true,
+    "bytes": 9186,
+    "path": "deliveries/corpus-20261014-03-medical-handoff-v1.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "reference": "library-file:fde1_bGliZmlsZV9udHk2Z2EzaExSM2VYTDA0RTliMjhR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "155245ef9569df7b4ccaf6688bc0b693968cfde408098db672c8bc5a9f414b27",
+    "byte_size": 21345,
+    "readback_verified": true,
+    "bytes": 21345,
+    "path": "deliveries/corpus-20261014-04-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "reference": "library-file:fde1_bGliZmlsZV9BQWs5ZWtpbUJLQUp4YldaWkZHY2l3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "5525d0acbc2a19ebedac33b2b5e2ad858fb85d9bc428dfd1930d72fec646860f",
+    "byte_size": 7121,
+    "readback_verified": true,
+    "bytes": 7121,
+    "path": "deliveries/corpus-20261014-04-medical-handoff-v1.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "4e914b3526aca18857d5ee1d6326b72c6388e3407e51ac47086082d7620fb4c0",
+    "byte_size": 42396,
+    "reference": "library-file:fde1_bGliZmlsZV9acGNUYVFQNXA3RjNBNU44YU9PZFNn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 42396,
+    "path": "deliveries/corpus-20261014-05-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "sha256": "11e93d8ca999ba3cad1f0812c6d866431a4b5ac0459f8e882ac01d10172f27c0",
+    "byte_size": 7577,
+    "reference": "library-file:fde1_bGliZmlsZV9Qem0wYUxhbktSQlhmeUpCZTRfaU9R_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 7577,
+    "path": "deliveries/corpus-20261014-05-medical-handoff-v1.json"
+  },
+  {
+    "file": "professional_review_priorities.json",
+    "sha256": "c89a00c7b15cbda57c0714284989bfc17bd4f41aad30e8c5819e3320fd6a50af",
+    "byte_size": 1746,
+    "reference": "library-file:fde1_bGliZmlsZV9RdmpQTEl1dmU5ZXctYTVMSGVtY0lR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 1746,
+    "path": "deliveries/corpus-20261014-05-professional_review_priorities.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "b26652565529100fc04b079cb8e9d1a2bce2dc59204e5500bef4ef4bf3c28263",
+    "byte_size": 43491,
+    "reference": "library-file:fde1_bGliZmlsZV9aSDQ1UFNaSXIzQTFkWS10LU5JSlJB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 43491,
+    "path": "deliveries/corpus-20261014-06-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "sha256": "137e1bae5875eab44b5a8f2a2c8ce9d5968845124f7caafb845b82187b68c9ad",
+    "byte_size": 7921,
+    "reference": "library-file:fde1_bGliZmlsZV9kb1J1OFF5NXgtbFVKOXhSenRTLW13_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 7921,
+    "path": "deliveries/corpus-20261014-06-medical-handoff-v1.json"
+  },
+  {
+    "file": "professional_review_priorities.json",
+    "sha256": "d6a9bf2b0ad3a4745c5473009b2342fb6c5956e6755223f83adff9ab1dabec7e",
+    "byte_size": 2675,
+    "reference": "library-file:fde1_bGliZmlsZV9hMFlOaDhCVmYyN3lNT3RRNXFHN193_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 2675,
+    "path": "deliveries/corpus-20261014-06-professional_review_priorities.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "4c7233d3b565d52b99a3e597d168522e0369172682492c0b5891db64f9e555ac",
+    "byte_size": 37923,
+    "reference": "library-file:fde1_bGliZmlsZV83MnRoRGV0UkVvTGpZZExYanZtNXlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 37923,
+    "path": "deliveries/corpus-20261014-07-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "sha256": "d720907b6fc991c64a97d5a45ccf85066779beeeddabd3e69b10f2e8d12918a4",
+    "byte_size": 7483,
+    "reference": "library-file:fde1_bGliZmlsZV9Ua1dKb3VaRmFkQXdaeFhDcWRyeDVB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 7483,
+    "path": "deliveries/corpus-20261014-07-medical-handoff-v1.json"
+  },
+  {
+    "file": "candidate_exclusions.json",
+    "sha256": "058819750b1b2f786898084c7bc4b83f4ea0d95fc42132a174cc056bb9f60bef",
+    "byte_size": 2648,
+    "reference": "library-file:fde1_bGliZmlsZV9mQm0yMnVUNjNHOExMaE15d3VHd3pB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 2648,
+    "path": "deliveries/corpus-20261014-07-candidate_exclusions.json"
+  },
+  {
+    "file": "professional_review_priorities.json",
+    "sha256": "207fe96ea8ac825279232b09e2d3c902fca91ca662448d0687cb03e1d4e3c69c",
+    "byte_size": 2225,
+    "reference": "library-file:fde1_bGliZmlsZV9FQ09XbkhhbUNveGxOeUszNkxrTlBB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 2225,
+    "path": "deliveries/corpus-20261014-07-professional_review_priorities.json"
+  },
+  {
+    "file": "required_notices.json",
+    "sha256": "e26a12b183dabcf91f052f0f35a486271615ab1c50ddb9cccdb22919b0ea8e03",
+    "byte_size": 4980,
+    "reference": "library-file:fde1_bGliZmlsZV9ZNXJibnVGS3l0cExDNnRVNEt4d093_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 4980,
+    "path": "deliveries/corpus-20261014-07-required_notices.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "7d1c60c35d3326d730f32625ada1d076ea380c32d8ef750d01ff3a49d5f5b5e3",
+    "byte_size": 10449,
+    "reference": "library-file:fde1_bGliZmlsZV9TV1h1cEdMbkpncUVXclhxNHVQeFlB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 10449,
+    "path": "deliveries/corpus-20261014-cn2024-upgrade01-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "sha256": "846f5432811b6a5e7ef0a2aaaf20dcdca5e96c5d93ae84a883442df006ce520d",
+    "byte_size": 1395,
+    "reference": "library-file:fde1_bGliZmlsZV93TDkyV0VDcWMwOVZsMm42M2dUU3dR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 1395,
+    "path": "deliveries/corpus-20261014-cn2024-upgrade01-medical-handoff-v1.json"
+  },
+  {
+    "file": "required_notices.json",
+    "sha256": "a47ec5c8b1d17a50eb7abbc0b866008e19138bccd205d8df2b41fed3b336656a",
+    "byte_size": 881,
+    "reference": "library-file:fde1_bGliZmlsZV9lQndYcTBrbmFUQUcySHNreTJoaFp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 881,
+    "path": "deliveries/corpus-20261014-cn2024-upgrade01-required_notices.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "30ec093c47d0dc5ae3d0c53e9d874476441cf7a21a541e77d25a24483fe40404",
+    "byte_size": 41598,
+    "reference": "library-file:fde1_bGliZmlsZV9uUExCb0tiN05XSE1oUkVFZEJMclpB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 41598,
+    "path": "deliveries/corpus-20261014-08-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "sha256": "0fb69e809dd80cb63b117e0e8bbf0077c8d4222670d321cb4fabaae447a9e933",
+    "byte_size": 7179,
+    "reference": "library-file:fde1_bGliZmlsZV9yXzBWal9NSVNiN04xOHNaLS1RWHV3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 7179,
+    "path": "deliveries/corpus-20261014-08-medical-handoff-v1.json"
+  },
+  {
+    "file": "required_notices.json",
+    "sha256": "fb431f03a5b7a67864199b78366ff2b1c53c63e52a4e88f5b9dbdc7379f83171",
+    "byte_size": 6951,
+    "reference": "library-file:fde1_bGliZmlsZV9KMC1TZG5xcEtiTXFLWElZQmtJUnln_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 6951,
+    "path": "deliveries/corpus-20261014-08-required_notices.json"
+  },
+  {
+    "file": "professional_review_priorities.json",
+    "sha256": "256dbdd47faa5265458e92aad8c14580fb26e2b2cae9d9860a80c0ef2da85539",
+    "byte_size": 2156,
+    "reference": "library-file:fde1_bGliZmlsZV9rOFA4cGJwaG5FSkwyMF8ySVp5N3VB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 2156,
+    "path": "deliveries/corpus-20261014-08-professional_review_priorities.json"
+  },
+  {
+    "file": "candidate_exclusions.json",
+    "sha256": "cfff829c24fa1f0255b7c5adfa9fa6fdbcc7c9f36e9f16d9a37f3f2eb5cf76ef",
+    "byte_size": 986,
+    "reference": "library-file:fde1_bGliZmlsZV9udkNXb1IwZTRUZW04aDFPWklNQk93_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 986,
+    "path": "deliveries/corpus-20261014-08-candidate_exclusions.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "b604c5d6fa27439e0e71cbd1dd939cc161f3deba076ffb541aa5d659da74c251",
+    "byte_size": 40819,
+    "reference": "library-file:fde1_bGliZmlsZV8yNnd3eDBLNUlOVWVrbGpvbDZpN0pB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 40819,
+    "path": "deliveries/corpus-20261014-09-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "sha256": "4f071f7bed6aa5b32f3856492d088a9d6c2dc0037f88a6e30cffecf6819ce8d3",
+    "byte_size": 7000,
+    "reference": "library-file:fde1_bGliZmlsZV83dUJzcmxHRHgwZTJWSnhTOGJiUWt3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 7000,
+    "path": "deliveries/corpus-20261014-09-medical-handoff-v1.json"
+  },
+  {
+    "file": "required_notices.json",
+    "sha256": "43e78e24cf85e44009e58ba09d5114bd48da2caefd655db79882c3099e077a8b",
+    "byte_size": 7098,
+    "reference": "library-file:fde1_bGliZmlsZV90WFJaTDlZVWdzSXBNZ2xOWFYzSl9n_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 7098,
+    "path": "deliveries/corpus-20261014-09-required_notices.json"
+  },
+  {
+    "file": "professional_review_priorities.json",
+    "sha256": "5cc18dbc37954c9ad23ac06cf4ecb764ae968cd4f323d83a9337b39677cad9ea",
+    "byte_size": 1722,
+    "reference": "library-file:fde1_bGliZmlsZV9oa0I4T1pUU1J2RWFmWjkwVEFLZDVn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 1722,
+    "path": "deliveries/corpus-20261014-09-professional_review_priorities.json"
+  },
+  {
+    "file": "candidate_exclusions.json",
+    "sha256": "98a6c35e7f52f8d9779ec582b2da0c6ee0cbce8a17cab57ca36304cb49adfd3d",
+    "byte_size": 1262,
+    "reference": "library-file:fde1_bGliZmlsZV9RZUxOTXBSbkV4NWo0VDg1WVNhTTVB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 1262,
+    "path": "deliveries/corpus-20261014-09-candidate_exclusions.json"
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "f6ae4b94c3f82b5970d9316cdfd74ba9f67a644459c60e59a35b4e1e6e785a30",
+    "byte_size": 13809,
+    "reference": "library-file:fde1_bGliZmlsZV9VbEV4VlZkMGVEOFRtYklYVDNtUW9R_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 13809,
+    "path": "deliveries/corpus-20261014-10-source_manifest.json"
+  },
+  {
+    "file": "medical-handoff-v1.json",
+    "sha256": "968048ee3fb586c339509fde9ab604d22e9863af65a4c87f00e3431899ed79e0",
+    "byte_size": 2171,
+    "reference": "library-file:fde1_bGliZmlsZV9jN3F2eHBfRzhoMXZSR19ycHBmM2Zn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 2171,
+    "path": "deliveries/corpus-20261014-10-medical-handoff-v1.json"
+  },
+  {
+    "file": "required_notices.json",
+    "sha256": "97cb77c4e8b488d7de72ac904b50dd2dcf1d1d3978d86f523564c0b34aff9fee",
+    "byte_size": 2366,
+    "reference": "library-file:fde1_bGliZmlsZV9NcTEtX3p5Zy1fb2lqX2Vqclg1MnFB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 2366,
+    "path": "deliveries/corpus-20261014-10-required_notices.json"
+  },
+  {
+    "file": "professional_review_priorities.json",
+    "sha256": "8c50ae6601284545c2fa2d9717760ee07facb7309e662b681985b1c1945298c2",
+    "byte_size": 746,
+    "reference": "library-file:fde1_bGliZmlsZV9fSVQ5clM3d0FMUEFEZUFpS3IwMXN3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "readback_verified": true,
+    "bytes": 746,
+    "path": "deliveries/corpus-20261014-10-professional_review_priorities.json"
+  },
+  {
+    "batch_id": "dot-eval-candidates-20261014-b02-0528",
+    "file": "dot-eval-candidates-20261014-b02-0528.json",
+    "reference": "library-file:fde1_bGliZmlsZV9WSmw0S25JQ2J6VERFaHFUOUFsck5R_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "a23daf67085badfc601851e071afab1e25df33f7a3687fa88962cdc8b47c8130",
+    "bytes": 55384,
+    "question_count": 10,
+    "professional_review": "pending",
+    "local_receipt_status": "not_received",
+    "path": "deliveries/dot-eval-candidates-20261014-b02-0528.json"
+  },
+  {
+    "batch_id": "dot-eval-candidates-20261014-b03-0534",
+    "file": "dot-eval-candidates-20261014-b03-0534.json",
+    "reference": "library-file:fde1_bGliZmlsZV9yM3lMX25NLXhNQml5VF9oQlQybWlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "c331922d4b3e4bea05997a14e589d53a8c9265f281c1092a0258c4aee70da806",
+    "bytes": 53507,
+    "question_count": 10,
+    "professional_review": "pending",
+    "local_receipt_status": "not_received",
+    "path": "deliveries/dot-eval-candidates-20261014-b03-0534.json"
+  },
+  {
+    "batch_id": "dot-eval-candidates-20261014-b04-0544",
+    "file": "dot-eval-candidates-20261014-b04-0544.json",
+    "reference": "library-file:fde1_bGliZmlsZV9QNm9vcnNnbE12ZXNTckRTYk5TektB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "d39ea29aa5ad4174a8a84ba780192bbfe27aed07c1197485d0a41a8f09af3b01",
+    "bytes": 59408,
+    "question_count": 10,
+    "professional_review": "pending",
+    "local_receipt_status": "not_received",
+    "path": "deliveries/dot-eval-candidates-20261014-b04-0544.json"
+  },
+  {
+    "batch_id": "dot-eval-candidates-20261014-b05-0550",
+    "file": "dot-eval-candidates-20261014-b05-0550.json",
+    "reference": "library-file:fde1_bGliZmlsZV9CZU5EdEZlZ3RwQlAwbXoydzh0Ymxn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "748be2a84c330c68e10b3aba7b807944535e3eae75e0aed3097c925adc2f450f",
+    "bytes": 51052,
+    "question_count": 10,
+    "professional_review": "pending",
+    "local_receipt_status": "not_received",
+    "path": "deliveries/dot-eval-candidates-20261014-b05-0550.json"
+  },
+  {
+    "batch_id": "dot-eval-candidates-20261014-b06-0557",
+    "file": "dot-eval-candidates-20261014-b06-0557.json",
+    "reference": "library-file:fde1_bGliZmlsZV9rYmNPX0RwV2hxbVQwX3BJZzJtWkxn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "sha256": "0d4455fb57d4a585d2ceea8fdfade6048acb09333809f834768a44d0fb24c7ef",
+    "bytes": 46682,
+    "question_count": 10,
+    "professional_review": "pending",
+    "local_receipt_status": "not_received",
+    "path": "deliveries/dot-eval-candidates-20261014-b06-0557.json"
+  }
+]

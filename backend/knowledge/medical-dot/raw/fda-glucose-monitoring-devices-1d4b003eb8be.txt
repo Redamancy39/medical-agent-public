@@ -1,0 +1,75 @@
+# Blood Glucose Monitoring Devices
+
+What is a blood glucose monitoring device? A blood glucose monitoring device, also referred to as a blood glucose meter, is a device that may be used in the home and health care settings to measure the amount of sugar (glucose) in your blood. The test system includes a handheld meter and test strips that help you measure how much glucose is in a small sample of your blood.
+What is glucose? Glucose is a sugar that your body uses as a source of energy. Unless you have diabetes , your body regulates the amount of glucose in your blood. People with diabetes may need special diets or medications to control blood glucose, and need to monitor their blood glucose levels to effectively manage their diabetes.
+Who should monitor blood sugar (glucose) levels? People with diabetes should monitor their blood sugar levels using a blood glucose monitoring device.
+The Diabetes Control and Complications Trial (1993) and its long-term ongoing follow-up, the Epidemiology of Diabetes Interventions and Complications (EDIC) study have shown that, for people with diabetes, good glucose control using home monitors led to fewer disease complications (The Diabetes Control and Complications Trial/Epidemiology of Diabetes Interventions and Complications Study at 30 Years: Overview - PMC ).
+You and your doctor can use the results to:
+
+  * determine your adjustments in treatment, such as insulin or other diabetes medications
+  * know if your glucose level is dangerously high or low
+  * understand how diet and exercise impact your glucose levels
+How do you choose a blood glucose monitoring device? There are many blood glucose test systems available for purchase. Your health care provider may have a recommendation based on your specific needs. You may consider the following when choosing the one that is right for you:
+  * accuracy
+  * amount of blood needed for each test
+  * how easy it is to use
+  * alternate site testing other than the fingertip for less painful testing when glucose is not changing rapidly
+  * testing speed
+  * overall size
+  * ability to store test results
+  * medications and supplements that may interfere with the glucose test
+  * ability to transmit data to a computer, mobile phone or cloud service
+  * cost of the meter and test strips
+  * technical support provided by the manufacturer
+  * special features for the visually impaired such as a large display, spoken instructions or spoken results
+Talk to your health care provider about the right glucose meter for you, and how to use it.
+
+What should you consider before using a blood glucose monitoring device? The safe use and accuracy of this device depends on many factors including:
+  * your device should not be shared with others, to reduce the risk of bloodborne pathogen transmission. Over-the-counter blood glucose monitoring systems are for single patient use.
+  * the quality of your meter and test strips.
+    * Always use new test strips that are authorized for sale in the United States.
+    * The FDA has issued a safety communication warning about the risks of using previously owned test strips or test strips that are not authorized for sale in the United States.
+  * how well you perform the test.
+    * For example, you should wash and dry your hands before testing and closely follow the instructions for operating your meter.
+  * if you have certain conditions that may affect your glucose result, such as:
+    * If you are severely dehydrated or anemic.
+    * If you have an extreme hematocrit (the amount of red blood cells in the blood).
+    * If you have a condition associated with high uric acid, such as gout.
+    * Ask your health care provider if you have any conditions that may affect your glucose result.
+  * if you have had certain medications, supplements and therapies.
+    * For example, Vitamin C, acetaminophen, acetaminophen containing drugs like Tylenol, and Xylose absorption therapies may interfere with the test and may affect your glucose result.
+    * Check the instructions for your meter and test strips to find out what substances may affect the glucose result. Ask your health care provider if you are taking any medications or supplements that may affect your glucose result.
+  * environment when performing the test.
+    * High altitude, extreme temperature, and extreme humidity conditions may cause unpredictable effects on glucose results. Check the instructions in your meter’s manual and the instructions for your test strips for the operating conditions of the test.
+  * storage and handling of the meter and test strips.
+    * Improperly stored meter and test strips may cause your test results to be less accurate. You should store the meter and test strips according to the manufacturer's instructions. If your test strips come in a vial, you should ensure the test strip vial is tightly closed when not in use.
+  * testing on other parts of your body besides a fingertip, which may be less accurate when your glucose is rapidly changing.
+How do you use a blood glucose monitor? Before you test your blood glucose, you must read and understand the instructions for your meter. In general, you prick your finger with a lancet to get a drop of blood that is placed on a disposable "test strip" inserted into your meter. The CDC has more tips for effectively performing blood glucose tests. The test strip contains chemicals that react with glucose, and that reaction is measured by the meter with electricity or light.
+In the U.S., meters report results in milligrams of glucose per deciliter of blood, or mg/dL. After testing, you should wash your hands to reduce the risk of transmitting diseases that are carried in the blood.
+You can get information about your meter and test strips from different sources, including the toll-free number in the manual that comes with your meter or on the manufacturer's website. If you have an urgent problem, always contact your health care provider or Dial 911.
+How often should you test your glucose? Follow the recommendations of your health care provider about how often to test your glucose. You may need to test yourself several times each day to determine adjustments in your diet or treatment.
+
+What should your glucose levels be? According to the American Diabetes Association , the blood glucose levels for an adult without diabetes are below 100 mg/dL when fasting and are below 140 mg/dL two hours after meals.
+People with diabetes should consult their health care provider to set appropriate blood glucose goals. You should treat your low or high blood glucose as recommended by your health care provider.
+Can you test blood glucose from sites other than your fingers? Some meters offer alternative site testing for you to test blood from sites other than the fingertip, such as your palm, upper arm, forearm, thigh, or calf. Alternative site testing should not be performed at times when your blood glucose may be changing rapidly, as the glucose result may be inaccurate. You should test from your fingertip if any of the following applies:
+  * you are ill
+  * you have just eaten
+  * you are under stress
+  * you have just exercised
+  * you have just taken insulin
+  * you think your blood sugar is low
+  * the results do not agree with the way you feel
+  * you are not aware of symptoms when you are hypoglycemic
+
+You should never use results from an alternative sampling site to calibrate a continuous glucose monitor (CGM), or for insulin dosing calculations.
+How can you check your meter's performance? Three ways to make sure your meter works properly:
+
+  1. Control solutions. Your blood glucose test system works with liquid control solutions to ensure the test is operating normally. You should consider performing a control solution test:
+     * every time you open a new container of test strips
+     * occasionally as you use the container of test strips
+     * if you drop the meter
+     * whenever you get unusual results that do not match how you feel
+To test a control solution, follow the instructions in the manual that comes with your meter or test strips. The glucose value from the control solution test should be within the range of values written on the test strip vial label. If you need control solutions, you can order them by calling the toll-free number in the meter’s manual.
+  2. Electronic checks. Every time you turn on your meter, it performs an electronic check to ensure the meter is in working order. If it detects a problem, an error code will display. Your meter's manual explains what the error codes mean and how to address the problem. If you are unsure if your meter is working properly, call the toll-free number in your meter's manual, or contact your health care provider.
+  3. Compare your meter with a blood glucose test performed in a laboratory. Take your meter with you to your next appointment with your health care provider. Ask your provider to watch your testing technique to make sure you are using the meter correctly. Ask your health care provider to have your blood tested with a laboratory method. If the values you obtain on your glucose meter match the laboratory values, then your meter is working well and you are using good technique.
+What should you do if your meter malfunctions? If your meter malfunctions, you should call the toll-free number in your meter's manual, and contact your health care provider.

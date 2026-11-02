@@ -1,0 +1,3647 @@
+{
+  "kind": "tables",
+  "source_family": "cn-hypertension-guideline-2024",
+  "tables": [
+    {
+      "caption": null,
+      "id": "Table20",
+      "index": 20,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Clinical condition"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "LDL-C target (mmol/L)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Non-HDL-C target (mmol/L)"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "History of ASCVD Event*"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 1.4 and ≥ 50% reduction from baseline"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 2.2"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension with ASCVD evidence"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 1.8 and ≥ 50% reduction from baseline"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 2.6"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension with High ASCVD Risk"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 2.6"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 3.4"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension with Moderate ASCVD Risk"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 2.6"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 3.4"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension with Low ASCVD Risk"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 3.4"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 4.2"
+          }
+        ],
+        [
+          {
+            "colspan": 3,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "ASCVD: atherosclerotic cardiovascular disease; LDL-C: low-density lipoprotein cholesterol; HDL-C: high-density lipoprotein cholesterol;\n*ASCVD events include a history of myocardial infarction, ischemic stroke, symptomatic peripheral vascular disease, previous revascularization, or amputation."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table21",
+      "index": 21,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Measurement method"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Category"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Definition"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 3,
+            "tag": "TD",
+            "text": "Ambulatory blood\npressure monitoring"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pure daytime hypertension"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Daytime BP ≥ 135/85 mmHg and Nighttime BP < 120/70 mmHg"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pure nighttime hypertension"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Nighttime BP ≥ 120/70 mmHg and Daytime BP < 135/85 mmHg"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Day-night hypertension"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Daytime BP ≥ 135/85 mmHg and Nighttime BP ≥ 120/70 mmHg"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 3,
+            "tag": "TD",
+            "text": "Home blood pressure\nmonitoring"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pure morning hypertension"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "7-day average morning BP ≥ 135/85 mmHg and Nighttime BP < 135/85 mmHg"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pure nighttime hypertension"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "7-day average nighttime BP ≥ 135/85 mmHg and Daytime BP < 135/85 mmHg"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "24-hour home hypertension"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "7-day average morning and nighttime BP ≥ 135/85 mmHg"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table22",
+      "index": 22,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Elderly population"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Timing of initiating antihypertensive treatment"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure target"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Elderly aged 65-79 years"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure ≥ 140/90 mmHg should start drug therapy"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure target < 140/90 mmHg; if tolerated, can be reduced to < 130/80 mmHg"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Elderly aged ≥ 80 years"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Systolic blood pressure ≥ 150 mmHg can start drug therapy"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure target < 150/90 mmHg; if tolerated, a lower target can be considered"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "With cardiovascular complications or target organ damage, or high cardiovascular risk"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Early initiation of antihypertensive treatment to improve prognosis"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "After evaluation such as CGA, a stricter antihypertensive strategy can be adopted if tolerated"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "With multiple comorbidities or frailty syndromes"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Timing of initiating drug therapy can be more flexible; in frail elderly, start if systolic BP ≥ 160 mmHg"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure targets should be individualized. For patients with frailty, the systolic blood pressure target should be < 150 mmHg, but not lower than 130 mmHg."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table23",
+      "index": 23,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Cuff Size"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Arm Circumference (cm)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Age Range (years)"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "SS"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "12– < 18"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "3–5"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "S"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "18– < 22"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "6–11"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "M"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "22– < 32"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "≥ 12"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "L"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "32– < 42"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "-"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "XL"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "42–50"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "-"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table24",
+      "index": 24,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Age, yrs"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Gender"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Systolic Blood Pressure (mmHg)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Diastolic Blood Pressure (mmHg)"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 2,
+            "tag": "TD",
+            "text": "3-15"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Boys"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "100 + 2 × Age (years)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "65+ Age (yrs)"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Girls"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "100 + 1.5 × Age (years)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "65+ Age (yrs)"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 2,
+            "tag": "TD",
+            "text": "16-17"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Boys"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "140"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "90"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Girls"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "140"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "90"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table25",
+      "index": 25,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Medication name"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Mechanism of action"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Typical dosagea"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Adverse reactions"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Labetalol"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "α and β receptor blocker"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "50-150 mg, 3-4 times/day, maximum dose 600 mg/day"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Fetal bradycardia,\nskin pruritus"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Nifedipine"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Inhibits calcium influx in arterial smooth muscle cells"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "5-20 mg, 3-4 times/day; or sustained-release: 10-20 mg,\n2-3 times/day; or controlled-release: 30-60 mg, once daily"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypotension"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Methyldopa"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Reduces sympathetic nerve tone in the brainstem"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "200-500 mg, 3-4 times/day"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Depression, excessive sedation, hypotension"
+          }
+        ],
+        [
+          {
+            "colspan": 4,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "aThe maximum recommended dosages in this guideline are lower than those recommended internationally. In clinical practice, the dosage should be adjusted based on the specific circumstances of the patient."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table26",
+      "index": 26,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Measurement indicator"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Unit"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Normal/Minimal increase"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Moderate increase"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Severe increase"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Albumin Excretion Rate (AER)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "mg/24 h"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 30"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "30–300"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "> 300"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Protein Excretion Rate (PER)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "mg/24 h"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 150"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "150–500"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "> 500"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Albumin-to-Creatinine Ratio (ACR)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "mg/mmol"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 3"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "3–30"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "> 30"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "mg/g"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 30"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "30–300"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "> 300"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Protein-to-Creatinine Ratio (PCR)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "mg/mmol"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 15"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "15–50"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "> 50"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "mg/g"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "< 150"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "150–500"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "> 500"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table27",
+      "index": 27,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Systolic blood pressure\n(mmHg)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Cancer Survivors"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Curative cancer\ntreatment period"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Cancer prognosis\n> 3 years"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Cancer Prognosis\n1-3 years"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Cancer Prognosis\n< 1 year"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "≥ 160"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "140-159"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Consider treatment"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "May treat"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "135-139"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Should treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "May treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Consider treatment"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "May treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Do not treat"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "130-134"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "May treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Do not treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Do not treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Do not treat"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Do not treat"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table28",
+      "index": 28,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Treatment method"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Recommended population"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Lifestyle modifications"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Weight Loss"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Obese patients"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Appropriate Physical Exercise"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "All patients"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Avoid Alcohol and Sedatives"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "All patients"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Inspiratory Muscle Strength Training"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Patients with simple snoring, mild to moderate OSAS, or severe OSAS intolerant to MAD or CPAP; used in combination with other therapies."
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Instrumental treatment"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "PAP therapy: includes CPAP, autoCPAP, BiPAP, autoBiPAP, Adaptive Servo-Ventilation (ASV)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Moderate to severe OSAS; mild OSAS with significant symptoms, or comorbid cardiovascular disease, diabetes; perioperative treatment for OSAS; persistent OSAS after surgery or other treatments; overlap syndrome with coexisting OSAS and COPD."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Positional Therapy Device"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Patients with positional-related OSAS"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Mandibular advancement device (MAD)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Patients with simple snoring and mild to moderate OSAS; severe OSAS intolerant to CPAP; used in combination with surgery or non-invasive positive airway pressure therapy for severe OSAS."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypoglossal nerve stimulation"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Patients with moderate to severe OSAS or those for whom PAP is ineffective or intolerable."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Surgical treatment"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Upper airway surgery"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Non-severely obese patients with moderate or mild OSAS; severe OSAS with grade II or above tonsil hypertrophy"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Weight loss surgery"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Severely obese patients with comorbidities"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "autoBiPAP: automatic bilevel positive airway pressure; autoCPAP: automatic continuous positive airway pressure; BiPAP: bilevel positive airway pressure; COPD: chronic obstructive pulmonary disease; CPAP: continuous positive airway pressure; MAD: mandibular advancement device; OSAS: obstructive sleep apnea syndrome; PAP: positive airway pressure."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table29",
+      "index": 29,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Classification"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Common drugs"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Mechanism"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Management measures"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Non-steroidal\nanti-inflammatory drugs (NSAIDs)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Indomethacin, Ibuprofen, Phenylbutazone, Celecoxib, Oxaprozin, Diclofenac Sodium"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Sodium and water retention; (2) reduced circulating prostaglandins; (3) kidney damage."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure typically normalizes\nafter drug discontinuation; if necessary, use antihypertensive drugs such\nas CCBs, ACEIs/ARBs."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Antihistamines"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Diphenhydramine, Cimetidine"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Block H1 and H2 histamine receptors, reducing histamine-mediated vasodilation; (2) blocking H1 receptor activation also inhibits endothelial cell-derived vasodilators (nitric oxide and prostaglandins)."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure usually returns to normal after discontinuation of antihistamines; consider using diuretics,\nCCBs, ACEIs/ARBs."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Thyroid hormones"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Levothyroxine, Liothyronine"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Enhanced sympathetic nervous system excitability."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Closely monitor for increased heart\nrate, arrhythmias, and changes in blood pressure."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Antidepressants"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Sertraline, Fluvoxamine, Paroxetine, Venlafaxine, Reboxetine, Tranylcypromine, Phenelzine"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Depletion of 5-HT and increased free 5-HT levels in the blood; (2) increased sensitivity of myocardium and blood vessels to sympathetic nerve stimulation, leading to hypertension."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Consider switching to other types of\nantidepressants or adding beta-blockers, CCBs, or ACEIs."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Oral Contraceptives"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Desogestrel-Ethinylestradiol, Cyproterone-Ethinylestradiol, Drospirenone-Ethinylestradiol"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Increased blood volume; (2) effects on RAS and sympathetic nervous system; (3) effects on renal blood flow; (4) abnormal glucose and lipid metabolism."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Immediately discontinue oral contraceptives; blood pressure typically\nreturns to normal within 3 to 6 months after discontinuation."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Antineoplastic Drugs, Especially New Targeted Therapies"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "VEGF Monoclonal Antibodies (Bevacizumab), Tyrosine Kinase Inhibitors (Sunitinib, Sorafenib, Axitinib)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Local activation of RAS; (2) vasoconstriction; (3) increased sensitivity of smooth muscle cells to\nendogenous vasopressin; (4) increased blood viscosity."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Use beta-blockers, dihydropyridine CCBs, ARBs; avoid non-dihydropyridine CCBs."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Glucocorticoids"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Cortisone, Prednisone, Prednisolone, Dexamethasone"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Enhanced RAS hypertensive effects; (2) increased peripheral vascular sensitivity to catecholamines; (3) sodium and water retention."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Consider using potassium-sparing\ndiuretics, CCBs, beta-blockers, or\nACEIs for hypertension control; closely monitor potassium levels."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Erythropoietin"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Recombinant Human Erythropoietin"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Increased endothelin-1 release and thromboxane B2 synthesis; (2) decreased nitric oxide synthesis in vascular endothelium; (3) abnormal peripheral vascular constriction."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "CCBs or alpha-blockers are the first choice; diuretics and ACEIs are less effective."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Immunosuppressants"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Azathioprine, 6-Mercaptopurine, Cyclophosphamide"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Increased endothelin levels in renal vasculature, decreased glomerular filtration rate; (2) inhibition of prostaglandin synthesis and release."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Use dihydropyridine CCBs."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Herbal and Mineral Drugs"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Licorice extracts, such as Glycyrrhizin, Compound Licorice Tablets, C\nholic Acid, Alisecium"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Inhibition of 11β-hydroxysteroid dehydrogenase activity, leading to cortisol-mediated mineralocorticoid excess and hypertension; (2) inhibition of prostaglandin synthesis; (3) inhibition of histamine synthesis and release."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure typically normalizes after drug discontinuation; monitor potassium levels."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Ephedrine Derivatives"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Ephedrine Nasal Drops, Ephedrine combined with Chlorpheniramine, Diphenhydramine, etc."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Direct stimulation of adrenal alpha and beta2 receptors; (2) indirect promotion of NE neurotransmitter release; (3) significant central nervous system stimulation."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Use alpha-blockers, beta-blockers."
+          }
+        ],
+        [
+          {
+            "colspan": 4,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "ACEI: angiotensin-converting enzyme inhibitor; ARB: angiotensin receptor blocker; CCB: calcium channel blocker; 5-HT: 5-hydroxytryptamine (Serotonin); NE: norepinephrine; RAS: renin-angiotensin system; VEGF: vascular endothelial growth factor."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table30",
+      "index": 30,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Subtype"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "First-Line Treatment"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Second-Line Treatment"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Unilateral adrenal lesion (confirmed by AVS) or age < 35 with unilateral\nadrenal adenoma or large nodule (> 10 mm), willing to undergo surgery"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Laparoscopic unilateral adrenalectomy"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Spironolactone, eplerenone,\namiloride"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Bilateral adrenal lesions or unwilling to undergo surgery"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Spironolactone, eplerenone,\namiloride"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Familial hyperaldosteronism"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Type I: low-dose glucocorticoids, others: spironolactone"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          }
+        ],
+        [
+          {
+            "colspan": 3,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "AVS: adrenal venous sampling."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table31",
+      "index": 31,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Disease type"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pathogenic gene"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Typical clinical features"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Liddle Syndrome"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "SCNN1B, SCNN1G"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Early-onset hypertension, hypokalemia, PRA↓, PAC↓; effective treatment with amiloride or triamterene"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Gordon Syndrome"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "WNK1, WNK4, KLHL3, CUL3"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Early-onset hypertension, hyperkalemia, hyperchloremia,\nmetabolic acidosis, PRA↓, PAC↓/-; some cases with developmental disorders"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Apparent Mineralocorticoid Excess\n(AME)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "HSD11B2"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Mild cases present with only hypertension; severe cases\ninclude developmental disorders, PRA ↓, PAC↓"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "17α-Hydroxylase Deficiency"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "CYP17A1"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Underdevelopment of secondary sexual characteristics, primary amenorrhea, early-onset hypertension, hypokalemia, PRA↓, PAC↓"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "11β-Hydroxylase Deficiency"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "CYP11B1"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Precocious puberty in males and female pseudohermaphroditism, early-onset hypertension, hypokalemia, PRA↓,\nPAC↓"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Familial Hyperaldosteronism TypeⅠ\n(Glucocorticoid-Remediable Aldosteronism, GRA)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "CYP11B2/CYP11B1 Chimeric\nMutation"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Early-onset hypertension, hypokalemia, PRA↓, PAC↑; effective treatment with glucocorticoids"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Familial Hyperaldosteronism TypeⅡ"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "CLCN2"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension, hypokalemia, presence of aldosterone-producing adenoma or bilateral adrenal hyperplasia, PRA↓,\nPAC↑"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Familial Hyperaldosteronism TypeⅢ"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "KCNJ5"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension, hypokalemia, more commonly seen with\nbilateral adrenal hyperplasia, PRA ↓, PAC ↑"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Familial Hyperaldosteronism TypeⅣ"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "CACNA1H"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension, hypokalemia, more commonly seen with\naldosterone-producing adenoma, PRA↓, PAC↑"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Generalized Glucocorticoid Resistance (Chrousos Syndrome)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "NR3C1"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Significantly elevated plasma cortisol, increased androgens, hypertension, hypokalemia, PRA ↓, PAC↓"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pheochromocytoma/Paraganglioma"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "VHL, RET, NF1, SDHB, SDHC,\nSDHD, MAX, TMEM127, EPAS1, SDHA, FH, SDHAF2"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Manifestations of catecholamine hypersecretion (elevated blood pressure and metabolic changes) and tumor-related symptoms"
+          }
+        ],
+        [
+          {
+            "colspan": 3,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "CACNA1H: calcium voltage-gated channel subunit α1H; CUL3: cullin 3 protein; CYP17A1: cytochrome P450 family 17 subfamily A member 1; CYP11B1: cytochrome P450 family 11 subfamily B member 1; CYP11B2: cytochrome P450 family 11 subfamily B member 2; CLCN2: chloride voltage-gated channel 2; EPAS1: endothelial PAS domain-containing protein 1; FH: fumarate hydratase; HSD11B2: 11β-hydroxysteroid dehydrogenase type 2; KCNJ5: potassium inwardly rectifying channel subfamily J member 5; KLHL3: Kelch-like protein family member 3; MAX: MYC-associated factor X; NF1: neurofibromin 1; NR3C1: nuclear receptor subfamily 3 group C member 1; PAC: plasma aldosterone concentration; PRA: plasma renin activity; RET: Ret proto-oncogene; SCNN1B: Epithelial sodium channel β subunit; SCNN1G: Epithelial sodium channel γ subunit; SDHA: Succinate dehydrogenase complex subunit A; SDHAF2: Succinate dehydrogenase complex assembly factor 2; SDHB: Succinate dehydrogenase complex subunit B; SDHC: Succinate dehydrogenase complex subunit C; SDHD: Succinate dehydrogenase complex subunit D; TMEM127: Transmembrane protein 127; WNK1: WNK lysine-deficient protein kinase 1; WNK4: WNK lysine-deficient protein kinase 4; VHL: Von Hippel-Lindau tumor suppressor; ↑ indicates increase, ↓ indicates decrease, - indicates normal levels."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table32",
+      "index": 32,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Evaluation Item"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Contents"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "History and Symptoms"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "History of hypertension and treatment, use of sympathomimetic drugs and other medications; symptoms such as headache, visual disturbances, neurological symptoms, nausea/vomiting, chest/back pain, cardiovascular/respiratory\nsymptoms, oliguria, weight changes, etc."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Physical\nExamination"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure: repeat measurements, consider measuring blood pressure in all four limbs, and postural blood pressure if necessary; pulse, respiration, temperature; assess fluid volume, dehydration, edema; central nervous system: consciousness changes, agitation, hemiplegia; fundoscopy: linear or flame-shaped hemorrhages, exudates, retinal edema, papilledema; neck: jugular venous distension, bruits; chest: cardiac enlargement, tachycardia, murmurs, signs of heart failure; abdomen: liver enlargement, pulsations, masses; extremities: edema, arterial pulses."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Emergency Tests"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Urinalysis, complete blood count (including smear); Blood chemistry (BUN, creatinine, electrolytes, glucose, cardiac\nmarkers, creatine phosphokinase, etc.); ECG, chest X-ray, arterial blood gases (if necessary); Cardiac, abdominal ultrasound, cranial CT or MRI, thoracoabdominal CT if necessary; Plasma renin activity, aldosterone, catecholamines, BNP levels if needed."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table33",
+      "index": 33,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Antihypertensive\ndrug"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Dosage"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Onset time"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Duration"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Adverse reactions"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Sodium Nitroprusside"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "0.25–10 µg/kg per minute, IV"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Immediate"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "1–2 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Nausea, vomiting, muscle twitching, sweating"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Nitroglycerin"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "5–100 µg/min, IV"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "2–5 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "3–5 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Headache, hypotension, reflex tachycardia"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Nicardipine"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "5–15 mg/h, IV"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "5–10 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "4–6 h"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Tachycardia, headache, nausea"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Esmolol"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "250–500 µg/kg over 1 minute, followed by 50–100 µg/(kg·min), IV"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "1–2 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "10–20 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Bradycardia, hypotension, bronchospasm"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Labetalol"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "20–80 mg IV bolus, or 0.5–2 mg/min, IV"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "5–10 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "3–6 h"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Nausea, vomiting, scalp tingling, dizziness"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hydralazine"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "10–20 mg, IV or 10–40 mg, IM"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "10–20 min"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "1–4 h"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Tachycardia, flushing, headache, aggravation of angina"
+          }
+        ],
+        [
+          {
+            "colspan": 5,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "IM: intramuscular injection; IV: intravenous injection."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table34",
+      "index": 34,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Key Evaluation Points"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Follow-up Focus"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) Establish personal and family health records, sign up with a family doctor,\nand incorporate the patient into standardized hypertension management."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(1) At least four face-to-face follow-ups per year."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(2) Assess the extent of target organ damage."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(2) Blood pressure control and associated symptoms\nand signs."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(3) Determine whether the hypertension is secondary."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(3) Monitor for adverse drug reactions and medication adherence."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(4) Cardiovascular comprehensive risk assessment and determination of intervention methods."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(4) Monitor for related complications and improvements."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(5) Identify barriers to lifestyle changes and medication adherence."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(5) Control of other risk factors."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(6) Provide lifestyle guidance and medication therapy."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(6) Effectiveness of lifestyle interventions."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(7) Set follow-up dates."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(7) Assess whether new conditions (e.g., diabetes, renal insufficiency) require medication adjustments."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "(8) Monitor and record home blood pressure."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table35",
+      "index": 35,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Monitoring item"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Initial visit"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Each follow-up"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Quarterly follow-up"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Annual follow-up"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Symptoms"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood Pressure"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Body Weight"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Body Mass Index"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Heart Rate"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Dietary Guidance"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Exercise Guidance"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Psychological Counseling"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Medication Adherence"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Adverse Drug Reactions"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Routine Blood Test"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Routine Urine Test"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Serum Potassium"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood Glucose"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Lipid Profile"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Renal Function (Creatinine, Urea Nitrogen)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Liver Function"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "ECG"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "√"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Ambulatory Blood Pressure"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Echocardiography"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Carotid Ultrasound"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Urine Albumin-Creatinine Ratio"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Chest X-ray"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Fundus Examination"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Optional"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table36",
+      "index": 36,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Item"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Primary management"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Secondary management"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Management target"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Patients with controlled blood pressure"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Patients with uncontrolled blood pressure"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Non-pharmacological treatment"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Long-term adherence"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Intensified lifestyle modifications with long-term adherence"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Follow-up frequency"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Once every 3 months"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Once every 2 to 4 weeks"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pharmacological treatment"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Maintain target blood pressure with medication"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Adjust treatment plan according to guidelines"
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table37",
+      "index": 37,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Healthy population"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "At-risk population for hypertension"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertensive population"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Definition of hypertension, its dangers,\nhealthy lifestyle, and blood pressure monitoring."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Definition of hypertension, its dangers, healthy lifestyle, and regular blood pressure monitoring."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Definition of hypertension, its dangers, healthy lifestyle, and regular blood pressure monitoring."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Risk factors and vulnerable groups."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Risk factors, identification of vulnerable groups, and guidance on correcting unhealthy behaviors."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Risk factors, targeted behavior correction, and\nguidance on healthy lifestyle."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension is preventable and controllable."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Importance of risk factors and standardized\nmanagement."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Non-pharmacological treatment and lifelong adherence to treatment."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension is treatable and controllable."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension self-management skills."
+          }
+        ]
+      ]
+    },
+    {
+      "caption": null,
+      "id": "Table38",
+      "index": 38,
+      "rows": [
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Community initial hypertension referral criteria"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Community follow-up hypertension referral criteria"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Presence of severe clinical conditions\nor target organ damage."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure remains uncontrolled despite standardized treatment with 2 or more antihypertensive drugs."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure consistently measured at Grade 3 levels."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Blood pressure becomes elevated again and difficult to control after previously being stable."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Suspected secondary hypertension."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Significant fluctuations in blood pressure that are difficult to manage clinically."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Pregnant and breastfeeding women."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "New severe clinical conditions emerge, or existing conditions worsen during follow-up."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertensive emergencies and urgencies."
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Unexplained or difficult-to-manage adverse reactions occur after taking antihypertensive medication."
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": ""
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "TD",
+            "text": "Hypertension with multiple risk factors or target organ damage that is difficult to manage."
+          }
+        ]
+      ]
+    }
+  ]
+}

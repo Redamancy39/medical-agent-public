@@ -1,0 +1,51 @@
+{
+  "batch_id": "corpus-20261014-07",
+  "sources": [
+    {
+      "source_id": "fda-meter-brochure-2003",
+      "source_family_id": "fda-meter-brochure-2003",
+      "title": "Home Healthcare Medical Devices: Blood Glucose Meters - Getting the Most Out of Your Meter",
+      "original_url": "https://www.fda.gov/medical-devices/home-health-and-consumer-devices/home-healthcare-medical-devices-blood-glucose-meters-getting-most-out-your-meter",
+      "pdf_url": "https://www.fda.gov/media/70916/download",
+      "publisher": "U.S. Food and Drug Administration",
+      "publication_date": "2003-09",
+      "version": null,
+      "version_evidence": "PDF page2: September2003",
+      "jurisdiction": "US",
+      "population": null,
+      "language": "en",
+      "access_status": "opened",
+      "read_scope": "HTML explanatory body and PDF text extraction pages1-2; no screenshots or image review.",
+      "reuse_status": "verified",
+      "reuse_evidence_url": "https://www.fda.gov/media/70916/download",
+      "reuse_short_quote": "The contents of this brochure is not copyrighted",
+      "body_file": null,
+      "raw_bytes_sha256": null,
+      "normalized_text_sha256": null,
+      "target_eligible": false,
+      "reason": "Older2003 brochure; HTML has unfinished sentence even if incorrect teststrip fits. PDF contains full sentence. Keep historical candidate only rather than inflate corpus with redundant older guidance."
+    },
+    {
+      "source_id": "fda-high-blood-pressure-medicines-2021",
+      "source_family_id": "fda-high-blood-pressure-medicines-2021",
+      "title": "High Blood Pressure",
+      "original_url": "https://www.fda.gov/consumers/womens-health-topics/high-blood-pressure",
+      "publisher": "U.S. Food and Drug Administration, Office of Women's Health",
+      "publication_date": null,
+      "version": "Medicine and risk information current as of February2021",
+      "version_evidence": "Final guide disclaimer line645",
+      "jurisdiction": "US",
+      "population": "Women; page also includes general adult medicine information",
+      "language": "en",
+      "access_status": "opened",
+      "read_scope": "HTML medical prose lines87-646; no linked medicine labels or PDF read.",
+      "reuse_status": "verified",
+      "reuse_evidence_url": "https://www.fda.gov/about-fda/about-website/website-policies",
+      "body_file": null,
+      "raw_bytes_sha256": null,
+      "normalized_text_sha256": null,
+      "target_eligible": false,
+      "reason": "Explicit2021 medicine information, not treated as current2026 formulary. Retain historical candidate pending updated version and professional review."
+    }
+  ]
+}

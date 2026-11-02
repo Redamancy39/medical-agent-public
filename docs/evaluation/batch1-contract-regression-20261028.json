@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-28",
+  "batch": "1",
+  "status": "completed_offline",
+  "baseline_commit": "85c2fcb8f88cf9c9f7a0b643b5662f05635a8da3",
+  "verification": {
+    "passed": 181,
+    "failed": 0,
+    "elapsed_seconds": 45.57,
+    "test_files": [
+      "backend/tests/test_review_contract_integrity.py",
+      "backend/tests/test_review_contract_api.py",
+      "backend/tests/test_prompt_efficiency.py",
+      "backend/tests/test_lead_contracts.py",
+      "backend/tests/test_realtime_reviewer.py",
+      "backend/tests/test_reviewer_refinement.py",
+      "backend/tests/test_reviewer_trace.py",
+      "backend/tests/test_evidence_context.py",
+      "backend/tests/test_evidence_recovery.py",
+      "backend/tests/test_multitask.py",
+      "backend/tests/test_medical_safety.py",
+      "backend/tests/test_graph.py",
+      "backend/tests/test_references.py",
+      "backend/tests/test_medical_routing.py",
+      "backend/tests/test_medical_quality.py",
+      "backend/tests/test_calibration_calls.py"
+    ],
+    "providers": "fake_or_httpx_MockTransport",
+    "database": "isolated_temporary_sqlite",
+    "sandbox_note": "Windows socketpair initialization stalls inside sandbox; same offline acceptance ran outside sandbox.",
+    "clinical_review": "not_run",
+    "real_provider_calls": 0,
+    "frozen_benchmark_runs": 0,
+    "training_runs": 0
+  },
+  "protected_inputs": {
+    "checked_files": 429,
+    "changed_files": [],
+    "scope": [
+      "demo-frontend/src",
+      "backend/evaluation",
+      "backend/training (excluding __pycache__)"
+    ],
+    "manifest_sha256": "9efbfcfe3858cd0eda363d795ade7810f0a6cb9e8ca3e21557311d5a921a70c0"
+  },
+  "changes": [
+    "Only narrow complete non-medical refusal clauses can skip review; mixed clinical content follows evidence checks.",
+    "Reject unknown or mismatched snapshots; unique same-version offset relocation is copied and recorded; remove invalid prior anchors.",
+    "Validate atom qualifiers/provenance/coverage and caps; bounded contract repair may fall back to original claims; execution controls cannot fall back.",
+    "Restore synthesis task/source coverage checks and bounded repair; fallback stays partial; returned sources do not alias worker sources.",
+    "Expose atomization_error_code and source-binding diagnostics through persisted run API.",
+    "Align two older regression assertions with the existing 80-claim limit and one format repair per rewrite cycle."
+  ],
+  "limitations": [
+    "Offline contract verification does not establish medical accuracy or complete semantic coverage of every subquestion.",
+    "Non-allowlisted refusals follow normal evidence handling; this intentionally favors false negatives over a whole-answer audit bypass.",
+    "Existing reranker configuration wiring, clinical prompt requirements and editorial classification still need independent review.",
+    "No new full-development-set or 50-case LLM evaluation was executed; previous scores are not refreshed."
+  ],
+  "next_batches": {
+    "2": "Unify candidate models, version/fingerprint caches, completion/retry rules and evaluation metrics.",
+    "3": "Trace DUAL-06, DUAL-01 and DIET-05 through source coverage, retrieval, draft, review, rewrite, synthesis and judge."
+  }
+}

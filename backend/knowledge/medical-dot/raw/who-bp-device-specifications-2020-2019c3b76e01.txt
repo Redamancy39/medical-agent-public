@@ -1,0 +1,157 @@
+5
+Measuring BP
+5.1 General standardized procedure for proper electronic BP measurements
+When BP is measured in a clinic or at home, the environment should be standardized, and a quiet, relaxed,
+comfortable setting ensured, with the person seated quietly with their arm outstretched and supported. Stimuli
+in the area such as a television, use of a telephone or smartphone, a radio or loud conversations or noises
+should be avoided. The room temperature should, if possible, be neither hot nor cold (Fig. 6).
+The following are specific instructions for proper electronic BP measurement (1, 38, 39).
+Step 1: Properly prepare the patient
+ Ask the patient to empty their bladder and to abstain from caffeine, nicotine and
+exercise for 30 minutes before the BP measurement.
+ Ask the patient to relax and to sit on a chair with their feet on the floor, legs
+uncrossed, back supported, ideally for at least 5 minutes.
+ Neither the patient nor the observer should talk, read or use electronic devices
+during the rest period or during the assessment.
+Step 2: Use the proper technique for BP measurement
+ Use a validated upper-arm, automated BPMD.
+ Identify the appropriate size of cuff for the patient’s mid-upper arm circumference.
+Many manufacturers mark cuffs to indicate proper fitting. A proper cuff should have:
+– a bladder length 75–100% of the upper mid-arm circumference and
+– a bladder width of 37–50% of the upper mid-arm circumference.
+ Position the cuff on the patient’s bare upper arm (a light sleeve is acceptable) and
+centre it over the brachial artery (the centre is marked on most cuffs). The cuff
+should fit snugly on the arm, allowing no more than two fingers to fit between the
+distal part of the cuff and the skin. The distal part of the cuff should be positioned
+1–2 cm above the cubital fossa.
+ Support the patient’s arm (i.e. resting on a desk with a pillow or book to adjust arm
+height) so that the middle of the cuff is at heart level. The cuff should not be higher
+or lower than heart level.
+Step 3. Activate the device as per the manufacturer’s instructions
+For semi-automated BPMDs (that require manual cuff inflation), ensure that the cuff is inflated to at least
+30 mm Hg higher than disappearance of the radial or brachial pulse. Most devices will indicate an error if
+the inflation is inadequate.
+ At the first visit, measure BP in both arms. If one arm has a consistently higher reading, use that arm
+for subsequent readings. If the difference between the two arms is >20 mm Hg for systolic pressure
+or >10 mm Hg for diastolic pressure on consecutive readings, the subject should be referred to a
+cardiovascular centre for further evaluation in order to exclude arterial disease.
+ Take two or more readings in a seated position to assess usual BP for screening, diagnosis and treatment
+decisions. Assess standing BP to determine postural hypotension in people with newly diagnosed
+hypertension, those taking drugs and those who have symptoms of postural hypotension.
+ Separate repeated measurements by 1–2 minutes.
+Step 4: Properly record accurate BP readings
+ Electronic BPMDs automatically display the BP value.
+ Note the most recent time any BP medication was taken before measurements, the subject’s position
+(sitting, lying or standing), the arm (left or right), the cuff size and the attitude of the subject (e.g. anxious,
+relaxed).
+Step 5: Average the readings
+Average the last two seated readings obtained on at least two occasions to estimate the individual’s BP.
+Step 6: Provide BP readings to the patient
+Give patients their systolic and diastolic readings both verbally and on their health record, and inform them
+whether their BP is hypertensive, prehypertensive, elevated or normal.
+Some patients will have high BP readings when they are obtained in a health care setting but normal readings
+elsewhere (“white-coat hypertension”). Therefore, BP should be monitored at home to confirm a diagnosis.
+People with “white-coat hypertension” may have other cardiovascular risks, which should be monitored.
+5.2 Specific advice for different settings
+In a clinical setting, health care professionals who take BP measurements must have adequate initial training
+and periodic review of their performance (40). In LMIC with poor access to biomedical engineering services,
+the following steps are suggested:
+• Equip the clinic with independently validated upper-arm automated (electronic) BPMD(s) for routine use.
+• Keep a limited number of auscultatory sphygmomanometers for confirmation of elevated readings, for
+device accuracy-checks or as alternatives for clinical conditions in which oscillometry is inappropriate
+(certain arrhythmias and in situations of technical failure of automatic devices). At least one health staff
+member should be trained in manual BP assessment.
+• Consider use of semi-automatic devices (battery-powered with manual hand-bulb cuff inflation system)
+where battery supply and availability of electricity are limited.
+BP measurement at home is used increasingly for management of hypertension. In some high-income
+countries, guidelines recommend BP measurement at home to confirm or complement clinical measurement
+(41, 3, 5, 7). Before this is introduced broadly in LMICs, decision-makers may need to enforce regulations and
+implement WHO-recommended standards at health care facilities.
+Home users should also be aware of the need for an accuracy validated BPMD and should know where and
+how to maintain the device and how to check the accuracy of their device. They should consider taking their
+BP monitor to a health care provider to ensure that it has been validated and learn the steps needed for making
+an accurate measurement (i.e. the same general procedure of emptying the bladder, resting, properly using
+an appropriately size of cuff, etc.). They should record their BP, the time of day when the measurement was
+obtained and the timing of any medication, to be reviewed by their health care provider. In general, at least
+3 days of measuring BP twice in the morning and twice in the evening are required to obtain an accurate
+assessment of usual BP.
+Phone applications and wearable devices, such as fitness trackers, state that they have the capability to
+measure BP, at home and elsewhere. These technologies are not considered to be medical devices and
+therefore are not validated by regulatory bodies. These devices are not currently recommended for clinical
+care or decision-making. 
+5.3 Sources of error
+For an accurate BP measurement, health care personnel must understand the factors that can affect accuracy,
+contribute to variation among measurements and reduce misinterpretation of small, probably erroneous or
+misleading changes. Table 7 indicates the effect of some factors on BP measurements.
+There are thus several potential sources of error with non-invasive BPMDs, which are associated with observer
+accuracy (device independent) and device accuracy (device dependent).
+The requirements for accuracy that are independent of the device used, as described in section 4.2, include
+preparing the patient, ensuring the correct posture and using an appropriately sized cuff. An undersized cuff
+tends to result in an overestimate of BP, while an oversized cuff may result in an underestimate of BP (1, 8).
+Wide-range, “one-size-fits-all” cuffs that may encompass a 22–42-cm arm may be practical in a very busy
+clinic, but the accuracy might be lower at either end of the cuff range (43).
+Observer-dependent sources of error include systematic error related to lack of concentration, poor patient
+preparation, incorrect cuff selection and placement, and suboptimal recording of obtained BP values. As an
+example, “terminal digit preference”, an observer rounds off pressure readings to a preferred digit, which is
+usually zero. Doctors may have a 12-fold bias in favour of the terminal digit zero (44). This is pertinent for all
+devices but may play a greater role in manual measurements. Another source of observer error is prejudice
+or bias, whereby the observer simply adjusts the pressure to meet his or her preconceived notion of what
+it should be. This usually occurs when an excess of pressures below the cut-off point for hypertension has
+been recorded, and it reflects the observer’s reluctance to diagnose hypertension. This is most likely to occur
+when an arbitrary division between normal and high BP is applied, such as 140 and 90 mm Hg. An observer
+might tend to record a favourable measurement in a young healthy man with a borderline increase in pressure
+but categorize an obese, middle-aged man with a similar reading as hypertensive. Observer bias might also
+be present in over-reading BP to facilitate recruitment for a research project, such as a drug trial. Observer
+prejudice is a serious source of inaccuracy, as the error cannot usually be demonstrated.
+Device-dependent sources of error can be removed by ensuring the requirements for accuracy, which include
+intact, functioning mechanical and electrical components. Cuffs and tubing should be intact and without leaks.
+Regular inspection of all devices and accuracy-checks of aneroid devices are essential parts of a preventive
+maintenance program.
+5.4 Importance of training personnel
+To assess BP accurately and reproducibly, a suitable environment, standardized patient preparation, and use
+of a standardized measurement technique are essential. Many studies show that BP is rarely assessed properly
+in clinical practice, resulting in measurement errors and/or confusion about the diagnosis, with downstream
+impacts on medication initiation and titration; and BP control that could affect hundreds of millions of people.
+Some health facilities have therefore established standardized BP measurement training programmes, some
+with certification requirements. Some use unobserved clinical audit to limit inaccuracies in BP measurement.
+Despite the clinical importance of accurate BP measurement, few health facilities require training.
+Technical training of staff who measure BP is much easier when automated electronic BPMDs are used.
+Manual devices require the same training as automated ones plus they require additional skill of auscultation,
+which requires excellent vision and hearing and specialized equipment (a stethoscope). Automated devices
+are therefore preferred for use in routine clinical practice.
+Staff who are appropriately trained and certified in measuring BP with an accuracy validated
+automated BPMD will improve the diagnosis and treatment of hundreds of millions of people with
+hypertension. Optimization of hypertension management will reduce death and disability from
+cardiovascular disease.
+A comprehensive programme for training and certification in use of medical devices can ensure that the
+personnel of educational programmes and health care institutions are fully committed to safe and effective
+use of devices. WHO encourages authorities at all levels of health care to commit to creating and implementing
+training programmes in BP assessment. Training should be provided at the time of engagement of staff, with
+periodic training and certification, depending on the context, provided as part of a periodic training programme
+organized by technical staff, the head of service or the head nurse. Clinical competence should be reviewed
+at specific intervals.
+The purpose of a training programme is to guarantee that staff and observers learn the following:
+• Devices should be used in suitable locations in the facility to minimize the influence of environmental
+factors on patients’ BP measurement (e.g. temperature, noise);
+• Patients should be prepared for BP readings mentally and physically, by reducing stress, emptying their bowel
+or bladder, avoiding consumption of tobacco, caffeine or physical exercise close to the appointment time;
+• The standardized procedure for accurate BP measurement (detailed in section 4.1)
+• How to properly maintain the BPMD, including the understanding of:
+– accurate recording of readings in a clinical file and identification of readings that should be repeated;
+– the purpose and use of all components of the equipment (e.g. display, controls, indicators, alarms,
+accessories such as tubing and cuff, controls);
+– how to clean the device, including decontamination procedures;
+– how often the device must be calibrated (manual devices) or checked for accuracy and by whom
+– when devices should be replaced or repaired;
+• How to report device-related adverse incidents;
+• When alternative methods of assessing BP (e.g. manual auscultation with an aneroid device) should be
+used and how to access them; and
+• Risks associated with misuse.
+Medical devices are sometimes used improperly or not used to their full capacity because of a lack of training.
+Therefore, local governments should ensure that all staff members receive regular training. Periodic training
+in maintenance, accuracy-checks and replacement of devices could be provided through a centralized
+programme or in programmed visits to various locations.
+The accuracy of a BP device is the key to obtaining a clinically valuable measurement. It has two
+components:
+• device accuracy (requiring validation) and
+• observer accuracy (measurement technique).

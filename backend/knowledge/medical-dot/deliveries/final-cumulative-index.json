@@ -1,0 +1,1292 @@
+{
+  "schema_version": "medical-cumulative-delivery-index-v1",
+  "created_at": "2026-10-14T06:36:40.709463+00:00",
+  "ledger_url": "https://chatgpt.com/space/page_6952833f7ff8819189a31b3dd75cc556",
+  "counting_method": "Count baseline provided bodies plus only reusable bodies with actual Page readback receipts and matching local bytes. Source families deduplicate chapters, versions, mirrors and formats. Page delivery is not local Codex acceptance. Prepared-only files excluded. Counts describe reviewable original-body delivery, NOT clinically validated knowledge. Explicitly quarantined conflicts remain reviewable source evidence but must not be adopted as clinical rules. Conservative goal eligibility excludes new clinical-rule-quarantined source families; target eligibility is still NOT medical professional approval. User-accepted baseline20 remains counted with its known HbA1c >6.5% vs >=6.5% conflict explicitly pending adjudication.",
+  "counts": {
+    "target_source_families": 100,
+    "baseline_families": 20,
+    "new_delivered_documents": 83,
+    "new_delivered_families": 82,
+    "cumulative_delivered_documents": 103,
+    "cumulative_unique_delivered_source_families": 102,
+    "remaining_to_target": 0,
+    "previous_metadata_only_candidates_not_counted_as_new_bodies": 7,
+    "original_txt_candidates_not_counted_as_valid_bodies": 4,
+    "delivered_synthetic_candidate_questions": 60,
+    "candidate_question_target": 60,
+    "dev_cases_exported": 20,
+    "dev_export_audit_rows": 60,
+    "dev_reference_points_expected": 60,
+    "new_candidate_only_families_since_baseline": 9,
+    "existing_candidate_metadata_upgrades_not_new_families": 1,
+    "candidate_family_count": 59,
+    "clinically_validated_source_families": null,
+    "clinical_validation_status": "pending_professional_review",
+    "clinical_rule_quarantined_sources": 2,
+    "target_eligible_source_families": 100,
+    "retained_reviewable_families": 102,
+    "target_counting_revision": "2026-10-14: Exclude two newly quarantined source families from the 100-source target; preserve earlier retained-body counts as historical observations.",
+    "original_body_document_count": 103,
+    "physical_body_file_count": 105,
+    "new_target_eligible_families": 80
+  },
+  "batches": [
+    {
+      "batch_id": "corpus-20261014-01",
+      "delivered_documents": 10,
+      "unique_families_within_batch": 10,
+      "manifest_path": "health_audit/corpus_expansion/batch01/source_manifest.json",
+      "metadata_references": []
+    },
+    {
+      "batch_id": "corpus-20261014-02",
+      "delivered_documents": 8,
+      "unique_families_within_batch": 7,
+      "manifest_path": "health_audit/corpus_expansion/batch02/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "reference": "library-file:fde1_bGliZmlsZV9INTVNYnIxMzNtU2w5dFJPaFQ1QU1R_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "f246ffeb01c71ea4df17d34f11826e56b76c878063d13aad254f2bc73d06948f",
+          "byte_size": 35302,
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "reference": "library-file:fde1_bGliZmlsZV9YMkJkMmN6VEhkQXNkcjh0VnR3LXJn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "345e83c456e5e5203cd9a65e932b5788634101a3ee30ec1513040b35bca184ae",
+          "byte_size": 8555,
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "reference": "library-file:fde1_bGliZmlsZV9jM09ZNHkzSkxyRGdTWktPMXFyY2Z3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "8e81d5e24ae326cb1d091a43894812c022fced897024993a7e02c367a68bad6d",
+          "byte_size": 1077,
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "reference": "library-file:fde1_bGliZmlsZV9BOGhzcy1jek56eVktSjVfeTR1dEFR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "a7a999072f085e896e4ee82bbdc128c2936ee8911c667a50cc5d2f6a9d90e317",
+          "byte_size": 3554,
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "reference": "library-file:fde1_bGliZmlsZV9Tc3ppWVlYNjNuZHJybkJ6eWhiMENB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "b6baee3b591f909eac493dc29df76bb7bad3ac3244fbd7bd16091586af63c671",
+          "byte_size": 2524,
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-03",
+      "delivered_documents": 10,
+      "unique_families_within_batch": 10,
+      "manifest_path": "health_audit/corpus_expansion/batch03/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "reference": "library-file:fde1_bGliZmlsZV9oRnlMZzViR2M5WHlUcFJiWHI2RTVn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "3744ffee0784e40c71a527779f9240f79bb64535d7cbc502ea75ab939c459281",
+          "byte_size": 32350,
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "reference": "library-file:fde1_bGliZmlsZV90MjFET0ZFaDNaS0lyWFRWTFFVRkFR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "aaec49aa12a70bc04e6cc8523e72250bf22f6df348783f554e0b349db11f69dd",
+          "byte_size": 9186,
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "reference": "library-file:fde1_bGliZmlsZV9pYWZxVDB4andObEJCbHZpVVpIXzFR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "82310efe4cc6131c197b2b2f30f5c17d93c7375dbd7384ca2491f4c0d06673bb",
+          "byte_size": 361,
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "reference": "library-file:fde1_bGliZmlsZV93N1NST1A0SE5jRGpfb3NFRFlmQlVR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "54e7ab571786f272aa47c95b56d7d0fd1f2f9675f6c91d0c8a0407e8919c0d26",
+          "byte_size": 5353,
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "reference": "library-file:fde1_bGliZmlsZV9hUVZTb1o0SFRGT1JxQkNtR3RlZ1VR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "594d09286ab6b3e197b56b331345929238bcb1ed13a319c40af5d6ac53ec561b",
+          "byte_size": 3094,
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-04",
+      "delivered_documents": 5,
+      "unique_families_within_batch": 5,
+      "manifest_path": "health_audit/corpus_expansion/batch04/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "reference": "library-file:fde1_bGliZmlsZV9udHk2Z2EzaExSM2VYTDA0RTliMjhR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "155245ef9569df7b4ccaf6688bc0b693968cfde408098db672c8bc5a9f414b27",
+          "byte_size": 21345,
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "reference": "library-file:fde1_bGliZmlsZV9BQWs5ZWtpbUJLQUp4YldaWkZHY2l3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "5525d0acbc2a19ebedac33b2b5e2ad858fb85d9bc428dfd1930d72fec646860f",
+          "byte_size": 7121,
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "reference": "library-file:fde1_bGliZmlsZV9seDhxbk83blN1WlVhcmtoUjFkc0lB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "e67f8be724d942eccd806641a86ca3eba48ce6ce6a86789985667c5bd6742227",
+          "byte_size": 406,
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "reference": "library-file:fde1_bGliZmlsZV9QXzRQMy1ncjVhdEVxbngwc2phZXd3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "2050298c0571e3b81efdf68d3ede59531c1c0f085318617fd471bcefa8573361",
+          "byte_size": 2892,
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "reference": "library-file:fde1_bGliZmlsZV9WSlNXWkU3NHVYMHJjeEROUFBWT0tB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "901107397dc2588c9165f3f04ac2eddad6a5b3f4e77de8da70dd14c3bb762d7e",
+          "byte_size": 1592,
+          "readback_verified": true
+        },
+        {
+          "file": "candidate_gaps.json",
+          "reference": "library-file:fde1_bGliZmlsZV9UclcybGRvZkV6Q1lPeEZiZWpvZERn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "9156752bf2b0b06eb140025ce53f9256638a9d46f019602b6ba78c56f2156bff",
+          "byte_size": 9449,
+          "readback_verified": true
+        },
+        {
+          "file": "pending_evidence_conflicts.json",
+          "reference": "library-file:fde1_bGliZmlsZV9MUXgwU1FtRWZDUWw3cnpTVEZGU1V3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "3f8ceb8531a008286d11ec6f9e8f114b6f751eb16d4568e81e2c65310b40d151",
+          "byte_size": 1627,
+          "readback_verified": true
+        },
+        {
+          "file": "required_cdc_notices.json",
+          "reference": "library-file:fde1_bGliZmlsZV9UbE5RM2d1RHVnZjZhUTRZUW1EZE9R_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "sha256": "da5e7d0e25095c72ae7773d1990c1803fdb89184c70c30cad915ab6ae7f3b177",
+          "byte_size": 691,
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-05",
+      "delivered_documents": 10,
+      "unique_families_within_batch": 10,
+      "manifest_path": "health_audit/corpus_expansion/batch05/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "sha256": "4e914b3526aca18857d5ee1d6326b72c6388e3407e51ac47086082d7620fb4c0",
+          "byte_size": 42396,
+          "reference": "library-file:fde1_bGliZmlsZV9acGNUYVFQNXA3RjNBNU44YU9PZFNn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "sha256": "11e93d8ca999ba3cad1f0812c6d866431a4b5ac0459f8e882ac01d10172f27c0",
+          "byte_size": 7577,
+          "reference": "library-file:fde1_bGliZmlsZV9Qem0wYUxhbktSQlhmeUpCZTRfaU9R_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "sha256": "2509976cbe0ff1395c459ce946011f3d873ee921aa70817d1b180691bfabed41",
+          "byte_size": 361,
+          "reference": "library-file:fde1_bGliZmlsZV9adThrRk1sLTQ2MWpHU0tqbzRPWGdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "sha256": "acbe025a9c44fafd16332207f925411352681e33d7f4e89fe784e63f8fbfea8c",
+          "byte_size": 4112,
+          "reference": "library-file:fde1_bGliZmlsZV91cmhGTk01QW9VbHd0ZExLekw5X053_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "sha256": "482d50b6711da4b076465d0e55c5270fdb6f67a5001c7f3c5792d267b344b95a",
+          "byte_size": 3094,
+          "reference": "library-file:fde1_bGliZmlsZV9wRUw3eXJzbnFxM0NRNVh0TUpYZ0tB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "access_failures.json",
+          "sha256": "b65cbafc1858c4907dd9cb6d0438bff3bd85320a13b8fbe906840db31b0d562a",
+          "byte_size": 529,
+          "reference": "library-file:fde1_bGliZmlsZV9SVGNCS1EtMEQyOEFhQTJhazFDdWJB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "professional_review_priorities.json",
+          "sha256": "c89a00c7b15cbda57c0714284989bfc17bd4f41aad30e8c5819e3320fd6a50af",
+          "byte_size": 1746,
+          "reference": "library-file:fde1_bGliZmlsZV9RdmpQTEl1dmU5ZXctYTVMSGVtY0lR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "required_cdc_notices.json",
+          "sha256": "da5e7d0e25095c72ae7773d1990c1803fdb89184c70c30cad915ab6ae7f3b177",
+          "byte_size": 691,
+          "reference": "library-file:fde1_bGliZmlsZV9jVnIxX0ptNjRtQ2ppdFNaYUxTZzJB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-06",
+      "delivered_documents": 10,
+      "unique_families_within_batch": 10,
+      "manifest_path": "health_audit/corpus_expansion/batch06/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "sha256": "b26652565529100fc04b079cb8e9d1a2bce2dc59204e5500bef4ef4bf3c28263",
+          "byte_size": 43491,
+          "reference": "library-file:fde1_bGliZmlsZV9aSDQ1UFNaSXIzQTFkWS10LU5JSlJB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "sha256": "137e1bae5875eab44b5a8f2a2c8ce9d5968845124f7caafb845b82187b68c9ad",
+          "byte_size": 7921,
+          "reference": "library-file:fde1_bGliZmlsZV9kb1J1OFF5NXgtbFVKOXhSenRTLW13_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "sha256": "93616be519a82cd9768130cd3337327a50636df6ec0a73934f52ac5ce1ac7d6c",
+          "byte_size": 449,
+          "reference": "library-file:fde1_bGliZmlsZV9Lbm5mM2stVDI4c1JSc0tIVGFpaWR3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "sha256": "94d06773f9848d82cce8f54040b145be6ad6912168fb446756009260de840f65",
+          "byte_size": 4325,
+          "reference": "library-file:fde1_bGliZmlsZV9Rd2t5ak1WNktRTzdwampmWUVqS3ZR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "sha256": "19f68eea3491a489f562795292a155a5f18653eb204be1df2af81362e934db97",
+          "byte_size": 3089,
+          "reference": "library-file:fde1_bGliZmlsZV80eGdqcXRSQ2lnZHVrWmI3MkJkRlBB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "access_failures.json",
+          "sha256": "2cb71e784eed49f454b82b82657a7226e13d32961a3c40d26e9c01ce20e4cd91",
+          "byte_size": 531,
+          "reference": "library-file:fde1_bGliZmlsZV94Ylg5MTk1T2lVazcxdjlaN1ZCb2lR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "professional_review_priorities.json",
+          "sha256": "d6a9bf2b0ad3a4745c5473009b2342fb6c5956e6755223f83adff9ab1dabec7e",
+          "byte_size": 2675,
+          "reference": "library-file:fde1_bGliZmlsZV9hMFlOaDhCVmYyN3lNT3RRNXFHN193_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "required_cdc_notices.json",
+          "sha256": "da5e7d0e25095c72ae7773d1990c1803fdb89184c70c30cad915ab6ae7f3b177",
+          "byte_size": 691,
+          "reference": "library-file:fde1_bGliZmlsZV83MjBZN1Vsdjg4b29oWlBzdVRPVlFB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-07",
+      "delivered_documents": 8,
+      "unique_families_within_batch": 8,
+      "manifest_path": "health_audit/corpus_expansion/batch07/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "sha256": "4c7233d3b565d52b99a3e597d168522e0369172682492c0b5891db64f9e555ac",
+          "byte_size": 37923,
+          "reference": "library-file:fde1_bGliZmlsZV83MnRoRGV0UkVvTGpZZExYanZtNXlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "sha256": "d720907b6fc991c64a97d5a45ccf85066779beeeddabd3e69b10f2e8d12918a4",
+          "byte_size": 7483,
+          "reference": "library-file:fde1_bGliZmlsZV9Ua1dKb3VaRmFkQXdaeFhDcWRyeDVB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "sha256": "303432091e74adb9d2c288ec85b925468d248fb4bb358b834337cfea33f23fda",
+          "byte_size": 574,
+          "reference": "library-file:fde1_bGliZmlsZV9NWW1aSEhfamM5TF9OdS1penh4VF93_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "sha256": "11f4cb77001cb89292acf29f78c8c98a4c40ead637333a7886d61cd87a987947",
+          "byte_size": 3879,
+          "reference": "library-file:fde1_bGliZmlsZV9MSEh1R2RVSTZXRnY1QzNZSWF5LThR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "sha256": "88fef77b428b48ebbffd4eb1ad17ed30fe81a670d8885a6d432003c614180228",
+          "byte_size": 2504,
+          "reference": "library-file:fde1_bGliZmlsZV9JZkhtMzM0aTJRQXFjaFo5anc4QVFn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "candidate_exclusions.json",
+          "sha256": "058819750b1b2f786898084c7bc4b83f4ea0d95fc42132a174cc056bb9f60bef",
+          "byte_size": 2648,
+          "reference": "library-file:fde1_bGliZmlsZV9mQm0yMnVUNjNHOExMaE15d3VHd3pB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "professional_review_priorities.json",
+          "sha256": "207fe96ea8ac825279232b09e2d3c902fca91ca662448d0687cb03e1d4e3c69c",
+          "byte_size": 2225,
+          "reference": "library-file:fde1_bGliZmlsZV9FQ09XbkhhbUNveGxOeUszNkxrTlBB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "required_notices.json",
+          "sha256": "e26a12b183dabcf91f052f0f35a486271615ab1c50ddb9cccdb22919b0ea8e03",
+          "byte_size": 4980,
+          "reference": "library-file:fde1_bGliZmlsZV9ZNXJibnVGS3l0cExDNnRVNEt4d093_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-cn2024-upgrade01",
+      "delivered_documents": 1,
+      "physical_text_files": 3,
+      "unique_families_within_batch": 1,
+      "new_candidate_family_delta": 0,
+      "first_body_family_delta": 1,
+      "manifest_path": "health_audit/corpus_expansion/china_hypertension_existing_family/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "sha256": "7d1c60c35d3326d730f32625ada1d076ea380c32d8ef750d01ff3a49d5f5b5e3",
+          "byte_size": 10449,
+          "reference": "library-file:fde1_bGliZmlsZV9TV1h1cEdMbkpncUVXclhxNHVQeFlB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "sha256": "846f5432811b6a5e7ef0a2aaaf20dcdca5e96c5d93ae84a883442df006ce520d",
+          "byte_size": 1395,
+          "reference": "library-file:fde1_bGliZmlsZV93TDkyV0VDcWMwOVZsMm42M2dUU3dR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "sha256": "0b5b91ea67126046d266d952fa371c1cb2519b6f7b303999b2ad7cea3f5e7c4d",
+          "byte_size": 558,
+          "reference": "library-file:fde1_bGliZmlsZV9PckJXV2I0eXljQnloQmtTOHdtZ2tB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "sha256": "2858f559419c5c0b3054a89b1f0a02add7a4754ea8091c6fa9be1f58d9110b81",
+          "byte_size": 4091,
+          "reference": "library-file:fde1_bGliZmlsZV9tM1JNTUF0ZS1aMFg1XzBNcHFaWGRn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "file_delivery_receipts.json",
+          "sha256": "edb18803a31340049aa5df841bba3f6f30a1888e22c92d2ad9e1b07c806b6ffa",
+          "byte_size": 2237,
+          "reference": "library-file:fde1_bGliZmlsZV9fX2puWThzYWJRYVYxdXdfMGZqdFhR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "required_notices.json",
+          "sha256": "a47ec5c8b1d17a50eb7abbc0b866008e19138bccd205d8df2b41fed3b336656a",
+          "byte_size": 881,
+          "reference": "library-file:fde1_bGliZmlsZV9lQndYcTBrbmFUQUcySHNreTJoaFp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-08",
+      "delivered_documents": 9,
+      "unique_families_within_batch": 9,
+      "manifest_path": "health_audit/corpus_expansion/batch08/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "sha256": "30ec093c47d0dc5ae3d0c53e9d874476441cf7a21a541e77d25a24483fe40404",
+          "byte_size": 41598,
+          "reference": "library-file:fde1_bGliZmlsZV9uUExCb0tiN05XSE1oUkVFZEJMclpB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "sha256": "0fb69e809dd80cb63b117e0e8bbf0077c8d4222670d321cb4fabaae447a9e933",
+          "byte_size": 7179,
+          "reference": "library-file:fde1_bGliZmlsZV9yXzBWal9NSVNiN04xOHNaLS1RWHV3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "sha256": "ab5543ef228348a62215b3fe5c53fc4260769ff6244dcc9bc42a80b1a0180494",
+          "byte_size": 1006,
+          "reference": "library-file:fde1_bGliZmlsZV9wcnFobldyYVF2NzEzdU9vZ0VOY1h3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "sha256": "77551028c576824c6d9d5c49c407354f86a59cae75a1a5cebd2ab73772d9b272",
+          "byte_size": 3752,
+          "reference": "library-file:fde1_bGliZmlsZV9aS0JYYW5kOWlZZ3Rna3ZnanBRZm93_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "sha256": "31ed812afc1443388aa2ee88fc9cc89dae174ce62eabb5f6d0a903c9cf733cf3",
+          "byte_size": 2797,
+          "reference": "library-file:fde1_bGliZmlsZV9rME5tOE82U2tDREZnMjhDMHBxVDlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "required_notices.json",
+          "sha256": "fb431f03a5b7a67864199b78366ff2b1c53c63e52a4e88f5b9dbdc7379f83171",
+          "byte_size": 6951,
+          "reference": "library-file:fde1_bGliZmlsZV9KMC1TZG5xcEtiTXFLWElZQmtJUnln_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "professional_review_priorities.json",
+          "sha256": "256dbdd47faa5265458e92aad8c14580fb26e2b2cae9d9860a80c0ef2da85539",
+          "byte_size": 2156,
+          "reference": "library-file:fde1_bGliZmlsZV9rOFA4cGJwaG5FSkwyMF8ySVp5N3VB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "candidate_exclusions.json",
+          "sha256": "cfff829c24fa1f0255b7c5adfa9fa6fdbcc7c9f36e9f16d9a37f3f2eb5cf76ef",
+          "byte_size": 986,
+          "reference": "library-file:fde1_bGliZmlsZV9udkNXb1IwZTRUZW04aDFPWklNQk93_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-09",
+      "delivered_documents": 9,
+      "unique_families_within_batch": 9,
+      "manifest_path": "health_audit/corpus_expansion/batch09/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "sha256": "b604c5d6fa27439e0e71cbd1dd939cc161f3deba076ffb541aa5d659da74c251",
+          "byte_size": 40819,
+          "reference": "library-file:fde1_bGliZmlsZV8yNnd3eDBLNUlOVWVrbGpvbDZpN0pB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "sha256": "4f071f7bed6aa5b32f3856492d088a9d6c2dc0037f88a6e30cffecf6819ce8d3",
+          "byte_size": 7000,
+          "reference": "library-file:fde1_bGliZmlsZV83dUJzcmxHRHgwZTJWSnhTOGJiUWt3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "sha256": "2b211b298901f450bbd3063e5256ff270e55bcd0cda4c30ec87565073282955f",
+          "byte_size": 943,
+          "reference": "library-file:fde1_bGliZmlsZV84aFVJcC1SNGVhdUNzYTBLR3pJWHln_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "sha256": "32ddd19d70fe974b10e3bc732a12a1888cb2294a9b2a381abcc5e550c65a2eeb",
+          "byte_size": 3219,
+          "reference": "library-file:fde1_bGliZmlsZV9vdnBteVNNYTFtRGtRSEp0Q3NVVWF3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "sha256": "f9e038bd988ddd2ecc853635c893f32eda2b1e15ba2ab62957638ef3706eb388",
+          "byte_size": 2798,
+          "reference": "library-file:fde1_bGliZmlsZV9iSThnRmltOGtQRnNZUGs3Qzh6amNn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "required_notices.json",
+          "sha256": "43e78e24cf85e44009e58ba09d5114bd48da2caefd655db79882c3099e077a8b",
+          "byte_size": 7098,
+          "reference": "library-file:fde1_bGliZmlsZV90WFJaTDlZVWdzSXBNZ2xOWFYzSl9n_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "professional_review_priorities.json",
+          "sha256": "5cc18dbc37954c9ad23ac06cf4ecb764ae968cd4f323d83a9337b39677cad9ea",
+          "byte_size": 1722,
+          "reference": "library-file:fde1_bGliZmlsZV9oa0I4T1pUU1J2RWFmWjkwVEFLZDVn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "candidate_exclusions.json",
+          "sha256": "98a6c35e7f52f8d9779ec582b2da0c6ee0cbce8a17cab57ca36304cb49adfd3d",
+          "byte_size": 1262,
+          "reference": "library-file:fde1_bGliZmlsZV9RZUxOTXBSbkV4NWo0VDg1WVNhTTVB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-10",
+      "delivered_documents": 3,
+      "unique_families_within_batch": 3,
+      "manifest_path": "health_audit/corpus_expansion/batch10/source_manifest.json",
+      "metadata_references": [
+        {
+          "file": "source_manifest.json",
+          "sha256": "f6ae4b94c3f82b5970d9316cdfd74ba9f67a644459c60e59a35b4e1e6e785a30",
+          "byte_size": 13809,
+          "reference": "library-file:fde1_bGliZmlsZV9VbEV4VlZkMGVEOFRtYklYVDNtUW9R_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "medical-handoff-v1.json",
+          "sha256": "968048ee3fb586c339509fde9ab604d22e9863af65a4c87f00e3431899ed79e0",
+          "byte_size": 2171,
+          "reference": "library-file:fde1_bGliZmlsZV9jN3F2eHBfRzhoMXZSR19ycHBmM2Zn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "checkpoint.json",
+          "sha256": "9aec8257defc25fecca4c6049f3735ea13850aba726ec31af4135297b3e02a9e",
+          "byte_size": 1010,
+          "reference": "library-file:fde1_bGliZmlsZV8xbWVmRndFcXFGM3FYMkRFMFozSkpn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "independent_qa.json",
+          "sha256": "f602e533ef07035ae770ac42420aae34241aea23b925f8fe45700378ef4d192a",
+          "byte_size": 1790,
+          "reference": "library-file:fde1_bGliZmlsZV9aNjJmemdXd2ZIOG13R3I4SFN6RXBn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "body_delivery_receipts.json",
+          "sha256": "6e0c2de5fed1eef5652b0c3086e69894863af05c97880d707aef2fe1031940d3",
+          "byte_size": 937,
+          "reference": "library-file:fde1_bGliZmlsZV9Odi12Rk9TWFFHWloxMUFETGVNZGFB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "required_notices.json",
+          "sha256": "97cb77c4e8b488d7de72ac904b50dd2dcf1d1d3978d86f523564c0b34aff9fee",
+          "byte_size": 2366,
+          "reference": "library-file:fde1_bGliZmlsZV9NcTEtX3p5Zy1fb2lqX2Vqclg1MnFB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        },
+        {
+          "file": "professional_review_priorities.json",
+          "sha256": "8c50ae6601284545c2fa2d9717760ee07facb7309e662b681985b1c1945298c2",
+          "byte_size": 746,
+          "reference": "library-file:fde1_bGliZmlsZV9fSVQ5clM3d0FMUEFEZUFpS3IwMXN3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "readback_verified": true
+        }
+      ]
+    }
+  ],
+  "candidate_batches": [
+    {
+      "batch_id": "dot-eval-candidates-20261014-b01-0515",
+      "file": "dot-eval-candidates-20261014-b01-0515.json",
+      "page_reference": "library-file:fde1_bGliZmlsZV9Td3NWWUtZbGx3UW9TdEF4QW9NU25B_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "18c5c453ac3061cde45f47fb51552206cb0397cdd285e90aaa9df0f588249ab0",
+      "byte_size": 52928,
+      "question_count": 10,
+      "professional_review": "pending",
+      "local_receipt_status": "received_initial_checks_only_full_schema_isolation_professional_license_acceptance_pending",
+      "previous_local_receipt_status": "not_confirmed"
+    },
+    {
+      "batch_id": "dot-eval-candidates-20261014-b02-0528",
+      "file": "dot-eval-candidates-20261014-b02-0528.json",
+      "page_reference": "library-file:fde1_bGliZmlsZV9WSmw0S25JQ2J6VERFaHFUOUFsck5R_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "a23daf67085badfc601851e071afab1e25df33f7a3687fa88962cdc8b47c8130",
+      "byte_size": 55384,
+      "question_count": 10,
+      "professional_review": "pending",
+      "local_receipt_status": "not_confirmed"
+    },
+    {
+      "batch_id": "dot-eval-candidates-20261014-b03-0534",
+      "file": "dot-eval-candidates-20261014-b03-0534.json",
+      "page_reference": "library-file:fde1_bGliZmlsZV9yM3lMX25NLXhNQml5VF9oQlQybWlR_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "c331922d4b3e4bea05997a14e589d53a8c9265f281c1092a0258c4aee70da806",
+      "byte_size": 53507,
+      "question_count": 10,
+      "professional_review": "pending",
+      "local_receipt_status": "not_confirmed"
+    },
+    {
+      "batch_id": "dot-eval-candidates-20261014-b04-0544",
+      "file": "dot-eval-candidates-20261014-b04-0544.json",
+      "page_reference": "library-file:fde1_bGliZmlsZV9QNm9vcnNnbE12ZXNTckRTYk5TektB_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "d39ea29aa5ad4174a8a84ba780192bbfe27aed07c1197485d0a41a8f09af3b01",
+      "byte_size": 59408,
+      "question_count": 10,
+      "professional_review": "pending",
+      "local_receipt_status": "not_confirmed"
+    },
+    {
+      "batch_id": "dot-eval-candidates-20261014-b05-0550",
+      "file": "dot-eval-candidates-20261014-b05-0550.json",
+      "page_reference": "library-file:fde1_bGliZmlsZV9CZU5EdEZlZ3RwQlAwbXoydzh0Ymxn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "748be2a84c330c68e10b3aba7b807944535e3eae75e0aed3097c925adc2f450f",
+      "byte_size": 51052,
+      "question_count": 10,
+      "professional_review": "pending",
+      "local_receipt_status": "not_confirmed"
+    },
+    {
+      "batch_id": "dot-eval-candidates-20261014-b06-0557",
+      "file": "dot-eval-candidates-20261014-b06-0557.json",
+      "page_reference": "library-file:fde1_bGliZmlsZV9rYmNPX0RwV2hxbVQwX3BJZzJtWkxn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "0d4455fb57d4a585d2ceea8fdfade6048acb09333809f834768a44d0fb24c7ef",
+      "byte_size": 46682,
+      "question_count": 10,
+      "professional_review": "pending",
+      "local_receipt_status": "not_confirmed"
+    }
+  ],
+  "dev_deliveries": [
+    {
+      "file": "dot-dev20-export-20261014-b01-0508.json",
+      "reference": "library-file:fde1_bGliZmlsZV9RTHFTNkI0NkNFeEFLaHRoV0U1eWl3_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "bbeca17476ffddab5df130815844b475971ee46271e45f4bde404dadc6673c26",
+      "byte_size": 39005,
+      "readback_verified": true
+    },
+    {
+      "file": "dot-dev20-export-20261014-b02-0508.json",
+      "reference": "library-file:fde1_bGliZmlsZV9CdDdRMWhWdlU0X3NrRDlTOVMtbUpB_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "0da487fb82b56577ee6f291b327cec210780bd213e6aa73c40d800c2513bc0d0",
+      "byte_size": 42373,
+      "readback_verified": true
+    },
+    {
+      "file": "A_full_fidelity_dev20_b01.json",
+      "reference": "library-file:fde1_bGliZmlsZV9Wc2x2UWJKTHN5RXpINjVyUlhaNkRB_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "ab3f713a6f4b5b266873dbfe84dbb53ab7ea59c49679b94729f31352199861b3",
+      "byte_size": 182152,
+      "readback_verified": true
+    },
+    {
+      "file": "A_full_fidelity_dev20_b02.json",
+      "reference": "library-file:fde1_bGliZmlsZV9uVmZBRHJWazZwdDdvMXZ2WkZoYTlB_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "f6e3cf0bd0694bc446667213595ff2d5adc888668d40b312e7dae77982d3fbe0",
+      "byte_size": 194952,
+      "readback_verified": true
+    },
+    {
+      "file": "B_reference_revision_proposals.json",
+      "reference": "library-file:fde1_bGliZmlsZV8wWGtRU052c3liU2hvVExJWWlSanp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "a92414fc864b948fabbff2bbb7dd8a92959d36f1a22660bf2c35bf5d6f5aa0fa",
+      "byte_size": 43534,
+      "readback_verified": true
+    },
+    {
+      "file": "C_paragraph_supplement_proposals.json",
+      "reference": "library-file:fde1_bGliZmlsZV9ad0h5SWJYb2ZlYWthNlRGV0RDTVRn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "7dddb018307ae545d3f1483ee15c2bd05218a50e19473d63f208c7b65d92460d",
+      "byte_size": 117421,
+      "readback_verified": true
+    },
+    {
+      "file": "D_txt_source_review.json",
+      "reference": "library-file:fde1_bGliZmlsZV9mbm9MMFp5alJjWFZiWTVwVE5Uc05B_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "1150430581491390e7b3739a717ec6e5d3de08211d5d6979994ee3ecf2283a8f",
+      "byte_size": 22961,
+      "readback_verified": true
+    },
+    {
+      "file": "E_unresolved_and_review.json",
+      "reference": "library-file:fde1_bGliZmlsZV9pOTJoRUVDbzcxSnExTEdLZjBQYk5n_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "b924aa94688ad0dc6ac892baae1ca915174990e1bed948494189ffb4e72c1c7d",
+      "byte_size": 30506,
+      "readback_verified": true
+    },
+    {
+      "file": "dev20_export_checkpoint.json",
+      "reference": "library-file:fde1_bGliZmlsZV81R01kdlNBZzJ1WkQ0Wm83OTBQcTlB_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "sha256": "15f2f99e619ba8881323bdc3d866ef7fecb4f70769cc2d62b5ab18aed99e5d70",
+      "byte_size": 2920,
+      "readback_verified": true
+    }
+  ],
+  "deduplication": {
+    "duplicate_original_url_groups": [],
+    "duplicate_normalized_body_hash_groups": [],
+    "multiple_documents_same_family": [
+      {
+        "value": "niddk-what-is-diabetes",
+        "source_ids": [
+          "niddk-insulin-resistance-prediabetes",
+          "niddk-type2-diabetes"
+        ]
+      }
+    ],
+    "duplicate_candidate_question_ids": [],
+    "candidate_family_groups_can_intentionally_overlap": true,
+    "limitations": "URL/family/hash checks are deterministic; distinct overlapping works are not automatically duplicate. External mirror discovery and clinical equivalence not asserted.",
+    "shared_candidate_families": [
+      {
+        "family_id": "diabetes-acute-illness-escalation",
+        "question_ids": [
+          "medcand-20261014-042",
+          "medcand-20261014-043"
+        ]
+      }
+    ]
+  },
+  "partial_series_family_ids": [
+    "nhlbi-dash-eating-plan",
+    "nhlbi-high-blood-pressure",
+    "niddk-diabetes-management",
+    "niddk-preventing-diabetes-problems",
+    "niddk-what-is-diabetes"
+  ],
+  "verification_errors": [],
+  "controls": {
+    "test40_semantic_read": false,
+    "originals_modified": false,
+    "knowledge_base_modified": false,
+    "medical_professional_review": "pending",
+    "local_development_performed": false,
+    "clinical_gold_standard": false
+  },
+  "candidate_only_register": {
+    "batch_registers": [
+      {
+        "batch_id": "corpus-20261014-04",
+        "evidence_file": "health_audit/corpus_expansion/batch04/candidate_gaps.json",
+        "sources": [
+          {
+            "source_id": "china-primary-diabetes-2025",
+            "source_family_id": "china-primary-diabetes-2025",
+            "title": "Guidelines on primary healthcare for type 2 diabetes in China, 2025",
+            "original_url": "https://fmch.bmj.com/content/13/4/e003765",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "unavailable",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Original journal returned 403; PMC mirror displayed CAPTCHA. No bypass. Title is discovery metadata, not verified clinical evidence.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-clinical-practice-hypertension",
+            "source_family_id": "china-clinical-practice-hypertension",
+            "title": "Clinical practice guideline for the management of hypertension in China",
+            "original_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11706600/",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "unavailable",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "PMC displayed CAPTCHA. Title from discovery search only; no actual body read.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-htn-burden-2020",
+            "source_family_id": "china-htn-burden-2020",
+            "title": "Growing Burden of Hypertension in China: Causes, Challenges, and Opportunities",
+            "original_url": "https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2020.210",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Article metadata opened, full-text section remained Loading. Relevance must be checked; pure prevalence content will not count.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-t2d-modifiable-risk-2023",
+            "source_family_id": "china-t2d-modifiable-risk-2023",
+            "title": "Modifiable Risk Factors in the Prevention and Management of Type 2 Diabetes: Implications and Future Directions for China",
+            "original_url": "https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2023.187",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Article metadata opened, full-text section Loading; issue PDF read returned 400 Timeout.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-t2d-cardiovascular-risk-2023",
+            "source_family_id": "china-t2d-cardiovascular-risk-2023",
+            "title": "Risk Factors for Diabetes and Cardiovascular Complications in the Chinese Population",
+            "original_url": "https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2023.191",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Article metadata opened, full-text section Loading; relevance not yet verified from medical body.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "cn-hypertension-guideline-2024",
+            "source_family_id": "cn-hypertension-guideline-2024",
+            "title": "Chinese Guidelines for the Prevention and Treatment of Hypertension (2024 revision)",
+            "original_url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+            "publisher": null,
+            "publisher_evidence": null,
+            "compiler": "Task Force of the Chinese Hypertension Guidelines; Chinese Hypertension League; Hypertension Branch of the China International Exchange and Promotive Association for Medical and Health Care; Hypertension Branch of the Chinese Geriatrics Society; Hypertension Branch of the Chinese Aging Well Association; Chinese Stroke Association; Chronic and Non-communicable Disease Control and Prevention Center of the Chinese Center for Disease Control and Prevention",
+            "compiler_evidence": {
+              "locator": "Author-group line 130",
+              "quote": "Task Force of the Chinese Hypertension Guidelines; Chinese Hypertension League"
+            },
+            "publication_date": "2025-01-28",
+            "version": "2024 revision, English edition",
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Article landing-page metadata and license only; none of 149 clinical pages read.",
+            "reuse_status": "verified",
+            "reuse_evidence": {
+              "url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+              "locator": "Article copyright notice lines 209-212",
+              "quote": "This is an open access article under the terms of the Creative Commons Attribution License",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "license_version_verified_by_opened_link": true,
+              "caveat": "Clinical PDF assets and third-party exclusions not inspected; no body delivered."
+            },
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "existing_candidate_metadata_upgrade",
+            "professional_review": "pending",
+            "new_candidate_family": false,
+            "blocker": "Landing page exposes PDF button but no resolved PDF URL in accessible representation. No medical body extracted.",
+            "restoration_requirement": "Accessible original PDF through an authorized route, then per-page extraction/rights check.",
+            "date_note": "2025 is publication of English edition; revision remains 2024. Same source family as existing Chinese edition; do not rename original TXT or infer any recommendation evidence grade.",
+            "journal": "Journal of Geriatric Cardiology",
+            "journal_evidence": {
+              "locator": "Article citation",
+              "quote": "Journal of Geriatric Cardiology, 2025, 22(1): 1-149"
+            },
+            "compiler_note": "Listed author groups, not separately verified guideline issuing authority.",
+            "current_state": "upgraded_to_body_delivered_by_corpus-20261014-cn2024-upgrade01",
+            "candidate_only_current": false
+          }
+        ]
+      },
+      {
+        "batch_id": "corpus-20261014-07",
+        "evidence_file": "health_audit/corpus_expansion/batch07/candidate_exclusions.json",
+        "sources": [
+          {
+            "source_id": "fda-meter-brochure-2003",
+            "source_family_id": "fda-meter-brochure-2003",
+            "title": "Home Healthcare Medical Devices: Blood Glucose Meters - Getting the Most Out of Your Meter",
+            "original_url": "https://www.fda.gov/medical-devices/home-health-and-consumer-devices/home-healthcare-medical-devices-blood-glucose-meters-getting-most-out-your-meter",
+            "pdf_url": "https://www.fda.gov/media/70916/download",
+            "publisher": "U.S. Food and Drug Administration",
+            "publication_date": "2003-09",
+            "version": null,
+            "version_evidence": "PDF page2: September2003",
+            "jurisdiction": "US",
+            "population": null,
+            "language": "en",
+            "access_status": "opened",
+            "read_scope": "HTML explanatory body and PDF text extraction pages1-2; no screenshots or image review.",
+            "reuse_status": "verified",
+            "reuse_evidence_url": "https://www.fda.gov/media/70916/download",
+            "reuse_short_quote": "The contents of this brochure is not copyrighted",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Older2003 brochure; HTML has unfinished sentence even if incorrect teststrip fits. PDF contains full sentence. Keep historical candidate only rather than inflate corpus with redundant older guidance.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "fda-high-blood-pressure-medicines-2021",
+            "source_family_id": "fda-high-blood-pressure-medicines-2021",
+            "title": "High Blood Pressure",
+            "original_url": "https://www.fda.gov/consumers/womens-health-topics/high-blood-pressure",
+            "publisher": "U.S. Food and Drug Administration, Office of Women's Health",
+            "publication_date": null,
+            "version": "Medicine and risk information current as of February2021",
+            "version_evidence": "Final guide disclaimer line645",
+            "jurisdiction": "US",
+            "population": "Women; page also includes general adult medicine information",
+            "language": "en",
+            "access_status": "opened",
+            "read_scope": "HTML medical prose lines87-646; no linked medicine labels or PDF read.",
+            "reuse_status": "verified",
+            "reuse_evidence_url": "https://www.fda.gov/about-fda/about-website/website-policies",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Explicit2021 medicine information, not treated as current2026 formulary. Retain historical candidate pending updated version and professional review.",
+            "candidate_only_current": true
+          }
+        ]
+      },
+      {
+        "batch_id": "corpus-20261014-08",
+        "evidence_file": "health_audit/corpus_expansion/batch08/candidate_exclusions.json",
+        "sources": [
+          {
+            "source_id": "who-hypertension-pharmacological-2021",
+            "source_family_id": "who-hypertension-pharmacological-2021",
+            "title": "Guideline for the pharmacological treatment of hypertension in adults",
+            "original_url": "https://www.ncbi.nlm.nih.gov/books/NBK573631/",
+            "publisher": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "Global",
+            "population": null,
+            "language": "en",
+            "access_status": "unavailable",
+            "reuse_status": "unconfirmed",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Opened Bookshelf page returned Checking your browser - reCAPTCHA, not medical body. Stop route; no CAPTCHA solved and no alternate fulltext route attempted. Metadata from search not verified. Restore only through authorized access without bypass.",
+            "candidate_only_current": true
+          }
+        ]
+      },
+      {
+        "batch_id": "corpus-20261014-09",
+        "evidence_file": "health_audit/corpus_expansion/batch09/candidate_exclusions.json",
+        "sources": [
+          {
+            "source_id": "cdc-diabetes-care-schedule",
+            "source_family_id": "cdc-diabetes-care-schedule",
+            "title": "Your Diabetes Care Schedule",
+            "original_url": "https://www.cdc.gov/diabetes/treatment/your-diabetes-care-schedule.html",
+            "publisher": "Centers for Disease Control and Prevention",
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "US",
+            "population": null,
+            "language": "en",
+            "access_status": "opened",
+            "reuse_status": "verified",
+            "reuse_evidence_url": "https://www.cdc.gov/other/agencymaterials.html",
+            "read_scope": "Complete medical prose logical lines26–76 read; no linked vaccine guidance reviewed.",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Candidate only: fixed pneumococcal vaccine schedule in Just once needs version-specific professional review. No current vaccination review undertaken because outside present knowledge scope. Not classified as confirmedmedicalerror and no body delivery/count.",
+            "necessary_short_quote": "You'll need two more doses when you're 65 or older.",
+            "candidate_only_current": true
+          }
+        ]
+      }
+    ],
+    "new_candidate_only_families_excluding_original7": 9,
+    "original7_note": "Seven previously received metadata entries remain separate historical metadata, not seven new bodies. China2024 HTN and NIDDK hypoglycemia subsequently upgraded to delivered bodies, counted once in body index. Other original candidates retain permission/access gaps."
+  },
+  "clinical_use_quarantine": [
+    {
+      "source_id": "cdc-hypertension-risk",
+      "reason": "Direct source classification/boundary discrepancy pending professional adjudication. Do not ingest problematic excerpts as clinical rules."
+    },
+    {
+      "source_id": "cdc-diabetes-testing",
+      "reason": "Direct source classification/boundary discrepancy pending professional adjudication. Do not ingest problematic excerpts as clinical rules."
+    }
+  ],
+  "baseline_dispute_note": "User-accepted 20-source baseline remains counted; known HbA1c >6.5% versus >=6.5% source discrepancy preserved, professional adjudication pending. This is not fresh clinical validation.",
+  "count_history": [
+    {
+      "checkpoint": "corpus06",
+      "retained_reviewable_families": 72,
+      "target_eligible_families": 70,
+      "quarantined_new_families": 2,
+      "note": "Earlier 72 count concerned delivered reviewable original bodies, not reliable clinical rules or professional validation."
+    },
+    {
+      "checkpoint": "corpus07",
+      "retained_reviewable_families": 80,
+      "target_eligible_families": 78,
+      "quarantined_new_families": 2
+    },
+    {
+      "checkpoint": "corpus-20261014-cn2024-upgrade01",
+      "retained_reviewable_families": 81,
+      "target_eligible_families": 79,
+      "quarantined_new_families": 2,
+      "original_body_documents": 82,
+      "physical_body_files": 84
+    },
+    {
+      "checkpoint": "corpus08",
+      "retained_reviewable_families": 90,
+      "target_eligible_families": 88,
+      "quarantined_new_families": 2,
+      "original_body_documents": 91,
+      "physical_body_files": 93
+    },
+    {
+      "checkpoint": "corpus09",
+      "retained_reviewable_families": 99,
+      "target_eligible_families": 97,
+      "quarantined_new_families": 2,
+      "original_body_documents": 100,
+      "physical_body_files": 102
+    },
+    {
+      "checkpoint": "corpus10_final",
+      "retained_reviewable_families": 102,
+      "target_eligible_families": 100,
+      "quarantined_new_families": 2,
+      "original_body_documents": 103,
+      "physical_body_files": 105
+    }
+  ],
+  "candidate_completion_status": "60 synthetic candidates delivered; professional review/local reception pending; no further candidate expansion",
+  "candidate_isolation_cautions": [
+    "Questions 056/057 retain quarantined sources only for critical source-comparison, not approved clinical rules.",
+    "Questions 013/052 should be considered one isolation group by local deduplication review.",
+    "Questions 042/043 deliberately share family_id."
+  ],
+  "candidate_final_index_receipts": {
+    "files": [
+      {
+        "page_id": "page_6952833f7ff8819189a31b3dd75cc556",
+        "reference": "library-file:fde1_bGliZmlsZV9vd3VyMEVsVkZHQ0NiQjM2OU44QXZ3_FileDrive_bc65bce1a9088191958be314f94df2de",
+        "file_name": "candidate_pool_60_index-19f17bacc0a84b0a997fe04e372f621c.json",
+        "mime_type": "application/json",
+        "byte_size": 58170,
+        "sha256": "aa78d8c1bfb728efcc6f63d722f9e3d0cf63334983b1d1ce5b0e81d3f7866d1f",
+        "file_access_confirmed": true,
+        "is_image": false,
+        "markdown": "[candidate\\_pool\\_60\\_index.json](library-file:fde1_bGliZmlsZV9vd3VyMEVsVkZHQ0NiQjM2OU44QXZ3_FileDrive_bc65bce1a9088191958be314f94df2de)",
+        "inserted": false,
+        "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown.",
+        "file": "candidate_pool_60_index.json",
+        "readback_verified": true
+      },
+      {
+        "page_id": "page_6952833f7ff8819189a31b3dd75cc556",
+        "reference": "library-file:fde1_bGliZmlsZV9WWFgwSDM5ZnpDNlppU0w1ak83X0xn_FileDrive_bc65bce1a9088191958be314f94df2de",
+        "file_name": "family_isolation_review-eb7cce7dec3e42b9a007b24795fe3025.json",
+        "mime_type": "application/json",
+        "byte_size": 1524,
+        "sha256": "86e03fbeba1b77075568fbfe637891eae90c65547b6975eeb2da098fa0cfd290",
+        "file_access_confirmed": true,
+        "is_image": false,
+        "markdown": "[family\\_isolation\\_review.json](library-file:fde1_bGliZmlsZV9WWFgwSDM5ZnpDNlppU0w1ak83X0xn_FileDrive_bc65bce1a9088191958be314f94df2de)",
+        "inserted": false,
+        "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown.",
+        "file": "family_isolation_review.json",
+        "readback_verified": true
+      },
+      {
+        "page_id": "page_6952833f7ff8819189a31b3dd75cc556",
+        "reference": "library-file:fde1_bGliZmlsZV9VWE0tNW4wS0NtZVBJSDhaaHNxVDdR_FileDrive_bc65bce1a9088191958be314f94df2de",
+        "file_name": "candidate_pool_unresolved-5b252e1b7d414b68ac73e624fe39ed53.json",
+        "mime_type": "application/json",
+        "byte_size": 2390,
+        "sha256": "9979f9f337857ce669f35958841f3562f3e04b2bc64eb2faf98ba263cb8cfe95",
+        "file_access_confirmed": true,
+        "is_image": false,
+        "markdown": "[candidate\\_pool\\_unresolved.json](library-file:fde1_bGliZmlsZV9VWE0tNW4wS0NtZVBJSDhaaHNxVDdR_FileDrive_bc65bce1a9088191958be314f94df2de)",
+        "inserted": false,
+        "next_step": "Read the Page and use edit_page with its fresh guards to insert markdown.",
+        "file": "candidate_pool_unresolved.json",
+        "readback_verified": true
+      }
+    ]
+  },
+  "local_receipt_summary": {
+    "receipt_id": "L",
+    "observed_sequence": 24,
+    "observed_at": "2026-10-14T06:20:12.189960+00:00",
+    "source_batches_received": [
+      "corpus-20261014-01",
+      "corpus-20261014-02"
+    ],
+    "new_body_files_received": 18,
+    "new_source_families_received": 17,
+    "baseline_plus_received_families": 37,
+    "local_body_sha256_all_passed": true,
+    "json_raw_hash_matches_reported": 8,
+    "dev_cases_received": 20,
+    "dev_audit_points_received": 60,
+    "dev_status": "staged_for_review",
+    "candidate_questions_received": 10,
+    "candidate_reference_points_received": 31,
+    "candidate_acceptance_caveats": "Basic fields/body hashes/quotes/policy consistency checked; full schema, frozen-set family isolation, professional review and independent licensing not accepted. Later50 candidate receipt not established.",
+    "later_body_batch_receipt": "not_established",
+    "formal_corpus_changed": false,
+    "no_embedding_no_milvus_no_model_eval": true,
+    "evidence_file": "local_receipt_L_evidence.json",
+    "scope": "Read-only reliance on actual local receipt in shared ledger; no local computer access performed."
+  },
+  "partial_work_source_families": [
+    "who-bp-device-specifications-2020"
+  ],
+  "source_record_parts": [
+    {
+      "file": "cumulative_source_records_part01.json",
+      "source_record_count": 55,
+      "byte_size": 105082,
+      "sha256": "c37a893a22da8e8c810535c8d90c1c2dc59880b80fcae4ae0ddb4f36c5a21c7a",
+      "page_reference": "library-file:fde1_bGliZmlsZV96SW5WWXhfTnQtd1lUTjMtUmFFVFhn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "delivery_status": "uploaded_actual_readback_verified_by_parent",
+      "readback_verified": true
+    },
+    {
+      "file": "cumulative_source_records_part02.json",
+      "source_record_count": 48,
+      "byte_size": 132508,
+      "sha256": "e1be0c7e6925376a8071d8af42d680c6204501ba4fd0b8c4e7368d795e8df20e",
+      "page_reference": "library-file:fde1_bGliZmlsZV93VFNwa0hLWXBMZGQxY2ZiMjhFbkdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "delivery_status": "uploaded_actual_readback_verified_by_parent",
+      "readback_verified": true
+    }
+  ],
+  "completion_status": "Target collection complete:100 eligible families (20 baseline+80 new),2 additional quarantined retained;60 synthetic candidates delivered; same research schedule disabled after confirmed completion. Professional review and later local receipts pending.",
+  "schedule_completion": {
+    "verified_at": "2026-10-14T06:34:24.193700+00:00",
+    "automation_id": "6aceddfad694819192abe8b448c58040",
+    "title": "成人慢病资料独立核查",
+    "is_enabled": false,
+    "saved_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Shanghai:20261015T090000\nRRULE:FREQ=DAILY;COUNT=7\nEND:VEVENT",
+    "timezone": "Asia/Shanghai",
+    "next_run_time": null,
+    "last_run_time": null,
+    "reason": "User-authorized stop after 100 target-eligible delivered source families and the requested audit/candidate deliveries reached their targets. Disabled the same automation; no duplicate automation created.",
+    "extension_to_2026_11_14_saved": false,
+    "extension_note": "Conditional extension was not needed because delivery goals were reached before the original first scheduled run. Original files and historical records are preserved."
+  },
+  "parent_final_integrity_report": {
+    "original_files_unchanged": 36,
+    "handoff_json_schema_validated": 12,
+    "candidate_batches_validated": 6,
+    "unique_candidate_questions": 60,
+    "all_interface_payloads_below256000": true,
+    "basis": "Parent direct verification reported 2026-10-14 06:35UTC; not independent medical review."
+  },
+  "coverage_summary": {
+    "file": "coverage_gap_summary.json",
+    "page_reference": "library-file:fde1_bGliZmlsZV9pakstZjI1MGtaS3VKZG1ielNpTzJ3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "byte_size": 29702,
+    "sha256": "cb30da5ea8283380070bb35c295db23fc0c7e7df05bb0b0ea2fc1e9983c12186",
+    "readback_verified": true
+  },
+  "next_action": {
+    "source_expansion": "stopped_target_met",
+    "candidate_expansion": "stopped_60_delivered",
+    "test40": "paused",
+    "professional_review": "pending",
+    "local_receipt_followup": "No local machine access; wait only for authorized posted receipt. KnownL scope remains unchanged."
+  }
+}

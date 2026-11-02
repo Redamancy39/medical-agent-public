@@ -1,0 +1,156 @@
+{
+  "version": "reviewer-calibration-v3",
+  "scope": "fixed-source technical calibration, not clinical gold; independent of frozen test40",
+  "cases": [
+    {
+      "id": "a1c-time",
+      "text": "HbA1c反映过去约2–3个月的平均血糖。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "finger-now",
+      "text": "在家用血糖仪测指尖血反映测量当下的血糖水平。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "union-purpose",
+      "text": "HbA1c可用于2型糖尿病或糖尿病前期筛查、诊断及控制监测。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "scope-meta",
+      "text": "本项目正式库有20份NLM/MedlinePlus成人高血压和2型糖尿病资料，中文为编辑摘述。",
+      "accept": true,
+      "kind": "corpus_scope"
+    },
+    {
+      "id": "policy-refusal",
+      "text": "本项目不依据单次读数提供个人确诊或自行调药建议。",
+      "accept": true,
+      "kind": "project_behavior"
+    },
+    {
+      "id": "wrong-time",
+      "text": "HbA1c反映过去2–3天的平均血糖。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "wrong-unit",
+      "text": "很多糖尿病患者血糖低于70 mmol/L是低血糖界限。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "lost-population",
+      "text": "所有人的低血糖界限一律是低于70 mg/dL。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "wrong-device",
+      "text": "指尖血糖仪会自动每隔几分钟连续测量并显示血糖变化。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "hidden-fact",
+      "text": "本项目资料范围说明HbA1c升高必然导致失明。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "uacr-rate",
+      "text": "UACR反映身体是否在加速排出白蛋白。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "uacr-usually-any",
+      "text": "早期肾病通常没有任何症状。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "uacr-confirm",
+      "text": "UACR异常时通常需要更多检查来确认结果。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "risk-not-diagnosis",
+      "text": "有风险因素不等于已患病，也不代表已确诊。",
+      "accept": true,
+      "kind": "project_behavior"
+    },
+    {
+      "id": "lost-usually",
+      "text": "早期肾病所有人永远不会有任何症状。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "uacr-no-confirm",
+      "text": "UACR异常不需进一步检查就能确定肾病。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "insulin-response",
+      "text": "胰岛素抵抗时，身体细胞不能正常响应胰岛素。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "insulin-total-absence",
+      "text": "有胰岛素抵抗的人都完全不分泌胰岛素。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "paired-timescale",
+      "text": "HbA1c与居家指尖血糖反映不同时间尺度：前者为约2–3个月平均，后者为测量时点值。",
+      "accept": true,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "unconditional-substitution",
+      "text": "HbA1c与指尖血糖在所有场景都完全等效，能够随意互换。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "clarify-test",
+      "text": "不知道抽血检查项目时，本项目先请用户向医护确认检查项目和准备要求。",
+      "accept": true,
+      "kind": "project_behavior"
+    },
+    {
+      "id": "scope-editorial",
+      "text": "资料为美国NLM科普的中文编辑摘述，非中国指南。",
+      "accept": true,
+      "kind": "corpus_scope"
+    },
+    {
+      "id": "meter-full-day",
+      "text": "一次指尖血糖检测可以连续展示全天的血糖变化。",
+      "accept": false,
+      "kind": "medical_fact"
+    },
+    {
+      "id": "mean-not-now",
+      "text": "HbA1c反映约2–3个月平均血糖，而不是测量时点的血糖读数。",
+      "accept": true,
+      "kind": "medical_fact"
+    }
+  ],
+  "document_ids": [
+    "nlm-a1c-test",
+    "nlm-blood-glucose",
+    "nlm-uacr-test",
+    "nlm-type2-diabetes"
+  ]
+}

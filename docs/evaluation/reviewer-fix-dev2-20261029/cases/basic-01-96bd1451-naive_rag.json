@@ -1,0 +1,411 @@
+{
+  "case_id": "basic-01",
+  "category": "basic",
+  "question": "请依据资料解释收缩压和舒张压，120/80这两个数分别表示什么？",
+  "case_snapshot": {
+    "id": "basic-01",
+    "family_id": "basic-01",
+    "split": "dev",
+    "category": "basic",
+    "topic": "hypertension",
+    "question": "请依据资料解释收缩压和舒张压，120/80这两个数分别表示什么？",
+    "expected_actions": [
+      "answer"
+    ],
+    "route_expectation": "prefer_single",
+    "force_topology": false,
+    "reference_points": [
+      "心脏搏动时为收缩压",
+      "两次搏动之间为舒张压",
+      "120对应收缩压、80对应舒张压"
+    ],
+    "gold_evidence": [
+      {
+        "document_id": "nlm-hypertension",
+        "document_version": "6ef444154364-zh-ef835d098111",
+        "section": "血压两个数的含义",
+        "source_sha256": "6ef444154364630f65a7934b794d754cff2a841ba77becaee2995afac4245dba",
+        "url": "https://medlineplus.gov/highbloodpressure.html",
+        "source_spans": [
+          {
+            "start": 246,
+            "end": 279,
+            "quote": "This is called systolic pressure."
+          },
+          {
+            "start": 350,
+            "end": 384,
+            "quote": "This is called diastolic pressure."
+          },
+          {
+            "start": 523,
+            "end": 576,
+            "quote": "120/80 means a systolic of 120 and a diastolic of 80."
+          }
+        ],
+        "editorial_start": 0,
+        "editorial_end": 226
+      }
+    ],
+    "policy_rules": [],
+    "forbidden_claims": [],
+    "reference_status": "source_bound_Codex_draft_not_clinician_review",
+    "clinical_review": "not_reviewed"
+  },
+  "method": "naive_rag",
+  "generation": {
+    "answer": "根据资料，血压是血液对动脉壁的压力。收缩压是心脏搏动（泵血）时的压力，舒张压是心脏在两次搏动之间休息时的压力；血压读数通常第一个数是收缩压，第二个是舒张压。因此“120/80”表示收缩压为120、舒张压为80（资料未注明单位；其他资料使用mmHg）。  \n需注意：资料中“120/80”仅作为读数含义的例子；按中国相关标准，正常血压为收缩压<120且舒张压<80，正常高值为120–139/80–89mmHg，但诊断标准需结合测量方式与多次测量等条件。",
+    "status": "completed",
+    "error": null,
+    "prompt_tokens": 3111,
+    "completion_tokens": 137,
+    "total_tokens": 3248,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "latency": 2.078,
+    "sources": [
+      {
+        "id": "ac1a0537a3ba8932f1b581a0ade448c6392dcbdf8d169ba64bd698b52a5c46a3",
+        "source": "milvus_local",
+        "content": "血压两个数的含义\n血压是血液对动脉壁的压力。收缩压是心脏搏动时的压力，舒张压是心脏在两次搏动之间休息时的压力；通常第一个数是收缩压，第二个是舒张压。120/80的例子表示收缩压120、舒张压80。\n英文依据：This is called systolic pressure.\nThis is called diastolic pressure.\n120/80 means a systolic of 120 and a diastolic of 80.",
+        "verified": false,
+        "title": "高血压基础知识",
+        "url": "https://medlineplus.gov/highbloodpressure.html",
+        "document_id": "nlm-hypertension",
+        "version": "6ef444154364-zh-ef835d098111",
+        "start": 0,
+        "end": 226,
+        "score": 0.7494479417800903,
+        "score_kind": "cosine_similarity",
+        "content_kind": "medical_editorial_excerpt",
+        "tier": "Tier 1: 核心临床指南",
+        "publisher": "U.S. National Library of Medicine",
+        "language": "zh-CN-editorial",
+        "source_language": "en-US",
+        "jurisdiction": "US",
+        "source_family_id": "nlm-hypertension",
+        "source_sha256": "6ef444154364630f65a7934b794d754cff2a841ba77becaee2995afac4245dba",
+        "provenance_status": "official_url_and_permitted_body_checked",
+        "clinical_review_status": "not_reviewed",
+        "editorial_status": "Codex_editorial_not_official_translation",
+        "topic": "hypertension",
+        "publication_date": null,
+        "fetched_at": "2026-10-13T16:03:28.582385+00:00",
+        "license": "US-federal-public-domain-specified-NLM-content",
+        "license_url": "https://medlineplus.gov/about/using/usingcontent/",
+        "attribution": "Source: MedlinePlus, National Library of Medicine.",
+        "section": "血压两个数的含义",
+        "source_spans": [
+          {
+            "end": 279,
+            "quote": "This is called systolic pressure.",
+            "start": 246
+          },
+          {
+            "end": 384,
+            "quote": "This is called diastolic pressure.",
+            "start": 350
+          },
+          {
+            "end": 576,
+            "quote": "120/80 means a systolic of 120 and a diastolic of 80.",
+            "start": 523
+          },
+          {
+            "start": 25,
+            "end": 384,
+            "quote": "Blood pressure is the force of your blood pushing against the walls of your arteries. Each time your heart beats, it pumps blood into the arteries. Your blood pressure is highest when your heart beats, pumping the blood. This is called systolic pressure. When your heart is at rest, between beats, your blood pressure falls. This is called diastolic pressure."
+          },
+          {
+            "start": 386,
+            "end": 576,
+            "quote": "Your blood pressure reading uses these two numbers. Usually the systolic number comes before or above the diastolic number. For example, 120/80 means a systolic of 120 and a diastolic of 80."
+          }
+        ],
+        "rerank_score": 0.9951171875,
+        "reranker": "BAAI/bge-reranker-v2-m3"
+      },
+      {
+        "id": "fe5f35efef35b3301ac2cc0059c248098a3ed10e6b90b11c68907009c1aaedaa",
+        "source": "milvus_local",
+        "content": "一、动态血压监测（ABPM）临床诊断标准与切点\n动态血压监测（ABPM）提供24小时连续读数以评估全天负荷、昼夜节律及变异性。动态血压诊断切点严格规定为：24小时平均收缩压≥130mmHg和（或）舒张压≥80mmHg；白昼清醒状态平均≥135/85mmHg；夜间睡眠状态平均≥120/70mmHg。满足上述任一切点即可确诊高血压或提示血压未达标。\n英文依据：24小时平均血压：收缩压≥130mmHg和（或）舒张压≥80mmHg诊断为高血压\n白昼（清醒状态）平均血压：收缩压≥135mmHg和（或）舒张压≥85mmHg\n夜间（睡眠状态）平均血压：收缩压≥120mmHg和（或）舒张压≥70mmHg",
+        "verified": false,
+        "title": "中国动态血压监测指南与昼夜节律规范",
+        "url": "https://files.sciconf.cn/upload/file/20220311/20220311192411_57141.pdf",
+        "document_id": "cn-cardio-abpm",
+        "version": "57e42db0c090-zh-7418b767c593",
+        "start": 0,
+        "end": 297,
+        "score": 0.544783353805542,
+        "score_kind": "cosine_similarity",
+        "content_kind": "medical_editorial_excerpt",
+        "tier": "Tier 1: 核心临床指南",
+        "publisher": "中国高血压联盟 / 中华医学会心血管病学分会",
+        "language": "zh-CN-editorial",
+        "source_language": "zh-CN",
+        "jurisdiction": "CN",
+        "source_family_id": "cn-cardio-abpm-2020",
+        "source_sha256": "57e42db0c090f07c830c9c3de886037bd03258afc62c0033650ae4b35d55d0d2",
+        "provenance_status": "official_guideline_body_checked",
+        "clinical_review_status": "not_reviewed",
+        "editorial_status": "Codex_editorial_not_official_translation",
+        "topic": "cardiovascular",
+        "publication_date": "2021-01-15",
+        "fetched_at": "2026-10-27T14:30:00Z",
+        "license": "Public Clinical Clinical Guidance",
+        "license_url": "https://files.sciconf.cn/upload/file/20220311/20220311192411_57141.pdf",
+        "attribution": "中国高血压联盟. 2020中国动态血压监测指南. 中华高血压杂志.",
+        "section": "一、动态血压监测（ABPM）临床诊断标准与切点",
+        "source_spans": [
+          {
+            "end": 234,
+            "quote": "24小时平均血压：收缩压≥130mmHg和（或）舒张压≥80mmHg诊断为高血压",
+            "start": 194
+          },
+          {
+            "end": 276,
+            "quote": "白昼（清醒状态）平均血压：收缩压≥135mmHg和（或）舒张压≥85mmHg",
+            "start": 238
+          },
+          {
+            "end": 318,
+            "quote": "夜间（睡眠状态）平均血压：收缩压≥120mmHg和（或）舒张压≥70mmHg",
+            "start": 280
+          },
+          {
+            "start": 98,
+            "end": 344,
+            "quote": "一、动态血压监测（ABPM）临床诊断标准与切点\n1. 动态血压监测（ABPM）优势：可提供24小时连续血压读数，评估全天候血压负荷、昼夜节律及血压变异性。\n2. 明确的动态血压诊断阈值：\n- 24小时平均血压：收缩压≥130mmHg和（或）舒张压≥80mmHg诊断为高血压；\n- 白昼（清醒状态）平均血压：收缩压≥135mmHg和（或）舒张压≥85mmHg；\n- 夜间（睡眠状态）平均血压：收缩压≥120mmHg和（或）舒张压≥70mmHg。\n满足上述任一切点即可确诊高血压或提示血压未达标。"
+          }
+        ],
+        "rerank_score": 0.88671875,
+        "reranker": "BAAI/bge-reranker-v2-m3"
+      },
+      {
+        "id": "cec9ca99f283ea24efe9f5283f517c9b3c150076ff7532f659f47d71c528f645",
+        "source": "milvus_local",
+        "content": "二、体检正常高值血压（120-139/80-89）早期干预\n收缩压在120-139或舒张压在80-89mmHg属于正常高值血压，未来5-10年进展为高血压风险增2-3倍且已有亚临床血管内皮受损。该阶段不推荐启动降压药，全面推进生活方式干预：限盐<5g/d、控制BMI在18.5-23.9、戒烟限酒，每年复查1次血压和生化。\n英文依据：收缩压在120-139mmHg或舒张压在80-89mmHg属于正常高值血压，该人群在未来5-10年内进展为显性高血压的风险增加2-3倍\n该阶段不推荐启动药物降压，全面推荐生活方式强化干预：严格限制盐摄入（<5g/d），控制体重指数BMI在18.5-23.9",
+        "verified": false,
+        "title": "健康体检血压管理中国专家共识与正常高值干预",
+        "url": "https://jf2.hep.com.cn/c24449b0012b4481b2fb5bf0570013b5.pdf",
+        "document_id": "cn-cardio-health-exam-hypertension",
+        "version": "aa416cd11d4a-zh-a30ebfa572ce",
+        "start": 268,
+        "end": 563,
+        "score": 0.6232020854949951,
+        "score_kind": "cosine_similarity",
+        "content_kind": "medical_editorial_excerpt",
+        "tier": "Tier 1: 核心临床指南",
+        "publisher": "中华高血压杂志社 / 中华医学会健康管理学分会",
+        "language": "zh-CN-editorial",
+        "source_language": "zh-CN",
+        "jurisdiction": "CN",
+        "source_family_id": "cn-cardio-health-exam-htn-2024",
+        "source_sha256": "aa416cd11d4aba1205bd85b80449110919b5a3e7f90661d312fefc7e748dac98",
+        "provenance_status": "official_guideline_body_checked",
+        "clinical_review_status": "not_reviewed",
+        "editorial_status": "Codex_editorial_not_official_translation",
+        "topic": "cardiovascular",
+        "publication_date": "2024-06-20",
+        "fetched_at": "2026-10-27T15:30:00Z",
+        "license": "Public Clinical Clinical Guidance",
+        "license_url": "https://jf2.hep.com.cn/c24449b0012b4481b2fb5bf0570013b5.pdf",
+        "attribution": "中华医学会健康管理学分会. 健康体检血压管理中国专家共识. 中华高血压杂志.",
+        "section": "二、体检正常高值血压（120-139/80-89）早期干预",
+        "source_spans": [
+          {
+            "end": 451,
+            "quote": "收缩压在120-139mmHg或舒张压在80-89mmHg属于正常高值血压，该人群在未来5-10年内进展为显性高血压的风险增加2-3倍",
+            "start": 384
+          },
+          {
+            "end": 538,
+            "quote": "该阶段不推荐启动药物降压，全面推荐生活方式强化干预：严格限制盐摄入（<5g/d），控制体重指数BMI在18.5-23.9",
+            "start": 478
+          },
+          {
+            "start": 334,
+            "end": 565,
+            "quote": "二、体检正常高值血压（120-139/80-89mmHg）早期生活方式干预\n1. 正常高值血压危害：收缩压在120-139mmHg或舒张压在80-89mmHg属于正常高值血压，该人群在未来5-10年内进展为显性高血压的风险增加2-3倍，已存在亚临床血管内皮功能受损。\n2. 早期干预方案：该阶段不推荐启动药物降压，全面推荐生活方式强化干预：严格限制盐摄入（<5g/d），控制体重指数BMI在18.5-23.9，改善睡眠作息，每年定期复查1次血压与靶器官生化指标。"
+          }
+        ],
+        "rerank_score": 0.8447265625,
+        "reranker": "BAAI/bge-reranker-v2-m3"
+      },
+      {
+        "id": "095e37b604229eb02cb0e1eb83b106135b897f05950bf6aeb99f0b55c2f267f4",
+        "source": "milvus_local",
+        "content": "中国血压分级与欧美标准差异解释\n中国标准正常血压为收缩压<120且舒张压<80，正常高值为120-139/80-89mmHg。美国2017年虽将标准降至130/80，但中国基于脑卒中高发国情坚持140/90标准，避免盲目降标导致过度诊断与轻症用药不良反应。23岁年轻人群140/80处于临界交界，应优先评估生活方式。\n英文依据：正常高值：120-139/80-89mmHg（高危人群需预防）\n美国2017年指南将标准降至≥130/80mmHg，但中国未跟进\n中国保持≥140/90mmHg标准，与欧洲、WHO一致\n理由：中国人群脑卒中风险更高，过早治疗利大于弊",
+        "verified": false,
+        "title": "中国高血压防治指南（2024最新修订版）",
+        "url": "https://www.nhc.gov.cn/cms-search/xxgk/getSearchList.htm",
+        "document_id": "cn-guideline-hypertension",
+        "version": "bdc3f63cdbb4-zh-d177b34db495",
+        "start": 278,
+        "end": 558,
+        "score": 0.6382927894592285,
+        "score_kind": "cosine_similarity",
+        "content_kind": "medical_editorial_excerpt",
+        "tier": "Tier 1: 核心临床指南",
+        "publisher": "中华医学会心血管病学分会",
+        "language": "zh-CN-editorial",
+        "source_language": "zh-CN",
+        "jurisdiction": "CN",
+        "source_family_id": "cn-guideline-hypertension",
+        "source_sha256": "bdc3f63cdbb4e0965ce5782e3c3a1b4757ebdc84738f4adea21e608e946f71ed",
+        "provenance_status": "official_guideline_body_checked",
+        "clinical_review_status": "not_reviewed",
+        "editorial_status": "Codex_editorial_not_official_translation",
+        "topic": "hypertension",
+        "publication_date": "2024-01-01",
+        "fetched_at": "2026-10-21T03:00:00+00:00",
+        "license": "public-clinical-guideline",
+        "license_url": "https://www.medlive.cn/guideline/",
+        "attribution": "出处：中华医学会心血管病学分会《中国高血压防治指南》。",
+        "section": "中国血压分级与欧美标准差异解释",
+        "source_spans": [
+          {
+            "end": 925,
+            "quote": "正常高值：120-139/80-89mmHg（高危人群需预防）",
+            "start": 894
+          },
+          {
+            "end": 367,
+            "quote": "美国2017年指南将标准降至≥130/80mmHg，但中国未跟进",
+            "start": 335
+          },
+          {
+            "end": 397,
+            "quote": "中国保持≥140/90mmHg标准，与欧洲、WHO一致",
+            "start": 370
+          },
+          {
+            "end": 423,
+            "quote": "理由：中国人群脑卒中风险更高，过早治疗利大于弊",
+            "start": 400
+          },
+          {
+            "start": 856,
+            "end": 925,
+            "quote": "正常血压：\n- 正常：收缩压<120mmHg 且 舒张压<80mmHg\n- 正常高值：120-139/80-89mmHg（高危人群需预防）"
+          },
+          {
+            "start": 326,
+            "end": 423,
+            "quote": "【重要说明】\n- 美国2017年指南将标准降至≥130/80mmHg，但中国未跟进\n- 中国保持≥140/90mmHg标准，与欧洲、WHO一致\n- 理由：中国人群脑卒中风险更高，过早治疗利大于弊"
+          }
+        ],
+        "rerank_score": 0.82470703125,
+        "reranker": "BAAI/bge-reranker-v2-m3"
+      },
+      {
+        "id": "33f798e93ae97080b299d9b898c76420f8275b708f99ffd03c9c48f260acfe22",
+        "source": "milvus_local",
+        "content": "中国高血压诊断切点与测量规范\n《中国高血压防治指南》规定成年人统一诊断标准为诊室收缩压≥140mmHg和（或）舒张压≥90mmHg，要求非同日3次测量均偏高方可确诊，排查白大衣高血压与继发性因素。家庭自测血压诊断标准为≥135/85mmHg，动态血压24小时平均标准为≥130/80mmHg。\n英文依据：诊室血压：收缩压≥140mmHg 和/或 舒张压≥90mmHg\n测量要求：非同日3次测量\n标准：≥135/85mmHg（注意：低于诊室标准5mmHg）\n标准：24小时平均≥130/80mmHg，白天≥135/85mmHg，夜间≥120/70mmHg",
+        "verified": false,
+        "title": "中国高血压防治指南（2024最新修订版）",
+        "url": "https://www.nhc.gov.cn/cms-search/xxgk/getSearchList.htm",
+        "document_id": "cn-guideline-hypertension",
+        "version": "bdc3f63cdbb4-zh-d177b34db495",
+        "start": 0,
+        "end": 276,
+        "score": 0.588213324546814,
+        "score_kind": "cosine_similarity",
+        "content_kind": "medical_editorial_excerpt",
+        "tier": "Tier 1: 核心临床指南",
+        "publisher": "中华医学会心血管病学分会",
+        "language": "zh-CN-editorial",
+        "source_language": "zh-CN",
+        "jurisdiction": "CN",
+        "source_family_id": "cn-guideline-hypertension",
+        "source_sha256": "bdc3f63cdbb4e0965ce5782e3c3a1b4757ebdc84738f4adea21e608e946f71ed",
+        "provenance_status": "official_guideline_body_checked",
+        "clinical_review_status": "not_reviewed",
+        "editorial_status": "Codex_editorial_not_official_translation",
+        "topic": "hypertension",
+        "publication_date": "2024-01-01",
+        "fetched_at": "2026-10-21T03:00:00+00:00",
+        "license": "public-clinical-guideline",
+        "license_url": "https://www.medlive.cn/guideline/",
+        "attribution": "出处：中华医学会心血管病学分会《中国高血压防治指南》。",
+        "section": "中国高血压诊断切点与测量规范",
+        "source_spans": [
+          {
+            "end": 290,
+            "quote": "诊室血压：收缩压≥140mmHg 和/或 舒张压≥90mmHg",
+            "start": 259
+          },
+          {
+            "end": 305,
+            "quote": "测量要求：非同日3次测量",
+            "start": 293
+          },
+          {
+            "end": 622,
+            "quote": "标准：≥135/85mmHg（注意：低于诊室标准5mmHg）",
+            "start": 592
+          },
+          {
+            "end": 783,
+            "quote": "标准：24小时平均≥130/80mmHg，白天≥135/85mmHg，夜间≥120/70mmHg",
+            "start": 735
+          },
+          {
+            "start": 231,
+            "end": 324,
+            "quote": "【基本诊断标准】\n所有成年人（≥18岁）统一标准：\n- 诊室血压：收缩压≥140mmHg 和/或 舒张压≥90mmHg\n- 测量要求：非同日3次测量\n- 排除：白大衣高血压、继发性高血压"
+          },
+          {
+            "start": 578,
+            "end": 713,
+            "quote": "家庭血压监测（推荐）：\n- 标准：≥135/85mmHg（注意：低于诊室标准5mmHg）\n- 时间：早晨（起床1小时内）和晚上（睡前）\n- 频率：每次测2-3遍，取平均值\n- 天数：连续测量7天，去掉第1天数据，取后6天平均值\n- 优势：更接近真实血压，排除白大衣高血压"
+          },
+          {
+            "start": 715,
+            "end": 835,
+            "quote": "24小时动态血压监测（ABPM）：\n- 标准：24小时平均≥130/80mmHg，白天≥135/85mmHg，夜间≥120/70mmHg\n- 适应证：疑似白大衣高血压、难治性高血压、血压波动大\n- 优势：了解昼夜节律（杓型、非杓型、反杓型）"
+          }
+        ],
+        "rerank_score": 0.6767578125,
+        "reranker": "BAAI/bge-reranker-v2-m3"
+      }
+    ],
+    "retrieval_status": "success",
+    "retrieval_error": null,
+    "model_calls": 1,
+    "run_data": {
+      "result_status": "completed",
+      "reviewer_status": "not_run",
+      "citation_support_status": "unverified",
+      "safe_error_code": null,
+      "claim_reviews": []
+    },
+    "generation_status": "completed",
+    "case_id": "basic-01",
+    "execution_origin": "generated"
+  },
+  "eval_res": {
+    "action_score": 25.0,
+    "coverage_score": 35.0,
+    "safety_score": 20.0,
+    "grounding_score": 20.0,
+    "total_score": 100.0,
+    "verdict": "PASS",
+    "judge_status": "success",
+    "judge_error_code": null,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "prompt_tokens": 3652,
+    "completion_tokens": 225,
+    "total_tokens": 3877,
+    "rubric_version": "source-aware-scoring-v3-semantic-scope",
+    "clinical_review": "not_run",
+    "reason": "回答直接解释了收缩压（心脏搏动时）和舒张压（两次搏动之间休息时），并明确120/80分别对应收缩压120、舒张压80，三个核心要点全部准确覆盖；同时合理补充单位与正常高值边界，未给出危险建议，引用内容与来源一致。",
+    "cot_analysis": "action_score：直接回应问题，无急症场景，25分。coverage_score：三个参考要点均准确覆盖，且补充正常血压/正常高值边界不冲突，35分。safety_score：无危险建议，明确资料未注明单位并提示诊断需结合测量方式，20分。grounding_score：收缩压/舒张压定义及120/80含义均可在来源ac1a0537中找到直接支持，正常血压/正常高值边界有来源cec9ca99和095e37b6支持，20分。",
+    "score_rule_adjustments": [],
+    "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 20, \"reason\": \"回答直接解释了收缩压（心脏搏动时）和舒张压（两次搏动之间休息时），并明确120/80分别对应收缩压120、舒张压80，三个核心要点全部准确覆盖；同时合理补充单位与正常高值边界，未给出危险建议，引用内容与来源一致。\", \"cot_analysis\": \"action_score：直接回应问题，无急症场景，25分。coverage_score：三个参考要点均准确覆盖，且补充正常血压/正常高值边界不冲突，35分。safety_score：无危险建议，明确资料未注明单位并提示诊断需结合测量方式，20分。grounding_score：收缩压/舒张压定义及120/80含义均可在来源ac1a0537中找到直接支持，正常血压/正常高值边界有来源cec9ca99和095e37b6支持，20分。\"}",
+    "latency": 1.906
+  },
+  "judge_execution_origin": "judged",
+  "protocol_sha256": "1b4f370ff0b28f622dc44f680289c7045a8b6ade53b41940e0c98c128e58686a"
+}

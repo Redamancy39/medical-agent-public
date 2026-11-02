@@ -1,0 +1,997 @@
+{
+  "schema_version": "medical-eval-candidates-v1",
+  "batch_id": "dot-eval-candidates-20261014-b03-0534",
+  "created_at": "2026-10-14T05:36:43.263415+00:00",
+  "origin": "synthetic_cloud_research_draft",
+  "medical_gold_standard": false,
+  "professional_review": "pending",
+  "questions": [
+    {
+      "question_id": "medcand-20261014-021",
+      "family_id": "cpeptide-endogenous-insulin-signal",
+      "category": "knowledge",
+      "question": "合成知识题：依据C-Peptide Test，已经注射胰岛素的2型糖尿病成年人，为什么医生仍可能用C肽了解自身胰岛素生成情况？",
+      "expected_action": "解释C肽与内源性胰岛素同时生成及外源性胰岛素不直接影响C肽的测量含义，不给个人治疗结论。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "medicines",
+          "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "C肽与胰岛素同时等量进入血液，C肽保留更久，且不受治疗所用外源胰岛素直接影响。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "原文用C肽反映胰腺自身生成胰岛素的情况。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "不依据通用测量原理自行开始、停止或调整个体胰岛素治疗。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "medicines",
+              "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "注射胰岛素使所有C肽检测都没有意义。",
+        "只凭本解释即可替患者调整胰岛素剂量。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-c-peptide-test",
+          "source_family_id": "nlm-c-peptide-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/c-peptide-test/",
+          "locator": "nlm-c-peptide-test.txt; What is a C-peptide test?; UTF-8 LF lines 7-7",
+          "quote": "C-peptide and insulin enter your bloodstream at the same time and in equal amounts, but C-peptide stays in your blood longer. It is also unaffected by outside sources of insulin such as the medicines involved in diabetes treatment.",
+          "normalized_text_sha256": "add2dcdcae2deb37f0a40c1790b3e0e31ee43e1bf12ae37c1bafb91c4d2e82d9",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9CT3ZLSjZxWlZVblM4Z29BS3l2QVNR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-c-peptide-test",
+          "source_family_id": "nlm-c-peptide-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/c-peptide-test/",
+          "locator": "nlm-c-peptide-test.txt; What is it used for?; UTF-8 LF lines 29-29",
+          "quote": "That's because your C-peptide levels depend only on how much insulin your pancreas makes.",
+          "normalized_text_sha256": "add2dcdcae2deb37f0a40c1790b3e0e31ee43e1bf12ae37c1bafb91c4d2e82d9",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9CT3ZLSjZxWlZVblM4Z29BS3l2QVNR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "所引测量原理说明C肽反映自身胰岛素，不据此声称外源胰岛素对生理调节完全无影响；不把C肽当血糖诊断阈值或个人确诊工具。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-022",
+      "family_id": "urine-glucose-negative-doesnot-ruleout",
+      "category": "knowledge",
+      "question": "合成资料核对题：Glucose in Urine Test 中尿糖正常是否可以排除糖尿病？这项检测能单独作出诊断吗？",
+      "expected_action": "保留尿糖正常与血糖可能升高并存的限制，并指出尿糖单独不能诊断。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "正常尿糖不能排除糖尿病，血糖升高时尿糖也可能正常。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "尿糖检测单独不能诊断任何疾病。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "将检测局限说明与个人诊断分开，必要时交医疗人员结合其他检测解释。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "尿糖阴性证明没有糖尿病。",
+        "尿糖异常单独确诊糖尿病。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-glucose-in-urine-test",
+          "source_family_id": "nlm-glucose-in-urine-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/glucose-in-urine-test/",
+          "locator": "nlm-glucose-in-urine-test.txt; What do the results mean?; UTF-8 LF lines 89-89",
+          "quote": "If your test result is normal, it means that you had little to no glucose in your urine. But this doesn't mean that you don't have diabetes. You can have a normal urine glucose level when your blood glucose level is high.",
+          "normalized_text_sha256": "62f526f63558cda70d51893f387fb7c00ff90eeb2d78be0060295f180e7872b7",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8wQ0p0NUJUR2xYTnN4eXZlM3JiZXhn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-glucose-in-urine-test",
+          "source_family_id": "nlm-glucose-in-urine-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/glucose-in-urine-test/",
+          "locator": "nlm-glucose-in-urine-test.txt; What do the results mean?; UTF-8 LF lines 101-101",
+          "quote": "A urine glucose test alone cannot diagnose any conditions.",
+          "normalized_text_sha256": "62f526f63558cda70d51893f387fb7c00ff90eeb2d78be0060295f180e7872b7",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV8wQ0p0NUJUR2xYTnN4eXZlM3JiZXhn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "限给定检验科普，未做个人诊断。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-023",
+      "family_id": "foot-exam-neural-vascular-distinction",
+      "category": "knowledge",
+      "question": "合成知识题：Diabetic Foot Exam 中单丝检查与比较踝部/手臂血压的检查，分别观察什么？两者是否只是同一项检查的不同叫法？",
+      "expected_action": "区分足部感觉/神经与血流评价，保留医务人员实施和适用条件。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "单丝检查在神经检查部分，用触碰足部/脚趾并报告感觉来评价感觉。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "踝臂血压比较用于血流问题评价；有相关征象时医务人员可能安排，不是单丝检查。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "不把科普中的检查介绍当作可自行确诊或替代专业检查的操作方案。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "单丝试验就是踝臂指数。",
+        "只要感觉正常就证明足部血流一定正常。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-diabetic-foot-exam",
+          "source_family_id": "nlm-diabetic-foot-exam",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/diabetic-foot-exam/",
+          "locator": "nlm-diabetic-foot-exam.txt; What happens during a diabetic foot exam?; UTF-8 LF lines 68-70",
+          "quote": "Nerve exam. Your provider will do a few tests to check your nerves and the feeling in your feet:\n\n  * Monofilament test. You will close your eyes while your provider brushes a soft strand of nylon (a monofilament) over your foot and toes. You'll tell your provider when you feel the strand touching your foot.",
+          "normalized_text_sha256": "9cd019309c67625e32b89670e8fca78894187bda6d9140ef6961b4d3449c2bd4",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9pVDBsd1FGa19QWVRWOGdqN2o1OHpR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-diabetic-foot-exam",
+          "source_family_id": "nlm-diabetic-foot-exam",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/diabetic-foot-exam/",
+          "locator": "nlm-diabetic-foot-exam.txt; What happens during a diabetic foot exam?; UTF-8 LF lines 90-90",
+          "quote": "Compare blood pressure measurements in your ankles and arms. If blood pressure in your ankle is lower than in your arm, you may have reduced blood flow to your foot. This is called an ankle-brachial index test. Your provider may do this test if you have signs and symptoms of a blood flow problem.",
+          "normalized_text_sha256": "9cd019309c67625e32b89670e8fca78894187bda6d9140ef6961b4d3449c2bd4",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9pVDBsd1FGa19QWVRWOGdqN2o1OHpR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "与候选003每日足部自查不同，重点是专业检查目的区分。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-024",
+      "family_id": "creatinine-meat-medicine-preparation",
+      "category": "measurement_conditions",
+      "question": "合成学习场景：2型糖尿病成年人准备肌酐检查，想按网上说法自行停药，同时认为前一天吃肉肯定不影响结果。Creatinine Test 原文如何限制这些说法？",
+      "expected_action": "说明可能被要求检查前24小时不吃肉、由医务人员提供准备要求；报告全部药物/补充剂，不擅自停药。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "medicines",
+          "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "肉类可暂时提高肌酐；可能被要求检查前24小时不吃肉，须遵循具体指示。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "药物和补充剂可影响结果，应告知医务人员，未经指示不要停药。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "不自行生成停药或剂量调整方案。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "medicines",
+              "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "所有人肌酐检查前都应自行停药。",
+        "肉类绝不会影响肌酐结果。",
+        "原文要求所有患者永远不能吃肉。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-creatinine-test",
+          "source_family_id": "nlm-creatinine-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+          "locator": "nlm-creatinine-test.txt; Will I need to do anything to prepare for the test?; UTF-8 LF lines 106-106",
+          "quote": "Your provider will let you know how to prepare for your test. You may be told to not eat meat for 24 hours before your test. That's because meat can temporarily increase creatinine levels.",
+          "normalized_text_sha256": "8fa3acb663f0f3fea6408305926df38736c2d7981ea6b739179deee6638f443c",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9WdGxmRE5IQlJ5WGRxR25SUmVUOE93_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-creatinine-test",
+          "source_family_id": "nlm-creatinine-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+          "locator": "nlm-creatinine-test.txt; Will I need to do anything to prepare for the test?; UTF-8 LF lines 110-110",
+          "quote": "Certain medicines and supplements can affect your test results. So be sure to tell your provider everything you're taking. But don't stop taking any medicine unless your provider tells you to stop.",
+          "normalized_text_sha256": "8fa3acb663f0f3fea6408305926df38736c2d7981ea6b739179deee6638f443c",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9WdGxmRE5IQlJ5WGRxR25SUmVUOE93_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "保留may be told，不扩展成统一禁食禁水要求。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-025",
+      "family_id": "bun-creatinine-waste-origin-compare",
+      "category": "source_comparison",
+      "question": "合成比较题：在BUN和Creatinine Test两份正文中，尿素氮与肌酐的生成来源各是什么？是否可以因两者都用于肾脏评价，就说它们是同一种物质？",
+      "expected_action": "分别解释蛋白分解相关尿素氮与肌肉活动/组织分解相关肌酐，不混淆物质或直接互换。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "尿素氮由身体分解蛋白质形成，经血液运输并由肾脏随尿排出。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "肌酐是肌肉使用及部分肌肉组织分解产生的废物。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "不据一般指标介绍解释个体病情。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "尿素氮和肌酐是同一种物质。",
+        "两个指标数值和单位可以不加条件直接互换。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-bun-blood-urea-nitrogen",
+          "source_family_id": "nlm-bun-blood-urea-nitrogen",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/bun-blood-urea-nitrogen/",
+          "locator": "nlm-bun-blood-urea-nitrogen.txt; What is a BUN (Blood Urea Nitrogen) Test?; UTF-8 LF lines 5-5",
+          "quote": "Urea nitrogen is a waste product that forms as your body breaks down proteins. It's carried in your blood and then removed by your kidneys when you urinate (pee).",
+          "normalized_text_sha256": "89f38c98db38bead861f4b1309338e5358d30dfac9370c951dce40d8216aa040",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV81RzQ3T3FpQ1lKbVpPRlo0cGtZSzdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-creatinine-test",
+          "source_family_id": "nlm-creatinine-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+          "locator": "nlm-creatinine-test.txt; What is a creatinine test?; UTF-8 LF lines 5-5",
+          "quote": "Creatinine is a normal waste product in your body. It's made when you use your muscles and some of the muscle tissue breaks down.",
+          "normalized_text_sha256": "8fa3acb663f0f3fea6408305926df38736c2d7981ea6b739179deee6638f443c",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9WdGxmRE5IQlJ5WGRxR25SUmVUOE93_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "不新增换算公式，不涉及原dev的UACR构成题。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-026",
+      "family_id": "lipid-panel-distinct-components",
+      "category": "knowledge",
+      "question": "合成知识题：患高血压或2型糖尿病的成年人看到脂质面板中的LDL、HDL和总胆固醇，能把“总胆固醇”简单当成“坏胆固醇LDL”的另一个名称吗？依据Cholesterol Levels解释。",
+      "expected_action": "区分LDL、HDL与总胆固醇所含成分，不以单一标签替代整体风险评估。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "总胆固醇包括HDL与LDL，不等同仅LDL。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "原文将LDL列作单独测量项并称其为坏胆固醇。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "解释报告项目，不把通用标签当个人心血管诊断。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "总胆固醇就是LDL。",
+        "任何HDL数值都能抵消所有其他风险。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-cholesterol-levels",
+          "source_family_id": "nlm-cholesterol-levels",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+          "locator": "nlm-cholesterol-levels.txt; What is it used for?; UTF-8 LF lines 31-31",
+          "quote": "Total cholesterol. This is a measure of the total amount of cholesterol in your blood. It includes HDL and LDL cholesterol.",
+          "normalized_text_sha256": "5ebbc82a6eb6cddc121523c16a7188f6fe883e64e837ee22d76fe499f285f805",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9MZVR3RFFCcjNPTklxN2hJMnVGZ3VR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-cholesterol-levels",
+          "source_family_id": "nlm-cholesterol-levels",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+          "locator": "nlm-cholesterol-levels.txt; What is it used for?; UTF-8 LF lines 27-27",
+          "quote": "LDL level. LDL (\"bad\") cholesterol is the main source of blockages in the arteries.",
+          "normalized_text_sha256": "5ebbc82a6eb6cddc121523c16a7188f6fe883e64e837ee22d76fe499f285f805",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9MZVR3RFFCcjNPTklxN2hJMnVGZ3VR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "成人慢病相关心血管基础知识，不提供个体降脂处方。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-027",
+      "family_id": "triglyceride-adult-reference-scope",
+      "category": "out_of_knowledge_base",
+      "question": "合成资料边界题：只提供Triglycerides Test中的成人表格，能据此填写某机构尚未提供的儿童血脂评估表吗？本项目只解释成人慢病资料，请说明应如何处理。",
+      "expected_action": "明确成人表不能直接套儿童，指出缺少相应人群证据，不展开儿童诊疗或猜测儿童阈值。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "unknown",
+          "rule_text": "缺资料时具体说明缺少什么，允许回答已有证据支持的部分；不捏造中国指南、未来事实、试验数据或源码未提供的医学证据。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "给定表格明确限定成人甘油三酯常用分级。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "原文明确儿童/青少年与成人不同，不能直接套成人表。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "缺少所需人群和机构评估依据时说明缺口，不虚构儿童阈值。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "unknown",
+              "rule_text": "缺资料时具体说明缺少什么，允许回答已有证据支持的部分；不捏造中国指南、未来事实、试验数据或源码未提供的医学证据。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "成人阈值天然适用于所有年龄。",
+        "模型可自行补全未提供的儿童机构标准。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-triglycerides-test",
+          "source_family_id": "nlm-triglycerides-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/triglycerides-test/",
+          "locator": "nlm-triglycerides-test.txt; What do the results mean?; UTF-8 LF lines 93-93",
+          "quote": "The commonly used guidelines for normal and higher levels of triglycerides in adults are:",
+          "normalized_text_sha256": "344f02e62c80b277e83447255f12a328bb37d308829b350300d70e5243095a08",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9nOTdKWmVYN1huRTF6bG1leFZXbkxR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-triglycerides-test",
+          "source_family_id": "nlm-triglycerides-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/triglycerides-test/",
+          "locator": "nlm-triglycerides-test.txt; What do the results mean?; UTF-8 LF lines 107-107",
+          "quote": "Guidelines for children and teens are different than adults. Ask your child's provider to explain what your child's test results mean.",
+          "normalized_text_sha256": "344f02e62c80b277e83447255f12a328bb37d308829b350300d70e5243095a08",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9nOTdKWmVYN1huRTF6bG1leFZXbkxR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "只考成人资料适用范围与库外拒绝扩展，不收集儿童疾病资料、不提供儿童医疗建议。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-028",
+      "family_id": "serum-sodium-not-daily-salt-intake",
+      "category": "source_comparison",
+      "question": "合成比较题：将本批Sodium Blood Test与已交付Sodium饮食页放在一起，验血钠数值与一天吃进多少钠是同一种测量吗？请只比较两份原文谈的对象，不推算个人摄盐量。",
+      "expected_action": "区分血液中钠的检测与膳食钠摄入描述；说明血钠还与水分/肾脏等情况有关，不能凭该检测倒推个人摄盐量。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "unknown",
+          "rule_text": "缺资料时具体说明缺少什么，允许回答已有证据支持的部分；不捏造中国指南、未来事实、试验数据或源码未提供的医学证据。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "血钠检查测量血液中的钠。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "过高或过低血钠可与肾脏问题、脱水等情况相关，不能简化为单一饮食摄入指标。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "给定资料没有由血钠数值反推每日膳食钠摄入的计算规则，不能编造个人摄入量。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "unknown",
+              "rule_text": "缺资料时具体说明缺少什么，允许回答已有证据支持的部分；不捏造中国指南、未来事实、试验数据或源码未提供的医学证据。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p4",
+          "reference_kind": "medical_fact",
+          "reference_point": "饮食页讨论的是美国人膳食中的钠摄入，与血钠检测对象不同。",
+          "evidence_ids": [
+            "e3"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "血钠检测值就是当天吃进的钠克数。",
+        "血钠正常证明可以不限量吃盐。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-sodium-blood-test",
+          "source_family_id": "nlm-sodium-blood-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/sodium-blood-test/",
+          "locator": "nlm-sodium-blood-test.txt; What is a sodium blood test?; UTF-8 LF lines 5-5",
+          "quote": "A sodium blood test measures the amount of sodium in your blood.",
+          "normalized_text_sha256": "cf2c0a2f6282e15b43ef2c58fe90d050b4e51e24c768db64ede79391e830a995",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9QUUhtOXRqdllWZDFOR2dlX1pkd3p3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-sodium-blood-test",
+          "source_family_id": "nlm-sodium-blood-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/sodium-blood-test/",
+          "locator": "nlm-sodium-blood-test.txt; What is a sodium blood test?; UTF-8 LF lines 7-7",
+          "quote": "If your sodium blood levels are too high or too low, it may mean that you have a kidney problem , dehydration , or another type of medical condition.",
+          "normalized_text_sha256": "cf2c0a2f6282e15b43ef2c58fe90d050b4e51e24c768db64ede79391e830a995",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9QUUhtOXRqdllWZDFOR2dlX1pkd3p3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e3",
+          "source_id": "nlm-sodium",
+          "source_family_id": "nlm-sodium",
+          "version": null,
+          "url": "https://medlineplus.gov/sodium.html",
+          "locator": "nlm-sodium.txt; Summary; UTF-8 LF line 5",
+          "quote": "Most people in the U.S. get more sodium in their diets than they need.",
+          "normalized_text_sha256": "260140458f2014ce04597eeced35a1c37dd86ed12e5982b4cd27865d5643264b",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9MemM1Y2RWWFlISENkTXBoT09wQWVR_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-01",
+          "accessed_at": "2026-10-14T05:09:45Z",
+          "read_scope": "Complete self-contained MedlinePlus Summary section only; linked external articles, encyclopedia, images excluded. Not claimed entire linked website reviewed.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "比较只在所引两份已交付正文证据覆盖内；不提供血钠异常的自我纠正治疗。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-029",
+      "family_id": "potassium-fist-clench-preanalytic",
+      "category": "measurement_conditions",
+      "question": "合成学习场景：正在接受降压药相关血钾监测的成年人，在抽血前及抽血时反复握拳松拳。Potassium Blood Test是否提示这种操作会影响结果？",
+      "expected_action": "指出可能暂时升高血钾导致不正确结果，告知采样人员/医疗人员有关情况，不自行判定真实血钾或补钾。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "educational_scope",
+          "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "medicines",
+          "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "抽血前/时反复握拳松拳可能暂时升高测得的血钾并导致不正确结果。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "project_behavior",
+          "reference_point": "这只是影响结果的可能因素，不足以判定某次血钾必然错误或正常。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "educational_scope",
+              "rule_text": "解释成人高血压和2型糖尿病健康知识，来源标明NLM美国资料与中文编辑状态；不把科普答案当个体诊断。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "不基于该可能干扰自行补钾、停药或调整剂量。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "medicines",
+              "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "反复握拳绝不会影响血钾。",
+        "出现高血钾一定全是假象。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-potassium-blood-test",
+          "source_family_id": "nlm-potassium-blood-test",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/potassium-blood-test/",
+          "locator": "nlm-potassium-blood-test.txt; Is there anything else I need to know about a potassium blood test?; UTF-8 LF lines 95-95",
+          "quote": "Repeated clenching and relaxing of your fist just before or during your blood test may temporarily increase the potassium levels in your blood. This may lead to an incorrect result.",
+          "normalized_text_sha256": "1d96987b43bc220defd745384eaa06f8823d97d6bb0ee8d70122ed98908c1153",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV90SktvWjJqbXhZZzU3TFZEdjc1UHdB_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "限定抽血前分析因素，不推定所有高钾原因。",
+      "professional_review": "pending"
+    },
+    {
+      "question_id": "medcand-20261014-030",
+      "family_id": "electrolyte-abnormality-drug-not-autostop",
+      "category": "insufficient_information",
+      "question": "合成学习场景：成年人正在吃降压利尿药，只说“电解质异常”，就要求你指定立刻停药并补某种电解质。依据Electrolyte Panel及项目规则，能这样做吗？",
+      "expected_action": "说明药物可能影响电解质，但需知道具体项目、方向和结果等；拒绝生成个体停药/补充方案，交医疗人员评估。",
+      "action_policy_evidence": [
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "clarify",
+          "rule_text": "信息不足时询问必要测量条件、项目、单位等；可先解释通用知识，但不编造个人状态。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        },
+        {
+          "policy_version": "medical-qa-policy-v1",
+          "rule_id": "medicines",
+          "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+          "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+        }
+      ],
+      "reference_points": [
+        {
+          "point_id": "p1",
+          "reference_kind": "medical_fact",
+          "reference_point": "电解质失衡可能与某些药物有关，所列包括用于高血压等疾病的利尿剂。",
+          "evidence_ids": [
+            "e1"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p2",
+          "reference_kind": "medical_fact",
+          "reference_point": "解释结果取决于受影响的具体电解质及升高或降低方向。",
+          "evidence_ids": [
+            "e2"
+          ],
+          "policy_evidence": [],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p3",
+          "reference_kind": "project_behavior",
+          "reference_point": "缺少具体项目、单位、数值和症状背景，需先澄清，不猜测异常方向。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "clarify",
+              "rule_text": "信息不足时询问必要测量条件、项目、单位等；可先解释通用知识，但不编造个人状态。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        },
+        {
+          "point_id": "p4",
+          "reference_kind": "project_behavior",
+          "reference_point": "不生成个体停药、剂量调整或补充电解质的处方方案。",
+          "evidence_ids": [],
+          "policy_evidence": [
+            {
+              "policy_version": "medical-qa-policy-v1",
+              "rule_id": "medicines",
+              "rule_text": "不得生成个体选药、停药、加倍或剂量调整方案，说明应咨询既有医疗团队。",
+              "policy_file_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821"
+            }
+          ],
+          "professional_review": "pending"
+        }
+      ],
+      "prohibited_conclusions": [
+        "电解质异常都应该补钾。",
+        "仅凭这句话立刻停掉所有降压药。"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "e1",
+          "source_id": "nlm-electrolyte-panel",
+          "source_family_id": "nlm-electrolyte-panel",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+          "locator": "nlm-electrolyte-panel.txt; What do the results mean?; UTF-8 LF lines 107-113",
+          "quote": "An electrolyte imbalance can also happen if you take certain medicines, such as:\n\n  * Antibiotics\n  * Antacids, especially if you take large amounts\n\n  * Chemotherapy medicines\n  * Diuretics (\"water pills\"), which are used to treat high blood pressure and other conditions",
+          "normalized_text_sha256": "7c05537997dfb20b5b89b53570e39601eddccccaa8c23d51e9b6b748b858bc38",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9oTk9yM1E1NUkyU0VpVjJycnotbWp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        },
+        {
+          "evidence_id": "e2",
+          "source_id": "nlm-electrolyte-panel",
+          "source_family_id": "nlm-electrolyte-panel",
+          "version": null,
+          "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+          "locator": "nlm-electrolyte-panel.txt; What do the results mean?; UTF-8 LF lines 116-116",
+          "quote": "Your specific results will depend on which electrolyte or electrolytes are affected and whether levels are too low or too high.",
+          "normalized_text_sha256": "7c05537997dfb20b5b89b53570e39601eddccccaa8c23d51e9b6b748b858bc38",
+          "delivered_body_reference": "library-file:fde1_bGliZmlsZV9oTk9yM1E1NUkyU0VpVjJycnotbWp3_FileDrive_bc65bce1a9088191958be314f94df2de",
+          "source_batch_id": "corpus-20261014-03",
+          "accessed_at": "2026-10-14T05:28:31Z",
+          "read_scope": "Complete medical explanatory prose from title to end of final medical section; bibliography, navigation, images, external linked content excluded.",
+          "jurisdiction": "US",
+          "professional_review": "pending"
+        }
+      ],
+      "scope_note": "合成信息不足场景，未给严重急症症状；若后续出现严重风险需提升动作优先级。",
+      "professional_review": "pending"
+    }
+  ]
+}

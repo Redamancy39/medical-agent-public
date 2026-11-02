@@ -1,0 +1,592 @@
+{
+  "synthetic_only": true,
+  "business_mode": "synthetic_sql",
+  "checks": {
+    "missing_fields_pause_zero_records": true,
+    "incomplete_review_rejected": true,
+    "review_zero_records": true,
+    "old_revision_rejected": true,
+    "cross_user_confirm_rejected": true,
+    "explicit_confirm_one_batch": true,
+    "confirm_replay_one_batch": true,
+    "cancel_zero_extra_records": true,
+    "confirm_after_cancel_rejected": true,
+    "other_user_records_empty": true,
+    "refresh_preserves_state": true,
+    "single_completed": true,
+    "single_tasks": true,
+    "single_chat_replay": true,
+    "single_cross_user_run_404": true,
+    "multi_completed": true,
+    "multi_tasks": true,
+    "multi_three_roles": true,
+    "multi_chat_replay": true,
+    "multi_cross_user_run_404": true
+  },
+  "agent_cases": [
+    {
+      "topology": "single",
+      "elapsed_seconds": 5.687,
+      "result": {
+        "run_id": "c4d25b42-7ef0-4548-81c0-77f7e6e9ef3c",
+        "request_id": "20e1fbd7-fd68-41c6-84e5-b583a88281ae",
+        "session_id": "3ec9d975-89a8-4d04-a09c-848ab48caf10",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "依据本地合成资料（软件流程示例，非医学规范）：样本登记先提取项目、样本类型、数量、接收日期、存储区域五个字段；缺字段时请求补充，字段完整仅生成草稿。用户可编辑、明确确认或取消；编辑后旧确认失效。仅当明确确认且字段、权限、版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c7160-f6c8-6762-8008-ee759f2754b0",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "research_agent",
+        "model_calls": 3,
+        "tool_calls": 2,
+        "worker_iterations": 2,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+            "source": "milvus_local",
+            "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+            "verified": false,
+            "title": "合成样本登记流程",
+            "url": "local://synthetic/registration",
+            "document_id": "synthetic-registration",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 134,
+            "score": 0.7604027986526489,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.9843822121620178,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 1,
+        "distinct_agent_count": null,
+        "planned_agent_count": 1,
+        "started_task_count": null,
+        "completed_task_count": null,
+        "failed_task_count": null,
+        "blocked_task_count": null,
+        "task_results": [],
+        "evidence_status": "not_run",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "empty",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "providers": [
+        {
+          "provider": "mem0",
+          "operation": "search",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 0.9220000000204891,
+          "usage": {}
+        },
+        {
+          "provider": "deepseek",
+          "operation": "plan",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 1.327999999979511,
+          "usage": {
+            "prompt_tokens": 507,
+            "completion_tokens": 63,
+            "total_tokens": 570
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 1.0309999999590218,
+          "usage": {
+            "prompt_tokens": 1149,
+            "completion_tokens": 114,
+            "total_tokens": 1263
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 1.1869999999180436,
+          "usage": {
+            "prompt_tokens": 2387,
+            "completion_tokens": 177,
+            "total_tokens": 2564
+          }
+        }
+      ]
+    },
+    {
+      "topology": "multi",
+      "elapsed_seconds": 10.859,
+      "result": {
+        "run_id": "03dcd0f5-d8a5-4ba5-9380-1633f30e4283",
+        "request_id": "5e58314e-f407-426b-a3a0-4bf77f445827",
+        "session_id": "3f22ee26-3222-4914-8b6b-bc2b7bf2d3bb",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "本地合成资料仅为软件链路验证，非医学规范。登记流程：先提取项目、样本类型、数量、接收日期、存储区域；缺字段请求补充，齐全仅生成草稿。用户可编辑、明确确认或取消；编辑后旧确认失效。仅当明确确认且字段、权限、版本校验通过，登记服务才幂等写入演示记录；取消不得新增记录。诊断核对：必填字段与确认条件已被现有片段完整覆盖，无明显缺失，也无冲突；未列出字段格式与取值细则，属未说明。边界：登记确认状态不入长期画像；检索失败与无命中须分别显示。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c7161-5e64-685a-8009-2f3451334fb1",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "consultation_agent",
+        "model_calls": 7,
+        "tool_calls": 3,
+        "worker_iterations": 0,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+            "source": "milvus_local",
+            "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+            "verified": false,
+            "title": "合成样本登记流程",
+            "url": "local://synthetic/registration",
+            "document_id": "synthetic-registration",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 134,
+            "score": 0.6722559332847595,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.46695929765701294,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+            "source": "milvus_local",
+            "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+            "verified": false,
+            "title": "合成会话与记忆流程",
+            "url": "local://synthetic/conversation",
+            "document_id": "synthetic-conversation",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 132,
+            "score": 0.5694100260734558,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.0024146628566086292,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+            "source": "milvus_local",
+            "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+            "verified": false,
+            "title": "合成检索与证据规则",
+            "url": "local://synthetic/evidence",
+            "document_id": "synthetic-evidence",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 145,
+            "score": 0.4764866828918457,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 9.589351975591853e-05,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 3,
+        "distinct_agent_count": 3,
+        "planned_agent_count": 3,
+        "started_task_count": 3,
+        "completed_task_count": 3,
+        "failed_task_count": 0,
+        "blocked_task_count": 0,
+        "task_results": [
+          {
+            "task_id": "consult_registration",
+            "agent_id": "consultation_agent",
+            "description": "解释登记流程的整体步骤，包括介绍、编辑、确认和取消，明确用户需要了解的关键节点和注意事项；严格使用本地合成资料，不虚构。",
+            "depends_on": [],
+            "status": "completed",
+            "answer": "以下依据本地合成资料（仅验证软件链路，非医学规范）：\n\n登记流程关键步骤：\n1) 介绍：先提取项目、样本类型、数量、接收日期、存储区域；缺字段时请求补充，字段完整仅生成草稿，尚未登记。\n2) 编辑：用户可修改草稿；编辑后原确认失效，需重新确认。\n3) 确认：仅\"明确确认\"有效；需字段、权限与版本校验均通过，登记服务才幂等写入演示记录。\n4) 取消：取消不得新增记录。\n\n注意事项：草稿不等于登记成功；确认状态不写入长期记忆；检索无相似案例命中。诊断方面无法进一步执行——本角色仅解释流程。",
+            "sources": [
+              {
+                "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+                "source": "milvus_local",
+                "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+                "verified": false,
+                "title": "合成样本登记流程",
+                "url": "local://synthetic/registration",
+                "document_id": "synthetic-registration",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 134,
+                "score": 0.7452032566070557,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.8497229814529419,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5826600790023804,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.0040757120586931705,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+                "source": "milvus_local",
+                "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+                "verified": false,
+                "title": "合成检索与证据规则",
+                "url": "local://synthetic/evidence",
+                "document_id": "synthetic-evidence",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 145,
+                "score": 0.44992750883102417,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.00010428609675727785,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 2,
+            "tool_calls": 2,
+            "worker_iterations": 2,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "research_local_sop",
+            "agent_id": "research_agent",
+            "description": "检索本地合成SOP资料，提取与登记流程相关的规则、必填字段说明和确认条件，并保留来源以便引用。",
+            "depends_on": [],
+            "status": "completed",
+            "answer": "本地合成SOP（软件流程资料，非医学规范）要点：登记时先提取项目、样本类型、数量、接收日期、存储区域；缺字段即请求补充，全部齐全也仅生成草稿。用户可编辑、明确确认或取消；编辑后旧确认自动失效。仅当明确确认且字段、权限、版本校验均通过，登记服务才幂等写入演示记录；取消不得新增记录。会话侧：JWT确认身份，按用户与会话隔离保存完整消息，最近十轮用完整对话、更早转摘要；长期记忆只存用户明确偏好，登记确认状态不入长期画像，检索失败与无命中须分别显示。所有合成资料仅用于验证软件链路。",
+            "sources": [
+              {
+                "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+                "source": "milvus_local",
+                "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+                "verified": false,
+                "title": "合成样本登记流程",
+                "url": "local://synthetic/registration",
+                "document_id": "synthetic-registration",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 134,
+                "score": 0.6722559332847595,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.46695929765701294,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5694100260734558,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.0024146628566086292,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+                "source": "milvus_local",
+                "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+                "verified": false,
+                "title": "合成检索与证据规则",
+                "url": "local://synthetic/evidence",
+                "document_id": "synthetic-evidence",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 145,
+                "score": 0.4764866828918457,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 9.589351975591853e-05,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 2,
+            "tool_calls": 1,
+            "worker_iterations": 2,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "diagnose_fields_rules",
+            "agent_id": "diagnostic_agent",
+            "description": "根据research_local_sop的检索结果，检查登记环节的必填字段与确认条件是否完整、符合SOP规则，列出缺失项或冲突点并引用来源。",
+            "depends_on": [
+              "research_local_sop"
+            ],
+            "status": "completed",
+            "answer": "依据本地合成SOP（软件流程资料，非医学规范）核对登记环节：\n\n应含要素：①必填字段：项目、样本类型、数量、接收日期、存储区域；②确认条件：字段齐全、权限校验、版本校验均通过，且用户明确确认。\n\n完整性检查：上述字段与条件在现有片段中均被覆盖，未发现明显缺失项；SOP未列出各字段的格式、取值范围等细化校验规则，属未说明而非已确认缺失。\n\n冲突点：无。语义一致（缺字段即请求补充，齐全仅生成草稿；编辑后旧确认失效；仅明确确认且三项校验通过才幂等写入；取消不得新增记录）。另需注意：登记确认状态不写入长期画像，检索失败与无命中须分别显示，此为边界一致性要求。",
+            "sources": [
+              {
+                "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+                "source": "milvus_local",
+                "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+                "verified": false,
+                "title": "合成样本登记流程",
+                "url": "local://synthetic/registration",
+                "document_id": "synthetic-registration",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 134,
+                "score": 0.6722559332847595,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.46695929765701294,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5694100260734558,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.0024146628566086292,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+                "source": "milvus_local",
+                "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+                "verified": false,
+                "title": "合成检索与证据规则",
+                "url": "local://synthetic/evidence",
+                "document_id": "synthetic-evidence",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 145,
+                "score": 0.4764866828918457,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 9.589351975591853e-05,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 1,
+            "tool_calls": 0,
+            "worker_iterations": 1,
+            "refined": false,
+            "started": true
+          }
+        ],
+        "evidence_status": "passed",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "empty",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "providers": [
+        {
+          "provider": "mem0",
+          "operation": "search",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 0.4220000000204891,
+          "usage": {}
+        },
+        {
+          "provider": "deepseek",
+          "operation": "plan",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 1.5,
+          "usage": {
+            "prompt_tokens": 524,
+            "completion_tokens": 209,
+            "total_tokens": 733
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 0.9839999999385327,
+          "usage": {
+            "prompt_tokens": 1045,
+            "completion_tokens": 127,
+            "total_tokens": 1172
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 0.7660000000614673,
+          "usage": {
+            "prompt_tokens": 1170,
+            "completion_tokens": 60,
+            "total_tokens": 1230
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 2.172000000020489,
+          "usage": {
+            "prompt_tokens": 2323,
+            "completion_tokens": 320,
+            "total_tokens": 2643
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 2.0,
+          "usage": {
+            "prompt_tokens": 1937,
+            "completion_tokens": 319,
+            "total_tokens": 2256
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 2.109999999869615,
+          "usage": {
+            "prompt_tokens": 2370,
+            "completion_tokens": 341,
+            "total_tokens": 2711
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "synthesize",
+          "status": "completed",
+          "http_status": 200,
+          "safe_error_code": null,
+          "elapsed_seconds": 1.8129999998491257,
+          "usage": {
+            "prompt_tokens": 3600,
+            "completion_tokens": 288,
+            "total_tokens": 3888
+          }
+        }
+      ]
+    }
+  ],
+  "mode": "cloud_real",
+  "session_id": "bddf395e-eaef-4e75-8eaa-da21212ff871",
+  "status": "passed",
+  "records": [
+    {
+      "id": "16ab6457-34ca-4dd4-93b8-9cbfbd174755",
+      "draft_id": "eb18b812-7081-4d07-94bd-9081a45a4171",
+      "revision": 3,
+      "fields": {
+        "project": "DEMO-A",
+        "sample_type": "血液",
+        "quantity": 4,
+        "received_at": "2026-10-13",
+        "storage": "DEMO-B 区域",
+        "note": "合成HTTP验收"
+      },
+      "sample_ids": [
+        "SYN-eb18b812-7081-4d07-94bd-9081a45a4171-01",
+        "SYN-eb18b812-7081-4d07-94bd-9081a45a4171-02",
+        "SYN-eb18b812-7081-4d07-94bd-9081a45a4171-03",
+        "SYN-eb18b812-7081-4d07-94bd-9081a45a4171-04"
+      ],
+      "created_at": "2026-10-13T14:54:53.002441+00:00",
+      "business_mode": "synthetic_sql"
+    }
+  ],
+  "requests": {
+    "deepseek": 10,
+    "mem0": 2,
+    "pubmed": 0
+  },
+  "token_usage": {
+    "prompt_tokens": 17012,
+    "completion_tokens": 2018,
+    "total_tokens": 19030
+  }
+}

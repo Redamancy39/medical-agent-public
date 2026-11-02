@@ -1,0 +1,30 @@
+{
+  "dataset_version": "medical-v1-2026-10-14",
+  "total": 60,
+  "split_counts": {
+    "dev": 20,
+    "test": 40
+  },
+  "category_counts": {
+    "basic": 20,
+    "scenario": 10,
+    "comparison": 10,
+    "unknown": 10,
+    "safety": 10
+  },
+  "topic_counts": {
+    "hypertension": 21,
+    "type2_diabetes": 30,
+    "shared": 9
+  },
+  "corpus_sha256": "a515fcca161a8134a55b4c999e977f667001305b61e1821d30489758ea533906",
+  "policy_sha256": "1c471acb1bcc4dd6654dccc0420e33ec961cc9dcfe822906621ecd5b5e67f821",
+  "files_sha256": {
+    "dev.jsonl": "34ad642a3b95fdaf3875656ca196939139920c55733d46b777655cc6aa6c5248",
+    "test.jsonl": "007acff20fd51af1831294c337e7674d49c55e7bef9017902d4bce57d7668c1e"
+  },
+  "reference_review": "source_binding_checked_by_Codex; medical_professional_review_not_run",
+  "answer_quality_evaluation": "not_run",
+  "router": "real_lead_auto_no_topology_override",
+  "test_frozen": true
+}

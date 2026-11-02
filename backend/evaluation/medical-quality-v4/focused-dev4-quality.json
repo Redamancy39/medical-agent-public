@@ -1,0 +1,252 @@
+{
+  "summary": {
+    "final_same_code_dev_cases": 4,
+    "reference_points": 12,
+    "reference_coverage_counts": {
+      "met": 11,
+      "partial": 1
+    },
+    "result_status_counts": {
+      "completed": 2,
+      "partial": 2
+    },
+    "reviewer_completed": 4,
+    "trace_input_hash_checks": 8,
+    "trace_source_anchor_checks": 578,
+    "final_validator_replay_of_successful_real_batches": 16,
+    "final_pilot_http_attempts": 41,
+    "final_pilot_tokens": 438017,
+    "dev20_same_code_full_retest": "not_run",
+    "test40_evaluation": "not_run",
+    "clinical_review": "not_run",
+    "clinical_accuracy": null
+  },
+  "rows": [
+    {
+      "case_id": "basic-07",
+      "pilot": "20261015-002102-e3360d1f",
+      "run_id": "082ccd48-00b1-4297-b242-f14ad09612f2",
+      "answer": "2型糖尿病通常由胰岛素抵抗开始。胰岛素抵抗时细胞对胰岛素反应不正常。胰岛素帮助把葡萄糖从血液送入细胞。胰岛素抵抗时葡萄糖留在血里、进入细胞不足。随时间身体无法制造足够胰岛素，血糖水平升高。2型糖尿病的常见相关因素包括超重或肥胖。2型糖尿病的常见相关因素包括不进行身体活动。2型糖尿病的常见相关因素包括遗传和家族史。2型糖尿病的具体判断与治疗请咨询医疗人员。\n资料来自美国NLM/MedlinePlus，中文为编辑解释，未经过医学专业复核；不替代个体诊断或用药建议。",
+      "answer_sha256": "8b488203ff8f7055d0f8302dcc9558490b685583776c72d5dc7ca07e66f2d9d8",
+      "result_status": "completed",
+      "safe_error_code": null,
+      "reviewer_status": "completed",
+      "model_calls": 8,
+      "review_rewrite_count": 1,
+      "actual_plan": {
+        "tasks": [
+          {
+            "task_id": "explain_ir",
+            "agent_id": "consultation_agent",
+            "description": "用通俗语言解释2型糖尿病中胰岛素抵抗的概念、在发病中的作用，并核对资料范围（仅美国NLM成人高血压与2型糖尿病科普，非中国指南或个人处方）。",
+            "depends_on": [],
+            "require_sources": true
+          }
+        ],
+        "reason": "单一概念性健康知识解释，目标唯一、无需前置检索或独立证据拆分，由一个任务完成解释并自行核对资料边界。"
+      },
+      "reference_points": [
+        {
+          "index": 0,
+          "text": "细胞对胰岛素响应不正常",
+          "coverage_status": "met",
+          "previous_L_coverage": "met",
+          "previous_M_coverage": "missing"
+        },
+        {
+          "index": 1,
+          "text": "葡萄糖难以进入细胞、血中升高",
+          "coverage_status": "met",
+          "previous_L_coverage": "met",
+          "previous_M_coverage": "missing"
+        },
+        {
+          "index": 2,
+          "text": "随时间胰岛素生成也可能不足",
+          "coverage_status": "met",
+          "previous_L_coverage": "missing",
+          "previous_M_coverage": "missing"
+        }
+      ],
+      "note": "定义、葡萄糖进入细胞不足/血中升高及随时间分泌可能不足均保留，审核分类未阻断。",
+      "professional_review": "pending",
+      "review_trace_rounds": 2
+    },
+    {
+      "case_id": "basic-16",
+      "pilot": "20261015-002102-e3360d1f",
+      "run_id": "50f4b19c-c2a8-491b-85d6-a9109b523f7e",
+      "answer": "UACR把尿中白蛋白水平与尿中肌酐水平相比较。UACR以比值形式报告。正常肾脏最多只让微量白蛋白通过滤过屏障进入尿液。肾脏受损时，大量白蛋白可能进入尿液。尿中白蛋白的异常量可能是肾病早期征象。早期肾病通常没有任何症状。该比值可帮助医护判断身体是否正以加快的速度排出白蛋白。糖尿病、高血压者为肾病风险较高人群。UACR用于筛查高风险但无症状者的肾病迹象，并监测已确诊的肾病。UACR可采随机尿、晨尿／定时尿或24小时尿样本。UACR采样与复查的具体安排应按医护说明进行。UACR不等同于直接测GFR。UACR结果异常时，通常需要更多检查来确认结果。UACR结果不能用于自行分期或确诊。以上内容非官方译文、未经医学专业复核。以上内容不作中国指南依据。以上内容不作个人诊断、处方、停药、剂量依据。库外内容未知。\n资料来自美国NLM/MedlinePlus，中文为编辑解释，未经过医学专业复核；不替代个体诊断或用药建议。",
+      "answer_sha256": "2ef2e5add8a66479ad381233d667ad01ed58cc6ec9eb82a59f7ec8ec6dce4674",
+      "result_status": "completed",
+      "safe_error_code": null,
+      "reviewer_status": "completed",
+      "model_calls": 11,
+      "review_rewrite_count": 1,
+      "actual_plan": {
+        "tasks": [
+          {
+            "task_id": "explain_uacr",
+            "agent_id": "consultation_agent",
+            "description": "解释UACR（尿白蛋白/肌酐比值）这一尿检指标主要比较哪两项、以何单位比值形式报告，以及为何该指标能反映早期肾损伤（如肾小球滤过屏障早期改变、尿白蛋白轻度升高的临床意义）。说明其适用人群与常见用途，并明确资料范围与局限：仅基于美国NLM成人高血压和2型糖尿病科普，不作为中国指南或个人诊断、处方依据，不能据此判断个体病情。",
+            "depends_on": [],
+            "require_sources": true
+          }
+        ],
+        "reason": "用户询问UACR这一单一指标的比较对象及与早期肾病的机制关联，属于对医学概念的解释性澄清，可由一个consultation_agent任务完成检索、解释与范围核对；因涉及医学事实，要求提供来源。无前置依赖、无急迫风险。"
+      },
+      "reference_points": [
+        {
+          "index": 0,
+          "text": "比较尿白蛋白与肌酐",
+          "coverage_status": "met",
+          "previous_L_coverage": "met",
+          "previous_M_coverage": "met"
+        },
+        {
+          "index": 1,
+          "text": "异常白蛋白漏出可能提示早期肾病",
+          "coverage_status": "met",
+          "previous_L_coverage": "partial",
+          "previous_M_coverage": "met"
+        },
+        {
+          "index": 2,
+          "text": "早期肾病可能没有症状",
+          "coverage_status": "met",
+          "previous_L_coverage": "met",
+          "previous_M_coverage": "missing"
+        }
+      ],
+      "note": "比較尿白蛋白与肌酐、异常可能提示早期肾病及早期通常无症状均保留；排出速率与更多检查确认也保留。",
+      "professional_review": "pending",
+      "review_trace_rounds": 2
+    },
+    {
+      "case_id": "scenario-06",
+      "pilot": "20261015-002318-89f19327",
+      "run_id": "8e1d9782-a571-48ad-9a18-c420a3b1a2c6",
+      "answer": "不能确定是否“一定”需要禁食。是否需要空腹取决于检查的是HbA1c还是空腹血糖，两者准备方式不同。HbA1c检测通常不需要空腹。空腹血糖检测需要空腹。空腹血糖检测的空腹时间一般为8–12小时。空腹血糖检测期间只可喝白水。空腹血糖检测前应避免口香糖、吸烟和运动。空腹的具体时长以医护指示为准。并非所有血糖检查都要空腹。应先联系开单机构确认检查项目和准备说明。资料为美国NLM科普的编辑摘述，非中国指南。该资料不能替代个人医嘱。\n部分内容缺少充分的原文或项目规则支持，已省略；如需更完整解释，请补充相关原文或向医护核对。\n资料来自美国NLM/MedlinePlus，中文为编辑解释，未经过医学专业复核；不替代个体诊断或用药建议。",
+      "answer_sha256": "6964c332fb2d5f382e10b927ee656ed5cdd3a4e02f2d4e7d89ff483a6a413adf",
+      "result_status": "partial",
+      "safe_error_code": "REVIEW_SUPPORT_INCOMPLETE",
+      "reviewer_status": "completed",
+      "model_calls": 12,
+      "review_rewrite_count": 1,
+      "actual_plan": {
+        "tasks": [
+          {
+            "task_id": "clarify_and_prep",
+            "agent_id": "consultation_agent",
+            "description": "向用户澄清：抽血项目未知时无法确定禁食要求；说明HbA1c与空腹血糖在进食要求上的差异，并建议先向开单机构确认检查项目与准备说明。",
+            "depends_on": [],
+            "require_sources": false
+          },
+          {
+            "task_id": "verify_scope",
+            "agent_id": "diagnostic_agent",
+            "description": "核查所引用资料（美国NLM成人高血压与2型糖尿病科普）对HbA1c与空腹血糖检查准备的覆盖范围与适用边界，标明不能替代中国指南或个人医嘱。",
+            "depends_on": [],
+            "require_sources": true
+          }
+        ],
+        "reason": "用户核心需求是澄清“未知抽血项目时的禁食要求”这一健康知识问题，属单一概念澄清，交由consultation_agent解释并给出确认路径；同时引用资料范围需核对适用边界，故并列一个有来源的核查任务。不属于急迫风险，无需单独就医提示任务。"
+      },
+      "reference_points": [
+        {
+          "index": 0,
+          "text": "先确认检测项目和医护指示",
+          "coverage_status": "met",
+          "previous_L_coverage": "met",
+          "previous_M_coverage": "met"
+        },
+        {
+          "index": 1,
+          "text": "空腹要求不同",
+          "coverage_status": "met",
+          "previous_L_coverage": "met",
+          "previous_M_coverage": "met"
+        },
+        {
+          "index": 2,
+          "text": "不自行要求所有验血都空腹",
+          "coverage_status": "met",
+          "previous_L_coverage": "met",
+          "previous_M_coverage": "met"
+        }
+      ],
+      "note": "先确认项目/医护要求、空腹要求不同且并非所有检测都要空腹；题外具体药物扩展不支持部分被删除。",
+      "professional_review": "pending",
+      "review_trace_rounds": 2
+    },
+    {
+      "case_id": "comparison-06",
+      "pilot": "20261015-002318-89f19327",
+      "run_id": "25e30056-3733-4995-a555-4a265a81cc61",
+      "answer": "HbA1c反映过去约2–3个月的平均血糖。HbA1c是过去2–3个月血糖平均水平的汇总。居家检测测的是当时那一刻的血糖水平。居家血糖检测属即时点值。HbA1c来自葡萄糖与红细胞内血红蛋白的结合。居家检测的单次数值只代表当时那个时点。贫血等影响红细胞的情况会使HbA1c不准确。肾衰竭会影响HbA1c结果。肝病会影响HbA1c结果。HbA1c不用于诊断1型糖尿病，但可用于监测血糖水平。HbA1c可用于筛查或诊断2型糖尿病。HbA1c可用于筛查或诊断糖尿病前期。HbA1c用于监测糖尿病总体控制情况。指尖血糖用于日常即时监测，检查频率应询问医疗团队。低血糖可危险，应尽快处理。以上依据美国NLM科普资料编辑摘述。以上内容不包括中国指南。\n部分内容缺少充分的原文或项目规则支持，已省略；如需更完整解释，请补充相关原文或向医护核对。\n资料来自美国NLM/MedlinePlus，中文为编辑解释，未经过医学专业复核；不替代个体诊断或用药建议。",
+      "answer_sha256": "2fa2bc67148b9624b7afafe2c4c341ba22a923f8a0f29755d9172fa3f7f7855b",
+      "result_status": "partial",
+      "safe_error_code": "REVIEW_SUPPORT_INCOMPLETE",
+      "reviewer_status": "completed",
+      "model_calls": 10,
+      "review_rewrite_count": 1,
+      "actual_plan": {
+        "tasks": [
+          {
+            "task_id": "hba1c-vs-smbg-timescale",
+            "agent_id": "consultation_agent",
+            "description": "依据美国 NLM 糖尿病科普资料，解释糖化血红蛋白(HbA1c)与指尖血糖各自反映的时间尺度与生理含义，说明二者为何不能简单互换及各自用途，并声明资料范围不包括中国指南或个体化医疗决策，不给出个人诊断或用药建议。",
+            "depends_on": [],
+            "require_sources": true
+          }
+        ],
+        "reason": "用户仅提出一个概念性、单一主题的问题（HbA1c 与指尖血糖的时间尺度差异及其不可互换的原因），属于健康知识解释，不需要拆分为检索、解释、核查三路。知识范围限定为美国 NLM 成人糖尿病科普，由单个 Worker 一并检索、解释并说明资料范围与安全边界即可。"
+      },
+      "reference_points": [
+        {
+          "index": 0,
+          "text": "HbA1c为数月平均",
+          "coverage_status": "met",
+          "previous_L_coverage": "missing",
+          "previous_M_coverage": "met"
+        },
+        {
+          "index": 1,
+          "text": "指尖为检测时点",
+          "coverage_status": "met",
+          "previous_L_coverage": "missing",
+          "previous_M_coverage": "met"
+        },
+        {
+          "index": 2,
+          "text": "用途不同并需医疗团队选择",
+          "coverage_status": "partial",
+          "previous_L_coverage": "partial",
+          "previous_M_coverage": "partial"
+        }
+      ],
+      "note": "两种时间窗和用途/频率核对保留；互换原因的概括被过严拒绝，具体由医疗团队选择检测未明确，第三要点仍partial。",
+      "professional_review": "pending",
+      "review_trace_rounds": 2
+    }
+  ],
+  "recovered_native_review_failures": [
+    {
+      "case_id": "basic-16",
+      "round": 2,
+      "batch": 2,
+      "recorded_diagnostic": {
+        "stage": "review_again",
+        "code": "REVIEW_MEDICAL_EVIDENCE_REQUIRED"
+      },
+      "format_repair": false,
+      "offline_analysis": {
+        "basis": "replay_saved_typed_output_with_final_validator_not_rewriting_original_diagnostic",
+        "code": "REVIEW_MEDICAL_EVIDENCE_REQUIRED",
+        "local_index": 1,
+        "global_index": 11,
+        "text": "UACR不等同于直接测GFR。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-14T06:32:24Z",
+  "original_files_compared_byte_for_byte_to_original_zip": 36,
+  "all_original_files_unchanged": true,
+  "test_semantics_read_by_this_integrity_check": false,
+  "handoff_files_schema_validated": 12,
+  "candidate_batches_schema_validated": 6,
+  "candidate_questions": 60,
+  "unique_question_ids": 60,
+  "all_validated_json_under_256000_bytes": true,
+  "medical_professional_review": "pending",
+  "note": "Original test file was compared as opaque bytes only. Structural validation is not medical validation, correctness measurement, or local receipt confirmation. Corpus delivery totals must be determined from actual final readback receipts."
+}

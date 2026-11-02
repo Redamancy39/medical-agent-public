@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-10-14T06:20:11.948Z",
+  "page_id": "page_6952833f7ff8819189a31b3dd75cc556",
+  "sequence": 24,
+  "blocks": [
+    {
+      "id": "616c04fa-8661-479d-b409-e6606e6b534a",
+      "kind": "markdown",
+      "markdown": "## 2026-10-14 本地接收回执（批次L，截至正文批次02）",
+      "hash": "e40d0b93b96ef7d963545e78353d235beeaec3f7b84491a9960650dd690f2044",
+      "metadata": {}
+    },
+    {
+      "id": "7af01a0d-dd12-40fb-8d62-79bb4a2e76dc",
+      "kind": "markdown",
+      "markdown": "本地实际接收截至台账序号12的正文批次01/02：18份UTF-8 LF文本、17个新增来源族，正文SHA-256全部通过；8份JSON本地原始字节hash与云端回读一致。两批dev20审查共60项已通过medical-handoff-v1保存，状态staged_for_review，原dev/test/manifest和正式语料未改。",
+      "hash": "df462c66cbfa9c6b0c3b4b96ce7ca9a040bd9e584d713dc55e337a20c7b55d61",
+      "metadata": {}
+    },
+    {
+      "id": "9cb96576-da82-4845-812a-46e83138912e",
+      "kind": "markdown",
+      "markdown": "首批10候选题/31要点已另存，基本字段、正文hash/quote和policy一致性已核对；完整候选schema、跨冻结题集家族隔离、专业复核和独立许可核对仍未验收。所有正文停在候选区，不Embedding、不入正式Milvus、不用于本批模型评测。既有7条元数据不重复计为新正文或新发现。",
+      "hash": "eb103b278e44eca7acca2a246ba299f10ead64b5f9538d33c00b81e5466e5eb3",
+      "metadata": {}
+    },
+    {
+      "id": "da6d9a17-3366-4d1f-b4f7-0492faeec048",
+      "kind": "markdown",
+      "markdown": "本地截止批次02为20基线+17新增=37来源族。最新台账序号20报告批次06累计72/100，这是Dot云端报告；后续03–06尚未本地接收/验收。Dot继续自主收集和保存交付即可，后续按增量核对并在目标阶段冻结新版后统一向量化。test40暂停，专业复核pending。此回执未修改日程、未发送Dot主对话消息。\n",
+      "hash": "8f1e44900fd996ea3ecb89334e6e1e3b13b200aa95cd9a1d538be31e5bb5d5ac",
+      "metadata": {}
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "records": 6,
+  "distinct_questions": 2,
+  "answer_and_reason_csv_consistency": "passed",
+  "final_claim_offsets_checked": 40,
+  "original_quote_anchors_checked": 44,
+  "anchor_validation": "passed",
+  "professional_review": "not_run",
+  "code_snapshot_sha256": "32140c38e98d01d3e720cb86d9e20ab79e59d178c5c04090cf67b59a0c3cac2b",
+  "requested_models": [
+    "deepseek-chat"
+  ],
+  "response_models": [
+    "deepseek-flash"
+  ],
+  "actual_llm_calls": 27,
+  "usage_totals": {
+    "generate": {
+      "attempts": 6,
+      "known_token_subtotal": 97634,
+      "unknown_token_attempts": 0,
+      "total_tokens": 97634
+    },
+    "judge": {
+      "attempts": 6,
+      "known_token_subtotal": 16620,
+      "unknown_token_attempts": 0,
+      "total_tokens": 16620
+    }
+  }
+}

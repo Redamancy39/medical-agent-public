@@ -1,0 +1,18 @@
+{
+  "batch_id": "corpus-20261014-10",
+  "professional_review": "pending",
+  "items": [
+    {
+      "source_id": "cdc-diabetes-medicine-literacy",
+      "issue": "The source lists questions to ask pharmacist; it does not supply a universal missed-dose, overdose, interaction or storage answer. Do not invent such answers."
+    },
+    {
+      "source_id": "cdc-diabetes-distress",
+      "issue": "Week-or-two persistence wording is supportive education, not diagnosis or a wait requirement for acute danger. Care/support conditions retained."
+    },
+    {
+      "source_id": "cdc-diabetes-care-team",
+      "issue": "US roles, program availability and eye/hearing timing not a China guideline or legal scope-of-practice determination."
+    }
+  ]
+}

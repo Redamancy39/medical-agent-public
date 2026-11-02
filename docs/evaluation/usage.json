@@ -1,0 +1,11 @@
+{
+  "requests_all_G_attempts": {
+    "deepseek": 92,
+    "mem0": 4,
+    "pubmed": 0
+  },
+  "deepseek_tokens_all_G_attempts": 194193,
+  "paired_real_reports": 4,
+  "http_reports": 2,
+  "billing": "not_queried"
+}

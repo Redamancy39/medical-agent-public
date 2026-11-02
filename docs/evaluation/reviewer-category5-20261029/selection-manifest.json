@@ -1,0 +1,14 @@
+{
+  "source": "backend/evaluation/medical-v1/dev.jsonl",
+  "source_sha256": "34ad642a3b95fdaf3875656ca196939139920c55733d46b777655cc6aa6c5248",
+  "selected_ids": [
+    "basic-01",
+    "scenario-01",
+    "comparison-01",
+    "unknown-05",
+    "safety-01"
+  ],
+  "selection_rule": "One per existing development category, chosen before generation. Unknown uses unnamed-drug case to avoid dependence on a historical corpus-scope assumption.",
+  "new_challenge_questions_created": 0,
+  "execution_status": "not_run_superseded_by_user_selected_historical_seven_categories"
+}

@@ -1,0 +1,310 @@
+{
+  "schema_version": "medical-source-review-digest-v1",
+  "created_at": "2026-10-14T06:34:16Z",
+  "status": "pending_professional_review",
+  "purpose": "Consolidate already recorded original-source conflicts, scope limits and pending professional decisions; not new dev/test review or answer key.",
+  "classification_note": "citation_gap is not medical error. Conditional/date/region/device differences are not automatically contradictions. The observed same-page140mg/dL overlap remains an internal boundary inconsistency, but correct clinical threshold awaits professional adjudication.",
+  "clinical_rule_quarantined_source_ids": [
+    "cdc-diabetes-testing",
+    "cdc-hypertension-risk"
+  ],
+  "baseline_unresolved": "Existing dev HbA1c >6.5% versus ≥6.5% difference retained pending professional adjudication; baseline untouched.",
+  "groups": [
+    {
+      "batch_id": "corpus-20261014-04",
+      "review_file": "pending_evidence_conflicts.json",
+      "library_references": [
+        "library-file:fde1_bGliZmlsZV9MUXgwU1FtRWZDUWw3cnpTVEZGU1V3_FileDrive_bc65bce1a9088191958be314f94df2de"
+      ],
+      "items": [
+        {
+          "conflict_id": "cgm-fingerstick-frequency-001",
+          "type": "scope_or_version_mismatch",
+          "status": "pending_professional_adjudication",
+          "topic": "CGM finger-stick checking frequency and purpose",
+          "sources": [
+            {
+              "source_id": "cdc-manage-blood-sugar",
+              "url": "https://www.cdc.gov/diabetes/treatment/",
+              "locator": "Checking blood sugar / How do I check my blood sugar?",
+              "quote": "If you use a CGM, you'll still need to test daily with a blood sugar meter.",
+              "date_note": "Header May 15, 2024; footer May 14, 2024, semantics unlabelled."
+            },
+            {
+              "source_id": "niddk-continuous-glucose-monitoring",
+              "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/continuous-glucose-monitoring",
+              "locator": "Types of CGMs; What issues could you have while using a continuous glucose monitor?",
+              "quote": "For some CGM models, you may need to do a finger-stick test",
+              "date_note": "Last reviewed June 2023; not publication date."
+            }
+          ],
+          "issue": "CDC states daily meter verification. NIDDK qualifies calibration by model and safety comparison by circumstances. Verification and calibration are not identical actions; no direct contradiction or source error is adjudicated.",
+          "proposed_handling": "Keep both original sources unchanged. Avoid universalizing daily calibration or saying all CGMs never require finger sticks. Require device/model, purpose, symptoms and manufacturer instructions before a device-specific recommendation. Medical professional review must resolve applicability.",
+          "professional_review": "pending"
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-05",
+      "review_file": "professional_review_priorities.json",
+      "library_references": [
+        "library-file:fde1_bGliZmlsZV9RdmpQTEl1dmU5ZXctYTVMSGVtY0lR_FileDrive_bc65bce1a9088191958be314f94df2de"
+      ],
+      "items": [
+        {
+          "item_id": "ketone-testing-condition-difference",
+          "type": "scope_or_version_mismatch",
+          "sources": [
+            {
+              "source_id": "cdc-manage-blood-sugar",
+              "url": "https://www.cdc.gov/diabetes/treatment/",
+              "section": "What causes high blood sugar?",
+              "short_quote": "If you're sick and your blood sugar is 240 mg/dL or above"
+            },
+            {
+              "source_id": "cdc-diabetic-ketoacidosis",
+              "url": "https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html",
+              "section": "Testing / Test for ketones",
+              "short_quote": "you're sick or your blood sugar is 250 mg/dL or above"
+            }
+          ],
+          "issue": "Both numerical threshold and conjunction differ between CDC educational pages. Preserve conditions separately, not interchangeable universal rules. DKA page also advises ketone testing when symptoms occur and immediate emergency care for listed danger signs.",
+          "suggestion": "Professional reviewer should reconcile intended populations, illness context, symptoms and action. Do not use absence of either glucose threshold to exclude an emergency."
+        },
+        {
+          "item_id": "sick-day-medication-generality",
+          "type": "scope_or_version_mismatch",
+          "source_id": "cdc-diabetes-sick-days",
+          "url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
+          "section": "More tips if you get sick",
+          "short_quote": "Continue taking your insulin and diabetes pills as usual.",
+          "issue": "Generic source wording does not name drug classes, dehydration, renal function or individualized sick-day plan. No opposite source has been adjudicated here.",
+          "suggestion": "Do not convert into individualized instruction to continue every medication under every illness condition; retain original and request professional review of drug-specific applicability."
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-06",
+      "review_file": "professional_review_priorities.json",
+      "library_references": [
+        "library-file:fde1_bGliZmlsZV9hMFlOaDhCVmYyN3lNT3RRNXFHN193_FileDrive_bc65bce1a9088191958be314f94df2de"
+      ],
+      "items": [
+        {
+          "id": "urine-ketones-diabetes-type-inference",
+          "priority": "high",
+          "type": "scope_or_version_mismatch",
+          "source_id": "cdc-diabetes-testing",
+          "url": "https://www.cdc.gov/diabetes/diabetes-testing/index.html",
+          "section": "When to get tested / Type 1 diabetes",
+          "short_quote": "Having ketones in your urine indicates you have type 1 diabetes instead of type 2.",
+          "comparison_url": "https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html",
+          "comparison_section": "Overview",
+          "comparison_quote": "People with type 2 diabetes can also develop DKA.",
+          "issue": "Source-scope conflict on using urine ketones to infer diabetes type. Preserve both sources. Do not infer that positive urine ketones exclude type2.",
+          "suggestion": "Quarantine type-inference excerpt from clinical-rule ingestion; professional reviewer must resolve interpretation and appropriate evidence. Do not delay emergency response to determine diabetes type."
+        },
+        {
+          "id": "two-hour-glucose-140-overlap",
+          "priority": "high",
+          "type": "contradicted_claim",
+          "source_id": "cdc-diabetes-testing",
+          "url": "https://www.cdc.gov/diabetes/diabetes-testing/index.html",
+          "section": "Types of tests / Glucose tolerance test / At 2 hours",
+          "short_quotes": [
+            "Normal: 140 mg/dL or below",
+            "Prediabetes: 140–199 mg/dL"
+          ],
+          "issue": "The same page places140 mg/dL in both normal and prediabetes ranges. This is a directly observed internal boundary inconsistency; the correct clinical boundary has not been newly adjudicated here.",
+          "suggestion": "Quarantine overlapping range from rule ingestion and seek professional correction with applicable diagnostic guideline; preserve original source wording."
+        },
+        {
+          "id": "elevated-bp-diastolic-80-boundary",
+          "priority": "high",
+          "type": "scope_or_version_mismatch",
+          "source_id": "cdc-hypertension-risk",
+          "url": "https://www.cdc.gov/high-blood-pressure/risk-factors/index.html",
+          "section": "Conditions that can increase risk / Elevated blood pressure",
+          "short_quote": "between 120/80 mm Hg and 129/80 mm Hg",
+          "comparison_url": "https://www.cdc.gov/high-blood-pressure/about/index.html",
+          "comparison_section": "Diagnosis / blood pressure category description",
+          "comparison_quote": "Systolic is 120-129 mm Hg and Diastolic is less than 80 mm Hg.",
+          "issue": "Elevated-category shorthand with diastolic80 differs from the explicit diastolic<80 condition in CDC's other page. Definitions are US-specific and pages display different dates.",
+          "suggestion": "Preserve regional/version context and quarantine classification wording until professionally adjudicated; do not apply US definition as a China guideline."
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-07",
+      "review_file": "professional_review_priorities.json",
+      "library_references": [
+        "library-file:fde1_bGliZmlsZV9FQ09XbkhhbUNveGxOeUszNkxrTlBB_FileDrive_bc65bce1a9088191958be314f94df2de"
+      ],
+      "items": [
+        {
+          "id": "cgm-frequency-extended-comparison",
+          "extends": "cgm-fingerstick-frequency-001",
+          "source_id": "cdc-continuous-glucose-monitors",
+          "url": "https://www.cdc.gov/diabetes/treatment/continuous-glucose-monitors.html",
+          "section": "Fingersticks",
+          "short_quote": "It’s important to still occasionally check your blood sugar with a fingerstick",
+          "displayed_date": "Sept. 30, 2025",
+          "comparison_url": "https://www.cdc.gov/diabetes/treatment/",
+          "comparison_section": "Checking blood sugar",
+          "comparison_quote": "you'll still need to test daily with a blood sugar meter",
+          "issue": "Same-agency educational pages differ in stated frequency. The2025 page directs readers to ask their care team how often. Date alone does not prove one page formally supersedes another. Calibration and verification remain distinct purposes.",
+          "suggestion": "Preserve source-specific conditions and dates; device-specific instructions and professional review needed. No universal daily or never-fingerstick rule."
+        },
+        {
+          "id": "lancet-disposal-container-clarification",
+          "priority": "high",
+          "source_id": "fda-diabetes-sharps-safety",
+          "url": "https://www.fda.gov/medical-devices/consumer-products/safely-using-sharps-needles-and-syringes-home-work-and-travel",
+          "section": "How to Dispose of Sharps; Importance of Safe Sharps Disposal",
+          "short_quote": "Used sharps should be immediately placed in a sharps disposal container.",
+          "comparison_source_id": "cdc-blood-sugar-monitoring",
+          "comparison_url": "https://www.cdc.gov/diabetes/diabetes-testing/monitoring-blood-sugar.html",
+          "comparison_section": "How to monitor / step7",
+          "comparison_quote": "Dispose of the lancet and strip in a trash container.",
+          "issue": "CDC wording does not specify a sharps-safe container. FDA explicitly prohibits loose sharps in household/public trash. The CDC sentence does not explicitly instruct loose disposal, so no direct contradiction is assumed.",
+          "suggestion": "Clarify safe container requirements, distinguish lancet from teststrip, and retain regional disposal requirements. Do not interpret trash container as permission for loose sharps. Independent professional review pending; no whole-source quarantine added."
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-08",
+      "review_file": "professional_review_priorities.json",
+      "library_references": [
+        "library-file:fde1_bGliZmlsZV9rOFA4cGJwaG5FSkwyMF8ySVp5N3VB_FileDrive_bc65bce1a9088191958be314f94df2de"
+      ],
+      "items": [
+        {
+          "source_id": "who-bp-device-specifications-2020",
+          "type": "scope_or_version_mismatch",
+          "locator": "Chapter5.1 Step2 /5.2, printedpp26–27",
+          "issue": "2020 original allows a light sleeve and makes date-specific statements about phone/wearable devices. Do not universally apply older device validation statements to2026 devices or merge differing cuff/clothing recommendations without conditions.",
+          "suggestion": "Retain2020 version and exact context; device-specific manufacturer instructions and current professional review required. Missing Figure6/Table7 provide no evidence in this delivery."
+        },
+        {
+          "source_id": "cdc-diabetes-shift-work",
+          "type": "scope_or_version_mismatch",
+          "locator": "Blood Sugar Monitoring",
+          "issue": "Morning is not by itself fasting; original specifies8or more hours since last meal and explicitly cautions overnight workers.",
+          "suggestion": "Reference points must retain elapsed-time/meal condition, not infer fasting from clock time."
+        },
+        {
+          "source_id": "cdc-diabetes-travel",
+          "type": "scope_or_version_mismatch",
+          "locator": "Before you go / medicine and supply storage",
+          "issue": "Airport liquid policy and device inspection recommendations are US-source context, not a verified worldwide2026 transport rule. Storage and inspection depend on medicine/device specifications.",
+          "suggestion": "Keep regional/version and manufacturer-specific conditions; no guessed dose or storage temperature."
+        },
+        {
+          "source_id": "nccih-diabetes-supplements",
+          "type": "scope_or_version_mismatch",
+          "locator": "Effectiveness and Safety; More To Consider",
+          "issue": "November2023 evidence summary includes study doses and preliminary benefits, not an endorsement or individualized safe dose.",
+          "suggestion": "Preserve weak/inconsistent evidence, interactions and no replacement of proven treatment; clinical use or updated benefit claims pending professional review."
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-09",
+      "review_file": "professional_review_priorities.json",
+      "library_references": [
+        "library-file:fde1_bGliZmlsZV9oa0I4T1pUU1J2RWFmWjkwVEFLZDVn_FileDrive_bc65bce1a9088191958be314f94df2de"
+      ],
+      "items": [
+        {
+          "source_ids": [
+            "cdc-diabetes-healthy-weight"
+          ],
+          "type": "scope_or_version_mismatch",
+          "issue": "US BMI25/30 and waist35/40inches are not Chinese population thresholds. Weightloss and lower insulin need are not instructions to self-reduce medication."
+        },
+        {
+          "source_ids": [
+            "cdc-diabetes-fiber",
+            "cdc-diabetes-digestion",
+            "cdc-diabetes-kidney-diet"
+          ],
+          "type": "scope_or_version_mismatch",
+          "issue": "General high-fiber advice differs from low-fiber advice specifically for gastroparesis; CKD stage and dialysis alter protein/potassium/fluid recommendations. These are conditional applicability differences, not direct contradictions. Fiber22–34g cites US2020–2025 guidance, not verified latestChinese standard."
+        },
+        {
+          "source_ids": [
+            "cdc-insulin-delivery-methods",
+            "cdc-diabetes-statins",
+            "cdc-diabetes-heat"
+          ],
+          "type": "scope_or_version_mismatch",
+          "issue": "General device/medicine pros/cons and need for dose adjustment are not personal dose, brand, route or drug-selection recommendations. Preserve clinician/device-specific conditions. Inhaled insulin description requires patient/type-specific review before rule use."
+        },
+        {
+          "source_ids": [
+            "cdc-diabetes-care-schedule"
+          ],
+          "type": "scope_or_version_mismatch",
+          "issue": "Candidate-only vaccine schedule needs currentversion/professional review; no contrary current vaccine source checked, so no unsupported/contradicted medical classification."
+        }
+      ]
+    },
+    {
+      "batch_id": "corpus-20261014-10",
+      "review_file": "professional_review_priorities.json",
+      "library_references": [
+        "library-file:fde1_bGliZmlsZV9fSVQ5clM3d0FMUEFEZUFpS3IwMXN3_FileDrive_bc65bce1a9088191958be314f94df2de"
+      ],
+      "items": [
+        {
+          "source_id": "cdc-diabetes-medicine-literacy",
+          "issue": "The source lists questions to ask pharmacist; it does not supply a universal missed-dose, overdose, interaction or storage answer. Do not invent such answers."
+        },
+        {
+          "source_id": "cdc-diabetes-distress",
+          "issue": "Week-or-two persistence wording is supportive education, not diagnosis or a wait requirement for acute danger. Care/support conditions retained."
+        },
+        {
+          "source_id": "cdc-diabetes-care-team",
+          "issue": "US roles, program availability and eye/hearing timing not a China guideline or legal scope-of-practice determination."
+        }
+      ]
+    }
+  ],
+  "global_controls": {
+    "professional_medical_approval": false,
+    "accuracy_rate_reported": false,
+    "gold_standard_declared": false,
+    "test40_semantics_read": false,
+    "original_knowledge_base_changed": false,
+    "automatic_clinical_ingestion_allowed": false
+  },
+  "cancelled_or_blocked_actions": [
+    {
+      "action": "Supplemental PDF read",
+      "target": "https://www.nhc.gov.cn/cms-search/downFiles/4fcbecd2c18e46baaf291bf46c2b79cd.pdf",
+      "status": "cancelled_approval_no_usable_result",
+      "result_used": false,
+      "retry_performed": false,
+      "execution_outcome": "uncertain; no usable result returned",
+      "note": "Supplemental PDF process had session2585; approval was canceled during polling, so execution extent is uncertain. No returned result used. Earlier independently read front pages are separate prior evidence, not a result of this canceled operation. No retry."
+    },
+    {
+      "action": "Shell urllib network request in initial corpus batch",
+      "target": "https://medlineplus.gov/diabetescomplications.html",
+      "status": "cancelled_uncompleted",
+      "result_used": false,
+      "note": "Subsequent accidental web open was excluded from source delivery; no further retry. Baseline copy remains unchanged."
+    }
+  ],
+  "restoration_note": "No restoration date promised. Access-control/permission problems need authorized accessible source and item-level rights evidence; no CAPTCHA or403 bypass, no repeatpermissionrequests.",
+  "source_expansion_status": "stopped_target_reached",
+  "counts": {
+    "target_eligible_families": 100,
+    "retained_families": 102,
+    "quarantined_families": 2,
+    "original_body_documents": 103,
+    "physical_body_files": 105,
+    "medical_professionally_approved": null
+  }
+}

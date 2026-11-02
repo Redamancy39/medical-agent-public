@@ -1,0 +1,56 @@
+{
+  "nccih-diabetes-supplements": {
+    "attribution": "Source: National Center for Complementary and Integrative Health, National Institutes of Health. Diabetes and Dietary Supplements: What You Need To Know. Last updated November2023. https://www.nccih.nih.gov/health/diabetes-and-dietary-supplements-what-you-need-to-know",
+    "no_endorsement": "Not an NCCIH endorsement of this project, commercial products or medical advice; not for advertising/product endorsement.",
+    "changes": "Plain-text formatting, citation-anchor and Getty image removal only. Original limitations and disclaimer retained."
+  },
+  "cdc-diabetes-nerve-damage": {
+    "attribution": "Source: CDC. Nerve Damage. https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-nerve-damage.html. Accessed2026-10-14.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "cdc-diabetes-shift-work": {
+    "attribution": "Source: CDC. Diabetes and Shift Work. https://www.cdc.gov/diabetes/articles/diabetes-shift-work.html. Accessed2026-10-14.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "cdc-diabetes-travel": {
+    "attribution": "Source: CDC. Tips for Traveling With Diabetes. https://www.cdc.gov/diabetes/about/tips-for-traveling-with-diabetes.html. Accessed2026-10-14.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "cdc-diabetes-smoking": {
+    "attribution": "Source: CDC. Diabetes and Smoking. https://www.cdc.gov/diabetes/risk-factors/diabetes-and-smoking.html. Accessed2026-10-14.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "cdc-diabetes-skin": {
+    "attribution": "Source: CDC. Diabetes and Your Skin. https://www.cdc.gov/diabetes/signs-symptoms/diabetes-and-your-skin.html. Accessed2026-10-14.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "cdc-diabetes-ear-health": {
+    "attribution": "Source: CDC. Promoting Ear Health. https://www.cdc.gov/diabetes/hcp/clinical-guidance/how-to-promote-ear-health-for-people-with-diabetes.html. Accessed2026-10-14.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "cdc-diabetes-eating-out": {
+    "attribution": "Source: CDC. Eating Out. https://www.cdc.gov/diabetes/healthy-eating/eating-out.html. Accessed2026-10-14.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "who-bp-device-specifications-2020": {
+    "attribution": "WHO technical specifications for automated non-invasive blood pressure measuring devices with cuff. Geneva: World Health Organization;2020. Licence: CC BY-NC-SA3.0IGO. Chapter5 original prose, printedpp25–29.",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/",
+    "no_endorsement": "No suggestion of WHO endorsement; WHO logo not reproduced. Current noncommercial research copy only, not commercial project clearance.",
+    "changes": "Selected chapter prose extracted to plain text; all figures and externally attributed Table7 omitted; running page headers removed. Original cross-references retained. No translated or invented replacement content.",
+    "limitations": "Missing Figure6 and Table7 cannot support any answer or clinical rule; remaining complete prose must be reviewed in its 2020 context."
+  }
+}

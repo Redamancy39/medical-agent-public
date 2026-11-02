@@ -1,0 +1,773 @@
+{
+  "benchmark_name": "Chinese Clinical Complex QA Benchmark (CC-QA-v1)",
+  "benchmark_version": "1.0.0",
+  "evaluated_at": "2026-10-27T05:54:14Z",
+  "total_cases": 20,
+  "summary": {
+    "average_score": 93.5,
+    "pass_rate_percent": 95.0,
+    "zero_tolerance_violations": 0,
+    "factuality_avg": 37.2,
+    "cutoff_precision_avg": 20.0,
+    "safety_avg": 17.5,
+    "traceability_avg": 8.8,
+    "reasoning_avg": 10.0
+  },
+  "case_evaluations": [
+    {
+      "case_id": "QA-CARD-001",
+      "category": "polypharmacy_combination",
+      "domain": "cardiovascular",
+      "total_score": 100.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "难治性高血压定义（包含利尿剂在内3种降压药足量治疗>=4周血压未达标140/90）",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "排查服药依从性、白大衣高血压（ABPM/HBPM）、袖带尺寸、升压药（布洛芬/NSAIDs）",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "第四种药物首选醛固酮受体拮抗剂螺内酯（20-40mg/d）",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "螺内酯监测血清钾与肾功能，血钾>5.0或eGFR<30慎用/禁用",
+          "status": "covered",
+          "hits": 4
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-002",
+      "category": "differential_diagnosis",
+      "domain": "cardiovascular",
+      "total_score": 100.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "年轻（<30岁）伴低血钾高度怀疑原发性醛固酮增多症（原醛症）",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "原醛首选筛查指标为ARR（血浆醛固酮与肾素活性比值）",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "双侧肾动脉狭窄绝对禁用ACEI与ARB类药物",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "禁忌原因：扩张出球小动脉导致肾小球滤过压骤降，诱发急性肾衰竭",
+          "status": "covered",
+          "hits": 1
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-003",
+      "category": "polypharmacy_combination",
+      "domain": "cardiovascular",
+      "total_score": 90.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 10.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/3",
+      "fact_details": [
+        {
+          "fact": "HFpEF三大诊断条件：心衰症状、LVEF>=50%、舒张功能异常/结构改变伴BNP/NT-proBNP升高",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "SGLT2i（达格列净/恩格列净）为HFpEF首选基石药物（I类推荐）",
+          "status": "covered",
+          "hits": 5
+        },
+        {
+          "fact": "无论是否合并糖尿病均推荐使用SGLT2i",
+          "status": "covered",
+          "hits": 2
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-004",
+      "category": "polypharmacy_combination",
+      "domain": "cardiovascular",
+      "total_score": 86.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 30.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 6.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/4",
+      "fact_details": [
+        {
+          "fact": "明确利尿剂抵抗概念",
+          "status": "missed",
+          "hits": 0
+        },
+        {
+          "fact": "联合噻嗪类（氢氯噻嗪）进行远曲小管双重利尿阻断",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "联合新型V2受体拮抗剂托伐普坦排水不排钠",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "高危电解质警示：低钾血症与低钠血症，需严防室性心律失常",
+          "status": "covered",
+          "hits": 2
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-005",
+      "category": "precise_threshold",
+      "domain": "cardiovascular",
+      "total_score": 91.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 15.0,
+        "evidence_traceability": 6.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "极高危LDL-C<1.8mmol/L且降幅>=50%",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "超高危LDL-C<1.4mmol/L且降幅>=50%，高危LDL-C<2.6mmol/L",
+          "status": "covered",
+          "hits": 5
+        },
+        {
+          "fact": "一线首选中等强度他汀（阿托伐他汀10-20mg/瑞舒伐他汀5-10mg）",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "阶梯联合：他汀 -> 联合依折麦布 -> 联合PCSK9单抗/小干扰RNA",
+          "status": "covered",
+          "hits": 7
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-006",
+      "category": "safety_contraindication",
+      "domain": "cardiovascular",
+      "total_score": 100.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "舌下含服0.5mg，5分钟一次，15分钟最多3片，无效警惕心梗呼叫120",
+          "status": "covered",
+          "hits": 5
+        },
+        {
+          "fact": "绝对禁忌：收缩压<90mmHg、肥厚型梗阻性心肌病",
+          "status": "covered",
+          "hits": 5
+        },
+        {
+          "fact": "绝对禁忌：24小时内服用过西地那非等PDE-5抑制剂",
+          "status": "covered",
+          "hits": 6
+        },
+        {
+          "fact": "禁忌机制：NO与cGMP降解受阻协同导致致死性顽固恶性低血压与心源性休克",
+          "status": "covered",
+          "hits": 3
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-007",
+      "category": "acute_emergency",
+      "domain": "endocrinology",
+      "total_score": 90.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 30.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/4",
+      "fact_details": [
+        {
+          "fact": "DKA三要素切点：血糖>13.9mmol/L，血酮>=3.0mmol/L或尿酮强阳性，pH<7.30且HCO3-<18",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "抢救首要关键是补液恢复有效血容量（先于胰岛素）",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "补液原则先快后慢、先盐后糖，前1-2小时生理盐水1000-1500ml",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "血糖降至13.9mmol/L必须换5%葡萄糖液加胰岛素，严防渗透压骤降诱发急性脑水肿与低血糖",
+          "status": "missed",
+          "hits": 1
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-008",
+      "category": "acute_emergency",
+      "domain": "endocrinology",
+      "total_score": 100.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/3",
+      "fact_details": [
+        {
+          "fact": "见尿补钾标准（尿量>40ml/h），防止少尿导致高钾蓄积致死",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "初始血钾<3.3mmol/L严禁立即静滴胰岛素，必须先补钾待>3.3mmol/L再给胰岛素",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "胰岛素促使细胞外钾快速转入细胞内，血钾低于3.3给胰岛素会导致恶性低钾诱发室速室颤或呼吸停止猝死",
+          "status": "covered",
+          "hits": 2
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-009",
+      "category": "acute_emergency",
+      "domain": "endocrinology",
+      "total_score": 96.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 6.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "糖尿病患者低血糖切点<=3.9mmol/L",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "双15法则：口服15-20g单糖，等15分钟复测，仍<=3.9再次给15g糖",
+          "status": "covered",
+          "hits": 6
+        },
+        {
+          "fact": "严禁巧克力高脂食品：脂肪延缓胃排空和肠道吸收，延误升糖黄金时间",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "昏迷严禁口服灌糖（防误吸窒息），立即静注50%葡萄糖40-60ml加呼叫120",
+          "status": "covered",
+          "hits": 4
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-010",
+      "category": "precise_threshold",
+      "domain": "endocrinology",
+      "total_score": 90.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 10.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/3",
+      "fact_details": [
+        {
+          "fact": "核心筛查指标：UACR联合eGFR，每年至少1次",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "微量白蛋白尿切点：30-300 mg/g（30以下正常，300以上大量）",
+          "status": "covered",
+          "hits": 6
+        },
+        {
+          "fact": "3-6个月内查2-3次有2次达标确诊，排除运动、发热、尿感等暂时假阳性",
+          "status": "covered",
+          "hits": 4
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-011",
+      "category": "polypharmacy_combination",
+      "domain": "endocrinology",
+      "total_score": 85.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 30.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 15.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/4",
+      "fact_details": [
+        {
+          "fact": "伴白蛋白尿血压靶目标<130/80mmHg",
+          "status": "missed",
+          "hits": 0
+        },
+        {
+          "fact": "一线首选ARB（厄贝沙坦）或ACEI",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "肌酐上升15%（<30%阈值）无需停药，系出球小动脉舒张的血流动力学良性效应",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "新型肾脏保护联合：SGLT2i（达格列净/恩格列净）与非奈利酮",
+          "status": "covered",
+          "hits": 4
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-012",
+      "category": "safety_contraindication",
+      "domain": "endocrinology",
+      "total_score": 96.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 6.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/3",
+      "fact_details": [
+        {
+          "fact": "最危险致死不良反应：粒细胞缺乏症（ANC<0.5x10^9/L）",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "发热、咽痛、寒战必须立即停药并急查血常规，严禁当成普通感冒处理",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "WBC<3.0或ANC<1.5停药升白，ANC<0.5必须绝对停药、无菌隔离、G-CSF与广谱抗生素",
+          "status": "covered",
+          "hits": 3
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-013",
+      "category": "safety_contraindication",
+      "domain": "endocrinology",
+      "total_score": 90.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 10.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/3",
+      "fact_details": [
+        {
+          "fact": "每日清晨空腹服用，等30-60分钟再吃早餐（或睡前隔3小时）",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "钙剂、铁剂、铝碳酸镁、PPI、豆浆严重阻碍吸收，必须间隔>=4小时",
+          "status": "covered",
+          "hits": 6
+        },
+        {
+          "fact": "老年与冠心病从小剂量12.5-25μg/d起始，慢速递增以防诱发心绞痛/心梗",
+          "status": "covered",
+          "hits": 4
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-014",
+      "category": "precise_threshold",
+      "domain": "endocrinology",
+      "total_score": 100.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "备孕与妊娠早期TSH目标<2.5mIU/L",
+          "status": "covered",
+          "hits": 2
+        },
+        {
+          "fact": "受孕后立即在孕前基础量追加20%-30%（如每周多服2天量）",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "每4周复查一次甲功直至平稳",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "机制：孕早期胎儿中枢神经发育完全依赖母体甲状腺激素，未及时加量损害智力发育",
+          "status": "covered",
+          "hits": 1
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-015",
+      "category": "polypharmacy_combination",
+      "domain": "endocrinology",
+      "total_score": 100.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "统一高尿酸血症诊断切点：非同日2次空腹>420μmol/L（不分男女）",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "急性期首选小剂量秋水仙碱（12小时内、负荷1.0mg后1小时0.5mg）或NSAIDs",
+          "status": "covered",
+          "hits": 8
+        },
+        {
+          "fact": "急性期严禁新加用或大幅加大降尿酸药（别嘌醇/非布司他）",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "机制：血尿酸剧烈波动导致关节内尿酸微晶溶解转移，加剧炎症和疼痛",
+          "status": "covered",
+          "hits": 2
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-016",
+      "category": "acute_emergency",
+      "domain": "emergency_medicine",
+      "total_score": 96.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 6.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "重度高钾血症（>6.0mmol/L伴心电图改变）为内科猝死极危重症",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "第一步立即推注10%葡萄糖酸钙10ml稳定心肌细胞膜电位防停搏",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "明确葡萄糖酸钙只稳定膜电位不降血钾绝对值",
+          "status": "covered",
+          "hits": 1
+        },
+        {
+          "fact": "第二步促钾入细胞：葡萄糖+短效胰岛素（6-10U）静滴、沙丁胺醇雾化、碳酸氢钠",
+          "status": "covered",
+          "hits": 6
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-017",
+      "category": "safety_contraindication",
+      "domain": "emergency_medicine",
+      "total_score": 80.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 24.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 6.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/5",
+      "fact_details": [
+        {
+          "fact": "绝对禁止直接静脉推注高浓度氯化钾（可导致心脏瞬间停搏死亡）",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "见尿补钾（尿量>40ml/h）",
+          "status": "covered",
+          "hits": 2
+        },
+        {
+          "fact": "外周静脉补钾浓度严格<=0.3%（1000ml最多加10%氯化钾30ml）",
+          "status": "covered",
+          "hits": 6
+        },
+        {
+          "fact": "滴速限制<=20mmol/h（约15ml/h）",
+          "status": "missed",
+          "hits": 0
+        },
+        {
+          "fact": "顽固低钾必须查镁补镁（纠正Na-K-ATP酶功能）",
+          "status": "missed",
+          "hits": 0
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-018",
+      "category": "acute_emergency",
+      "domain": "emergency_medicine",
+      "total_score": 95.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 15.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/3",
+      "fact_details": [
+        {
+          "fact": "BE FAST口诀：平衡、眼睛、面部、手臂、言语、时间",
+          "status": "covered",
+          "hits": 9
+        },
+        {
+          "fact": "静脉溶栓（rt-PA）黄金时间窗为发病4.5小时内",
+          "status": "covered",
+          "hits": 5
+        },
+        {
+          "fact": "抢救原因：时间就是大脑，挽救缺血半暗带神经细胞，超窗溶栓出血风险剧增",
+          "status": "covered",
+          "hits": 2
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-019",
+      "category": "precise_threshold",
+      "domain": "respiratory_medicine",
+      "total_score": 85.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 30.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 15.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "3/4",
+      "fact_details": [
+        {
+          "fact": "慢阻肺诊断切点：舒张后FEV1/FVC<70%（<0.70）",
+          "status": "missed",
+          "hits": 0
+        },
+        {
+          "fact": "LTOT指征：PaO2<=55mmHg或SaO2<=88%；或PaO2 56-59mmHg合并肺动脉高压/心衰/红细胞增多",
+          "status": "covered",
+          "hits": 6
+        },
+        {
+          "fact": "吸氧时间>=15小时/天",
+          "status": "covered",
+          "hits": 2
+        },
+        {
+          "fact": "吸氧流量：低流量1-2L/min，维持SaO2 88%-92%，防高浓度抑制呼吸加重二氧化碳潴留",
+          "status": "covered",
+          "hits": 5
+        }
+      ]
+    },
+    {
+      "case_id": "QA-CARD-020",
+      "category": "polypharmacy_combination",
+      "domain": "infection_control",
+      "total_score": 100.0,
+      "max_score": 100.0,
+      "dimension_scores": {
+        "factuality": 40.0,
+        "cutoff_precision": 20.0,
+        "safety_contraindication": 20.0,
+        "evidence_traceability": 10.0,
+        "reasoning_structure": 10.0
+      },
+      "safety_violation": false,
+      "violation_reason": null,
+      "facts_covered_ratio": "4/4",
+      "fact_details": [
+        {
+          "fact": "I类清洁手术通常不需预防性使用抗生素（仅大手术/植入物/重要脏器时使用）",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "给药时机：皮肤切开前0.5至1小时内静滴",
+          "status": "covered",
+          "hits": 3
+        },
+        {
+          "fact": "停药时限：24小时内停药（特殊大手术最多48小时）",
+          "status": "covered",
+          "hits": 4
+        },
+        {
+          "fact": "长期无休止滥用后果：不降低感染率、诱发耐药菌（MDRO）、破坏菌群导致伪膜性肠炎、肝肾毒性",
+          "status": "covered",
+          "hits": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "documents": 66,
+  "chunks": 153,
+  "corpus_sha256": "f2682aa0d1cabf1e13fedb2899f6d1bdd5c9df165f7412aca93ca945025ad08c",
+  "embedding": "BAAI/bge-small-zh-v1.5",
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "idempotent_import": true,
+  "probe_hits": 5,
+  "clinical_review": "not_reviewed"
+}

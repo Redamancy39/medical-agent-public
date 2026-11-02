@@ -1,0 +1,204 @@
+# Insulin Pumps: Tips for Using Your Insulin Pump at Home
+
+Woman wearing an insulin pump and continuous glucose monitor (CGM).
+An insulin pump is a device that delivers insulin under the skin through a small plastic tube (catheter). The device can deliver insulin continuously, on demand before meals, or to correct high glucose levels. Insulin pumps can help flexibly manage blood glucose levels, allowing for the right amount of insulin to be delivered without injections. They can be worn on the body using a band, belt, pouch, clip, or tape. Read on to learn more about how to safely use your insulin pump.
+
+## Before using your insulin pump
+## You should:
+  * Be sure you understand the signs and symptoms of high and low blood sugar so you can recognize them early if they occur.
+  * Complete training on safe use of your insulin pump and any associated devices.
+    * Training may occur in-person or virtually.
+      * If you have access to a pump trainer, ask for a hands-on demonstration. Alternatively, your health care provider or a diabetes educator can go over device use with you.
+      * You can also review videos and/or pictures provided in the training materials provided by the pump company or from your pump trainer.
+      * If you still have questions about the safe use of your insulin pump, contact the pump company to arrange for additional training.
+    * Consider inviting your family or other care partners to complete the training with you and practice with you.
+    * Ask questions and take notes.
+    * Contact your health care provider or the pump company’s technical support line if you have questions during training or if questions arise during routine device use.
+  * Read your pump’s Instructions for Use and User Guide and keep them handy.
+    * Make sure you understand how to use the insulin pump.
+    * Know what information is displayed on the insulin pump screen and what you should expect to see during routine device use.
+  * Know how to recognize problems with your insulin pump and any associated devices.
+    * Understand what types of alarms and error messages are possible and what to do if they appear, including how to enable/disable them and adjust these settings based on your needs.
+  * Before setting up your insulin pump for the first time, work with your health care provider to:
+    * Review your medical condition, allergies, and possible reactions to using this device.
+    * Discuss what situations might arise that would make it unsafe for you to continue using an insulin pump (for example, any medications you must avoid, etc.).
+    * Develop a back-up plan, including supplies, for resuming your insulin regimen in case of pump failure.
+  * Use the initial insulin pump settings specific to you that your health care provider will provide. Do not follow the treatment plan prescribed to someone else. Your insulin requirements are unique to you.
+    * Confirm the settings you have entered to ensure you did not make any errors that may result in the pump delivering too little or too much insulin.
+  * Confirm that you are using the correct prescription medication. The drug container label should match your prescription.
+    * Check the user guide of your insulin pump to ensure the insulin product you have is included on the list of compatible insulin products. If not, confirm with your health care provider that you have the correct medication, then call the pump company to check if you can use it with the pump. If you cannot use it with your pump, then contact your health care provider.
+    * Check the insulin expiration date before using.
+    * Review proper storage of insulin (for example, if your insulin requires refrigeration).
+  * Understand how to use your pump before you use it. Do not begin using your insulin pump if you do not feel the training has answered all your questions.
+  * Talk with your health care provider before making changes to your insulin pump settings. Discuss what, if any, changes to your insulin pump settings or the way you use your pump may be needed to minimize over- or under- delivery of insulin.
+  * Contact the pump company or your health care provider whenever you have questions.
+## Your health care provider should:
+  * Assess your health status and review your allergies with you.
+  * Discuss what to look out for in terms of potential medication side effects and allergic reactions.
+  * Provide you with initial insulin pump therapy settings that you will manually enter into your insulin pump after completion of the training.
+  * Adjust your insulin pump therapy settings as needed, such as at periodic visits (for example, every 3 months), or if you call the office to report a persistent issue (for example, blood sugar going high overnight for several days) or encounter an unexpected circumstance (for example, you will be fasting for a surgery and want to know how to adjust your insulin).
+  * Address any concerns or questions you have about your insulin pump therapy settings, such as baseline (basal) rate settings or intermittent (bolus) insulin doses.
+  * Discuss proper storage of medicine.
+  * Teach you about proper use and maintenance of your pump.
+  * Provide you with “sick day rules” about adjustments to your insulin pump settings for special circumstances, such as illness or before a medical procedure.
+  * Discuss the safe disposal of any non-reusable parts, including the disposal of needles in a sharps container (a thick, plastic, leak-proof, capped container to reduce the chance of needlestick injuries).
+  * Give you emergency contact phone numbers that you can call anytime, day or night.
+## Your pump company will:
+
+  * Have a customer service phone number available 24 hours a day for any pump questions and to report an event where you may be concerned your insulin pump did not work properly.
+  * Help you with pump troubleshooting and malfunctions.
+  * Handle all repairs or replacements of your pump and pump-related parts.
+  * Investigate any report of possible insulin pump malfunction.
+## Using your insulin pump
+  * Be aware that bug spray, sunscreen, lotions, and other personal care products can damage your insulin pump.
+    * If you have used these products, wash your hands with soap and water for 20 seconds and dry them with a clean paper towel before using your pump.
+  * Change batteries or recharge your pump as directed in the pump user guide.
+  * Follow pump-specific instructions for how and when to change insulin in the pump reservoir and when to change infusion sets and rotate infusion sites.
+  * Regularly monitor your glucose levels with a continuous glucose monitor (CGM) or blood glucose meter.
+## Managing the most common problems with an insulin pump
+
+  * Be sure you understand the signs and symptoms of high and low blood sugar so you can recognize them early if they occur.
+  * Talk with your health care provider before making changes to your insulin pump settings. Discuss what, if any, changes to your insulin pump settings or the way you use your pump may be needed to minimize over- or under- delivery of insulin.
+## Too much or too little insulin delivery
+
+The amount of insulin you need can change for many reasons, including diet, time of day, exercise, illness, and other factors. If the amount of insulin your pump delivers does not match your insulin needs, or if the pump malfunctions and delivers more or less insulin than it is programmed to deliver, you can have low blood sugar (hypoglycemia) or high blood sugar (hyperglycemia).
+
+To help prevent over- or under-delivery of insulin:
+  * Prime your infusion set before it is attached to your body. Never prime your infusion set while it is attached to your body because this can cause you to receive more insulin than intended. When starting a new infusion set, follow pump-specific instructions for priming.
+  * Regularly check your pump to ensure it is in place and does not have any leaks, kinks, air bubbles, or blockages. Follow your pump’s instructions for troubleshooting as needed.
+    * Note: While most insulin pumps can detect blockages and sound an alert, sometimes the pump may not detect blockages right away. Also, be aware that in general, insulin pumps cannot detect leaks.
+  * If your glucose is high, do not give yourself multiple doses of insulin in a short timeframe, as this can lead to overcorrection (decreasing your glucose more than planned).
+    * For more information on the treatment of high blood sugar, please see the section below “In Case of High Blood Sugar .”
+  * If giving yourself a pre-meal insulin bolus is part of your treatment plan, remember to enter it before eating your meal.
+    * Be careful not to overestimate carbohydrates, as that can lead to too much insulin being given and a low blood sugar.
+  * Always consult your health care provider before changing your insulin pump settings.
+If you think you have received too much or too little insulin:
+
+  * Monitor your glucose frequently to watch for low or high readings.
+  * If you are using a continuous glucose monitor (CGM) and your symptoms do not match the glucose value displayed, confirm the measurement with a fingerstick blood glucose meter.
+
+In case of low blood sugar (hypoglycemia):
+  * Take 15 grams of fast-acting carbohydrates, such as juice (be sure it is not sugar-free), glucose gel, or glucose tablets to bring your blood sugar up quickly.
+  * Check your glucose again in 15 minutes to make sure your glucose has come up. If it is still low, repeat the step above.
+  * Your health care provider may also prescribe you a medication like glucagon which you or a family member can inject in case of severely low blood sugar.
+  * Monitor your glucose levels closely until your glucose levels are back to normal.
+  * If you are not sure why your glucose was low (sometimes there is a clear explanation such as a skipped meal), check to be sure your pump settings are correct and contact your health care provider for further guidance.
+  * If you continue to have low glucose after the steps above, you should contact your health care provider. You may need to pause or remove your pump until you see your health care provider.
+In case of high blood sugar (hyperglycemia):
+  * Inspect your insulin pump to be sure it is working correctly:
+    * Check that your pump settings are correct.
+    * Check to see if insulin is being delivered.
+    * Check your pump and tubing for a blockage, kink, leak, or air bubbles.
+  * Troubleshoot any problems you have found to restore normal pump function.
+    * Follow pump-specific instructions for how to respond to blockage alarms.
+    * Reference your pump’s user guide as needed to help correct any problems. If you can’t find the paper user guide, check to see if your specific pump has a user guide available on the manufacturer’s website.
+    * Don’t hesitate to call the pump manufacturer or your health care provider if needed.
+  * Be sure you have backup pump replacement supplies and insulin injection supplies on hand in case there is a problem with your pump and you are unable to get it working again in a timely fashion.
+  * Give a correction insulin bolus dose as directed by your health care provider. Typically, you may see your glucose level start to decrease after 30-60 minutes, and the dose to have its full effect at 3-4 hours (however, this is a general guide – always confirm with your healthcare provider what timing you should expect in your particular case). Ask your health care provider when you should recheck your blood sugar and how soon you can give another correction dose.
+Do not deliver multiple doses quickly as it can lead to overcorrection.
+  * Monitor your insulin pump and your glucose levels closely until your blood sugar levels are back to normal.
+  * If your blood sugar levels are not improving as expected or if you are not sure what led to your high blood sugar levels, contact your health care provider.
+## Wrong pump programming
+  * Check the pump screen to be sure programmed basal rates timing and dosages match the treatment plan provided to you by your health care provider.
+  * If the rate, timing, or dosage differs, contact your health care provider for clarification and assistance as soon as possible.
+  * Check to make sure the date and time in your pump is set correctly, including when you travel across time-zones.
+    * Talk to your health care provider about whether you might need to adjust infusion schedules when traveling to different time zones.
+  * Basal insulin delivery profiles can vary throughout the day and night to match your insulin needs. You pump must have correct date and time settings to make sure they match your insulin needs.
+## Wrong insulin prescription
+
+Call your health care provider immediately if you think:
+
+  * your insulin pump settings are not correct,
+  * your insulin needs have changed since your last visit based on a change in your glucose level patterns, or
+  * you may have received the wrong type of insulin for your pump.
+## Missing parts
+  * Your insulin pump prescription should also include all the necessary parts for using and regularly changing the non-reusable parts of the pump system, such as insulin pump reservoirs, infusion sets, or other disposable components.
+  * If you think you are missing or received an incorrect pump part, please contact your health care provider immediately.
+  * If you are not sure how to use a provided pump part, please check the User Guide or contact your insulin pump trainer or the technical support line of the pump company.
+## Batteries and insulin pump recharging
+  * Change batteries or recharge your pump according to pump-specific instructions.
+  * Be aware that some rechargeable devices require you to use only the company’s charging cables to avoid a fire hazard.
+    * Read the FDA’s tips to help charge medical devices safely and avoid overheating .
+  * Be on the alert for alarms that will occur when the batteries or charge are low (or if there are other problems).
+    * Do not ignore alarms.
+  * Always keep an extra supply of new batteries with you.
+  * Call your pump provider if you have questions about which types of batteries to use, how to recharge your pump, or if you experience problems such as shorter than expected battery life.
+## Seeking medical assistance for problems with your insulin pump
+
+Call 911 for any health emergencies, including:
+  * Extremely high blood sugar or high blood sugar associated with symptoms of nausea, vomiting, shortness of breath, confusion, or loss of consciousness
+  * Extremely low blood sugar, low blood sugar that does not respond to fast-acting carbohydrates, or low blood sugar associated with symptoms of confusion, altered mental status, or loss of consciousness
+  * Chest pain
+  * Trouble breathing
+  * Confusion or changes in behavior or level of alertness
+  * Difficulty walking or talking
+  * Anaphylaxis (a serious allergic reaction)
+Contact your health care provider if you:
+  * Develop problems at your pump site such as:
+    * Pain
+    * Leaking
+    * Foul odor
+    * Pus-like discharge
+    * Skin redness, swelling, warmth, firmness
+  * Develop persistent hyperglycemia or hypoglycemia that you cannot correct on your own.
+  * Need a Computed Tomography (CT) scan or Magnetic Resonance Imaging (MRI) exam.
+    * Your health care provider will review with you the potential for interference between CT and electronic medical devices, such as your insulin pump and what patients should know before having an MRI exam .
+## Preparing for a power outage or natural disaster
+  * Keep extra pump batteries on hand (if applicable) and know how to replace them.
+  * Keep extra pump parts, such as infusion sets and pump reservoirs, on hand.
+  * Have back-up insulin supplies, including insulin pens, pen needles, insulin vials, or syringes, and know how to use them—including the specific doses—in case of extended power outage or communication issues where you may not be able to reach your health care provider promptly.
+  * Review the storage temperature requirements for your insulin. Most insulin products for use in pumps can be stored for up to 28 days at room temperature.
+  * Keep emergency and after-hours phone numbers handy. If you keep these numbers in your cell phone, be sure to have a back-up physical copy of the numbers somewhere in your home in case your cell phone runs out of power during an emergency.
+  * Have a flashlight available.
+## Traveling with your insulin pump
+## Airplane travel
+  * Before going to the airport, contact the Transportation Security Administration (TSA) Consumer Response Center toll-free at 1-866-289-9673 with questions about traveling with your pump.
+  * Always pack your pump supplies, including insulin, in your carry-on luggage. Do not pack your supplies in checked luggage as it could get delayed, lost, or broken.
+  * Label insulin vials and needles.
+  * Refer to the User Guide for your insulin pump for travel instructions or ask your pump supplier and health care provider about additional needs or precautions when traveling with your specific device.
+  * Ask your pump supplier if your pump can be worn during security screening, or if manual screening is recommended.
+    * If manual screening is recommended, before going through a security screening station, inform the staff that you have an insulin pump or continuous glucose monitor.
+    * If the pump supplier recommends not exposing the pump to airport scanners, inform the TSA officer that you do not want your device screened by x-ray or body scanner, and they will conduct alternative screening.
+  * After going through security, check the status of your pump.
+  * Bring extra snacks, glucose gel, or glucose tablets in the event of a low blood sugar during travel.
+## Foreign travel
+  * Review the U.S. Department of State web pages about Your Health Abroad and Travelers with Disabilities , and the Centers for Disease Control and Prevention (CDC) web page about Traveling Abroad with Medicine .
+  * If your pump is rechargeable, make sure the charger for your pump will work with that country’s power system.
+    * If it does not, check with your pump supplier and follow their recommendations for charging, such using as a converter for the power source (voltage and frequency) and an adapter for the plug so that your pump will work.
+    * Only use charging components supplied or recommended by your pump supplier. See the FDA’s tips to help charge medical devices safely and avoid overheating .
+    * Consider the reliability of the electrical system and your access to it.
+  * If your pump uses batteries (either disposable or replaceable), keep extra pump batteries on hand (if applicable) and know how to replace them.
+    * The necessary battery type may not be available in other countries.
+    * Consider the reliability of the electrical system and your access to it when deciding how many extra batteries to bring.
+  * Bring additional tubing sets, syringes, needles, swabs, and other medical equipment.
+    * This equipment may not be available in other countries.
+    * When assessing the amounts to bring, consider the number of doses/infusions you will need during your travel, including during any potential travel delays.
+  * In general, insulin is a widely used medication and should not be restricted when traveling to another country.
+    * If you have any concerns or if you are traveling with other medications that you are concerned may be restricted (like opiate pain medications), contact the U.S. embassy in your destination and in any layover countries.
+  * Talk to your health care provider ahead of your travel. Consider asking about:
+    * Getting enough medicine for the duration of your trip, including planning for any travel delays.
+    * Having appropriate documentation, such as copies of prescriptions or letters documenting medical conditions, as recommended by the U.S. embassy in your destination and any layover countries.
+    * Storing your medications, including your expected access to reliable refrigeration (as needed).
+    * Adjusting infusion schedules when traveling to different time zones.
+## Reporting insulin pump-related problems and injuries
+
+Report any problems with your insulin pump to each of the following:
+
+  * Your health care provider
+  * Your pump supplier
+  * The FDA’s MedWatch online or at 1-800-332-1088 (24 hours a day)
+## Caring for children who need insulin pumps
+  * Explain the reasons for using the pump and the benefits.
+    * Use language your child will understand.
+    * Encourage your child to ask questions.
+    * Be honest and try to use positive words and pictures.
+  * Show your child how he or she can help.
+    * Allow children to assist with their own care, when age appropriate.
+    * For a small child, try play-acting with a doll to show what will happen and how they can help, including what symptoms they may feel when glucose is very low or very high so they are aware they should alert you if these occur.
+  * Check on your child as often as your health care provider recommends.
+    * A younger child may need to be checked more often than an older child.
+  * Ask about resources in the community, including at school and camp.
+  * Report any change in your child's physical or mental condition to your child’s health care provider right away.
+  * Ask your child’s health care provider about resources for adjusting to their condition or using an insulin pump.
+  * Encourage children to play in a manner that will avoid dislodging or damaging their insulin pump and to tell an adult if they think something is wrong with their pump or infusion site.
+  * If you have any concerns, speak with your child’s health care provider.

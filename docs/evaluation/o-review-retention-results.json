@@ -1,0 +1,247 @@
+{
+  "date": "2026-10-15",
+  "offline_tests": {
+    "passed": 213,
+    "seconds": 48.12
+  },
+  "controlled_regressions": {
+    "before_fix_failed": 3,
+    "after_fix_passed": 3
+  },
+  "retrieval": {
+    "run": "20261015-095721-0d5caf3d",
+    "mode": "local_dev_retrieval",
+    "corpus_sha256": "a515fcca161a8134a55b4c999e977f667001305b61e1821d30489758ea533906",
+    "cases": 20,
+    "eligible_cases": 16,
+    "no_gold_cases": 4,
+    "retrieval_sweep_status": "completed",
+    "hit_at_5": 1.0,
+    "mrr_at_5": 0.9375,
+    "mean_support_coverage_at_5": 0.9479166666666666,
+    "embedding": "BAAI/bge-small-zh-v1.5",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "answer_quality": "not_run",
+    "clinical_review": "not_run",
+    "test_answer_evaluation": "not_run"
+  },
+  "full_dev": {
+    "run": "20261015-100150-2cf734fc",
+    "observed_dev_cases": 20,
+    "same_code_within_sweep": true,
+    "code_changed_after_sweep": [
+      "app\\medical_reviewer.py"
+    ],
+    "final_same_code_quality_retest": "pending_provider_recovery",
+    "runtime_status_counts": {
+      "failed": 14,
+      "partial": 4,
+      "completed": 2
+    },
+    "runtime_error_counts": {
+      "UPSTREAM_ERROR": 18,
+      "None": 2
+    },
+    "reviewer_status_counts": {
+      "not_run": 14,
+      "failed": 4,
+      "skipped_policy": 2
+    },
+    "http_status_counts": {
+      "200": 30,
+      "503": 19
+    },
+    "answer_quality": "blocked_by_provider_instability_pending_independent_review",
+    "provider_blocked_cases": 18,
+    "policy_only_reference_points_checked": 6,
+    "medical_reference_points_assessed": 0,
+    "reference_point_coverage": null,
+    "clinical_accuracy": null,
+    "clinical_review": "not_run",
+    "test40": "not_run"
+  },
+  "full_dev_http_attempts": 49,
+  "calibrations": [
+    {
+      "run": "20261015-095156-f4b35fd7",
+      "summary": {
+        "status": "contract_failed_report_not_saved",
+        "code": "REVIEW_POLICY_REQUIRED",
+        "valid_calibration_cases": null,
+        "exact_judgments": "unavailable"
+      },
+      "calls": [
+        {
+          "http_status": 200,
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 15199,
+            "completion_tokens": 559,
+            "total_tokens": 15758
+          }
+        }
+      ]
+    },
+    {
+      "run": "20261015-095443-e39889e8",
+      "summary": {
+        "status": "failed",
+        "error": {
+          "stage": "calibration",
+          "code": "UPSTREAM_ERROR"
+        },
+        "cases": 0,
+        "expected_cases": 24,
+        "false_rejections": null,
+        "false_acceptances": null,
+        "kind_matches": null,
+        "http_attempts": 1,
+        "fixture_sha256": "61aec29d7347bbbf6dd711aed8e6f37ca141e2f7af0d911ca61e7381d63dbbaf",
+        "clinical_review": "not_run",
+        "generalization": "not_established",
+        "test40": "not_run"
+      },
+      "calls": [
+        {
+          "http_status": 503,
+          "status": "failed",
+          "safe_error_code": "UPSTREAM_ERROR",
+          "usage": {}
+        }
+      ]
+    },
+    {
+      "run": "20261015-095526-61977a42",
+      "summary": {
+        "status": "failed",
+        "error": {
+          "stage": "calibration",
+          "code": "UPSTREAM_ERROR"
+        },
+        "cases": 0,
+        "expected_cases": 24,
+        "false_rejections": null,
+        "false_acceptances": null,
+        "kind_matches": null,
+        "http_attempts": 1,
+        "fixture_sha256": "61aec29d7347bbbf6dd711aed8e6f37ca141e2f7af0d911ca61e7381d63dbbaf",
+        "clinical_review": "not_run",
+        "generalization": "not_established",
+        "test40": "not_run"
+      },
+      "calls": [
+        {
+          "http_status": 503,
+          "status": "failed",
+          "safe_error_code": "UPSTREAM_ERROR",
+          "usage": {}
+        }
+      ]
+    },
+    {
+      "run": "20261015-095556-5d5ac83b",
+      "summary": {
+        "status": "failed",
+        "error": {
+          "stage": "calibration",
+          "code": "UPSTREAM_ERROR"
+        },
+        "cases": 0,
+        "expected_cases": 24,
+        "false_rejections": null,
+        "false_acceptances": null,
+        "kind_matches": null,
+        "http_attempts": 1,
+        "fixture_sha256": "61aec29d7347bbbf6dd711aed8e6f37ca141e2f7af0d911ca61e7381d63dbbaf",
+        "clinical_review": "not_run",
+        "generalization": "not_established",
+        "test40": "not_run"
+      },
+      "calls": [
+        {
+          "http_status": 503,
+          "status": "failed",
+          "safe_error_code": "UPSTREAM_ERROR",
+          "usage": {}
+        }
+      ]
+    },
+    {
+      "run": "20261015-100807-e4e1a2a1",
+      "summary": {
+        "status": "failed",
+        "error": {
+          "stage": "calibration",
+          "code": "UPSTREAM_ERROR"
+        },
+        "cases": 10,
+        "expected_cases": 24,
+        "false_rejections": 0,
+        "false_acceptances": 0,
+        "kind_matches": 9,
+        "http_attempts": 2,
+        "fixture_sha256": "61aec29d7347bbbf6dd711aed8e6f37ca141e2f7af0d911ca61e7381d63dbbaf",
+        "clinical_review": "not_run",
+        "generalization": "not_established",
+        "test40": "not_run"
+      },
+      "calls": [
+        {
+          "http_status": 200,
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 15199,
+            "completion_tokens": 609,
+            "total_tokens": 15808
+          }
+        },
+        {
+          "http_status": 503,
+          "status": "failed",
+          "safe_error_code": "UPSTREAM_ERROR",
+          "usage": {}
+        }
+      ]
+    }
+  ],
+  "connectivity_controls": [
+    {
+      "status": "failed",
+      "http_status": 503,
+      "safe_error_code": "UPSTREAM_ERROR",
+      "usage": {}
+    },
+    {
+      "status": "failed",
+      "http_status": 503,
+      "safe_error_code": "UPSTREAM_ERROR",
+      "usage": {}
+    }
+  ],
+  "new_http_attempts": 57,
+  "new_known_tokens": 214123,
+  "usage_available_attempts": 32,
+  "trace_packet_hash_checks": 3,
+  "source_anchor_checks": 573,
+  "successful_review_batch_replays": 6,
+  "protected_files": {
+    "checked": 210,
+    "changed": 0
+  },
+  "original_reference_files": {
+    "checked": 153,
+    "changed": 0
+  },
+  "old_sql_rows_preserved": 674,
+  "frontend": "unchanged",
+  "frozen_dev_test_manifest": "unchanged",
+  "formal_milvus": "unchanged",
+  "dot_candidates": "unchanged",
+  "environment_file": "unchanged",
+  "original_demo_service": "not_restarted",
+  "mem0": "disabled",
+  "web": "disabled",
+  "clinical_review": "not_run"
+}

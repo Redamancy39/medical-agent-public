@@ -1,0 +1,552 @@
+{
+  "schema_version": "medical-handoff-v1",
+  "batch_id": "dot-dev20-export-20261014-b01-0508",
+  "created_at": "2026-10-14T05:09:17.188142+00:00",
+  "sources": [],
+  "audits": [
+    {
+      "case_id": "basic-01",
+      "reference_point": "心脏搏动时为收缩压",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/highbloodpressure.html",
+          "locator": "L88 / What is blood pressure?",
+          "quote": "Your blood pressure is highest when your heart beats, pumping the blood. This is called systolic pressure.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-01.p1。建议独立审查稿将定义写为心脏收缩泵血时动脉内压力，并为定义绑定上下文。 问题说明：概念获正文支持；原绑定只摘出命名句，脱离前句不够自足。  原引用为题级非点级：nlm-hypertension / 6ef444154364-zh-ef835d098111 / 血压两个数的含义 https://medlineplus.gov/highbloodpressure.html LF跨度[246,279),[350,384),[523,576) 待专业复核：由专业人员确认中文通俗化准确性。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-01",
+      "reference_point": "两次搏动之间为舒张压",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/highbloodpressure.html",
+          "locator": "L88 / What is blood pressure?",
+          "quote": "When your heart is at rest, between beats, your blood pressure falls. This is called diastolic pressure.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-01.p2。建议表述为心脏在两次搏动间舒张/休息时动脉内压力。 问题说明：概念获正文支持；原命名句未独立给出休息阶段。  原引用为题级非点级：nlm-hypertension / 6ef444154364-zh-ef835d098111 / 血压两个数的含义 https://medlineplus.gov/highbloodpressure.html LF跨度[246,279),[350,384),[523,576) 待专业复核：确认收缩/舒张的生理表述。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-01",
+      "reference_point": "120对应收缩压、80对应舒张压",
+      "reference_kind": "medical_fact",
+      "issue_type": "none",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/highbloodpressure.html",
+          "locator": "L89 / What is blood pressure?",
+          "quote": "120/80 means a systolic of 120 and a diastolic of 80.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-01.p3。建议补上mm Hg；其单位可由本轮已打开的Measuring Blood Pressure正文“结果解释”段核实，不能把例子写成中国诊断阈值。 问题说明：120/80与两个数的顺序正确；题干没有单位，不应据此作正常/异常分级。  原引用为题级非点级：nlm-hypertension / 6ef444154364-zh-ef835d098111 / 血压两个数的含义 https://medlineplus.gov/highbloodpressure.html LF跨度[246,279),[350,384),[523,576) 待专业复核：确认单位及示例不隐含诊断。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-03",
+      "reference_point": "利尿剂排出多余水和钠",
+      "reference_kind": "medical_fact",
+      "issue_type": "none",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/bloodpressuremedicines.html",
+          "locator": "L98 / How do blood pressure medicines work?",
+          "quote": "Diuretics remove extra water and sodium (salt) from your body.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-03.p1。保留一般机制，不延伸到选药或个人剂量。 问题说明：原绑定利尿剂短句与要点相符。  原引用为题级非点级：nlm-bp-medicines / 2686229dca08-zh-21b243a99613 / 降压药机制的一般解释 https://medlineplus.gov/bloodpressuremedicines.html LF跨度[1317,1373),[1569,1608),[1786,1828) 待专业复核：药理学简化范围。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-03",
+      "reference_point": "钙通道阻滞剂帮助血管放松",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/bloodpressuremedicines.html",
+          "locator": "L97 / How do blood pressure medicines work?",
+          "quote": "Calcium channel blockers prevent calcium from entering the muscle cells of your heart and blood vessels. This allows the blood vessels to relax.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-03.p2。独立建议补入钙通道阻滞剂机制段引用。 问题说明：正文直接支持，但原source_spans只有β阻滞剂、利尿剂和联合用药，未绑定钙通道阻滞剂句。  原引用为题级非点级：nlm-bp-medicines / 2686229dca08-zh-21b243a99613 / 降压药机制的一般解释 https://medlineplus.gov/bloodpressuremedicines.html LF跨度[1317,1373),[1569,1608),[1786,1828) 待专业复核：药理表达与药物类别边界。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-03",
+      "reference_point": "不提供个体剂量",
+      "reference_kind": "project_behavior",
+      "issue_type": "none",
+      "support_status": "supported",
+      "evidence": [],
+      "rule_ids": [
+        "medicines"
+      ],
+      "suggested_change": "point_id=basic-03.p3。保留不提供个体剂量约束，移入独立行为合规字段建议，不改原dev。 问题说明：这是题干和项目安全约束，不属于待证医学命题；首轮insufficient_evidence不应解释为unsupported_claim。 本项为项目行为，supported仅表示项目规则/原题约束支持，不表示医学结论核实；旧状态=not_applicable_project_policy。 原引用为题级非点级：nlm-bp-medicines / 2686229dca08-zh-21b243a99613 / 降压药机制的一般解释 https://medlineplus.gov/bloodpressuremedicines.html LF跨度[1317,1373),[1569,1608),[1786,1828) 待专业复核：确认安全规则的审核责任与适用范围。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-04",
+      "reference_point": "运动和咖啡因可影响读数",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+          "locator": "L52–57; L111–118 / What is a blood pressure measurement? / What happens during a blood pressure test? / Will I need to do anything to prepare for the test?",
+          "quote": "Many things can change your blood pressure. It can increase or decrease based on:\nWhether you're resting or exercising\nIf you eat or drink foods with caffeine, alcohol, or tobacco",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-04.p1。独立建议绑定准备段完整语义范围。 问题说明：运动、咖啡因等影响读数获正文支持；原绑定30分钟孤立片段未包含具体对象。  原引用为题级非点级：nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 测量条件与准备 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[5351,5370),[5497,5545),[3452,3485) 待专业复核：确认准备要求适用于常规坐位测压场景。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-04",
+      "reference_point": "NLM提示至少30分钟前避免相关活动/饮食",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+          "locator": "L113–118 / What is a blood pressure measurement? / What happens during a blood pressure test? / Will I need to do anything to prepare for the test?",
+          "quote": "To get a more accurate blood pressure measurement, avoid these things for at least 30 minutes before having your blood pressure taken:\nExercise\nAlcohol\nTobacco products\nFood or drinks containing caffeine",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-04.p2。明确测量前至少30分钟避免运动、酒精、烟草及含咖啡因食品饮料；不能扩大为所有食物禁食。 问题说明：数值30、单位分钟、下限至少正确；原参考“相关活动/饮食”含糊。  原引用为题级非点级：nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 测量条件与准备 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[5351,5370),[5497,5545),[3452,3485) 待专业复核：中国应用时另核对当地测量规范，不将美国科普称为中国指南。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-04",
+      "reference_point": "排空膀胱和合适坐姿",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+          "locator": "L95–96; L120 / What is a blood pressure measurement? / What happens during a blood pressure test? / Will I need to do anything to prepare for the test?",
+          "quote": "You will sit in a chair with your feet flat on the floor.\nYou will rest your arm on a table or other surface, so your arm is level with your heart.\nAlso, make sure to go to the bathroom before the test.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-04.p3。把“合适坐姿”展开为上述要求；如加入其他姿势或静息时长须另绑定证据。 问题说明：排空膀胱属于对如厕准备的中文解释；坐位双脚平放、手臂与心脏同高获正文支持。  原引用为题级非点级：nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 测量条件与准备 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[5351,5370),[5497,5545),[3452,3485) 待专业复核：确认“排空膀胱”的中文对应。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-07",
+      "reference_point": "细胞对胰岛素响应不正常",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/diabetestype2.html",
+          "locator": "L94 / What is type 2 diabetes? / What causes type 2 diabetes?",
+          "quote": "This is a condition in which your cells don't respond normally to insulin.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-07.p1。独立建议绑定同段对细胞反应的定义句，而不是年龄风险描述。 问题说明：正文直接支持；原绑定的首句只说2型通常始于抵抗，风险因素和年龄不支持定义。  原引用为题级非点级：nlm-type2-diabetes / fefe9a051cee-zh-247fd6cad22c / 2型糖尿病与胰岛素抵抗 https://medlineplus.gov/diabetestype2.html LF跨度[795,850),[699,733),[736,763),[1267,1283) 待专业复核：避免将抵抗等同于已诊断2型糖尿病。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-07",
+      "reference_point": "葡萄糖难以进入细胞、血中升高",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/diabetestype2.html",
+          "locator": "L85; L94 / What is type 2 diabetes? / What causes type 2 diabetes?",
+          "quote": "The glucose then stays in your blood and not enough goes into your cells.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-07.p2。补绑定机制段；保留“难以/不足”，不改为完全不能进入所有细胞。 问题说明：葡萄糖进入细胞不足及血中升高有正文支持；原风险因素片段不直接支持因果解释。  原引用为题级非点级：nlm-type2-diabetes / fefe9a051cee-zh-247fd6cad22c / 2型糖尿病与胰岛素抵抗 https://medlineplus.gov/diabetestype2.html LF跨度[795,850),[699,733),[736,763),[1267,1283) 待专业复核：确认因果链通俗化边界。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-07",
+      "reference_point": "随时间胰岛素生成也可能不足",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/diabetestype2.html",
+          "locator": "L94 / What is type 2 diabetes? / What causes type 2 diabetes?",
+          "quote": "But over time, your body can't make enough insulin, and your blood glucose levels rise.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-07.p3。独立审查建议补充相应正文定位；保持不是所有人相同病程。 问题说明：正文叙述早期代偿增多后不足；参考保留“可能”没有夸大必然性。中文绑定编辑段未明确展开随时间变化。  原引用为题级非点级：nlm-type2-diabetes / fefe9a051cee-zh-247fd6cad22c / 2型糖尿病与胰岛素抵抗 https://medlineplus.gov/diabetestype2.html LF跨度[795,850),[699,733),[736,763),[1267,1283) 待专业复核：专业人员确认病程表述与胰岛素抵抗定义的区分。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-11",
+      "reference_point": "反映过去约2–3个月平均",
+      "reference_kind": "medical_fact",
+      "issue_type": "none",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+          "locator": "L46; L50; L59 / What is a hemoglobin A1C (HbA1C) test? / What is it used for?",
+          "quote": "A hemoglobin A1C (HbA1C) test is a blood test that shows your average level of blood glucose, also called blood sugar, over the past two to three months.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-11.p1。保留“约/平均”，不要将时间窗当作精确每一天等权。 问题说明：2–3个月与正文一致，原source_spans直接覆盖；不是检测频率建议。  原引用为题级非点级：nlm-a1c-test / 88534028573f-zh-2369744f56c1 / HbA1c表示长期平均血糖 https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/ LF跨度[159,193),[2323,2374),[2379,2432) 待专业复核：确认影响HbA1c可靠性的特殊情形在扩展问答中有边界。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-11",
+      "reference_point": "并非当前时点读数",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+          "locator": "L59 / What is a hemoglobin A1C (HbA1C) test? / What is it used for?",
+          "quote": "If you're checking it at home, you are measuring what your blood glucose level is at that time. An A1C test gives you an average level of your blood glucose level over the past two to three months.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-11.p2。独立建议引用用途段的时点对比。 问题说明：正文对比即时家庭血糖与A1c过去数月平均；原绑定只摘时间窗及1型诊断/监测句，未直接绑定对比段。  原引用为题级非点级：nlm-a1c-test / 88534028573f-zh-2369744f56c1 / HbA1c表示长期平均血糖 https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/ LF跨度[159,193),[2323,2374),[2379,2432) 待专业复核：区分HbA1c与即时血糖，不能用其排除当前异常。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-11",
+      "reference_point": "与红细胞血红蛋白结合葡萄糖有关",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+          "locator": "L48; L52–53; L107 / What is a hemoglobin A1C (HbA1C) test? / What is it used for?",
+          "quote": "Glucose in your blood sticks to hemoglobin, a protein in your red blood cells.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-11.p3。建议绑定L48与L107；如扩展检测比例，不宜误写为糖化红细胞数占比，应由专业人员确认措辞。 问题说明：红细胞血红蛋白与葡萄糖结合获正文支持；原source_spans没有绑定结合机制。  原引用为题级非点级：nlm-a1c-test / 88534028573f-zh-2369744f56c1 / HbA1c表示长期平均血糖 https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/ LF跨度[159,193),[2323,2374),[2379,2432) 待专业复核：确认糖化血红蛋白比例的专业定义；原科普L48与L107用语精度不同。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-16",
+      "reference_point": "比较尿白蛋白与肌酐",
+      "reference_kind": "medical_fact",
+      "issue_type": "none",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/",
+          "locator": "What is a microalbumin creatinine ratio test?，正文L49",
+          "quote": "The microalbumin creatinine ratio test compares the levels of albumin in your urine to your levels of creatinine.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-16.p1。明确为尿白蛋白/肌酐比值，不说血肌酐。 问题说明：正文直接说明尿中白蛋白与肌酐水平比较；原绑定亦覆盖。本题无数值、单位阈值。  原引用为题级非点级：nlm-uacr-test / 3772202d3291-zh-42e69b95deb8 / UACR检查肾脏白蛋白漏出 https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/ LF跨度[991,1065),[1965,2020),[1508,1521),[1524,1548) 待专业复核：中文术语及与中国检验报告命名的一致性。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-16",
+      "reference_point": "异常白蛋白漏出可能提示早期肾病",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/",
+          "locator": "What is a microalbumin creatinine ratio test? L46；What do the results mean? L108–109",
+          "quote": "Abnormal amounts of this protein may be an early sign of kidney disease.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-16.p2。建议独立补绑定L46，并保留异常结果需医护进一步评估的边界。 问题说明：保留“可能”，不等于一次异常即确诊；原绑定风险人群片段不是该结论的直接片段。  原引用为题级非点级：nlm-uacr-test / 3772202d3291-zh-42e69b95deb8 / UACR检查肾脏白蛋白漏出 https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/ LF跨度[991,1065),[1965,2020),[1508,1521),[1524,1548) 待专业复核：异常值解释与中国复核流程；本轮未提出阈值。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "basic-16",
+      "reference_point": "早期肾病可能没有症状",
+      "reference_kind": "medical_fact",
+      "issue_type": "none",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/",
+          "locator": "Why do I need a microalbumin creatinine ratio test? L66",
+          "quote": "Early kidney disease usually doesn't have any symptoms.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=basic-16.p3。保持原要点即可。 问题说明：原文强度为通常无症状；草稿“可能”不构成夸大。  原引用为题级非点级：nlm-uacr-test / 3772202d3291-zh-42e69b95deb8 / UACR检查肾脏白蛋白漏出 https://medlineplus.gov/lab-tests/microalbumin-creatinine-ratio/ LF跨度[991,1065),[1965,2020),[1508,1521),[1524,1548) 待专业复核：本条科普适用范围。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-01",
+      "reference_point": "询问休息/测量方式与重复读数",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "partially_supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+          "locator": "What happens during a blood pressure test? L95–97；居家测量L146–152；结果L137",
+          "quote": "Rest in the chair for about five minutes before taking your blood pressure.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [
+        "clarify"
+      ],
+      "suggested_change": "point_id=scenario-01.p1。将规范测量的医学依据与clarify_first路由依据分开记录；问题可询问实际读数、休息和测量情况。 问题说明：正文支持规范体位、测前休息、跨日重复，但并未规定聊天系统必须先提问。原片段未包含居家静坐约5分钟。 分项：[{\"component\":\"休息、体位、重复测量的事实依据\",\"status\":\"supported\",\"issue_type\":\"citation_gap\"},{\"component\":\"必须先澄清的聊天顺序\",\"status\":\"not_applicable_project_policy\",\"issue_type\":null}] 原引用为题级非点级：nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 测量条件与准备 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[5351,5370),[5497,5545),[3452,3485)；nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 读数解释不是一次确诊 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[6022,6074),[6678,6736),[6813,6844),[6472,6500) 待专业复核：专业复核询问范围，避免紧急症状因澄清流程延误。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-01",
+      "reference_point": "说明运动可影响",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+          "locator": "What is a blood pressure measurement? L52–57；准备L113–118",
+          "quote": "Whether you're resting or exercising",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-01.p2。如提测前避免运动至少30分钟，须绑定完整条件，不等同所有休息都需30分钟。 问题说明：正文直接支持运动影响读数。原绑定只有30分钟短语，未包含该段运动条目。  原引用为题级非点级：nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 测量条件与准备 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[5351,5370),[5497,5545),[3452,3485)；nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 读数解释不是一次确诊 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[6022,6074),[6678,6736),[6813,6844),[6472,6500) 待专业复核：中国测量准备建议的一致性。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-01",
+      "reference_point": "不能据一次读数确诊",
+      "reference_kind": "medical_fact",
+      "issue_type": "none",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/measuring-blood-pressure/",
+          "locator": "What do the results mean? L137",
+          "quote": "Your provider will only usually diagnose you with high blood pressure if you have two or more high blood pressure readings on different days.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-01.p3。仅凭刚运动后这一次偏高读数不能判断已确诊；引用保留usually，不扩写为任何场景一次读数都绝无诊断意义。 问题说明：适用于此题刚运动后一次偏高且无其他诊断信息的场景；正文用通常需不同日期至少两次，不能改为绝无例外。  原引用为题级非点级：nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 测量条件与准备 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[5351,5370),[5497,5545),[3452,3485)；nlm-bp-test / 3605f16f26b8-zh-1123b25addaa / 读数解释不是一次确诊 https://medlineplus.gov/lab-tests/measuring-blood-pressure/ LF跨度[6022,6074),[6678,6736),[6813,6844),[6472,6500) 待专业复核：诊断例外及异常读数/症状时的安全升级；不凭本题新增阈值。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-03",
+      "reference_point": "需确认单位、检测项目、空腹/时间",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "partially_supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/diabetes-tests/",
+          "locator": "What happens during a diabetes test? L90–95",
+          "quote": "Random blood sugar. This test can be taken at any time. No fasting is required.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [
+        "clarify"
+      ],
+      "suggested_change": "point_id=scenario-03.p1。将单位澄清标作信息完整性规则；医疗依据另绑定检测类型/采样条件，不推断8.0单位。 问题说明：来源支持不同检测准备不同，但本页及原绑定没有明确说明单位缺失的判读规则；未能直接支持完整复合要点。 分项：[{\"component\":\"检测类型与采样/空腹条件不同\",\"status\":\"supported\",\"issue_type\":\"citation_gap\"},{\"component\":\"询问缺失单位及检测信息\",\"status\":\"not_applicable_project_policy\",\"issue_type\":null,\"note\":\"信息完整性/安全策略，不以医学网页未规定聊天步骤判unsupported_claim。\"}] 原引用为题级非点级：nlm-diabetes-tests / 00eea6f5d7e0-zh-45efb32fab43 / 不同糖尿病检测测什么 https://medlineplus.gov/lab-tests/diabetes-tests/ LF跨度[5646,5701),[6017,6054),[6101,6163) 待专业复核：中国单位、检测方法、标本类型及诊断规则。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-03",
+      "reference_point": "不能直接确诊",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "partially_supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/diabetes-tests/",
+          "locator": "What happens during a diabetes test? L91；What do the results mean? L112",
+          "quote": "It may be repeated to confirm a diagnosis.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [
+        "clarify",
+        "educational_scope"
+      ],
+      "suggested_change": "point_id=scenario-03.p2。保留不直接确诊的安全限制；不要给8.0附加默认单位、阈值或病情定性。 问题说明：正文支持按检测类型解释、必要时复测，但没有直接涵盖“8.0且单位未知”场景。该谨慎动作合理但不是完整直接原文证据。 分项：[{\"component\":\"空腹血糖必要时复测以确认诊断\",\"status\":\"supported\",\"issue_type\":\"citation_gap\"},{\"component\":\"仅给8.0且未给单位时不做诊断\",\"status\":\"not_applicable_project_policy\",\"issue_type\":null,\"note\":\"项目安全限制。本文未直接讨论该特定缺信息情境，不能声称完整医学逐字证据，也不标答案错误。\"}] 原引用为题级非点级：nlm-diabetes-tests / 00eea6f5d7e0-zh-45efb32fab43 / 不同糖尿病检测测什么 https://medlineplus.gov/lab-tests/diabetes-tests/ LF跨度[5646,5701),[6017,6054),[6101,6163) 待专业复核：需中国诊断资料补足单位和检测条件的直接依据；不是医学反驳。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-03",
+      "reference_point": "可解释不同检测用途",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/diabetes-tests/",
+          "locator": "What are they used for? L54；What happens during a diabetes test? L90–98",
+          "quote": "This test measures the average amount of glucose attached to hemoglobin over the past three months.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-03.p3。绑定完整相应检测段，限制到本题相关类型，勿引入妊娠糖尿病流程。 问题说明：正文覆盖筛查、监测和诊断及HbA1c与即时血糖差别。原片段仅随机血糖、HbA1c免空腹、尿糖不足以覆盖全部检测。  原引用为题级非点级：nlm-diabetes-tests / 00eea6f5d7e0-zh-45efb32fab43 / 不同糖尿病检测测什么 https://medlineplus.gov/lab-tests/diabetes-tests/ LF跨度[5646,5701),[6017,6054),[6101,6163) 待专业复核：成人2型糖尿病语境中解释内容的专业复核。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-06",
+      "reference_point": "先确认检测项目和医护指示",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/",
+          "locator": "What is fasting for a blood test? L51；Is there anything else...? L89",
+          "quote": "If you aren't sure if you should fast for a coming blood test, ask your provider as soon as possible.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [
+        "clarify"
+      ],
+      "suggested_change": "point_id=scenario-06.p1。补医护指示相关证据；不要无条件规定今晚不能吃喝。 问题说明：正文明确有疑问应向医护确认；但必须先澄清再回答仍属项目策略。原绑定缺这两段。 分项：[{\"component\":\"不确定准备要求时询问医护\",\"status\":\"supported\",\"issue_type\":\"citation_gap\"},{\"component\":\"clarify_first路由\",\"status\":\"not_applicable_project_policy\",\"issue_type\":null}] 原引用为题级非点级：nlm-diabetes-tests / 00eea6f5d7e0-zh-45efb32fab43 / 空腹要求和结果解释 https://medlineplus.gov/lab-tests/diabetes-tests/ LF跨度[6017,6054),[6017,6054),[766,835)；nlm-fasting-test / 989a2020ae03-zh-dcacc7c1bb5b / 空腹验血的准备与例外 https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/ LF跨度[153,171),[634,647),[1840,1883) 待专业复核：合并检查、用药和特殊准备是否需额外提醒。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-06",
+      "reference_point": "空腹要求不同",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/diabetes-tests/",
+          "locator": "What happens during a diabetes test? L91、L95；准备L102–104",
+          "quote": "Before the test, you will need to fast (not eat or drink) for eight hours before the test.\nNo fasting is required for this test.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-06.p2。独立建议删除重复/不相干绑定，补空腹血糖与HbA1c完整段；不能把普通空腹等同完全禁水。 问题说明：HbA1c单项无需空腹；空腹血糖需空腹。原证据重复相同HbA1c片段且另有严重低血糖无关片段。  原引用为题级非点级：nlm-diabetes-tests / 00eea6f5d7e0-zh-45efb32fab43 / 空腹要求和结果解释 https://medlineplus.gov/lab-tests/diabetes-tests/ LF跨度[6017,6054),[6017,6054),[766,835)；nlm-fasting-test / 989a2020ae03-zh-dcacc7c1bb5b / 空腹验血的准备与例外 https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/ LF跨度[153,171),[634,647),[1840,1883) 待专业复核：医护具体准备要求优先；同次另有检查时不能仅按HbA1c推断。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-06",
+      "reference_point": "不自行要求所有验血都空腹",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/",
+          "locator": "Is there anything else...? L89；What is fasting...? L46",
+          "quote": "You should not fast if your provider doesn't tell you to do so.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-06.p3。在独立建议明确：先核实项目和要求；普通空腹通常不禁白水，但遵从专门指示。 问题说明：直接支持未经要求不自行空腹。另L46说明普通空腹可喝白水，当前“不能吃喝”问法易误导。  原引用为题级非点级：nlm-diabetes-tests / 00eea6f5d7e0-zh-45efb32fab43 / 空腹要求和结果解释 https://medlineplus.gov/lab-tests/diabetes-tests/ LF跨度[6017,6054),[6017,6054),[766,835)；nlm-fasting-test / 989a2020ae03-zh-dcacc7c1bb5b / 空腹验血的准备与例外 https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/ LF跨度[153,171),[634,647),[1840,1883) 待专业复核：中国当地实验室准备要求及例外。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-09",
+      "reference_point": "确认检查与空腹要求",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/",
+          "locator": "What types of blood tests require fasting? L63、L71；Is there anything else...? L89",
+          "quote": "Not all blood glucose tests require fasting, so ask your provider if you need to fast for your test.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-09.p1。先说明误饮应告知，再确认检测种类；不应先认定已影响全部检查。 问题说明：原文支持不确定时确认；原绑定未包含该条件。  原引用为题级非点级：nlm-fasting-test / 989a2020ae03-zh-dcacc7c1bb5b / 药物和误进食的处理 https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/ LF跨度[4082,4154),[4469,4504),[3431,3450) 待专业复核：中国检验流程；检查并非空腹项目时如何沟通。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-09",
+      "reference_point": "告诉医护误饮咖啡",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/",
+          "locator": "Can I drink anything besides water...? L74；What if I make a mistake...? L82",
+          "quote": "Tell your provider if you eat or drink before your test.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-09.p2。补L82告知语句及L74咖啡条件；不把不加糖咖啡当作白水。 问题说明：原文将咖啡列为非白水饮料，明确误饮应告诉医护；原绑定只列咖啡和改期，漏告知句。  原引用为题级非点级：nlm-fasting-test / 989a2020ae03-zh-dcacc7c1bb5b / 药物和误进食的处理 https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/ LF跨度[4082,4154),[4469,4504),[3431,3450) 待专业复核：应告知饮用时间及饮品情况的表达范围。",
+      "professional_review": "pending"
+    },
+    {
+      "case_id": "scenario-09",
+      "reference_point": "可能需要重新安排，不隐瞒",
+      "reference_kind": "medical_fact",
+      "issue_type": "citation_gap",
+      "support_status": "supported",
+      "evidence": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/",
+          "locator": "What if I make a mistake...? L82",
+          "quote": "You may need to reschedule the test for another time when you can fast to make sure you get accurate results.",
+          "access_status": "opened"
+        }
+      ],
+      "rule_ids": [],
+      "suggested_change": "point_id=scenario-09.p3。避免写成所有喝过咖啡的检测都无效；由医护决定是否改期。 问题说明：保留“可能”，由医护根据检查类型决定，不是必然取消或重抽；不隐瞒是告知动作的准确转述。 原片段仅保留“You may need to reschedule the test”，缺告知动作及完整条件；补同段，不否定原参考要点。  原引用为题级非点级：nlm-fasting-test / 989a2020ae03-zh-dcacc7c1bb5b / 药物和误进食的处理 https://medlineplus.gov/lab-tests/fasting-for-a-blood-test/ LF跨度[4082,4154),[4469,4504),[3431,3450) 待专业复核：改期、继续检查决定及需遵循的本地流程。",
+      "professional_review": "pending"
+    }
+  ]
+}

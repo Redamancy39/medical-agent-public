@@ -1,0 +1,35 @@
+{
+  "batch_id": "corpus-20261014-08",
+  "professional_review": "pending",
+  "new_proven_medical_errors": 0,
+  "items": [
+    {
+      "source_id": "who-bp-device-specifications-2020",
+      "type": "scope_or_version_mismatch",
+      "locator": "Chapter5.1 Step2 /5.2, printedpp26–27",
+      "issue": "2020 original allows a light sleeve and makes date-specific statements about phone/wearable devices. Do not universally apply older device validation statements to2026 devices or merge differing cuff/clothing recommendations without conditions.",
+      "suggestion": "Retain2020 version and exact context; device-specific manufacturer instructions and current professional review required. Missing Figure6/Table7 provide no evidence in this delivery."
+    },
+    {
+      "source_id": "cdc-diabetes-shift-work",
+      "type": "scope_or_version_mismatch",
+      "locator": "Blood Sugar Monitoring",
+      "issue": "Morning is not by itself fasting; original specifies8or more hours since last meal and explicitly cautions overnight workers.",
+      "suggestion": "Reference points must retain elapsed-time/meal condition, not infer fasting from clock time."
+    },
+    {
+      "source_id": "cdc-diabetes-travel",
+      "type": "scope_or_version_mismatch",
+      "locator": "Before you go / medicine and supply storage",
+      "issue": "Airport liquid policy and device inspection recommendations are US-source context, not a verified worldwide2026 transport rule. Storage and inspection depend on medicine/device specifications.",
+      "suggestion": "Keep regional/version and manufacturer-specific conditions; no guessed dose or storage temperature."
+    },
+    {
+      "source_id": "nccih-diabetes-supplements",
+      "type": "scope_or_version_mismatch",
+      "locator": "Effectiveness and Safety; More To Consider",
+      "issue": "November2023 evidence summary includes study doses and preliminary benefits, not an endorsement or individualized safe dose.",
+      "suggestion": "Preserve weak/inconsistent evidence, interactions and no replacement of proven treatment; clinical use or updated benefit claims pending professional review."
+    }
+  ]
+}

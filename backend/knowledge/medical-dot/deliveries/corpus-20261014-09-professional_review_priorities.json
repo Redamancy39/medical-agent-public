@@ -1,0 +1,39 @@
+{
+  "batch_id": "corpus-20261014-09",
+  "professional_review": "pending",
+  "new_proven_medical_errors": 0,
+  "items": [
+    {
+      "source_ids": [
+        "cdc-diabetes-healthy-weight"
+      ],
+      "type": "scope_or_version_mismatch",
+      "issue": "US BMI25/30 and waist35/40inches are not Chinese population thresholds. Weightloss and lower insulin need are not instructions to self-reduce medication."
+    },
+    {
+      "source_ids": [
+        "cdc-diabetes-fiber",
+        "cdc-diabetes-digestion",
+        "cdc-diabetes-kidney-diet"
+      ],
+      "type": "scope_or_version_mismatch",
+      "issue": "General high-fiber advice differs from low-fiber advice specifically for gastroparesis; CKD stage and dialysis alter protein/potassium/fluid recommendations. These are conditional applicability differences, not direct contradictions. Fiber22–34g cites US2020–2025 guidance, not verified latestChinese standard."
+    },
+    {
+      "source_ids": [
+        "cdc-insulin-delivery-methods",
+        "cdc-diabetes-statins",
+        "cdc-diabetes-heat"
+      ],
+      "type": "scope_or_version_mismatch",
+      "issue": "General device/medicine pros/cons and need for dose adjustment are not personal dose, brand, route or drug-selection recommendations. Preserve clinician/device-specific conditions. Inhaled insulin description requires patient/type-specific review before rule use."
+    },
+    {
+      "source_ids": [
+        "cdc-diabetes-care-schedule"
+      ],
+      "type": "scope_or_version_mismatch",
+      "issue": "Candidate-only vaccine schedule needs currentversion/professional review; no contrary current vaccine source checked, so no unsupported/contradicted medical classification."
+    }
+  ]
+}

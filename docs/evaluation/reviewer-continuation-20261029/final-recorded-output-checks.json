@@ -1,0 +1,9 @@
+{
+  "role": "deterministic_replay_of_previously_observed_provider_outputs",
+  "original_live_report": "E:\\medical agent\\docs\\evaluation\\reviewer-calibration-20261029\\live-v3-scope-action\\report.json",
+  "main_contract_cases": 10,
+  "scope_contract_cases": 8,
+  "new_cloud_calls": 0,
+  "numeric_conflict_blocked": true,
+  "new_guard_limits": "Narrow consistency/threshold checks, not general semantic or clinical certification."
+}

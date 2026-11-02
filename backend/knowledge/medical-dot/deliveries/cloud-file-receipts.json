@@ -1,0 +1,50 @@
+[
+  {
+    "name": "corpus02-source-manifest.json",
+    "reference": "library-file:fde1_bGliZmlsZV9INTVNYnIxMzNtU2w5dFJPaFQ1QU1R_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 35302,
+    "sha256": "f246ffeb01c71ea4df17d34f11826e56b76c878063d13aad254f2bc73d06948f"
+  },
+  {
+    "name": "corpus01-source-manifest.json",
+    "reference": "library-file:fde1_bGliZmlsZV9mQWxiTkJjMks5bTJyNHR5QWd3NU5B_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 34954,
+    "sha256": "0cde6f123445378666bc44e782b4c6501b0a34ba4e962d44894fae8272ea3145"
+  },
+  {
+    "name": "corpus02-handoff.json",
+    "reference": "library-file:fde1_bGliZmlsZV9YMkJkMmN6VEhkQXNkcjh0VnR3LXJn_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 8555,
+    "sha256": "345e83c456e5e5203cd9a65e932b5788634101a3ee30ec1513040b35bca184ae"
+  },
+  {
+    "name": "corpus01-handoff.json",
+    "reference": "library-file:fde1_bGliZmlsZV9rQXJObDkzdFYyY0tTbjVzZTlWLTNB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 8589,
+    "sha256": "443cd24a45f7dc5db8c9cb4250e3757904d02d9e97096b7c8d841b0f3f355a83"
+  },
+  {
+    "name": "dev20-handoff-b02.json",
+    "reference": "library-file:fde1_bGliZmlsZV9CdDdRMWhWdlU0X3NrRDlTOVMtbUpB_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 42373,
+    "sha256": "0da487fb82b56577ee6f291b327cec210780bd213e6aa73c40d800c2513bc0d0"
+  },
+  {
+    "name": "candidate-schema.json",
+    "reference": "library-file:fde1_bGliZmlsZV9sWWJhdExvb1VBSXBKRW5lNFRnOU5n_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 8011,
+    "sha256": "c0f763ce462e27a9665ceea3315be630084e9088171b3b20b84930da98a23e44"
+  },
+  {
+    "name": "candidate-b01.json",
+    "reference": "library-file:fde1_bGliZmlsZV9Td3NWWUtZbGx3UW9TdEF4QW9NU25B_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 52928,
+    "sha256": "18c5c453ac3061cde45f47fb51552206cb0397cdd285e90aaa9df0f588249ab0"
+  },
+  {
+    "name": "dev20-handoff-b01.json",
+    "reference": "library-file:fde1_bGliZmlsZV9RTHFTNkI0NkNFeEFLaHRoV0U1eWl3_FileDrive_bc65bce1a9088191958be314f94df2de",
+    "bytes": 39005,
+    "sha256": "bbeca17476ffddab5df130815844b475971ee46271e45f4bde404dadc6673c26"
+  }
+]

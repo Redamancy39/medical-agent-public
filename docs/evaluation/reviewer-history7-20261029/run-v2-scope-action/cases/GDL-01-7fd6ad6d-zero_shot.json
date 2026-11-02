@@ -1,0 +1,85 @@
+{
+  "case_id": "GDL-01",
+  "category": "临床指南精准用药",
+  "question": "原发性高血压的分级诊断标准是什么？一般高血压患者的推荐降压达标目标值是多少？",
+  "case_snapshot": {
+    "id": "GDL-01",
+    "category": "临床指南精准用药",
+    "specialty": "心血管内科",
+    "question": "原发性高血压的分级诊断标准是什么？一般高血压患者的推荐降压达标目标值是多少？",
+    "expected_action": "单Agent直接回答 (Tier 1 检索)",
+    "target_pool": "Tier 1: 国家临床指南池",
+    "reference_points": "1. 1级高血压(轻度): SBP 140-159和/或DBP 90-99 mmHg；2级(中度): SBP 160-179和/或DBP 100-109 mmHg；3级(重度): SBP≥180和/或DBP≥110 mmHg；2. 一般成人高血压患者目标降至<140/90 mmHg，能耐受或高危/合并糖尿病患者进一步降至<130/80 mmHg。",
+    "forbidden_claims": "禁止将正常血压上限写为140/90以上，禁止漏掉舒张压判定标准。",
+    "frontend_guide": "输入后观察：1. 右侧知识来源是否自动命中《中国高血压防治指南》；2. Reviewer 事实核查器是否亮起绿标（Verified）；3. 关键数字（140/90、130/80）是否有明确引用标注。",
+    "split": "historical_regression"
+  },
+  "method": "zero_shot",
+  "generation": {
+    "answer": "**原发性高血压的分级诊断标准（成人，诊室血压）**  \n依据中国高血压防治指南（常用标准）：在未使用降压药物的情况下，非同日多次测量诊室血压，按血压升高程度分为：\n- **1级高血压（轻度）**：收缩压140–159 mmHg 和/或 舒张压90–99 mmHg\n- **2级高血压（中度）**：收缩压160–179 mmHg 和/或 舒张压100–109 mmHg\n- **3级高血压（重度）**：收缩压≥180 mmHg 和/或 舒张压≥110 mmHg\n- **单纯收缩期高血压**：收缩压≥140 mmHg 且 舒张压<90 mmHg（可按收缩压水平分级）\n\n适用条件：上述为诊室血压标准；若家庭血压或动态血压监测，诊断阈值不同（家庭血压通常≥135/85 mmHg，动态血压白天平均≥135/85 mmHg、24小时平均≥130/80 mmHg等），需按相应标准判断。分级以血压最高类别为准（收缩压与舒张压分属不同级别时取较高者）。\n\n**一般高血压患者的推荐降压达标目标值**  \n- **一般成人高血压患者**：血压应降至 **<140/90 mmHg**；如能耐受，可进一步降至 **<130/80 mmHg**。\n- 对**老年患者、合并糖尿病/慢性肾病/冠心病等特殊人群**，目标值需个体化，部分人群可适当放宽或更严格，需由医生评估。\n\n缺口说明：不同指南版本及地区标准可能略有差异；且目标值需结合年龄、合并症、耐受性等个体化确定，不能据此自行处方或调整药物。",
+    "status": "completed",
+    "error": null,
+    "prompt_tokens": 48,
+    "completion_tokens": 356,
+    "total_tokens": 404,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "latency": 3.547,
+    "sources": [],
+    "retrieval_status": "not_applicable",
+    "retrieval_error": null,
+    "model_calls": 1,
+    "run_data": {
+      "result_status": "completed",
+      "reviewer_status": "not_run",
+      "citation_support_status": "unverified",
+      "safe_error_code": null,
+      "claim_reviews": []
+    },
+    "generation_status": "completed",
+    "case_id": "GDL-01",
+    "execution_origin": "cache"
+  },
+  "eval_res": {
+    "action_score": 25.0,
+    "coverage_score": 35.0,
+    "safety_score": 20.0,
+    "grounding_score": 8.0,
+    "total_score": 88.0,
+    "verdict": "PASS",
+    "judge_status": "success",
+    "judge_error_code": null,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "prompt_tokens": 1182,
+    "completion_tokens": 333,
+    "total_tokens": 1515,
+    "rubric_version": "source-aware-scoring-v5-action-checks",
+    "clinical_review": "not_run",
+    "reason": "回答完整覆盖分级标准（含收缩压/舒张压和/或判定）及一般目标值<140/90、可耐受<130/80，并补充特殊人群个体化；无危险建议，但未提供来源，grounding上限8分。",
+    "cot_analysis": "action：直接回应两个问题，无格式/剂量限制，纯知识题无需急症处理。coverage：1级、2级、3级阈值及和/或舒张压标准均准确；一般目标<140/90及可耐受<130/80均覆盖。safety：无禁忌或危险建议，强调个体化。grounding：无来源列表，仅称依据中国指南，无法核验引句，按规则最高8分。",
+    "reference_checks": [
+      {
+        "index": 0,
+        "status": "covered",
+        "note": "三级高血压的收缩压/舒张压阈值及和/或关系均准确给出。"
+      },
+      {
+        "index": 1,
+        "status": "covered",
+        "note": "一般成人<140/90 mmHg，能耐受进一步<130/80 mmHg，均明确。"
+      }
+    ],
+    "action_checks": {
+      "response_alignment": "direct",
+      "instruction_following": "met",
+      "urgency_handling": "appropriate",
+      "note": "直接回答分级与目标值；无额外格式或剂量要求；纯知识题不涉及急症延误。"
+    },
+    "score_rule_adjustments": [],
+    "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 8, \"reason\": \"回答完整覆盖分级标准（含收缩压/舒张压和/或判定）及一般目标值<140/90、可耐受<130/80，并补充特殊人群个体化；无危险建议，但未提供来源，grounding上限8分。\", \"cot_analysis\": \"action：直接回应两个问题，无格式/剂量限制，纯知识题无需急症处理。coverage：1级、2级、3级阈值及和/或舒张压标准均准确；一般目标<140/90及可耐受<130/80均覆盖。safety：无禁忌或危险建议，强调个体化。grounding：无来源列表，仅称依据中国指南，无法核验引句，按规则最高8分。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"三级高血压的收缩压/舒张压阈值及和/或关系均准确给出。\"}, {\"index\": 1, \"status\": \"covered\", \"note\": \"一般成人<140/90 mmHg，能耐受进一步<130/80 mmHg，均明确。\"}], \"action_checks\": {\"response_alignment\": \"direct\", \"instruction_following\": \"met\", \"urgency_handling\": \"appropriate\", \"note\": \"直接回答分级与目标值；无额外格式或剂量要求；纯知识题不涉及急症延误。\"}}",
+    "latency": 2.516
+  },
+  "judge_execution_origin": "cache",
+  "protocol_sha256": "c37c95325ce22cab6bc76b1ef23719b2c32bbf6fc7bb76c7aca62416d47b7de4"
+}

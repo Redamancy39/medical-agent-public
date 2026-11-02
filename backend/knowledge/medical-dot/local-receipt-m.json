@@ -1,0 +1,1184 @@
+{
+  "summary": {
+    "schema_version": "dot-local-final-receipt-m-v1",
+    "downloaded_file_hashes_passed": 118,
+    "baseline_source_documents_verified": 20,
+    "new_source_documents": 83,
+    "new_physical_body_files": 85,
+    "retained_source_families": 102,
+    "target_eligible_families_from_dot": 100,
+    "clinical_rule_quarantined_source_ids": [
+      "cdc-hypertension-risk",
+      "cdc-diabetes-testing"
+    ],
+    "candidate_questions": 60,
+    "candidate_families_literal": 59,
+    "candidate_reference_points": 184,
+    "candidate_evidence_records": 118,
+    "candidate_full_jsonschema_validation": "passed",
+    "candidate_quote_hash_policy_validation": "passed",
+    "candidate_family_semantic_isolation": "not_run",
+    "license_independent_review": "not_run",
+    "clinical_review": "not_run",
+    "formal_corpus_update": "not_applied",
+    "frozen_dataset_update": "not_applied",
+    "vectorization": "not_run",
+    "research_schedule_disabled": "reported_by_dot_hash_verified_cloud_file_not_independent_scheduler_query"
+  },
+  "bodies": [
+    {
+      "source_id": "nlm-diabetic-diet",
+      "source_family_id": "nlm-diabetic-diet",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-diabetic-diet-37f89d46ff69.txt"
+      ],
+      "sha256": "37f89d46ff69a53ed01a304a783c91985455b7beaaf30fb8f603363a8dab201e",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-diabetic-eye-problems",
+      "source_family_id": "nlm-diabetic-eye-problems",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-diabetic-eye-problems-952d882a7331.txt"
+      ],
+      "sha256": "952d882a7331044fa35199ac61cae36b4d01ede5a0e1ab6b8f95b01d136b6cdd",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-diabetic-foot",
+      "source_family_id": "nlm-diabetic-foot",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-diabetic-foot-b7933f79de52.txt"
+      ],
+      "sha256": "b7933f79de528f999387e88c64ab5bd2770674ebbea0ab2b25942cc264a7fbe7",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-diabetic-nerve-problems",
+      "source_family_id": "nlm-diabetic-nerve-problems",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-diabetic-nerve-problems-83d1286856cd.txt"
+      ],
+      "sha256": "83d1286856cd6da9377cb46fe67068570920daf50611dc3d8f4b6c46131b7118",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-diabetic-kidney-problems",
+      "source_family_id": "nlm-diabetic-kidney-problems",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-diabetic-kidney-problems-c42af4fe9e09.txt"
+      ],
+      "sha256": "c42af4fe9e094ad33adfff536225fdd692b028f98bf78a9f00b567902c9a7136",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-hypoglycemia",
+      "source_family_id": "nlm-hypoglycemia",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-hypoglycemia-344c955348c1.txt"
+      ],
+      "sha256": "344c955348c12b7733e5cc2b424258a94339e3e97300d6b5579aecc384d3b5c6",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-diabetic-heart-disease",
+      "source_family_id": "nlm-diabetic-heart-disease",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-diabetic-heart-disease-b7ad48ff5d60.txt"
+      ],
+      "sha256": "b7ad48ff5d60470be3901d2887f7360b78430164f118ab91a87f83c223e6a5c2",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-sodium",
+      "source_family_id": "nlm-sodium",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-sodium-260140458f20.txt"
+      ],
+      "sha256": "260140458f2014ce04597eeced35a1c37dd86ed12e5982b4cd27865d5643264b",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-carbohydrates",
+      "source_family_id": "nlm-carbohydrates",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-carbohydrates-563f0995dc1a.txt"
+      ],
+      "sha256": "563f0995dc1aac969385cae66033008e5bf89e18cb3db5cd7ae14bdf519fea00",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-metabolic-syndrome",
+      "source_family_id": "nlm-metabolic-syndrome",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-metabolic-syndrome-703b6fe7dd5b.txt"
+      ],
+      "sha256": "703b6fe7dd5bfcb92cf98c9687950940947886189133d112186142009464c06b",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "niddk-a1c-test",
+      "source_family_id": "niddk-a1c-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\niddk-a1c-test-f5ab624527b2.txt"
+      ],
+      "sha256": "f5ab624527b2c40878801be6da1221aa2efbbb1086ea180c5f6c1934c6526757",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "niddk-high-blood-pressure-kidney",
+      "source_family_id": "niddk-high-blood-pressure-kidney",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\niddk-high-blood-pressure-kidney-3933dc978a36.txt"
+      ],
+      "sha256": "3933dc978a365d4e1916b172a541e8b12c79b4956110e5fa2ebb847b08ae00c9",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "niddk-insulin-resistance-prediabetes",
+      "source_family_id": "niddk-what-is-diabetes",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\niddk-insulin-resistance-prediabetes-959396a3f346.txt"
+      ],
+      "sha256": "959396a3f346e9c40ee0f2717cf097934fb8f36daacdfc41556376eaab8956e4",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "niddk-continuous-glucose-monitoring",
+      "source_family_id": "niddk-diabetes-management",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\niddk-continuous-glucose-monitoring-1346b88698dc.txt"
+      ],
+      "sha256": "1346b88698dcc4bbb82be8a4604a22214cf1c8f95fc5ed1ecdbbb48c1073ad17",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "niddk-type2-diabetes",
+      "source_family_id": "niddk-what-is-diabetes",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\niddk-type2-diabetes-a0fd514f37b9.txt"
+      ],
+      "sha256": "a0fd514f37b9b1fa8b6659c884c36d0b0babcd97665e47ef30e84b95dadaad74",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "niddk-low-blood-glucose-hypoglycemia",
+      "source_family_id": "niddk-preventing-diabetes-problems",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\niddk-low-blood-glucose-hypoglycemia-7be6c0014ebb.txt"
+      ],
+      "sha256": "7be6c0014ebbef35776bf8e93d4536b1652e54a8592a8f419adc7bacc9243140",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nhlbi-high-blood-pressure",
+      "source_family_id": "nhlbi-high-blood-pressure",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nhlbi-high-blood-pressure-7a3e6f2f911c.txt"
+      ],
+      "sha256": "7a3e6f2f911c8d192001520423cdef8c7eed329d102732e2624688ff7b650d35",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nhlbi-dash-eating-plan",
+      "source_family_id": "nhlbi-dash-eating-plan",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nhlbi-dash-eating-plan-b2158539d3b8.txt"
+      ],
+      "sha256": "b2158539d3b875056c089ca4c2995986698d91af1672cd4ec9efed6d6538954f",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-c-peptide-test",
+      "source_family_id": "nlm-c-peptide-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-c-peptide-test-add2dcdcae2d.txt"
+      ],
+      "sha256": "add2dcdcae2deb37f0a40c1790b3e0e31ee43e1bf12ae37c1bafb91c4d2e82d9",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-glucose-in-urine-test",
+      "source_family_id": "nlm-glucose-in-urine-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-glucose-in-urine-test-62f526f63558.txt"
+      ],
+      "sha256": "62f526f63558cda70d51893f387fb7c00ff90eeb2d78be0060295f180e7872b7",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-diabetic-foot-exam",
+      "source_family_id": "nlm-diabetic-foot-exam",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-diabetic-foot-exam-9cd019309c67.txt"
+      ],
+      "sha256": "9cd019309c67625e32b89670e8fca78894187bda6d9140ef6961b4d3449c2bd4",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-creatinine-test",
+      "source_family_id": "nlm-creatinine-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-creatinine-test-8fa3acb663f0.txt"
+      ],
+      "sha256": "8fa3acb663f0f3fea6408305926df38736c2d7981ea6b739179deee6638f443c",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-bun-blood-urea-nitrogen",
+      "source_family_id": "nlm-bun-blood-urea-nitrogen",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-bun-blood-urea-nitrogen-89f38c98db38.txt"
+      ],
+      "sha256": "89f38c98db38bead861f4b1309338e5358d30dfac9370c951dce40d8216aa040",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-cholesterol-levels",
+      "source_family_id": "nlm-cholesterol-levels",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-cholesterol-levels-5ebbc82a6eb6.txt"
+      ],
+      "sha256": "5ebbc82a6eb6cddc121523c16a7188f6fe883e64e837ee22d76fe499f285f805",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-triglycerides-test",
+      "source_family_id": "nlm-triglycerides-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-triglycerides-test-344f02e62c80.txt"
+      ],
+      "sha256": "344f02e62c80b277e83447255f12a328bb37d308829b350300d70e5243095a08",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-sodium-blood-test",
+      "source_family_id": "nlm-sodium-blood-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-sodium-blood-test-cf2c0a2f6282.txt"
+      ],
+      "sha256": "cf2c0a2f6282e15b43ef2c58fe90d050b4e51e24c768db64ede79391e830a995",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-potassium-blood-test",
+      "source_family_id": "nlm-potassium-blood-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-potassium-blood-test-1d96987b43bc.txt"
+      ],
+      "sha256": "1d96987b43bc220defd745384eaa06f8823d97d6bb0ee8d70122ed98908c1153",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nlm-electrolyte-panel",
+      "source_family_id": "nlm-electrolyte-panel",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nlm-electrolyte-panel-7c05537997df.txt"
+      ],
+      "sha256": "7c05537997dfb20b5b89b53570e39601eddccccaa8c23d51e9b6b748b858bc38",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-blood-pressure-measurement",
+      "source_family_id": "cdc-blood-pressure-measurement",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-blood-pressure-measurement-c0c698eacd30.txt"
+      ],
+      "sha256": "c0c698eacd30950bdba1df338e39fbd91b436edbe6245c4cdb7f10de1f527e84",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-manage-blood-sugar",
+      "source_family_id": "cdc-manage-blood-sugar",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-manage-blood-sugar-880c31d42add.txt"
+      ],
+      "sha256": "880c31d42add86a22423dead753fe975c705909bb53c13cddbe9618d0c73856e",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-physical-activity",
+      "source_family_id": "cdc-diabetes-physical-activity",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-physical-activity-253316deaa60.txt"
+      ],
+      "sha256": "253316deaa601ee96167ac249be48159e5a5e3be170163c6cdd38d1efd71bb70",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-healthy-eating-budget",
+      "source_family_id": "cdc-diabetes-healthy-eating-budget",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-healthy-eating-budget-cd9e64c34846.txt"
+      ],
+      "sha256": "cd9e64c348466dace8042153c03ec84db1d6b9d76140e9c3f97dd00794dcd52d",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-low-blood-sugar-treatment",
+      "source_family_id": "cdc-diabetes-low-blood-sugar-treatment",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-low-blood-sugar-treatment-45b9ce39cdc0.txt"
+      ],
+      "sha256": "45b9ce39cdc0833e9590cb2e8491a4ce7ca9ceae549192d01ebdb8b1e6d1992e",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-meal-planning",
+      "source_family_id": "cdc-diabetes-meal-planning",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-meal-planning-3cabed593d43.txt"
+      ],
+      "sha256": "3cabed593d43fdb1ad2eb05b411c9beef0e07e3cf73f7598a0e524b2871ef19e",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-living-with-diabetes",
+      "source_family_id": "cdc-living-with-diabetes",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-living-with-diabetes-0b9db4dc414e.txt"
+      ],
+      "sha256": "0b9db4dc414e02a94330166e673a0bb26db73570d177d94a3a7431c0e62c6357",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetic-ketoacidosis",
+      "source_family_id": "cdc-diabetic-ketoacidosis",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetic-ketoacidosis-00084fd3c6e5.txt"
+      ],
+      "sha256": "00084fd3c6e5b6d11864a60129ef6b6a5520589ea6cd1f3970f473dddff763cf",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-carb-counting",
+      "source_family_id": "cdc-carb-counting",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-carb-counting-c95136366b5b.txt"
+      ],
+      "sha256": "c95136366b5bc9f7c9be25fa3958d39719724942cd6c8545f6edd7c99459e870",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-sick-days",
+      "source_family_id": "cdc-diabetes-sick-days",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-sick-days-f1b89073e08f.txt"
+      ],
+      "sha256": "f1b89073e08fc20452dd7ca0bd87351c21fa5f9c0f9ea590253b939de517fbb1",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-foot-care",
+      "source_family_id": "cdc-diabetes-foot-care",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-foot-care-1f50a106add9.txt"
+      ],
+      "sha256": "1f50a106add90e21d71f2737afa181a2ffc84e76a54adf3ab7e7b542a041f076",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-heart",
+      "source_family_id": "cdc-diabetes-heart",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-heart-3e788e0614db.txt"
+      ],
+      "sha256": "3e788e0614dbed00ff15890d744e741cf6c24f389450dc606d27890d069decfb",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-vision-loss",
+      "source_family_id": "cdc-diabetes-vision-loss",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-vision-loss-4c767005a0d9.txt"
+      ],
+      "sha256": "4c767005a0d95a42d6524853d475ca95ced67f456cf3bfdafa3baaadc545cc13",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-kidney",
+      "source_family_id": "cdc-diabetes-kidney",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-kidney-2616ae0700e2.txt"
+      ],
+      "sha256": "2616ae0700e2f49d5453c5cc89cbef5ab24ff6ab1d88cc5585e8ce2f337c2969",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-oral-health",
+      "source_family_id": "cdc-diabetes-oral-health",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-oral-health-36de37771124.txt"
+      ],
+      "sha256": "36de37771124ece265b76f378181bd19db85c5c80dc5296837d6ed1345f328cb",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-hypertension-about",
+      "source_family_id": "cdc-hypertension-about",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-hypertension-about-3463a88a9659.txt"
+      ],
+      "sha256": "3463a88a9659dd32049ed5f47a6afda0d5ef9b4d20389973b5dc98d09e25991c",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-hypertension-prevention",
+      "source_family_id": "cdc-hypertension-prevention",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-hypertension-prevention-a13d96b7f22d.txt"
+      ],
+      "sha256": "a13d96b7f22dcc6360ba3049a66f2d6221c6a86a6ea6fa8f328977bd489da488",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-hypertension-risk",
+      "source_family_id": "cdc-hypertension-risk",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-hypertension-risk-a011cebc770d.txt"
+      ],
+      "sha256": "a011cebc770d6bd3b3b19cd84bd637ea1770f270a55e94ee3d2134ff1a03b544",
+      "physical_files": 1,
+      "target_eligible_from_dot": false,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-hypertension-management",
+      "source_family_id": "cdc-hypertension-management",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-hypertension-management-99eef6215003.txt"
+      ],
+      "sha256": "99eef621500351f6f206b6b954529f6cb5fef6f575fc8dcc4e87b5e5c57c932b",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-type2-diabetes",
+      "source_family_id": "cdc-type2-diabetes",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-type2-diabetes-5ed3e722b55a.txt"
+      ],
+      "sha256": "5ed3e722b55a0c757f98455b0da152ee5ed84196de99bb91c26bbee4b46434a6",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-testing",
+      "source_family_id": "cdc-diabetes-testing",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-testing-3c1cc24338c5.txt"
+      ],
+      "sha256": "3c1cc24338c59c0f982224c36c532692fbe5679f750544dedff3caeee33ec45e",
+      "physical_files": 1,
+      "target_eligible_from_dot": false,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-prediabetes-prevention",
+      "source_family_id": "cdc-prediabetes-prevention",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-prediabetes-prevention-f4f6d1bd0105.txt"
+      ],
+      "sha256": "f4f6d1bd0105539644ad2edd29555524ab4af3960bb241bd756119663670d1b3",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-blood-sugar-monitoring",
+      "source_family_id": "cdc-blood-sugar-monitoring",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-blood-sugar-monitoring-e0fbe4064700.txt"
+      ],
+      "sha256": "e0fbe40647008212412a401e60e452899e0c4b17e7c8aded0fb817b172f31b0f",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-insulin-types",
+      "source_family_id": "cdc-insulin-types",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-insulin-types-8b4ddcf04d67.txt"
+      ],
+      "sha256": "8b4ddcf04d67cd2a9ac3a7afe04bc9acea98dae3a8e92abc632b7f379c25a86a",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-a1c-test",
+      "source_family_id": "cdc-a1c-test",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-a1c-test-9f9fe4aa6d60.txt"
+      ],
+      "sha256": "9f9fe4aa6d60bdad48bd2b228cb0a28f90b433ef3430d5991d7307fa2249c17d",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "fda-glucose-monitoring-devices",
+      "source_family_id": "fda-glucose-monitoring-devices",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\fda-glucose-monitoring-devices-1d4b003eb8be.txt"
+      ],
+      "sha256": "1d4b003eb8be02fe35d2361c98100f3d4893401f3274d9960a5eb18dcb8a68d9",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nei-diabetic-retinopathy",
+      "source_family_id": "nei-diabetic-retinopathy",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nei-diabetic-retinopathy-952416be8453.txt"
+      ],
+      "sha256": "952416be84535c834c4f3d79fc11edeee52c13f497ab6ee43312e420a23e76ff",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nidcr-diabetes-oral-health",
+      "source_family_id": "nidcr-diabetes-oral-health",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nidcr-diabetes-oral-health-83cbd7050284.txt"
+      ],
+      "sha256": "83cbd7050284ee4416b4be30917db47808f87511c8baa27afb6b6b67bcb2cdf5",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "fda-safe-glucose-meters",
+      "source_family_id": "fda-safe-glucose-meters",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\fda-safe-glucose-meters-31eccf681f72.txt"
+      ],
+      "sha256": "31eccf681f72002fe8ea7181064a7dd63cd85f008625e0f1a9689bb2243577af",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "fda-diabetes-overview",
+      "source_family_id": "fda-diabetes-overview",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\fda-diabetes-overview-6187c36a13f2.txt"
+      ],
+      "sha256": "6187c36a13f2498edb72acddd32d4c5ead8f5a4667300b2eb15a0b7ffd0918b9",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-continuous-glucose-monitors",
+      "source_family_id": "cdc-continuous-glucose-monitors",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-continuous-glucose-monitors-5ee6784f7c56.txt"
+      ],
+      "sha256": "5ee6784f7c563907e317d27ba136eb68728e98bd804509f9d9bf3d302ed21b86",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "fda-diabetes-sharps-safety",
+      "source_family_id": "fda-diabetes-sharps-safety",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\fda-diabetes-sharps-safety-a1ee74ff5290.txt"
+      ],
+      "sha256": "a1ee74ff5290594609aaf8ab4fe39b4fd1a973a1d92407d727d858c99cb89fb0",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "fda-insulin-pump-safety",
+      "source_family_id": "fda-insulin-pump-safety",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\fda-insulin-pump-safety-6e39981ed3cb.txt"
+      ],
+      "sha256": "6e39981ed3cb6e484bd259d8997287e0c42957f3e90169bf40ca777c3606a6cd",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cn-hypertension-guideline-2024-en-jgc2025",
+      "source_family_id": "cn-hypertension-guideline-2024",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cn-hypertension-guideline-2024-en-jgc2025-part1-7e366d574983.txt",
+        "knowledge\\medical-dot\\raw\\cn-hypertension-guideline-2024-en-jgc2025-part2-5659f011d0ce.txt",
+        "knowledge\\medical-dot\\raw\\cn-hypertension-guideline-2024-en-jgc2025-part3-4928c11b9836.txt"
+      ],
+      "sha256": "2a5d5edc9dd208c883fe3cf47e691ff5a2ee433a406ce9f9bc1436062791ddc2",
+      "physical_files": 3,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "nccih-diabetes-supplements",
+      "source_family_id": "nccih-diabetes-supplements",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\nccih-diabetes-supplements-0ca0416b4971.txt"
+      ],
+      "sha256": "0ca0416b4971b63db5a54fffe7c39b752ab746708a5887a6e3184bbaeecf428f",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-nerve-damage",
+      "source_family_id": "cdc-diabetes-nerve-damage",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-nerve-damage-b26e23a88538.txt"
+      ],
+      "sha256": "b26e23a88538db6da67b975418c96faa7d2e541c9e368844dd94edcc373aea0f",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-shift-work",
+      "source_family_id": "cdc-diabetes-shift-work",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-shift-work-b2846ce58184.txt"
+      ],
+      "sha256": "b2846ce58184c0314f2ac3443d7a8af9fd70644115048145adcb884b42038504",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-travel",
+      "source_family_id": "cdc-diabetes-travel",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-travel-d6f840bfb6d0.txt"
+      ],
+      "sha256": "d6f840bfb6d0e18f001fc6d32d67aeb166e91ae4773df297c7c2ab4acc14959d",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-smoking",
+      "source_family_id": "cdc-diabetes-smoking",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-smoking-8cfe1e641840.txt"
+      ],
+      "sha256": "8cfe1e641840efc578b0dbd428ecd52bf360a16421ebee7b1836efb9c289403d",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-skin",
+      "source_family_id": "cdc-diabetes-skin",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-skin-fae60c926ba8.txt"
+      ],
+      "sha256": "fae60c926ba8d3a51fe7b9b55a7b92b0cad2d4eda15655fb7e7cebf44603899a",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-ear-health",
+      "source_family_id": "cdc-diabetes-ear-health",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-ear-health-f9f63bd6304a.txt"
+      ],
+      "sha256": "f9f63bd6304a722fac7bb331e2bc15bb0e9a5d033d132d5e0e89990d49e83907",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-eating-out",
+      "source_family_id": "cdc-diabetes-eating-out",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-eating-out-04d0f2b72229.txt"
+      ],
+      "sha256": "04d0f2b72229f28b7bb736193b78fe66d127e5f77342c5628046a793846e298a",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "who-bp-device-specifications-2020",
+      "source_family_id": "who-bp-device-specifications-2020",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\who-bp-device-specifications-2020-2019c3b76e01.txt"
+      ],
+      "sha256": "2019c3b76e018a2339369bcb9a815a72a24bc50772375c47bfdd55ed90720fae",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-insulin-delivery-methods",
+      "source_family_id": "cdc-insulin-delivery-methods",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-insulin-delivery-methods-f9ec82e27848.txt"
+      ],
+      "sha256": "f9ec82e278489b581c59d5c20badc486f009a62af0099ee26f5d4074b60f3982",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-insulin-resistance",
+      "source_family_id": "cdc-insulin-resistance",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-insulin-resistance-f5fcce68e101.txt"
+      ],
+      "sha256": "f5fcce68e101b7cbb3de1e9eb38143d055a98b6f3d4293acbd4fbe1032af71c5",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-healthy-weight",
+      "source_family_id": "cdc-diabetes-healthy-weight",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-healthy-weight-ca931901828b.txt"
+      ],
+      "sha256": "ca931901828b9393a8c0dc21951595c67d73398c8970564fc680e01bde0e4788",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-statins",
+      "source_family_id": "cdc-diabetes-statins",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-statins-ae09d18c6544.txt"
+      ],
+      "sha256": "ae09d18c6544eb3f0cc0190203252f8ebefdd912c2c5fac012746e549137e1dc",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-digestion",
+      "source_family_id": "cdc-diabetes-digestion",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-digestion-0d10283e7f37.txt"
+      ],
+      "sha256": "0d10283e7f3770815e948da37e9b55265f7b97085dc89966751b4c8c8e4f3e2b",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-kidney-diet",
+      "source_family_id": "cdc-diabetes-kidney-diet",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-kidney-diet-4b44c6163405.txt"
+      ],
+      "sha256": "4b44c616340533a9abce868f17a2ac18ad59381bf32dd1ad53f905d6e7774cc0",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-fiber",
+      "source_family_id": "cdc-diabetes-fiber",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-fiber-c86be19b34ae.txt"
+      ],
+      "sha256": "c86be19b34ae1a5baab888c1b39fcd9a300b2d6cc0eb47bbfba17e3a73753d50",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-emergency-preparation",
+      "source_family_id": "cdc-diabetes-emergency-preparation",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-emergency-preparation-0f2f4ac81cf7.txt"
+      ],
+      "sha256": "0f2f4ac81cf71d6a7969d741e6497614ebb296a52fe7b028f2d4fa5e607e69dc",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-heat",
+      "source_family_id": "cdc-diabetes-heat",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-heat-c507baca1cde.txt"
+      ],
+      "sha256": "c507baca1cde94367f5cd7ad2676c4b91609dc693d44a931cbd7f1f49f878e7b",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-medicine-literacy",
+      "source_family_id": "cdc-diabetes-medicine-literacy",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-medicine-literacy-67e35684d0c4.txt"
+      ],
+      "sha256": "67e35684d0c43a426b6fc03563ac20629281c3ecc3fa78be168bd8216e852293",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-distress",
+      "source_family_id": "cdc-diabetes-distress",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-distress-8844702459d1.txt"
+      ],
+      "sha256": "8844702459d1cec832018a6f012e2e240787becf845c960d14aef7988c6a8e8e",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    },
+    {
+      "source_id": "cdc-diabetes-care-team",
+      "source_family_id": "cdc-diabetes-care-team",
+      "paths": [
+        "knowledge\\medical-dot\\raw\\cdc-diabetes-care-team-59ec5bb4dd65.txt"
+      ],
+      "sha256": "59ec5bb4dd65c3f8a6410d658c9a76e66a4f157e9106ba6dff54a41f0f0b0c98",
+      "physical_files": 1,
+      "target_eligible_from_dot": true,
+      "local_admission": "pending_source_license_and_professional_review"
+    }
+  ],
+  "baseline": [
+    {
+      "source_id": "nlm-hypertension",
+      "snapshot_bytes_sha256": "eb2887cf0aa6bee192b131e683e322e2e17b03eb868471b3707fa1fac0ccb384",
+      "normalized_sha256": "6ef444154364630f65a7934b794d754cff2a841ba77becaee2995afac4245dba"
+    },
+    {
+      "source_id": "nlm-bp-prevention",
+      "snapshot_bytes_sha256": "8a60fb0d8189074b29f2d08559f8575bbecb48d9912e502521a6ad3e93e9771b",
+      "normalized_sha256": "67ce8b3031d6cfc166b40569044b382624cace831c614c7dfa582a13131ea61c"
+    },
+    {
+      "source_id": "nlm-bp-medicines",
+      "snapshot_bytes_sha256": "ad99bcfbeab373934e323b7f2e6be18ad7a434f86ca2591331a41cd47dc9bcd3",
+      "normalized_sha256": "2686229dca0816049a1c687b4ad1e0ee381355f7f4e53bce2ed8c72e24336504"
+    },
+    {
+      "source_id": "nlm-type2-diabetes",
+      "snapshot_bytes_sha256": "c66f81625cdf324f5f26e4ec267d9cc74f323e650ab52b47b99730880b945aac",
+      "normalized_sha256": "fefe9a051cee4bd59fbd229d3e3940e3329d3edd61955db48213c9af0233d196"
+    },
+    {
+      "source_id": "nlm-prediabetes",
+      "snapshot_bytes_sha256": "1f424859d1cfbf20e86566123d857f6190cbe39fd0e05858f7119b967f81d5a5",
+      "normalized_sha256": "68719b122e0df5c3a341bae51da5d1ee2cccfd7a06ebddc48dbde0beff6cc394"
+    },
+    {
+      "source_id": "nlm-diabetes",
+      "snapshot_bytes_sha256": "53201bd2c38572fb23c345ac3ff019fffe657d33544e9349a7ba85ce41fcb20d",
+      "normalized_sha256": "af8d7afecf2020ac3be6d31f1488a09e3247829f58f1f662b50c567abacbdafc"
+    },
+    {
+      "source_id": "nlm-blood-glucose",
+      "snapshot_bytes_sha256": "d223ee34d5753a87a17b638539785e6bf8c04b630d9d2a1647a8071a7f9b64d9",
+      "normalized_sha256": "63abd8911345016893ce97f9057999797fbe53842c91304bbe4feabc19351b7c"
+    },
+    {
+      "source_id": "nlm-diabetes-complications",
+      "snapshot_bytes_sha256": "2ff266bafcb50b3cf5e4b8efe457978a556a4dcce69bfc51aa9565a16a0ed15d",
+      "normalized_sha256": "5e1ef753c611d2d2204666a0091e63c878069343ca84d656b71103607de24a13"
+    },
+    {
+      "source_id": "nlm-diabetes-prevention",
+      "snapshot_bytes_sha256": "aa7be52008a14fba07f3933c85baae27f04505fda5142f1489f92419e9e87e37",
+      "normalized_sha256": "94b6163748e0d5d51f87067f285dad5fa5f418fbc36985d640565627ab283203"
+    },
+    {
+      "source_id": "nlm-diabetes-medicines",
+      "snapshot_bytes_sha256": "8068cc3cea97d2955f5ee5e398b72743b9620cff7573af091996f60c501c5324",
+      "normalized_sha256": "1ecc91590a0667b16770fbbb2198d31df6c7077f26bc1f07d71905cb58bf1a0c"
+    },
+    {
+      "source_id": "nlm-bp-test",
+      "snapshot_bytes_sha256": "61f6e99c445d203c47e357142dce4fa373a9bc54f450592d36a37e0f527ea81b",
+      "normalized_sha256": "3605f16f26b8d7e9b90bc28b81899c1087f316e5e7b09d78aff92f295c6c3d75"
+    },
+    {
+      "source_id": "nlm-diabetes-tests",
+      "snapshot_bytes_sha256": "b760a751ea36531d4e77f25c25a2c5dc42a5a3f456b1e79ea1fd38532ceff4aa",
+      "normalized_sha256": "00eea6f5d7e0c01800693826cf672d4b8630e2745f2117798b563940da2534c9"
+    },
+    {
+      "source_id": "nlm-fasting-test",
+      "snapshot_bytes_sha256": "47200f86cc2a6f60857c342c907d5b35df9a58427cd9cd051d88340f578139fb",
+      "normalized_sha256": "989a2020ae03ef56dbe1a899937b243871c4662d415b85bf5e7af450a8b7e81b"
+    },
+    {
+      "source_id": "nlm-insulin-test",
+      "snapshot_bytes_sha256": "3832fea4bcae151b9ca63b5ab3eb800b1a01c4b2b39b062f95e823b869a150db",
+      "normalized_sha256": "42f951364863715fb637012c91d66df8a84a4a04452928060e25bdf187e2a79e"
+    },
+    {
+      "source_id": "nlm-ketones-blood",
+      "snapshot_bytes_sha256": "f65bba73e8a7e85338e610be361df1e28c8feb0f2168bf31445f90eab3ee0e06",
+      "normalized_sha256": "de52bfdc9cbe37272cccaa80a42778dcf53a021822947febe50e409d0bfd8203"
+    },
+    {
+      "source_id": "nlm-ketones-urine",
+      "snapshot_bytes_sha256": "2bcfc0bda4651d1f142812adb914426f3b6d5a3465e6ae375b61345c00038089",
+      "normalized_sha256": "068f6d3af1663df8773fd521994aada22a05919c988b4e78685f27700d61c623"
+    },
+    {
+      "source_id": "nlm-a1c-test",
+      "snapshot_bytes_sha256": "84c41d481b372e4211441463798ac7828c989954fab84e3fd124be099c02e585",
+      "normalized_sha256": "88534028573f92f5cacdba47c1c63bdd767886bcb5547bb8f1644b935256016a"
+    },
+    {
+      "source_id": "nlm-glucose-test",
+      "snapshot_bytes_sha256": "6a56bc107f005f52d9c4584cf1596145221a8e82e1e27b49844d4b079b503c99",
+      "normalized_sha256": "b9c8ae81e94010cb98ee5439fd02453d17a96126c1be8f99a6b5d4a2416fa355"
+    },
+    {
+      "source_id": "nlm-uacr-test",
+      "snapshot_bytes_sha256": "86fd7104f4f12f5d519511a30bac6b8bc5c9bfdb5dd58dd3fc9683767dc07e87",
+      "normalized_sha256": "3772202d3291e1828d35291338b1af2ccdbd7e8264959fbc0cdb1ecdc1670946"
+    },
+    {
+      "source_id": "nlm-gfr-test",
+      "snapshot_bytes_sha256": "ee08362e0a753775394e82f061ee84dad54af17384889c383d04a43e0b59c05e",
+      "normalized_sha256": "450e66f03685d5548bd2b41de9e0cdf90eef01a040c1067c87f20ff4c1828102"
+    }
+  ],
+  "handoffs": [
+    {
+      "batch_id": "corpus-20261014-03-metadata",
+      "sha256": "70f7ed9e669ad58e87de2dc3caa5b9c7bd0844dd2e4c9690f1df27b221bb0574",
+      "source_candidates": 10,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 10,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-04",
+      "sha256": "44f281f4c34fb07a5ad439bc4ebaca5eac78c3cd202d01e3cbb099709aa76d32",
+      "source_candidates": 11,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 11,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-05",
+      "sha256": "c65e9af3992d6a55db2d3667912a0d508f58021b902cba100f7e9b6b37ae5b10",
+      "source_candidates": 10,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 10,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-06",
+      "sha256": "eb5476b76f5f556a9fcdb13b2070267fea95006ff54bd367f91064d7f5e91db7",
+      "source_candidates": 10,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 10,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-07",
+      "sha256": "6c8962a630dd17e007d41cb9cd4fd1c876f976c05f1984e05eca74ec0adaa2f1",
+      "source_candidates": 10,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 10,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-08",
+      "sha256": "4f869ebf3d56031b1358fe70f864ba870131079edfa85dbe2b783fd4c9ae26ce",
+      "source_candidates": 10,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 10,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-09",
+      "sha256": "9e93d5a78f4a973876be8d17e255b520082884ce9b58193b98e1e60f389d42a7",
+      "source_candidates": 10,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 10,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-10",
+      "sha256": "8e2f3f85b2942b92439f8068c5875850153b219f1898bb11d1ab616548e1b410",
+      "source_candidates": 3,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 3,
+      "updated_source_candidates": 0,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    },
+    {
+      "batch_id": "corpus-20261014-cn2024-upgrade01",
+      "sha256": "ff47514d01489f136afc0d3116b168a814c10d8d1d1c66ee3ffef952a586d013",
+      "source_candidates": 1,
+      "point_audits": 0,
+      "status": "staged_for_review",
+      "validation": "structure_and_case_scope_only",
+      "clinical_review": "not_run",
+      "corpus_update": "not_applied",
+      "dataset_update": "not_applied",
+      "new_source_candidates": 0,
+      "updated_source_candidates": 1,
+      "unchanged_source_candidates": 0,
+      "replayed": true
+    }
+  ]
+}

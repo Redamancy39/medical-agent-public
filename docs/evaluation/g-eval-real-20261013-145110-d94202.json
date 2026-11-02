@@ -1,0 +1,1324 @@
+{
+  "dataset_version": "synthetic-workflows-v1",
+  "dataset_sha256": "bbf2dedd930088f98d1256372f20b75c083eca06c40b41781bc97a59dfa9a64b",
+  "mode": "cloud_real",
+  "synthetic_only": true,
+  "method": "same questions, fresh sessions, fixed topology plans, same model/tool caps; planning is deterministic and counts one budget attempt but makes no HTTP call",
+  "limits": {
+    "model_attempts_per_run": 16,
+    "tools_per_run": 5,
+    "model_attempts_per_worker": 4,
+    "tools_per_worker": 2,
+    "output_tokens_per_request": 768,
+    "cloud_requests_global": 36
+  },
+  "human_review": "not_run",
+  "clinical_quality": "not_evaluated",
+  "cells": [
+    {
+      "case_id": "registration_rules",
+      "topology": "single",
+      "question": "请检索本地合成资料，说明样本登记所需字段、编辑后重新确认、取消和重复提交的处理规则。请引用资料，仅依据合成软件流程回答。",
+      "elapsed_seconds": 3.547,
+      "result": {
+        "run_id": "5fb947ec-9be2-4617-ac1f-92a4481f4a01",
+        "request_id": "7bbbb661-d97a-4224-a02c-db35d2a8f93b",
+        "session_id": "1541d8d2-f41a-4d9c-81d7-b7e07ac838a1",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "依据合成登记流程（非医学规范）：登记先提取项目、样本类型、数量、接收日期、存储区域五项字段；缺字段则请求补充，字段完整仅生成草稿，不直接入库。用户可编辑、明确确认或取消；编辑后原确认失效，须重新确认。仅当明确确认且字段、权限、版本校验均通过，登记服务才幂等写入演示记录；重复提交按幂等处理，不产生重复记录。取消不得新增记录。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c7159-08d9-6be1-8008-a19ae410ac87",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "research_agent",
+        "model_calls": 3,
+        "tool_calls": 1,
+        "worker_iterations": 2,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+            "source": "milvus_local",
+            "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+            "verified": false,
+            "title": "合成样本登记流程",
+            "url": "local://synthetic/registration",
+            "document_id": "synthetic-registration",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 134,
+            "score": 0.7180685997009277,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.9292643666267395,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 1,
+        "distinct_agent_count": null,
+        "planned_agent_count": 1,
+        "started_task_count": null,
+        "completed_task_count": null,
+        "failed_task_count": null,
+        "blocked_task_count": null,
+        "task_results": [],
+        "evidence_status": "not_run",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "simulated",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "observed_tasks": 1,
+      "observed_roles": 1,
+      "topology_ok": true,
+      "source_contract_ok": true,
+      "rubric_presence": {
+        "required_fields": true,
+        "edit_invalidates": true,
+        "cancel_no_write": true,
+        "idempotency": true
+      },
+      "rubric_method": "lexical_presence_only_not_semantic_correctness",
+      "http_calls": [
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 750,
+            "completion_tokens": 64,
+            "total_tokens": 814
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1905,
+            "completion_tokens": 193,
+            "total_tokens": 2098
+          }
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2655,
+        "completion_tokens": 257,
+        "total_tokens": 2912
+      }
+    },
+    {
+      "case_id": "registration_rules",
+      "topology": "multi",
+      "question": "请检索本地合成资料，说明样本登记所需字段、编辑后重新确认、取消和重复提交的处理规则。请引用资料，仅依据合成软件流程回答。",
+      "elapsed_seconds": 8.141,
+      "result": {
+        "run_id": "dc8faecf-9e5f-461e-9ebe-3b1d6c5aa818",
+        "request_id": "999272be-fa38-4631-9018-d924db8f61d6",
+        "session_id": "07343b7b-7011-4aaf-b7f8-d1013a157dca",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "仅依据本地合成软件流程：登记先提取项目、样本类型、数量、接收日期、存储区域；缺字段时请求补充，完整字段仅生成草稿。用户可编辑、明确确认或取消；编辑后旧确认失效，须重新明确确认。只有明确确认且字段、权限、版本校验通过，服务才幂等写入演示记录，重复提交不产生重复记录；取消不得新增记录。该资料为合成演示，不构成医学规范。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c7159-56a4-60dc-8009-2ca1aefaa670",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "research_agent",
+        "model_calls": 6,
+        "tool_calls": 2,
+        "worker_iterations": 0,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+            "source": "milvus_local",
+            "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+            "verified": false,
+            "title": "合成样本登记流程",
+            "url": "local://synthetic/registration",
+            "document_id": "synthetic-registration",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 134,
+            "score": 0.6769322156906128,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.7230409383773804,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 3,
+        "distinct_agent_count": 3,
+        "planned_agent_count": 3,
+        "started_task_count": 3,
+        "completed_task_count": 3,
+        "failed_task_count": 0,
+        "blocked_task_count": 0,
+        "task_results": [
+          {
+            "task_id": "research",
+            "agent_id": "research_agent",
+            "description": "请检索本地合成资料，说明样本登记所需字段、编辑后重新确认、取消和重复提交的处理规则。请引用资料，仅依据合成软件流程回答。",
+            "depends_on": [],
+            "status": "completed",
+            "answer": "仅依据本地合成软件流程：登记需先提取项目、样本类型、数量、接收日期、存储区域；缺字段时请求补充，完整字段仅生成草稿。用户可编辑、明确确认或取消；编辑后旧确认失效，须重新明确确认。只有明确确认且字段、权限、版本校验通过，服务才幂等写入演示记录（重复提交不产生重复记录）。取消不得新增记录。该资料属合成演示，不构成医学规范。",
+            "sources": [
+              {
+                "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+                "source": "milvus_local",
+                "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+                "verified": false,
+                "title": "合成样本登记流程",
+                "url": "local://synthetic/registration",
+                "document_id": "synthetic-registration",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 134,
+                "score": 0.6769322156906128,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.7230409383773804,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 2,
+            "tool_calls": 2,
+            "worker_iterations": 2,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "explain",
+            "agent_id": "consultation_agent",
+            "description": "根据research已给出的来源解释本题规则与限制；资料足够时直接回答，无需重复检索：请检索本地合成资料，说明样本登记所需字段、编辑后重新确认、取消和重复提交的处理规则。请引用资料，仅依据合成软件流程回答。",
+            "depends_on": [
+              "research"
+            ],
+            "status": "completed",
+            "answer": "仅依据本地合成软件流程：登记先提取项目、样本类型、数量、接收日期、存储区域；缺字段时请求补充，完整字段仅生成草稿。用户可编辑、明确确认或取消；编辑后旧确认失效，须重新明确确认。只有明确确认且字段、权限、版本校验通过，服务才幂等写入演示记录，故重复提交不产生重复记录；取消不得新增记录。该资料为合成演示，不构成医学规范。",
+            "sources": [
+              {
+                "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+                "source": "milvus_local",
+                "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+                "verified": false,
+                "title": "合成样本登记流程",
+                "url": "local://synthetic/registration",
+                "document_id": "synthetic-registration",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 134,
+                "score": 0.6769322156906128,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.7230409383773804,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 1,
+            "tool_calls": 0,
+            "worker_iterations": 1,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "review",
+            "agent_id": "diagnostic_agent",
+            "description": "核对research已给出的来源对本题回答的支持及遗漏；资料足够时直接回答，无需重复检索，不作临床判断：请检索本地合成资料，说明样本登记所需字段、编辑后重新确认、取消和重复提交的处理规则。请引用资料，仅依据合成软件流程回答。",
+            "depends_on": [
+              "research"
+            ],
+            "status": "completed",
+            "answer": "核对结论：前置来源已足够，无需重复检索。字段：登记先提取项目、样本类型、数量、接收日期、存储区域；缺字段须请求补充，完整字段仅生成草稿。编辑：可编辑、明确确认或取消；编辑后旧确认失效，须重新明确确认。取消：不得新增记录。重复提交：仅当明确确认且字段、权限、版本校验通过，服务才幂等写入演示记录，重复提交不产生重复记录。该资料为合成演示，不构成医学规范。",
+            "sources": [
+              {
+                "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+                "source": "milvus_local",
+                "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+                "verified": false,
+                "title": "合成样本登记流程",
+                "url": "local://synthetic/registration",
+                "document_id": "synthetic-registration",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 134,
+                "score": 0.6769322156906128,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.7230409383773804,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 1,
+            "tool_calls": 0,
+            "worker_iterations": 1,
+            "refined": false,
+            "started": true
+          }
+        ],
+        "evidence_status": "passed",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "simulated",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "observed_tasks": 3,
+      "observed_roles": 3,
+      "topology_ok": true,
+      "source_contract_ok": true,
+      "rubric_presence": {
+        "required_fields": true,
+        "edit_invalidates": true,
+        "cancel_no_write": true,
+        "idempotency": true
+      },
+      "rubric_method": "lexical_presence_only_not_semantic_correctness",
+      "http_calls": [
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 792,
+            "completion_tokens": 121,
+            "total_tokens": 913
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 2449,
+            "completion_tokens": 190,
+            "total_tokens": 2639
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1392,
+            "completion_tokens": 190,
+            "total_tokens": 1582
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1397,
+            "completion_tokens": 202,
+            "total_tokens": 1599
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "synthesize",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1828,
+            "completion_tokens": 163,
+            "total_tokens": 1991
+          }
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 7858,
+        "completion_tokens": 866,
+        "total_tokens": 8724
+      }
+    },
+    {
+      "case_id": "memory_boundaries",
+      "topology": "multi",
+      "question": "请检索本地合成资料，说明JWT、SQL完整历史、最近十轮与旧摘要各自的作用，以及哪些内容不能进入Mem0长期画像。请引用资料，不提供医学诊断。",
+      "elapsed_seconds": 9.796,
+      "result": {
+        "run_id": "9721693e-0e5d-4d28-9671-c9c2d77cb737",
+        "request_id": "9a33346e-929b-415e-92f3-18a42734ed34",
+        "session_id": "0f4dfb38-e45c-47f1-a61e-4e1f1555f759",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "本地合成资料显示：JWT用于确认当前用户身份；SQL会话按用户与会话隔离，保存完整历史消息；上下文默认取最近十轮完整对话，更早对话生成带覆盖序号的摘要，以兼顾细节与长度控制。Mem0长期画像仅保存用户明确的长期偏好，未验证诊断、助手猜测及登记确认状态不得写入；记忆检索失败与无命中需分别显示。上述均为软件链路演示，不作医学结论或临床判断。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c7159-b43e-6625-8009-1f16edb25bb8",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "research_agent",
+        "model_calls": 7,
+        "tool_calls": 2,
+        "worker_iterations": 0,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+            "source": "milvus_local",
+            "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+            "verified": false,
+            "title": "合成会话与记忆流程",
+            "url": "local://synthetic/conversation",
+            "document_id": "synthetic-conversation",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 132,
+            "score": 0.5074003338813782,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.9832888245582581,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+            "source": "milvus_local",
+            "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+            "verified": false,
+            "title": "合成样本登记流程",
+            "url": "local://synthetic/registration",
+            "document_id": "synthetic-registration",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 134,
+            "score": 0.5205236673355103,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.07848363369703293,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+            "source": "milvus_local",
+            "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+            "verified": false,
+            "title": "合成检索与证据规则",
+            "url": "local://synthetic/evidence",
+            "document_id": "synthetic-evidence",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 145,
+            "score": 0.49667900800704956,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 5.23649032402318e-05,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 3,
+        "distinct_agent_count": 3,
+        "planned_agent_count": 3,
+        "started_task_count": 3,
+        "completed_task_count": 3,
+        "failed_task_count": 0,
+        "blocked_task_count": 0,
+        "task_results": [
+          {
+            "task_id": "research",
+            "agent_id": "research_agent",
+            "description": "请检索本地合成资料，说明JWT、SQL完整历史、最近十轮与旧摘要各自的作用，以及哪些内容不能进入Mem0长期画像。请引用资料，不提供医学诊断。",
+            "depends_on": [],
+            "status": "completed",
+            "answer": "本地合成软件资料说明：JWT用于确认当前用户身份；SQL会话按用户与会话隔离并保存完整历史消息；上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要，兼顾细节与长度控制。Mem0长期画像仅保存用户明确的长期偏好；未验证诊断、助手猜测及登记确认状态不得写入长期画像。记忆检索失败与无命中需分别显示。以上均为软件链路演示，不构成医学结论或诊断。",
+            "sources": [
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5074003338813782,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.9832888245582581,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 2,
+            "tool_calls": 1,
+            "worker_iterations": 2,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "explain",
+            "agent_id": "consultation_agent",
+            "description": "根据research已给出的来源解释本题规则与限制；资料足够时直接回答，无需重复检索：请检索本地合成资料，说明JWT、SQL完整历史、最近十轮与旧摘要各自的作用，以及哪些内容不能进入Mem0长期画像。请引用资料，不提供医学诊断。",
+            "depends_on": [
+              "research"
+            ],
+            "status": "completed",
+            "answer": "按本地合成资料：JWT用于确认当前用户身份；SQL会话按用户与会话隔离，保存完整历史消息。上下文默认取最近十轮完整对话，更早对话生成带覆盖序号的摘要，以兼顾细节与长度控制。Mem0长期画像仅保存用户明确的长期偏好；未验证诊断、助手猜测、登记确认状态不得写入长期画像。记忆检索失败与无命中需分别显示。以上为软件链路演示，不构成医学结论或诊断。",
+            "sources": [
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5074003338813782,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.9832888245582581,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 1,
+            "tool_calls": 0,
+            "worker_iterations": 1,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "review",
+            "agent_id": "diagnostic_agent",
+            "description": "核对research已给出的来源对本题回答的支持及遗漏；资料足够时直接回答，无需重复检索，不作临床判断：请检索本地合成资料，说明JWT、SQL完整历史、最近十轮与旧摘要各自的作用，以及哪些内容不能进入Mem0长期画像。请引用资料，不提供医学诊断。",
+            "depends_on": [
+              "research"
+            ],
+            "status": "completed",
+            "answer": "核对结论：research来源与本次检索一致，仅51d…片段直接覆盖本题，另两个片段为登记流程与检索证据规则，属旁证而非本题直接依据。\n\n作用：JWT确认当前用户身份；SQL会话按用户与会话隔离，保存完整历史消息；上下文默认取最近十轮完整对话；更早对话生成带覆盖序号的摘要，兼顾细节与长度控制。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测、登记确认状态不得写入长期画像。记忆检索失败与无命中分别显示。均为软件链路演示，非医学结论。",
+            "sources": [
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5074003338813782,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.9832888245582581,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+                "source": "milvus_local",
+                "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+                "verified": false,
+                "title": "合成样本登记流程",
+                "url": "local://synthetic/registration",
+                "document_id": "synthetic-registration",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 134,
+                "score": 0.5205236673355103,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.07848363369703293,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+                "source": "milvus_local",
+                "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+                "verified": false,
+                "title": "合成检索与证据规则",
+                "url": "local://synthetic/evidence",
+                "document_id": "synthetic-evidence",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 145,
+                "score": 0.49667900800704956,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 5.23649032402318e-05,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 2,
+            "tool_calls": 1,
+            "worker_iterations": 2,
+            "refined": false,
+            "started": true
+          }
+        ],
+        "evidence_status": "passed",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "simulated",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "observed_tasks": 3,
+      "observed_roles": 3,
+      "topology_ok": true,
+      "source_contract_ok": true,
+      "rubric_presence": {
+        "identity": true,
+        "history": true,
+        "memory": true,
+        "exclude_guesses": true
+      },
+      "rubric_method": "lexical_presence_only_not_semantic_correctness",
+      "http_calls": [
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 806,
+            "completion_tokens": 68,
+            "total_tokens": 874
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1965,
+            "completion_tokens": 182,
+            "total_tokens": 2147
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1386,
+            "completion_tokens": 182,
+            "total_tokens": 1568
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1391,
+            "completion_tokens": 73,
+            "total_tokens": 1464
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 2489,
+            "completion_tokens": 295,
+            "total_tokens": 2784
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "synthesize",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 2394,
+            "completion_tokens": 239,
+            "total_tokens": 2633
+          }
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 10431,
+        "completion_tokens": 1039,
+        "total_tokens": 11470
+      }
+    },
+    {
+      "case_id": "memory_boundaries",
+      "topology": "single",
+      "question": "请检索本地合成资料，说明JWT、SQL完整历史、最近十轮与旧摘要各自的作用，以及哪些内容不能进入Mem0长期画像。请引用资料，不提供医学诊断。",
+      "elapsed_seconds": 3.594,
+      "result": {
+        "run_id": "e4eb5897-668e-4683-8901-f12232b5820b",
+        "request_id": "887339d8-72ff-4f79-a604-304411ffb471",
+        "session_id": "c5379ab1-5079-4dd7-b00f-b1b1aea720c6",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "据本地合成资料（软件演示说明，非医学规范）：JWT确认当前用户身份；SQL会话按用户与会话隔离，保存完整消息历史；上下文默认用最近十轮完整对话，更早内容生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测、登记确认状态均不得写入长期画像。记忆检索失败与无命中需分别显示。以上仅验证软件链路，不作临床判断。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c7159-d6a1-6b87-8008-f7ca16db203a",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "research_agent",
+        "model_calls": 3,
+        "tool_calls": 1,
+        "worker_iterations": 2,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+            "source": "milvus_local",
+            "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+            "verified": false,
+            "title": "合成会话与记忆流程",
+            "url": "local://synthetic/conversation",
+            "document_id": "synthetic-conversation",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 132,
+            "score": 0.5074003338813782,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.982018232345581,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "0bd7f16fc11d9fe9016ede0e9b192fe290b90e8f6d6673342f69a0b7a0a3406e",
+            "source": "milvus_local",
+            "content": "此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。",
+            "verified": false,
+            "title": "合成样本登记流程",
+            "url": "local://synthetic/registration",
+            "document_id": "synthetic-registration",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 134,
+            "score": 0.3983795642852783,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.041758306324481964,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+            "source": "milvus_local",
+            "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+            "verified": false,
+            "title": "合成检索与证据规则",
+            "url": "local://synthetic/evidence",
+            "document_id": "synthetic-evidence",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 145,
+            "score": 0.40196144580841064,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.00046141428174450994,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 1,
+        "distinct_agent_count": null,
+        "planned_agent_count": 1,
+        "started_task_count": null,
+        "completed_task_count": null,
+        "failed_task_count": null,
+        "blocked_task_count": null,
+        "task_results": [],
+        "evidence_status": "not_run",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "simulated",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "observed_tasks": 1,
+      "observed_roles": 1,
+      "topology_ok": true,
+      "source_contract_ok": true,
+      "rubric_presence": {
+        "identity": true,
+        "history": true,
+        "memory": true,
+        "exclude_guesses": true
+      },
+      "rubric_method": "lexical_presence_only_not_semantic_correctness",
+      "http_calls": [
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 757,
+            "completion_tokens": 69,
+            "total_tokens": 826
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1916,
+            "completion_tokens": 265,
+            "total_tokens": 2181
+          }
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 2673,
+        "completion_tokens": 334,
+        "total_tokens": 3007
+      }
+    },
+    {
+      "case_id": "evidence_boundaries",
+      "topology": "single",
+      "question": "请检索本地合成资料，解释为什么有引用和成功运行不代表医学正确，PubMed索引与论文正文有何区别，以及检索无命中和工具失败应该怎样分别反馈。请引用资料。",
+      "elapsed_seconds": 5.204,
+      "result": {
+        "run_id": "df3d39d5-1980-48d7-aa72-5ceffb5cf944",
+        "request_id": "7ef1fe1a-3e35-49a3-a35e-4edec4dcdb35",
+        "session_id": "171bde11-662c-4b15-af8a-00566cbfc77b",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "合成资料表明：引用与成功运行只验证软件链路，不能作为医学证据或临床判断，来源含文档ID、版本、片段位置和相似度也仅是元数据。PubMed检索返回标题、日期和链接等索引信息，不等于已阅读论文正文，不可据索引推断结论。资料缺失、来源冲突应如实报告；无命中须明确说明未检索到，而非宣称有结果；工具失败则报告真实失败状态，不编造证据。记忆检索失败与无命中也要分别显示，未验证诊断和助手猜测不写入长期画像。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c715a-0856-6502-8008-66526625c4b1",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "research_agent",
+        "model_calls": 3,
+        "tool_calls": 2,
+        "worker_iterations": 2,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+            "source": "milvus_local",
+            "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+            "verified": false,
+            "title": "合成检索与证据规则",
+            "url": "local://synthetic/evidence",
+            "document_id": "synthetic-evidence",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 145,
+            "score": 0.5434894561767578,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.48186442255973816,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+            "source": "milvus_local",
+            "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+            "verified": false,
+            "title": "合成会话与记忆流程",
+            "url": "local://synthetic/conversation",
+            "document_id": "synthetic-conversation",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 132,
+            "score": 0.5383597612380981,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.35678645968437195,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 1,
+        "distinct_agent_count": null,
+        "planned_agent_count": 1,
+        "started_task_count": null,
+        "completed_task_count": null,
+        "failed_task_count": null,
+        "blocked_task_count": null,
+        "task_results": [],
+        "evidence_status": "not_run",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "simulated",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "observed_tasks": 1,
+      "observed_roles": 1,
+      "topology_ok": true,
+      "source_contract_ok": true,
+      "rubric_presence": {
+        "not_clinical_truth": true,
+        "index_not_full_text": true,
+        "no_match": true,
+        "failure": true
+      },
+      "rubric_method": "lexical_presence_only_not_semantic_correctness",
+      "http_calls": [
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 756,
+            "completion_tokens": 120,
+            "total_tokens": 876
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 2808,
+            "completion_tokens": 243,
+            "total_tokens": 3051
+          }
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 3564,
+        "completion_tokens": 363,
+        "total_tokens": 3927
+      }
+    },
+    {
+      "case_id": "evidence_boundaries",
+      "topology": "multi",
+      "question": "请检索本地合成资料，解释为什么有引用和成功运行不代表医学正确，PubMed索引与论文正文有何区别，以及检索无命中和工具失败应该怎样分别反馈。请引用资料。",
+      "elapsed_seconds": 7.641,
+      "result": {
+        "run_id": "23d8e9cd-4810-4de1-9b53-9efc2cd6c9c3",
+        "request_id": "41196173-afb4-47d2-9132-396fc4dea166",
+        "session_id": "7e12a35e-b47f-4bed-a6e3-6da37cf46188",
+        "run_status": "finished",
+        "result_status": "completed",
+        "answer": "本地合成资料只能验证软件链路跑通，不用于临床判断；有引用、流程成功运行仅说明链路跑通，不等于医学正确。PubMed只返回标题、日期、来源链接等公开检索元数据，不等于已读论文正文，不能据此断言全文结论。反馈须报真实状态、不编造证据：检索无命中应如实说明未命中、无相关结果；工具失败应报告失败本身，不可当作无命中，二者分别显示。",
+        "safe_error_code": null,
+        "mode": "cloud_real",
+        "replayed": false,
+        "graph_version": 3,
+        "checkpoint_id": "1f1c715a-5169-686c-8009-3e835987d01c",
+        "stage": "persist_result",
+        "plan_status": "completed",
+        "agent_id": "research_agent",
+        "model_calls": 6,
+        "tool_calls": 1,
+        "worker_iterations": 0,
+        "context_status": "ready",
+        "sources": [
+          {
+            "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+            "source": "milvus_local",
+            "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+            "verified": false,
+            "title": "合成检索与证据规则",
+            "url": "local://synthetic/evidence",
+            "document_id": "synthetic-evidence",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 145,
+            "score": 0.6445932388305664,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.5811396837234497,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          },
+          {
+            "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+            "source": "milvus_local",
+            "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+            "verified": false,
+            "title": "合成会话与记忆流程",
+            "url": "local://synthetic/conversation",
+            "document_id": "synthetic-conversation",
+            "version": "2026-10-13-v1",
+            "start": 0,
+            "end": 132,
+            "score": 0.5296610593795776,
+            "score_kind": "cosine_similarity",
+            "content_kind": "synthetic_excerpt",
+            "rerank_score": 0.04601972922682762,
+            "reranker": "BAAI/bge-reranker-v2-m3"
+          }
+        ],
+        "cancel_requested": false,
+        "task_count": 3,
+        "distinct_agent_count": 3,
+        "planned_agent_count": 3,
+        "started_task_count": 3,
+        "completed_task_count": 3,
+        "failed_task_count": 0,
+        "blocked_task_count": 0,
+        "task_results": [
+          {
+            "task_id": "research",
+            "agent_id": "research_agent",
+            "description": "请检索本地合成资料，解释为什么有引用和成功运行不代表医学正确，PubMed索引与论文正文有何区别，以及检索无命中和工具失败应该怎样分别反馈。请引用资料。",
+            "depends_on": [],
+            "status": "completed",
+            "answer": "资料指出：本地合成资料仅能验证软件链路，不构成医学结论；引用存在、流程成功运行只说明链路跑通，不等于医学正确。PubMed只提供公开索引（标题、日期、来源链接），属检索元数据，不等于已读论文正文，故不能据此断言全文结论。反馈要求报告真实状态、不编造证据：无命中如实说明检索未命中、无相关结果；工具失败应报告失败本身而非当作无命中。会话与记忆流程也要求记忆检索失败与无命中分别显示。",
+            "sources": [
+              {
+                "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+                "source": "milvus_local",
+                "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+                "verified": false,
+                "title": "合成检索与证据规则",
+                "url": "local://synthetic/evidence",
+                "document_id": "synthetic-evidence",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 145,
+                "score": 0.6445932388305664,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.5811396837234497,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5296610593795776,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.04601972922682762,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 2,
+            "tool_calls": 1,
+            "worker_iterations": 2,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "explain",
+            "agent_id": "consultation_agent",
+            "description": "根据research已给出的来源解释本题规则与限制；资料足够时直接回答，无需重复检索：请检索本地合成资料，解释为什么有引用和成功运行不代表医学正确，PubMed索引与论文正文有何区别，以及检索无命中和工具失败应该怎样分别反馈。请引用资料。",
+            "depends_on": [
+              "research"
+            ],
+            "status": "completed",
+            "answer": "两篇合成资料均只用于验证软件链路，不构成医学结论。引用存在、流程成功运行仅说明链路跑通，不能证明医学正确。PubMed提供的是公开索引（标题、日期、来源链接），属检索元数据，不等于已读论文正文，故不能据此断言全文结论。反馈时须报真实状态、不编造证据：检索无命中的，如实说明未命中、无相关结果；工具失败的，报告失败本身，不得当作无命中处理。",
+            "sources": [
+              {
+                "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+                "source": "milvus_local",
+                "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+                "verified": false,
+                "title": "合成检索与证据规则",
+                "url": "local://synthetic/evidence",
+                "document_id": "synthetic-evidence",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 145,
+                "score": 0.6445932388305664,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.5811396837234497,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5296610593795776,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.04601972922682762,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 1,
+            "tool_calls": 0,
+            "worker_iterations": 1,
+            "refined": false,
+            "started": true
+          },
+          {
+            "task_id": "review",
+            "agent_id": "diagnostic_agent",
+            "description": "核对research已给出的来源对本题回答的支持及遗漏；资料足够时直接回答，无需重复检索，不作临床判断：请检索本地合成资料，解释为什么有引用和成功运行不代表医学正确，PubMed索引与论文正文有何区别，以及检索无命中和工具失败应该怎样分别反馈。请引用资料。",
+            "depends_on": [
+              "research"
+            ],
+            "status": "completed",
+            "answer": "已核对前置来源，两片段可支撑本题，无关键遗漏，无需重复检索。要点：本地合成资料只能验证软件链路跑通，引用存在和流程成功运行不等于医学正确，不用于临床判断。PubMed只返回标题、日期、来源链接等公开检索元数据，不等于已读论文正文，不能据此断言全文结论。检索无命中应如实说明未命中、无相关结果；工具失败应报告失败本身，不可当作无命中，二者分别显示。资料缺失与来源冲突也需报告真实状态，不编造证据。",
+            "sources": [
+              {
+                "id": "d6533853f166417d74de5455af0ad9299e8b2e9c74d4a5a74b0ad9e1606e4473",
+                "source": "milvus_local",
+                "content": "本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。",
+                "verified": false,
+                "title": "合成检索与证据规则",
+                "url": "local://synthetic/evidence",
+                "document_id": "synthetic-evidence",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 145,
+                "score": 0.6445932388305664,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.5811396837234497,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              },
+              {
+                "id": "51d1195d097672d2ef86d16220176623045f5ba97aba80488db4fbfe8bcbf902",
+                "source": "milvus_local",
+                "content": "此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。",
+                "verified": false,
+                "title": "合成会话与记忆流程",
+                "url": "local://synthetic/conversation",
+                "document_id": "synthetic-conversation",
+                "version": "2026-10-13-v1",
+                "start": 0,
+                "end": 132,
+                "score": 0.5296610593795776,
+                "score_kind": "cosine_similarity",
+                "content_kind": "synthetic_excerpt",
+                "rerank_score": 0.04601972922682762,
+                "reranker": "BAAI/bge-reranker-v2-m3"
+              }
+            ],
+            "safe_error_code": null,
+            "model_calls": 1,
+            "tool_calls": 0,
+            "worker_iterations": 1,
+            "refined": false,
+            "started": true
+          }
+        ],
+        "evidence_status": "passed",
+        "evidence_issues": [],
+        "refinement_count": 0,
+        "context_details": {
+          "memory_status": "simulated",
+          "memory_error_code": null,
+          "summary_status": "empty",
+          "older_history_omitted": false,
+          "history_truncated": false,
+          "memory_count": 0
+        },
+        "summary_coverage": null,
+        "memory_write_status": "skipped",
+        "summary_write_status": "not_run",
+        "maintenance_error_code": null,
+        "schema_repair_count": 0,
+        "provider_contract_details": {}
+      },
+      "observed_tasks": 3,
+      "observed_roles": 3,
+      "topology_ok": true,
+      "source_contract_ok": true,
+      "rubric_presence": {
+        "not_clinical_truth": true,
+        "index_not_full_text": true,
+        "no_match": true,
+        "failure": true
+      },
+      "rubric_method": "lexical_presence_only_not_semantic_correctness",
+      "http_calls": [
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 804,
+            "completion_tokens": 73,
+            "total_tokens": 877
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1607,
+            "completion_tokens": 237,
+            "total_tokens": 1844
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1755,
+            "completion_tokens": 227,
+            "total_tokens": 1982
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "worker",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 1760,
+            "completion_tokens": 242,
+            "total_tokens": 2002
+          }
+        },
+        {
+          "provider": "deepseek",
+          "operation": "synthesize",
+          "status": "completed",
+          "safe_error_code": null,
+          "usage": {
+            "prompt_tokens": 2666,
+            "completion_tokens": 200,
+            "total_tokens": 2866
+          }
+        }
+      ],
+      "token_usage": {
+        "prompt_tokens": 8592,
+        "completion_tokens": 979,
+        "total_tokens": 9571
+      }
+    }
+  ],
+  "tool_policy": "local_kb_only",
+  "knowledge_sha256": "1a6596d10c90e4e128e127fe716da8545615499034c71185aea5f96168caeea8",
+  "retrieval": "local_bge_with_user_reranker",
+  "by_topology": {
+    "single": {
+      "denominator": 3,
+      "completed": 3,
+      "topology_ok": 3,
+      "source_contract_ok": 3,
+      "latency_p50_seconds": 3.594,
+      "latency_p95_seconds": 5.204,
+      "model_attempts": 9,
+      "tool_attempts": 4,
+      "http_requests": 6,
+      "total_tokens": 9846
+    },
+    "multi": {
+      "denominator": 3,
+      "completed": 3,
+      "topology_ok": 3,
+      "source_contract_ok": 3,
+      "latency_p50_seconds": 8.141,
+      "latency_p95_seconds": 9.796,
+      "model_attempts": 19,
+      "tool_attempts": 5,
+      "http_requests": 16,
+      "total_tokens": 29765
+    }
+  },
+  "status": "passed"
+}

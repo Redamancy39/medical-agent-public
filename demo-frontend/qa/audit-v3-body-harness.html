@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>前端正文完整性独立验收</title>
+<style>body{margin:20px;font-family:system-ui;overflow:auto!important}#app{display:block;height:auto}article{margin:20px 0!important}#controls{position:sticky;top:0;background:white;padding:12px;z-index:20;border-bottom:1px solid #ddd}button{margin:4px}#expected{white-space:pre-wrap;background:#eef3fa;padding:12px}</style>
+<div id="controls"><h1>独立验收夹具 · 使用当前 ConversationTurnCard</h1><p>纯前端合成数据，无后端请求。下方“原始正文”必须出现在实际组件中。</p><button id="valid">正常映射</button><button id="bad">首条偏移错误</button><button id="missing">缺少首条映射</button><button id="policy">末行包含正文和声明</button><button id="mention">正文提及来源短语</button><p>原始正文：</p><div id="expected"></div></div><div id="app"></div>
+<script type="module">
+import {createApp,h,shallowRef} from 'vue';
+import Card from '/src/ConversationTurnCard.vue';
+import {MOCK_SCENARIOS} from '/src/mockMedicalScenarios.ts';
+import {extractAnswerBodyAndNotices} from '/src/medicalLabels.ts';
+import '/src/style.css';
+const original=MOCK_SCENARIOS[0].turns[0];
+const current=shallowRef(structuredClone(original.run));
+const expectation=document.querySelector('#expected');
+function choose(mode){const r=structuredClone(original.run);let expected=extractAnswerBodyAndNotices(r.answer).bodyText;
+ if(mode==='bad')r.claim_reviews[0].final_start++;
+ if(mode==='missing')r.claim_reviews.shift();
+ if(mode==='policy'){r.answer='保留前一段。\n请先确认具体检查项目。资料来自美国NLM/MedlinePlus，中文为编辑解释，未经过医学专业复核；不替代个体诊断或用药建议。';r.claim_reviews=[];expected='保留前一段。\n请先确认具体检查项目。';}
+ if(mode==='mention'){r.answer='问题说明：这份资料来自美国NLM/MedlinePlus 的哪个栏目？';r.claim_reviews=[];expected=r.answer;}
+ current.value=r;expectation.textContent=expected;}
+for(const mode of ['valid','bad','missing','policy','mention']) document.getElementById(mode).addEventListener('click',()=>choose(mode));
+createApp({setup:()=>()=>h(Card,{question:'前端正文完整性合成验收案例',run:current.value,answerText:current.value.answer,isSimulation:true})}).mount('#app');choose('valid');
+</script></html>

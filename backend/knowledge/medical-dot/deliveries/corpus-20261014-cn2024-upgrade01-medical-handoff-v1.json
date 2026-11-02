@@ -1,0 +1,22 @@
+{
+  "schema_version": "medical-handoff-v1",
+  "batch_id": "corpus-20261014-cn2024-upgrade01",
+  "created_at": "2026-10-14T06:03:00Z",
+  "sources": [
+    {
+      "id": "cn-hypertension-guideline-2024-en-jgc2025",
+      "title": "Chinese Guidelines for the Prevention and Treatment of Hypertension (2024 revision)",
+      "url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+      "publisher": null,
+      "publication_date": "2025-01-28",
+      "version": "2024 revision; English journal manifestation published 2025",
+      "jurisdiction": "CN",
+      "population": "Hypertension populations; adult sections directly relevant, but full work also includes children/adolescents and pregnancy sections. Do not generalize special-population recommendations to general adults.",
+      "reuse_status": "verified",
+      "reuse_evidence_url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+      "access_status": "opened",
+      "notes": "Existing cn-hypertension-guideline-2024 family first-body upgrade, English journal manifestation published2025, not a new revision or extra translation source. Full rendered text mechanically extracted into3parts; not full clinical review and no PDF pages read.38tables/263headings companionJSON. CC BY4.0, images excluded. Do not overwrite original Chinese TXT/KB. Professional review pending."
+    }
+  ],
+  "audits": []
+}

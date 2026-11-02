@@ -1,0 +1,36 @@
+{
+  "dataset_version": "synthetic-workflows-v1",
+  "content_kind": "synthetic_software_workflows_not_clinical",
+  "cases": [
+    {
+      "id": "registration_rules",
+      "question": "请检索本地合成资料，说明样本登记所需字段、编辑后重新确认、取消和重复提交的处理规则。请引用资料，仅依据合成软件流程回答。",
+      "rubric": [
+        {"id": "required_fields", "all": ["项目", "数量", "日期", "区域"]},
+        {"id": "edit_invalidates", "all": ["编辑", "确认"]},
+        {"id": "cancel_no_write", "all": ["取消"], "any": ["不新增", "不得新增", "不会新增", "不产生", "不写入", "零写入"]},
+        {"id": "idempotency", "any": ["幂等", "重复"]}
+      ]
+    },
+    {
+      "id": "memory_boundaries",
+      "question": "请检索本地合成资料，说明JWT、SQL完整历史、最近十轮与旧摘要各自的作用，以及哪些内容不能进入Mem0长期画像。请引用资料，不提供医学诊断。",
+      "rubric": [
+        {"id": "identity", "all": ["JWT"]},
+        {"id": "history", "all": ["SQL", "摘要"], "any": ["十轮", "10轮"]},
+        {"id": "memory", "all": ["Mem0", "偏好"]},
+        {"id": "exclude_guesses", "any": ["猜测", "推测", "未验证诊断"]}
+      ]
+    },
+    {
+      "id": "evidence_boundaries",
+      "question": "请检索本地合成资料，解释为什么有引用和成功运行不代表医学正确，PubMed索引与论文正文有何区别，以及检索无命中和工具失败应该怎样分别反馈。请引用资料。",
+      "rubric": [
+        {"id": "not_clinical_truth", "all": ["医学"], "any": ["不代表", "不能", "不等于", "不证明"]},
+        {"id": "index_not_full_text", "all": ["PubMed", "正文"]},
+        {"id": "no_match", "all": ["无命中"]},
+        {"id": "failure", "all": ["失败"]}
+      ]
+    }
+  ]
+}

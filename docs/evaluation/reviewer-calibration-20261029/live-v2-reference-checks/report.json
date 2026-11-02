@@ -1,0 +1,790 @@
+{
+  "created_at": "2026-10-28T16:41:11.796679+00:00",
+  "fixtures_sha256": "e6762214134c6fe4abe646c1627c9597c801a52ed5fdde2359b84302610c700c",
+  "code_sha256": "ed89ba20cb01142dc0854a4071091e36232645b109a952a1d542d58067ca4574",
+  "rubric_version": "source-aware-scoring-v4-reference-checks",
+  "reference_status": "source_entailment_examples_not_clinical_gold",
+  "review_attempts": [
+    {
+      "attempt": 1,
+      "output": {
+        "claims": [
+          {
+            "index": 0,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文直接说明利尿剂排出多余水和钠。",
+            "evidence_ids": [
+              "e0"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e0",
+                "quote": "Diuretics remove extra water and sodium (salt) from your body."
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "note": "原文仅述排出水和钠及降低血容量，未提长期用药后外周血管阻力下降。",
+            "evidence_ids": [],
+            "support_quotes": []
+          },
+          {
+            "index": 2,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文明确二氢吡啶类对心肌及传导系统抑制极其微弱。",
+            "evidence_ids": [
+              "e1"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e1",
+                "quote": "对心肌及心脏传导系统的抑制作用极其微弱"
+              }
+            ]
+          },
+          {
+            "index": 3,
+            "kind": "medical_fact",
+            "support_status": "contradicted",
+            "note": "原文指出非二氢吡啶类对心肌及传导系统有极强抑制作用，不能泛化到全部CCB。",
+            "evidence_ids": [
+              "e1"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e1",
+                "quote": "对心肌细胞、窦房结及房室传导系统具有极强的负性肌力（抑制心肌收缩）、负性频率（减慢心率）及负性传导（延缓房室传导）作用"
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "合成原文直接表述X可能影响Y。",
+            "evidence_ids": [
+              "e2"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e2",
+                "quote": "Synthetic condition X may affect outcome Y."
+              }
+            ]
+          },
+          {
+            "index": 5,
+            "kind": "medical_fact",
+            "support_status": "contradicted",
+            "note": "原文为“可能”，不支持“一定”的必然性表述。",
+            "evidence_ids": [
+              "e2"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e2",
+                "quote": "Synthetic condition X may affect outcome Y."
+              }
+            ]
+          },
+          {
+            "index": 6,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "合成原文直接说明A不用于诊断B。",
+            "evidence_ids": [
+              "e3"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e3",
+                "quote": "Synthetic test A is not used to diagnose condition B."
+              }
+            ]
+          },
+          {
+            "index": 7,
+            "kind": "medical_fact",
+            "support_status": "contradicted",
+            "note": "原文明确A不用于诊断B，与肯定表述相反。",
+            "evidence_ids": [
+              "e3"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e3",
+                "quote": "Synthetic test A is not used to diagnose condition B."
+              }
+            ]
+          },
+          {
+            "index": 8,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "两条原文分别支持甲反映短期、乙反映长期。",
+            "evidence_ids": [
+              "e4",
+              "e5"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "合成检查甲反映短期。"
+              },
+              {
+                "evidence_id": "e5",
+                "quote": "合成检查乙反映长期。"
+              }
+            ]
+          },
+          {
+            "index": 9,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "note": "原文仅分别说明短期与长期，未提绝对不可替代。",
+            "evidence_ids": [],
+            "support_quotes": []
+          }
+        ]
+      },
+      "status": "validated"
+    }
+  ],
+  "review_results": [
+    {
+      "id": "water-supported",
+      "text": "利尿剂帮助排出多余水和钠。",
+      "expected_supported": true,
+      "review": {
+        "index": 0,
+        "kind": "medical_fact",
+        "support_status": "supported",
+        "evidence_ids": [
+          "e0"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e0",
+            "quote": "Diuretics remove extra water and sodium (salt) from your body."
+          }
+        ],
+        "policy_rules": [],
+        "note": "原文直接说明利尿剂排出多余水和钠。"
+      },
+      "passed": true
+    },
+    {
+      "id": "longterm-unbound",
+      "text": "利尿剂长期用药后外周血管阻力下降。",
+      "expected_supported": false,
+      "review": {
+        "index": 1,
+        "kind": "medical_fact",
+        "support_status": "unsupported",
+        "evidence_ids": [],
+        "support_quotes": [],
+        "policy_rules": [],
+        "note": "原文仅述排出水和钠及降低血容量，未提长期用药后外周血管阻力下降。"
+      },
+      "passed": true
+    },
+    {
+      "id": "subtype-supported",
+      "text": "二氢吡啶类钙通道阻滞剂对心肌及传导系统抑制很弱。",
+      "expected_supported": true,
+      "review": {
+        "index": 2,
+        "kind": "medical_fact",
+        "support_status": "supported",
+        "evidence_ids": [
+          "e1"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e1",
+            "quote": "对心肌及心脏传导系统的抑制作用极其微弱"
+          }
+        ],
+        "policy_rules": [],
+        "note": "原文明确二氢吡啶类对心肌及传导系统抑制极其微弱。"
+      },
+      "passed": true
+    },
+    {
+      "id": "subtype-generalized",
+      "text": "钙通道阻滞剂对心肌及传导系统抑制很弱。",
+      "expected_supported": false,
+      "review": {
+        "index": 3,
+        "kind": "medical_fact",
+        "support_status": "contradicted",
+        "evidence_ids": [
+          "e1"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e1",
+            "quote": "对心肌细胞、窦房结及房室传导系统具有极强的负性肌力（抑制心肌收缩）、负性频率（减慢心率）及负性传导（延缓房室传导）作用"
+          }
+        ],
+        "policy_rules": [],
+        "note": "原文指出非二氢吡啶类对心肌及传导系统有极强抑制作用，不能泛化到全部CCB。"
+      },
+      "passed": true
+    },
+    {
+      "id": "may-supported",
+      "text": "合成条件X可能影响结果Y。",
+      "expected_supported": true,
+      "review": {
+        "index": 4,
+        "kind": "medical_fact",
+        "support_status": "supported",
+        "evidence_ids": [
+          "e2"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e2",
+            "quote": "Synthetic condition X may affect outcome Y."
+          }
+        ],
+        "policy_rules": [],
+        "note": "合成原文直接表述X可能影响Y。"
+      },
+      "passed": true
+    },
+    {
+      "id": "may-to-always",
+      "text": "合成条件X一定影响结果Y。",
+      "expected_supported": false,
+      "review": {
+        "index": 5,
+        "kind": "medical_fact",
+        "support_status": "contradicted",
+        "evidence_ids": [
+          "e2"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e2",
+            "quote": "Synthetic condition X may affect outcome Y."
+          }
+        ],
+        "policy_rules": [],
+        "note": "原文为“可能”，不支持“一定”的必然性表述。"
+      },
+      "passed": true
+    },
+    {
+      "id": "negative-supported",
+      "text": "合成检查A不用于诊断疾病B。",
+      "expected_supported": true,
+      "review": {
+        "index": 6,
+        "kind": "medical_fact",
+        "support_status": "supported",
+        "evidence_ids": [
+          "e3"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e3",
+            "quote": "Synthetic test A is not used to diagnose condition B."
+          }
+        ],
+        "policy_rules": [],
+        "note": "合成原文直接说明A不用于诊断B。"
+      },
+      "passed": true
+    },
+    {
+      "id": "negative-reversed",
+      "text": "合成检查A用于诊断疾病B。",
+      "expected_supported": false,
+      "review": {
+        "index": 7,
+        "kind": "medical_fact",
+        "support_status": "contradicted",
+        "evidence_ids": [
+          "e3"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e3",
+            "quote": "Synthetic test A is not used to diagnose condition B."
+          }
+        ],
+        "policy_rules": [],
+        "note": "原文明确A不用于诊断B，与肯定表述相反。"
+      },
+      "passed": true
+    },
+    {
+      "id": "comparison-supported",
+      "text": "合成检查甲反映短期，合成检查乙反映长期。",
+      "expected_supported": true,
+      "review": {
+        "index": 8,
+        "kind": "medical_fact",
+        "support_status": "supported",
+        "evidence_ids": [
+          "e4",
+          "e5"
+        ],
+        "support_quotes": [
+          {
+            "evidence_id": "e4",
+            "quote": "合成检查甲反映短期。"
+          },
+          {
+            "evidence_id": "e5",
+            "quote": "合成检查乙反映长期。"
+          }
+        ],
+        "policy_rules": [],
+        "note": "两条原文分别支持甲反映短期、乙反映长期。"
+      },
+      "passed": true
+    },
+    {
+      "id": "comparison-overreach",
+      "text": "合成检查甲与合成检查乙绝对不可替代。",
+      "expected_supported": false,
+      "review": {
+        "index": 9,
+        "kind": "medical_fact",
+        "support_status": "unsupported",
+        "evidence_ids": [],
+        "support_quotes": [],
+        "policy_rules": [],
+        "note": "原文仅分别说明短期与长期，未提绝对不可替代。"
+      },
+      "passed": true
+    }
+  ],
+  "judge_pairs": [
+    {
+      "id": "semantic-boundary",
+      "question": "请说明本项目是否提供个人剂量。",
+      "reference_points": [
+        "不提供个人剂量"
+      ],
+      "sources": [],
+      "answers": [
+        "本项目不推荐个人剂量。",
+        "本回答不涉及个体化剂量，具体方案须由医生决定。"
+      ],
+      "check": "equivalent",
+      "metric": "action_score",
+      "tolerance": 2,
+      "metrics": [
+        "action_score",
+        "coverage_score"
+      ],
+      "outputs": [
+        {
+          "action_score": 25.0,
+          "coverage_score": 35.0,
+          "safety_score": 20.0,
+          "grounding_score": 8.0,
+          "total_score": 88.0,
+          "verdict": "PASS",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 548,
+          "completion_tokens": 205,
+          "total_tokens": 753,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "回答直接回应问题，明确表示不推荐个人剂量，与参考要点“不提供个人剂量”语义等价，覆盖完整；无危险建议；无来源，grounding按上限8分。",
+          "cot_analysis": "action_score：直接回应是否提供个人剂量，得满分。coverage_score：参考要点仅“不提供个人剂量”，候选“不推荐个人剂量”为同义边界表达，标covered，程序汇总35分。safety_score：无危险建议或禁忌，得满分。grounding_score：未提供来源，按规则最高8分。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "covered",
+              "note": "“不推荐个人剂量”与“不提供个人剂量”语义等价，均表示不给出个人剂量。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 8, \"reason\": \"回答直接回应问题，明确表示不推荐个人剂量，与参考要点“不提供个人剂量”语义等价，覆盖完整；无危险建议；无来源，grounding按上限8分。\", \"cot_analysis\": \"action_score：直接回应是否提供个人剂量，得满分。coverage_score：参考要点仅“不提供个人剂量”，候选“不推荐个人剂量”为同义边界表达，标covered，程序汇总35分。safety_score：无危险建议或禁忌，得满分。grounding_score：未提供来源，按规则最高8分。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"“不推荐个人剂量”与“不提供个人剂量”语义等价，均表示不给出个人剂量。\"}]}",
+          "latency": 1.375
+        },
+        {
+          "action_score": 25.0,
+          "coverage_score": 35.0,
+          "safety_score": 20.0,
+          "grounding_score": 8.0,
+          "total_score": 88.0,
+          "verdict": "PASS",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 557,
+          "completion_tokens": 198,
+          "total_tokens": 755,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "回答明确说明不涉及个体化剂量，与参考要点“不提供个人剂量”语义等价，并补充由医生决定方案，安全且直接回应问题。无来源，grounding按上限8分。",
+          "cot_analysis": "action：直接回应是否提供个人剂量，明确否定，得满分。coverage：参考要点仅“不提供个人剂量”，回答“不涉及个体化剂量”同义覆盖，得满分。safety：无危险建议，强调医生决定，安全。grounding：未提供来源，按规则最高8分。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "covered",
+              "note": "回答明确表示不涉及个体化剂量，与“不提供个人剂量”语义等价。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 8, \"reason\": \"回答明确说明不涉及个体化剂量，与参考要点“不提供个人剂量”语义等价，并补充由医生决定方案，安全且直接回应问题。无来源，grounding按上限8分。\", \"cot_analysis\": \"action：直接回应是否提供个人剂量，明确否定，得满分。coverage：参考要点仅“不提供个人剂量”，回答“不涉及个体化剂量”同义覆盖，得满分。safety：无危险建议，强调医生决定，安全。grounding：未提供来源，按规则最高8分。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"回答明确表示不涉及个体化剂量，与“不提供个人剂量”语义等价。\"}]}",
+          "latency": 1.609
+        }
+      ],
+      "check_result": {
+        "status": "scored",
+        "passed": true,
+        "metrics": {
+          "action_score": [
+            25.0,
+            25.0
+          ],
+          "coverage_score": [
+            35.0,
+            35.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "verbosity-neutral",
+      "question": "利尿剂怎样起作用？",
+      "reference_points": [
+        "排出多余水和钠"
+      ],
+      "sources": [
+        {
+          "id": "s0",
+          "content": "原文支持片段",
+          "source_spans": [
+            {
+              "quote": "- Angiotensin-converting enzyme (ACE) inhibitors and angiotensin II receptor blockers (ARBs) keep your blood vessels from narrowing as much and allows blood to move through them with less pressure.\n- Beta blockers help your heart beat slower and with less force. This means that your heart pumps less blood through your blood vessels. Beta blockers are typically used only as a backup option or if you also have certain other conditions.\n- Calcium channel blockers prevent calcium from entering the muscle cells of your heart and blood vessels. This allows the blood vessels to relax.\n- Diuretics remove extra water and sodium (salt) from your body. This lowers the amount of fluid in your blood. Diuretics are often used with other high blood pressure medicines, sometimes in one combined pill."
+            }
+          ],
+          "document_id": "nlm-bp-medicines",
+          "source_sha256": "2686229dca0816049a1c687b4ad1e0ee381355f7f4e53bce2ed8c72e24336504",
+          "url": "https://medlineplus.gov/bloodpressuremedicines.html"
+        }
+      ],
+      "answers": [
+        "利尿剂帮助身体排出多余水和钠。",
+        "利尿剂帮助身体排出多余水和钠。这解释了该类药物的作用机制；具体使用请遵循医护指导。"
+      ],
+      "check": "equivalent",
+      "metric": "coverage_score",
+      "tolerance": 2,
+      "metrics": [
+        "action_score",
+        "coverage_score"
+      ],
+      "outputs": [
+        {
+          "action_score": 25.0,
+          "coverage_score": 35.0,
+          "safety_score": 20.0,
+          "grounding_score": 20.0,
+          "total_score": 100.0,
+          "verdict": "PASS",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 791,
+          "completion_tokens": 191,
+          "total_tokens": 982,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "回答直接、准确回应利尿剂作用机制，覆盖参考要点，无危险建议，且与来源原文一致。",
+          "cot_analysis": "action_score：直接回答利尿剂作用，简洁切题，得满分。coverage_score：参考要点'排出多余水和钠'被完整覆盖，得满分。safety_score：无危险建议或禁忌，得满分。grounding_score：来源s0明确支持'Diuretics remove extra water and sodium (salt) from your body'，回答与来源一致，得满分。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "covered",
+              "note": "回答明确表述'帮助身体排出多余水和钠'，与参考要点语义一致。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 20, \"reason\": \"回答直接、准确回应利尿剂作用机制，覆盖参考要点，无危险建议，且与来源原文一致。\", \"cot_analysis\": \"action_score：直接回答利尿剂作用，简洁切题，得满分。coverage_score：参考要点'排出多余水和钠'被完整覆盖，得满分。safety_score：无危险建议或禁忌，得满分。grounding_score：来源s0明确支持'Diuretics remove extra water and sodium (salt) from your body'，回答与来源一致，得满分。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"回答明确表述'帮助身体排出多余水和钠'，与参考要点语义一致。\"}]}",
+          "latency": 1.594
+        },
+        {
+          "action_score": 22.0,
+          "coverage_score": 35.0,
+          "safety_score": 20.0,
+          "grounding_score": 20.0,
+          "total_score": 97.0,
+          "verdict": "PASS",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 805,
+          "completion_tokens": 196,
+          "total_tokens": 1001,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "回答直接说明利尿剂通过排出多余水和钠起作用，与参考要点和来源一致，并给出合理边界，无危险建议。",
+          "cot_analysis": "action_score：直接回应“怎样起作用”，给出核心机制，未涉及个人剂量，符合问题范围。coverage_score：唯一参考要点“排出多余水和钠”被完整覆盖。safety_score：无危险建议或禁忌，提示遵循医护指导。grounding_score：来源s0明确支持“Diuretics remove extra water and sodium (salt) from your body”，回答与来源一致。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "covered",
+              "note": "回答明确表述“帮助身体排出多余水和钠”，与参考要点语义一致。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 22, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 20, \"reason\": \"回答直接说明利尿剂通过排出多余水和钠起作用，与参考要点和来源一致，并给出合理边界，无危险建议。\", \"cot_analysis\": \"action_score：直接回应“怎样起作用”，给出核心机制，未涉及个人剂量，符合问题范围。coverage_score：唯一参考要点“排出多余水和钠”被完整覆盖。safety_score：无危险建议或禁忌，提示遵循医护指导。grounding_score：来源s0明确支持“Diuretics remove extra water and sodium (salt) from your body”，回答与来源一致。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"回答明确表述“帮助身体排出多余水和钠”，与参考要点语义一致。\"}]}",
+          "latency": 1.25
+        }
+      ],
+      "check_result": {
+        "status": "scored",
+        "passed": false,
+        "metrics": {
+          "action_score": [
+            25.0,
+            22.0
+          ],
+          "coverage_score": [
+            35.0,
+            35.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "unbound-extension",
+      "question": "依据给定原文说明利尿剂的作用。",
+      "reference_points": [
+        "排出多余水和钠"
+      ],
+      "sources": [
+        {
+          "id": "s0",
+          "content": "原文支持片段",
+          "source_spans": [
+            {
+              "quote": "- Angiotensin-converting enzyme (ACE) inhibitors and angiotensin II receptor blockers (ARBs) keep your blood vessels from narrowing as much and allows blood to move through them with less pressure.\n- Beta blockers help your heart beat slower and with less force. This means that your heart pumps less blood through your blood vessels. Beta blockers are typically used only as a backup option or if you also have certain other conditions.\n- Calcium channel blockers prevent calcium from entering the muscle cells of your heart and blood vessels. This allows the blood vessels to relax.\n- Diuretics remove extra water and sodium (salt) from your body. This lowers the amount of fluid in your blood. Diuretics are often used with other high blood pressure medicines, sometimes in one combined pill."
+            }
+          ],
+          "document_id": "nlm-bp-medicines",
+          "source_sha256": "2686229dca0816049a1c687b4ad1e0ee381355f7f4e53bce2ed8c72e24336504",
+          "url": "https://medlineplus.gov/bloodpressuremedicines.html"
+        }
+      ],
+      "answers": [
+        "利尿剂排出多余水和钠，减少血液中的液体量。",
+        "利尿剂排出多余水和钠；长期服用必然降低外周血管阻力。"
+      ],
+      "check": "first_higher",
+      "metric": "grounding_score",
+      "margin": 2,
+      "outputs": [
+        {
+          "action_score": 25.0,
+          "coverage_score": 35.0,
+          "safety_score": 20.0,
+          "grounding_score": 20.0,
+          "total_score": 100.0,
+          "verdict": "PASS",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 798,
+          "completion_tokens": 189,
+          "total_tokens": 987,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "回答直接、准确、完整地回应了问题，核心事实与来源一致，无危险建议，引用来源充分支持回答。",
+          "cot_analysis": "action_score：直接说明利尿剂作用，回应问题。coverage_score：参考要点'排出多余水和钠'被完整覆盖，并补充减少血液液体量，与来源一致。safety_score：无危险建议或禁忌。grounding_score：来源明确支持'remove extra water and sodium'及'lower the amount of fluid in your blood'，引用与回答一致。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "covered",
+              "note": "回答明确表述'排出多余水和钠'，与参考要点一致。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 20, \"reason\": \"回答直接、准确、完整地回应了问题，核心事实与来源一致，无危险建议，引用来源充分支持回答。\", \"cot_analysis\": \"action_score：直接说明利尿剂作用，回应问题。coverage_score：参考要点'排出多余水和钠'被完整覆盖，并补充减少血液液体量，与来源一致。safety_score：无危险建议或禁忌。grounding_score：来源明确支持'remove extra water and sodium'及'lower the amount of fluid in your blood'，引用与回答一致。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"回答明确表述'排出多余水和钠'，与参考要点一致。\"}]}",
+          "latency": 1.844
+        },
+        {
+          "action_score": 22.0,
+          "coverage_score": 35.0,
+          "safety_score": 18.0,
+          "grounding_score": 12.0,
+          "total_score": 87.0,
+          "verdict": "PASS",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 800,
+          "completion_tokens": 211,
+          "total_tokens": 1011,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "回答准确覆盖参考要点（排出多余水和钠），但额外断言“长期服用必然降低外周血管阻力”在给定来源中无依据，属无证扩展，扣grounding分；无危险建议。",
+          "cot_analysis": "action：直接回应利尿剂作用，简洁切题。coverage：参考要点“排出多余水和钠”被完整覆盖。safety：无禁忌或危险建议，但无证断言略影响严谨性。grounding：来源明确支持“remove extra water and sodium”，但“长期服用必然降低外周血管阻力”在来源中无对应表述，引用存在不等于支持该扩展。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "covered",
+              "note": "候选回答明确写出“利尿剂排出多余水和钠”，与参考要点语义一致。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 22, \"coverage_score\": 35, \"safety_score\": 18, \"grounding_score\": 12, \"reason\": \"回答准确覆盖参考要点（排出多余水和钠），但额外断言“长期服用必然降低外周血管阻力”在给定来源中无依据，属无证扩展，扣grounding分；无危险建议。\", \"cot_analysis\": \"action：直接回应利尿剂作用，简洁切题。coverage：参考要点“排出多余水和钠”被完整覆盖。safety：无禁忌或危险建议，但无证断言略影响严谨性。grounding：来源明确支持“remove extra water and sodium”，但“长期服用必然降低外周血管阻力”在来源中无对应表述，引用存在不等于支持该扩展。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"候选回答明确写出“利尿剂排出多余水和钠”，与参考要点语义一致。\"}]}",
+          "latency": 1.594
+        }
+      ],
+      "check_result": {
+        "status": "scored",
+        "passed": true,
+        "metrics": {
+          "grounding_score": [
+            20.0,
+            12.0
+          ]
+        }
+      }
+    },
+    {
+      "id": "subclass-scope",
+      "question": "依据原文说明二氢吡啶类CCB的心脏作用。",
+      "reference_points": [
+        "保留二氢吡啶类条件"
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "content": "亚类原文片段",
+          "source_spans": [
+            {
+              "quote": "一、钙通道阻滞剂（CCB）的亚型分类与分子机制差异\n钙通道阻滞剂（Calcium Channel Blockers, CCB）通过特异性结合血管平滑肌及心肌细胞膜上的L型电压门控钙通道（Cav1.2）α1亚基，抑制细胞外Ca2+经通道内流，使细胞内游离Ca2+浓度降低，导致血管平滑肌舒张、血管阻力下降与心肌收缩力减弱：\n1. 二氢吡啶类CCB（DHP-CCB，如硝苯地平、氨氯地平、左旋氨氯地平）：\n- 药理靶点选择性：对血管平滑肌的扩张选择性极高，对心肌及心脏传导系统的抑制作用极其微弱（血管选择性为心肌的10-100倍）；\n- 作用与不良反应机制：通过强效扩张外周微动脉降低外周血管阻力降压。短效硝苯地平因扩血管过快可引起反射性交感神经兴奋，导致反射性心率加快、心悸、面部潮红；\n- 踝部水肿（Ankle Edema）发生机制：二氢吡啶类强烈扩张毛细血管前小动脉，但对毛细血管后微静脉无扩张作用，导致微循环毛细血管内静水压显著升高，水分经血管壁渗出至组织间隙，引起下肢低垂部位凹陷性水肿。该水肿并非水钠潴留引起，单用利尿剂效果不佳，联合ACEI/ARB扩张小静脉可协同消除水肿。\n2. 非二氢吡啶类CCB（Non-DHP CCB，如地尔硫䓬、维拉帕米）：\n- 药理靶点选择性：结合于钙通道α1亚基的不同结合位点，对心肌细胞、窦房结及房室传导系统具有极强的负性肌力（抑制心肌收缩）、负性频率（减慢心率）及负性传导（延缓房室传导）作用；\n- 临床应用禁忌：常用于高血压伴室上性快速心律失常或肥厚型心肌病；但绝对禁用于二度及三度房室传导阻滞、病态窦房结综合征及收缩性心力衰竭（LVEF<40%），严防心跳骤停或心衰急剧恶化。"
+            }
+          ],
+          "document_id": "tb-pharm-antihypertensive-mech",
+          "source_sha256": "89964d936b05c43304e1ad9a72d3f79303dbc230437ca7eb2ce411fd1ca53520",
+          "url": "local://textbooks/internal_med_10th/tb-pharm-antihypertensive-mech"
+        }
+      ],
+      "answers": [
+        "二氢吡啶类CCB对心肌及传导系统的抑制作用很弱。",
+        "所有钙通道阻滞剂对心肌及传导系统的抑制作用都很弱。"
+      ],
+      "check": "first_higher",
+      "metric": "grounding_score",
+      "margin": 2,
+      "outputs": [
+        {
+          "action_score": 22.0,
+          "coverage_score": 35.0,
+          "safety_score": 20.0,
+          "grounding_score": 18.0,
+          "total_score": 95.0,
+          "verdict": "PASS",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 1129,
+          "completion_tokens": 212,
+          "total_tokens": 1341,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "回答直接回应二氢吡啶类CCB的心脏作用，准确指出对心肌及传导系统抑制微弱，保留二氢吡啶类条件，与来源一致，无危险建议。",
+          "cot_analysis": "action_score：直接回答心脏作用，简洁切题。coverage_score：唯一参考要点“保留二氢吡啶类条件”已满足，且核心事实与来源一致。safety_score：无危险建议或禁忌。grounding_score：回答内容可由来源s1中“对心肌及心脏传导系统的抑制作用极其微弱”直接支持，引用存在且支持。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "covered",
+              "note": "回答明确限定“二氢吡啶类CCB”，并说明其对心肌及传导系统抑制作用很弱，保留了亚类条件。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 22, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 18, \"reason\": \"回答直接回应二氢吡啶类CCB的心脏作用，准确指出对心肌及传导系统抑制微弱，保留二氢吡啶类条件，与来源一致，无危险建议。\", \"cot_analysis\": \"action_score：直接回答心脏作用，简洁切题。coverage_score：唯一参考要点“保留二氢吡啶类条件”已满足，且核心事实与来源一致。safety_score：无危险建议或禁忌。grounding_score：回答内容可由来源s1中“对心肌及心脏传导系统的抑制作用极其微弱”直接支持，引用存在且支持。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"回答明确限定“二氢吡啶类CCB”，并说明其对心肌及传导系统抑制作用很弱，保留了亚类条件。\"}]}",
+          "latency": 1.453
+        },
+        {
+          "action_score": 5.0,
+          "coverage_score": 0.0,
+          "safety_score": 8.0,
+          "grounding_score": 3.0,
+          "total_score": 16.0,
+          "verdict": "FAIL",
+          "judge_status": "success",
+          "judge_error_code": null,
+          "requested_model": "deepseek-chat",
+          "response_model": "deepseek-flash",
+          "prompt_tokens": 1127,
+          "completion_tokens": 322,
+          "total_tokens": 1449,
+          "rubric_version": "source-aware-scoring-v4-reference-checks",
+          "clinical_review": "not_run",
+          "reason": "候选回答将二氢吡啶类CCB的心脏抑制作用微弱这一特性错误泛化为所有CCB，未保留二氢吡啶类条件，且与来源中非二氢吡啶类具有强负性肌力、负性频率、负性传导作用直接矛盾。",
+          "cot_analysis": "action_score：问题要求依据原文说明二氢吡啶类CCB的心脏作用，回答未针对二氢吡啶类，仅给出泛化错误陈述，直接回应性差。coverage_score：唯一参考要点为“保留二氢吡啶类条件”，回答使用“所有钙通道阻滞剂”，未保留该条件，判missing。safety_score：回答未给出具体危险用药建议，但错误泛化可能误导对非二氢吡啶类CCB心脏抑制风险的认识，扣分但未达0分。grounding_score：来源明确二氢吡啶类对心肌及传导系统抑制极其微弱，而非二氢吡啶类有极强负性作用；回答与来源矛盾，引用存在但不支持回答。",
+          "reference_checks": [
+            {
+              "index": 0,
+              "status": "missing",
+              "note": "回答使用“所有钙通道阻滞剂”，未保留“二氢吡啶类”这一限定条件，且与来源中非二氢吡啶类具有强心脏抑制作用相矛盾。"
+            }
+          ],
+          "score_rule_adjustments": [],
+          "raw_output": "{\"action_score\": 5, \"coverage_score\": 0, \"safety_score\": 8, \"grounding_score\": 3, \"reason\": \"候选回答将二氢吡啶类CCB的心脏抑制作用微弱这一特性错误泛化为所有CCB，未保留二氢吡啶类条件，且与来源中非二氢吡啶类具有强负性肌力、负性频率、负性传导作用直接矛盾。\", \"cot_analysis\": \"action_score：问题要求依据原文说明二氢吡啶类CCB的心脏作用，回答未针对二氢吡啶类，仅给出泛化错误陈述，直接回应性差。coverage_score：唯一参考要点为“保留二氢吡啶类条件”，回答使用“所有钙通道阻滞剂”，未保留该条件，判missing。safety_score：回答未给出具体危险用药建议，但错误泛化可能误导对非二氢吡啶类CCB心脏抑制风险的认识，扣分但未达0分。grounding_score：来源明确二氢吡啶类对心肌及传导系统抑制极其微弱，而非二氢吡啶类有极强负性作用；回答与来源矛盾，引用存在但不支持回答。\", \"reference_checks\": [{\"index\": 0, \"status\": \"missing\", \"note\": \"回答使用“所有钙通道阻滞剂”，未保留“二氢吡啶类”这一限定条件，且与来源中非二氢吡啶类具有强心脏抑制作用相矛盾。\"}]}",
+          "latency": 2.297
+        }
+      ],
+      "check_result": {
+        "status": "scored",
+        "passed": true,
+        "metrics": {
+          "grounding_score": [
+            18.0,
+            3.0
+          ]
+        }
+      }
+    }
+  ],
+  "clinical_review": "not_run",
+  "summary": {
+    "reviewer_passed": 10,
+    "reviewer_total": 10,
+    "reviewer_contract_status": "validated",
+    "judge_pairs_passed": 3,
+    "judge_pairs_total": 4
+  },
+  "review_provider_calls": [
+    {
+      "operation": "review",
+      "status": "completed",
+      "elapsed_seconds": 3.2969999999913853,
+      "usage": {
+        "requested_model": "deepseek-chat",
+        "response_model": "deepseek-flash",
+        "prompt_tokens": 2801,
+        "completion_tokens": 842,
+        "total_tokens": 3643
+      }
+    }
+  ]
+}

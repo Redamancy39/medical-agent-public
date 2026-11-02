@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.venv/
+data/
+logs/
+evaluation/medical-v1/runs/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/

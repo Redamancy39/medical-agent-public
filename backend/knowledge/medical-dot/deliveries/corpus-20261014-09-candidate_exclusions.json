@@ -1,0 +1,27 @@
+{
+  "batch_id": "corpus-20261014-09",
+  "sources": [
+    {
+      "source_id": "cdc-diabetes-care-schedule",
+      "source_family_id": "cdc-diabetes-care-schedule",
+      "title": "Your Diabetes Care Schedule",
+      "original_url": "https://www.cdc.gov/diabetes/treatment/your-diabetes-care-schedule.html",
+      "publisher": "Centers for Disease Control and Prevention",
+      "publication_date": null,
+      "version": null,
+      "jurisdiction": "US",
+      "population": null,
+      "language": "en",
+      "access_status": "opened",
+      "reuse_status": "verified",
+      "reuse_evidence_url": "https://www.cdc.gov/other/agencymaterials.html",
+      "read_scope": "Complete medical prose logical lines26–76 read; no linked vaccine guidance reviewed.",
+      "body_file": null,
+      "raw_bytes_sha256": null,
+      "normalized_text_sha256": null,
+      "target_eligible": false,
+      "reason": "Candidate only: fixed pneumococcal vaccine schedule in Just once needs version-specific professional review. No current vaccination review undertaken because outside present knowledge scope. Not classified as confirmedmedicalerror and no body delivery/count.",
+      "necessary_short_quote": "You'll need two more doses when you're 65 or older."
+    }
+  ]
+}

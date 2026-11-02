@@ -1,0 +1,74 @@
+{
+  "role": "reference_conflict_and_recorded_output_replay",
+  "case_id": "DUAL-01",
+  "original_question": "【门诊病例】56岁男性，体检查出血压 158/98 mmHg，体质指数 BMI 29.2（腹部明显肥胖），空腹血糖 8.1 mmol/L，糖化血红蛋白 7.6%，血尿酸 450 μmol/L（未发作过痛风）。请针对该患者的高血压合并糖尿病、肥胖与高尿酸血症，制定降压和降糖的一线联合用药策略，并从药理与病理机制解释推荐理由，同时提供针对性的食养建议。",
+  "original_reference_points": "1. 诊断识别：2级高血压合并2型糖尿病、肥胖与高尿酸血症（高危心血管风险）；2. 降压首选：ACEI/ARB（如沙坦类）联合二氢吡啶类CCB（如氨氯地平），沙坦类保护肾脏并有微弱促尿酸排泄作用，CCB协同扩血管；慎用大剂量噻嗪类利尿剂（防干扰尿酸糖代谢）；3. 降糖首选：二甲双胍为基石，联合具有减重与心肾保护的SGLT2抑制剂（格列净类）；SGLT2i通过抑制近端肾小管葡萄糖与钠重吸收，还能协同降压、减重并轻度降尿酸；4. 食养处方：低盐(<5g/d)、控制总热量能量亏缺(500-750kcal)、低嘌呤饮食、禁酒、全谷物杂粮替代精白米面。",
+  "reference_file_changed": false,
+  "historical_scores_changed": false,
+  "conflict": "The historical reference and generated answer call 158/98 mmHg grade 2. Its cited source requires >=160/100 for grade 2 or above. The supplied raw classification table places these numerical values within grade 1; this is a table-consistency check, not a remote clinical diagnosis.",
+  "verified_primary_reference": {
+    "title": "高血压基层诊疗指南（2019年）表1",
+    "publisher": "中华医学会/中华全科医师杂志",
+    "url": "https://seleguide.yiigle.com/uploads/guide_html/高血压基层诊疗指南（2019年）.html",
+    "doi": "10.3760/cma.j.issn.1671-7368.2019.04.002"
+  },
+  "original_supported_judgment": {
+    "index": 3,
+    "kind": "medical_fact",
+    "support_status": "supported",
+    "evidence_ids": [
+      "e15"
+    ],
+    "support_quotes": [
+      {
+        "evidence_id": "e15",
+        "quote": "2级及以上高血压（血压≥160/100mmHg）"
+      }
+    ],
+    "scope_status": "requested",
+    "scope_note": "回答血压分级。",
+    "policy_rules": [],
+    "note": "158/98符合2级高血压（≥160/100为2级下限？）需核对：原文2级定义为≥160/100，158/98未达。",
+    "text": "血压158/98 mmHg属2级高血压。",
+    "draft_start": 114,
+    "draft_end": 134,
+    "evidence": [
+      {
+        "id": "e15",
+        "source_id": "2e5dc61aab5e160add9c49de751912f486cca04ece4f6dcd13f7f6e4ae899e46",
+        "document_id": "cn-cardio-primary-hypertension-2025",
+        "source_sha256": "72a4ab322e7296bf4d94ce29811b1750f7994c8ffdfd3d2c589db513807c1fd1",
+        "start": 308,
+        "end": 534,
+        "quote": "二、基层降压药物分级首选与联合治疗路径\n1. 一线降压药物目录：基层机构应常规配备五大类一线降压药物：A类（ACEI/ARB）、C类（二氢吡啶类CCB）、D类（噻嗪类利尿剂）及B类（β受体阻滞剂）。\n2. 起始用药原则：\n- 1级轻度高血压且心血管低危者：可起始单药治疗；\n- 2级及以上高血压（血压≥160/100mmHg）或高危患者：推荐起始即采用两药联合方案，优先推荐单片复方制剂（SPC），如A+C或A+D配伍，以加快达标速度并提高患者依从性。",
+        "url": "https://hbp-office.nccd.org.cn/files/guide2025.pdf"
+      }
+    ],
+    "professional_review": "pending",
+    "original_draft_spans": [
+      {
+        "index": 2,
+        "start": 102,
+        "end": 179,
+        "text": "本例158/98 mmHg属2级高血压，按基层指南2级及以上或高危者宜起始两药联合，优先单片复方，如A+C（ACEI/ARB＋二氢吡啶类CCB）或A+D。"
+      }
+    ],
+    "review_round": 1,
+    "review_claim_index": 3,
+    "final_start": 114,
+    "final_end": 134
+  },
+  "strict_replay_error": "REVIEW_JUDGMENT_INCONSISTENT",
+  "derived_rejections": [
+    {
+      "claim_index": 0,
+      "code": "REVIEW_JUDGMENT_INCONSISTENT"
+    }
+  ],
+  "derived_support_status": "unsupported",
+  "clinical_review": "not_run",
+  "limits": [
+    "Lower-bound check only detects a narrow numerical contradiction; it is not a complete grading/diagnostic engine.",
+    "The old reference file remains frozen. No case was removed or score retroactively improved."
+  ]
+}

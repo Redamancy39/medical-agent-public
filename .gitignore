@@ -1,0 +1,61 @@
+# Local credentials; keep only the public template.
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Large binary / media files (> 50MB)
+*.mp4
+*.mkv
+*.avi
+*.whl
+
+# Dependencies & Build artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+*.tsbuildinfo
+
+# Python artifacts
+__pycache__/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Independent backend runtime files.
+backend/.venv/
+backend/data/
+backend/logs/
+backend/training/
+backend/evaluation/medical-v1/runs/
+backend/.pytest_cache/
+backend/.ruff_cache/
+backend/*.egg-info/
+tmp/
+docs/research/*/downloads/
+
+
+scratch/
+
+# Public release: private material and local post-training stay outside Git.
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+**/.claude/settings.local.json
+**/.codex/
+**/.agents/
+experiments/
+deployment/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bundle
+docs/research/**/extracted_texts/

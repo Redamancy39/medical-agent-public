@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "business_mode": "synthetic_sql",
+  "session_id": "799c8434-e6fe-48a1-aa80-a03d1e347300",
+  "completed_draft": {
+    "id": "91b0394f-7ea1-4eb0-9905-8aad2a542cce",
+    "session_id": "799c8434-e6fe-48a1-aa80-a03d1e347300",
+    "revision": 3,
+    "status": "completed",
+    "fields": {
+      "project": "DEMO-A",
+      "sample_type": "血液",
+      "quantity": 4,
+      "received_at": "2026-10-13",
+      "storage": "DEMO-B 区域",
+      "note": ""
+    },
+    "issues": {},
+    "workflow": "registration_graph_v1",
+    "created_at": "2026-10-13T14:45:22.488979+00:00",
+    "updated_at": "2026-10-13T14:46:18.882408+00:00"
+  },
+  "cancelled_draft": {
+    "id": "0fbaf1ca-285b-4382-b41a-c4f0365b709c",
+    "session_id": "799c8434-e6fe-48a1-aa80-a03d1e347300",
+    "revision": 1,
+    "status": "cancelled",
+    "fields": {
+      "project": "DEMO-B",
+      "sample_type": "组织",
+      "quantity": 2,
+      "received_at": "2026-10-13",
+      "storage": "DEMO-C 区域",
+      "note": ""
+    },
+    "issues": {},
+    "workflow": "registration_graph_v1",
+    "created_at": "2026-10-13T14:46:30.675431+00:00",
+    "updated_at": "2026-10-13T14:46:38.411273+00:00"
+  },
+  "record_count": 1,
+  "confirmed_samples": 4,
+  "audit": [
+    {
+      "action": "prepare",
+      "revision": 1,
+      "request_id": "2b8f78f1-8a9c-4bf9-a6e5-2d9bcb100c3c",
+      "created_at": "2026-10-13T14:45:22.490135+00:00"
+    },
+    {
+      "action": "edit",
+      "revision": 2,
+      "request_id": "96c878f2-a3b5-4279-bfe6-82d9b5b74f61",
+      "created_at": "2026-10-13T14:45:29.821916+00:00"
+    },
+    {
+      "action": "review",
+      "revision": 2,
+      "request_id": "377a865e-5221-4075-ab0f-b3f3ca8d280d",
+      "created_at": "2026-10-13T14:45:35.989998+00:00"
+    },
+    {
+      "action": "edit",
+      "revision": 3,
+      "request_id": "76242543-b867-4738-9726-6d08fe250d79",
+      "created_at": "2026-10-13T14:45:53.483924+00:00"
+    },
+    {
+      "action": "review",
+      "revision": 3,
+      "request_id": "ae3e90ab-4d05-489a-9cd6-25548f107a98",
+      "created_at": "2026-10-13T14:46:00.046115+00:00"
+    },
+    {
+      "action": "confirm",
+      "revision": 3,
+      "request_id": "ac7242aa-cf2a-4901-8192-82cce5adae94",
+      "created_at": "2026-10-13T14:46:18.882408+00:00"
+    }
+  ],
+  "memory_facts": 0,
+  "model_requests": 0
+}

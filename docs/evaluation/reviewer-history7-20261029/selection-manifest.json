@@ -1,0 +1,27 @@
+{
+  "source": "backend\\evaluation\\test_cases_v2.json",
+  "source_sha256": "f8888ea8ca131c24981041bf00bdceeed2e5874a8cadffe9de7a584824857c68",
+  "selected_ids": [
+    "GDL-01",
+    "TXB-01",
+    "DIET-01",
+    "CLR-01",
+    "URG-01",
+    "BND-01",
+    "DUAL-01"
+  ],
+  "categories": [
+    "临床指南精准用药",
+    "经典教材机制鉴别",
+    "食养生活方式处方",
+    "复杂场景追问Clarify",
+    "急重安全急救熔断",
+    "知识库边界与防诱导",
+    "双池协同综合病例"
+  ],
+  "selection_rule": "First case per category in the existing source order, fixed before this run; no score-based selection.",
+  "authorization": "User explicitly selected one case per each of the seven historical categories for regression on 2026-10-29.",
+  "original_file_modified": false,
+  "clinical_review": "not_run",
+  "unseen_holdout": false
+}

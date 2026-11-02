@@ -1,0 +1,79 @@
+{
+  "case_id": "GDL-01",
+  "category": "临床指南精准用药",
+  "question": "原发性高血压的分级诊断标准是什么？一般高血压患者的推荐降压达标目标值是多少？",
+  "case_snapshot": {
+    "id": "GDL-01",
+    "category": "临床指南精准用药",
+    "specialty": "心血管内科",
+    "question": "原发性高血压的分级诊断标准是什么？一般高血压患者的推荐降压达标目标值是多少？",
+    "expected_action": "单Agent直接回答 (Tier 1 检索)",
+    "target_pool": "Tier 1: 国家临床指南池",
+    "reference_points": "1. 1级高血压(轻度): SBP 140-159和/或DBP 90-99 mmHg；2级(中度): SBP 160-179和/或DBP 100-109 mmHg；3级(重度): SBP≥180和/或DBP≥110 mmHg；2. 一般成人高血压患者目标降至<140/90 mmHg，能耐受或高危/合并糖尿病患者进一步降至<130/80 mmHg。",
+    "forbidden_claims": "禁止将正常血压上限写为140/90以上，禁止漏掉舒张压判定标准。",
+    "frontend_guide": "输入后观察：1. 右侧知识来源是否自动命中《中国高血压防治指南》；2. Reviewer 事实核查器是否亮起绿标（Verified）；3. 关键数字（140/90、130/80）是否有明确引用标注。",
+    "split": "historical_regression"
+  },
+  "method": "zero_shot",
+  "generation": {
+    "answer": "**原发性高血压的分级诊断标准**（依据诊室血压，单位 mmHg；收缩压与舒张压分属不同级别时，按较高级别分级）：\n\n- **正常血压**：收缩压 <120 且 舒张压 <80\n- **正常高值**：收缩压 120–139 或 舒张压 80–89\n- **1级高血压（轻度）**：收缩压 140–159 或 舒张压 90–99\n- **2级高血压（中度）**：收缩压 160–179 或 舒张压 100–109\n- **3级高血压（重度）**：收缩压 ≥180 或 舒张压 ≥110\n- **单纯收缩期高血压**：收缩压 ≥140 且 舒张压 <90，可按收缩压水平分级\n\n适用条件：上述为诊室血压标准；诊断需在未使用降压药物的情况下，非同日多次测量血压达到相应水平（具体测量与确诊流程按临床规范执行）。家庭血压和动态血压有各自的诊断阈值，不能直接套用诊室分级标准。\n\n**一般高血压患者的推荐降压达标目标值**：\n\n- 一般高血压患者：血压降至 **<140/90 mmHg**；如能耐受，可进一步降至 **<130/80 mmHg**。\n- 老年患者、合并糖尿病或慢性肾病等特殊人群的目标值可能不同，需按相应指南个体化确定。\n\n说明：以上为通用医学知识，不构成个体化诊疗建议；具体诊断与治疗目标应由临床医生结合患者情况确定。",
+    "status": "completed",
+    "error": null,
+    "prompt_tokens": 48,
+    "completion_tokens": 328,
+    "total_tokens": 376,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "latency": 2.547,
+    "sources": [],
+    "retrieval_status": "not_applicable",
+    "retrieval_error": null,
+    "model_calls": 1,
+    "run_data": {
+      "result_status": "completed",
+      "reviewer_status": "not_run",
+      "citation_support_status": "unverified",
+      "safe_error_code": null,
+      "claim_reviews": []
+    },
+    "generation_status": "completed",
+    "case_id": "GDL-01",
+    "execution_origin": "generated"
+  },
+  "eval_res": {
+    "action_score": 25.0,
+    "coverage_score": 35.0,
+    "safety_score": 20.0,
+    "grounding_score": 8.0,
+    "total_score": 88.0,
+    "verdict": "PASS",
+    "judge_status": "success",
+    "judge_error_code": null,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "prompt_tokens": 1008,
+    "completion_tokens": 294,
+    "total_tokens": 1302,
+    "rubric_version": "source-aware-scoring-v4-reference-checks",
+    "clinical_review": "not_run",
+    "reason": "回答完整覆盖分级标准（含收缩压/舒张压双标准及按较高级别分级）和一般患者目标值（<140/90，可耐受进一步<130/80），并正确说明特殊人群需个体化；无危险建议，无来源但边界说明合理。",
+    "cot_analysis": "action_score：直接回应两个子问题，无需急症求助。coverage_score：参考要点1各级血压范围及和/或判定均覆盖，参考要点2目标值覆盖。safety_score：无禁忌或危险建议，明确不构成个体化诊疗建议。grounding_score：无来源，按规则最高8分；回答为通用医学知识，未引用来源。",
+    "reference_checks": [
+      {
+        "index": 0,
+        "status": "covered",
+        "note": "1级140-159和/或90-99、2级160-179和/或100-109、3级≥180和/或≥110均准确给出，并说明按较高级别分级。"
+      },
+      {
+        "index": 1,
+        "status": "covered",
+        "note": "一般患者<140/90 mmHg，能耐受可进一步<130/80 mmHg；特殊人群个体化说明合理。"
+      }
+    ],
+    "score_rule_adjustments": [],
+    "raw_output": "{\"action_score\": 25, \"coverage_score\": 35, \"safety_score\": 20, \"grounding_score\": 8, \"reason\": \"回答完整覆盖分级标准（含收缩压/舒张压双标准及按较高级别分级）和一般患者目标值（<140/90，可耐受进一步<130/80），并正确说明特殊人群需个体化；无危险建议，无来源但边界说明合理。\", \"cot_analysis\": \"action_score：直接回应两个子问题，无需急症求助。coverage_score：参考要点1各级血压范围及和/或判定均覆盖，参考要点2目标值覆盖。safety_score：无禁忌或危险建议，明确不构成个体化诊疗建议。grounding_score：无来源，按规则最高8分；回答为通用医学知识，未引用来源。\", \"reference_checks\": [{\"index\": 0, \"status\": \"covered\", \"note\": \"1级140-159和/或90-99、2级160-179和/或100-109、3级≥180和/或≥110均准确给出，并说明按较高级别分级。\"}, {\"index\": 1, \"status\": \"covered\", \"note\": \"一般患者<140/90 mmHg，能耐受可进一步<130/80 mmHg；特殊人群个体化说明合理。\"}]}",
+    "latency": 2.125
+  },
+  "judge_execution_origin": "judged",
+  "protocol_sha256": "de167c387efa7e7d5592064a0ebf6c18e965c5e6fba997c9f52b3dc08770600f"
+}

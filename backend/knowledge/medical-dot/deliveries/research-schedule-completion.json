@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-14T06:34:24.193700+00:00",
+  "automation_id": "6aceddfad694819192abe8b448c58040",
+  "title": "成人慢病资料独立核查",
+  "is_enabled": false,
+  "saved_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Asia/Shanghai:20261015T090000\nRRULE:FREQ=DAILY;COUNT=7\nEND:VEVENT",
+  "timezone": "Asia/Shanghai",
+  "next_run_time": null,
+  "last_run_time": null,
+  "reason": "User-authorized stop after 100 target-eligible delivered source families and the requested audit/candidate deliveries reached their targets. Disabled the same automation; no duplicate automation created.",
+  "extension_to_2026_11_14_saved": false,
+  "extension_note": "Conditional extension was not needed because delivery goals were reached before the original first scheduled run. Original files and historical records are preserved."
+}

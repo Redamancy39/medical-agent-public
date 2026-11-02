@@ -1,0 +1,50 @@
+{
+  "schema_version": "medical-handoff-v1",
+  "batch_id": "corpus-20261014-10",
+  "created_at": "2026-10-14T06:30:04Z",
+  "sources": [
+    {
+      "id": "cdc-diabetes-medicine-literacy",
+      "title": "Take Charge of Your Diabetes Medicines",
+      "url": "https://www.cdc.gov/diabetes/articles/diabetes-and-your-medicines.html",
+      "publisher": "Centers for Disease Control and Prevention",
+      "publication_date": null,
+      "version": null,
+      "jurisdiction": "US",
+      "population": null,
+      "reuse_status": "verified",
+      "reuse_evidence_url": "https://www.cdc.gov/other/agencymaterials.html",
+      "access_status": "opened",
+      "notes": "Original CDC prose, source-specific context and required notices retained; professional review pending, not prescribing or clinical validation."
+    },
+    {
+      "id": "cdc-diabetes-distress",
+      "title": "10 Tips for Coping with Diabetes Distress",
+      "url": "https://www.cdc.gov/diabetes/articles/10-tips-coping-diabetes-distress.html",
+      "publisher": "Centers for Disease Control and Prevention",
+      "publication_date": null,
+      "version": null,
+      "jurisdiction": "US",
+      "population": null,
+      "reuse_status": "verified",
+      "reuse_evidence_url": "https://www.cdc.gov/other/agencymaterials.html",
+      "access_status": "opened",
+      "notes": "Original CDC prose, source-specific context and required notices retained; professional review pending, not prescribing or clinical validation."
+    },
+    {
+      "id": "cdc-diabetes-care-team",
+      "title": "Your Diabetes Care Team",
+      "url": "https://www.cdc.gov/diabetes/treatment/diabetes-doctors.html",
+      "publisher": "Centers for Disease Control and Prevention",
+      "publication_date": null,
+      "version": null,
+      "jurisdiction": "US",
+      "population": null,
+      "reuse_status": "verified",
+      "reuse_evidence_url": "https://www.cdc.gov/other/agencymaterials.html",
+      "access_status": "opened",
+      "notes": "Original CDC prose, source-specific context and required notices retained; professional review pending, not prescribing or clinical validation."
+    }
+  ],
+  "audits": []
+}

@@ -1,0 +1,126 @@
+What are estimated glomerular filtration rate (eGFR) and GFR tests?
+
+Estimated glomerular filtration rate (eGFR) and GFR tests check how well your kidneys are working. Your kidneys are two organs on either side of your spine just below your rib cage. They have tiny filters called glomeruli. These filters remove waste and extra water from your blood and get rid of them through your urine (pee).
+
+A GFR test checks how well your kidneys are working directly by measuring the amount of certain waste substances in your blood. This is sometimes called a measured GFR (or mGFR). Health care providers do this by injecting you with certain substances and monitoring how quickly your kidneys can filter it out. However, this test is complicated and not widely available. It's usually only done in certain circumstances, such as if you have extreme obesity or are about to donate a kidney.
+
+Because mGFR tests aren't common, providers usually use an estimate (or eGFR) to see how well your kidneys are working. To measure your eGFR, providers often start by measuring your creatinine levels. Creatinine is a waste product that comes from normal wear and tear on your muscles. If your kidneys aren't working well, creatinine can build up in your blood.
+
+Your creatinine levels alone, however, can't determine your eGFR. This is because people make different amounts of creatinine, depending on their size, diet, and activity levels. So, to calculate your eGFR, your provider will also consider your:
+
+- Age
+- Weight
+- Height
+- Sex
+
+This information is put into a mathematical formula, called a GFR calculator, to find your eGFR.
+
+eGFR may also be calculated using the level of cystatin C in your blood. This is a protein that many cells in your body make. Unlike your creatinine levels, your cystatin C levels are not affected by muscle size, age, or diet. So some researchers think cystatin C provides a more accurate estimate of GFR than creatinine. In certain cases, creatinine and cystatin levels are both used to calculate eGFR in adults.
+
+Other names: estimated GFR, eGFR, calculated glomerular filtration rate, cGFR
+
+What is it used for?
+
+An eGFR and mGFR test are used to see if your kidneys are filtering waste at a healthy rate. If they filter waste too slowly, it could be a sign that your kidneys have been damaged by kidney disease.
+
+eGFR tests are used to:
+
+- Screen for kidney disease in people without symptoms
+- Help diagnose kidney disease in people who have symptoms
+- Help find out how serious kidney disease is
+- Monitor people who are being treated for chronic kidney disease (CKD) or taking medicines that could harm their kidneys
+- Check kidney health before people start certain treatments that could affect their kidneys
+
+If an eGFR test helps to identify kidney disease early on, you and your provider can take steps to make sure it doesn't get worse.
+
+Why do I need a GFR test?
+
+Often, your provider will check your eGFR during a routine checkup. They can do this by measuring your creatinine levels during a basic metabolic panel (a test that measures eight different substances in your blood).
+
+You may also need an eGFR test if you have:
+
+- Kidney disease without symptoms
+- A high risk for kidney disease
+- Symptoms of kidney disease
+
+Usually, kidney disease doesn't cause symptoms if it's in an early stage. Because of this, your provider may want to check your eGFR during a routine exam if they know you have early-stage kidney disease. That way, they can see if it gets worse before you start having symptoms.
+
+You may be at higher risk for kidney disease if you:
+
+- Have diabetes
+- Have high blood pressure
+- Have a family history of kidney disease, diabetes, or high blood pressure
+- Have heart disease
+- Are over 60 years old
+- Smoke
+- Have obesity
+
+If you have a condition that increases your risk of kidney disease, ask your provider how often you should get tested.
+
+Later stage kidney disease does cause symptoms. So, you may need an eGFR test if you have:
+
+- Swelling in your legs, feet, ankles, or hands or face
+- Urinating (peeing) more often or less often than usual
+- Dry skin and/or itching
+- Fatigue
+- Muscle cramps
+- Nausea and vomiting
+- Loss of appetite
+
+In some cases, your provider may measure your cystatin C levels instead of your creatinine levels. They may do this if you:
+
+- Are younger than 18 or over 65
+- Have a lot of muscle mass
+- Have obesity
+- Are pregnant
+
+An mGFR test that checks your blood is usually only used if:
+
+- Your provider needs a more exact measurement of your creatinine or cystatin C levels. They may need this if you take certain medicines such as a specific type of chemotherapy.
+- You have a health condition that makes an eGFR unreliable. These conditions include severe malnutrition, muscle wasting conditions such as atrophy, and advanced liver disease.
+- You've had a limb amputated. Muscle mass affects your creatinine levels, which are used in an eGFR calculation. So, if you've had a limb amputated, your creatinine levels may appear unhealthy even though they aren't. mGFR testing can give your provider a clearer picture.
+- You're about to donate a kidney. In this case, your provider will want to use mGFR testing because its more exact measurements can tell them if the kidney is working the way it should.
+
+What happens during a GFR test?
+
+For eGFR testing, a health care professional will take a blood sample from a vein in your arm, using a small needle. After the needle is inserted, a small amount of blood will be collected into a test tube or vial. You may feel a little sting when the needle goes in or out. This usually takes less than five minutes.
+
+For mGFR testing, a health care professional will inject you with a substance called a filtration marker. Your kidneys then filter this filtration marker out of your blood. To see how well your kidneys do this, a health care professional will take a blood sample every 2 to 3 hours. They may also take a sample of your urine (pee).
+
+Will I need to do anything to prepare for these tests?
+
+Your provider will let you know how to prepare for your eGFR test. You may need to fast (not eat or drink) or avoid certain foods, such as meat, for several hours before the test. This is because some foods like meat can affect your eGFR score. Certain medicines can also affect your results. So be sure to tell your provider everything you're taking. But don't stop taking any medicine unless your provider tells you to.
+
+If you're getting an mGFR test, you may need to fast or avoid certain foods before the test. If your provider wants to test your urine, you may be asked to drink a specific amount of water. Ask your provider if you need to do anything else to prepare for this test.
+
+Are there any risks to the test?
+
+There is very little risk to having a blood test for an eGFR test. You may have slight pain or bruising at the spot where the needle was put in, but most symptoms go away quickly.
+
+In some cases, the substances used during an mGFR test can cause an allergic reaction. However, this isn't common.
+
+What do the results mean?
+
+Your eGFR results may be reported as a number that shows how much blood your kidneys filter per minute. Your test results may also show your creatinine or cystatin C level.
+
+Ask your provider to explain what your eGFR says about your kidney health. An eGFR isn't a perfect test and may not always reflect kidney damage. It's also possible to have an abnormal result even if you don't have kidney damage. Because eGFR can vary from person to person based on factors like age, body size, and other health conditions, your provider can help you understand how these general ranges apply to you.
+
+In general:
+
+- An eGFR between 90 and 100 means that you probably don't have kidney disease
+- An eGFR between 60 and 90 means you may have early-stage kidney disease
+- An eGFR between 15 and 60 means that you may have kidney disease
+- An eGFR below 15 means that you may have kidney failure
+
+If your eGFR is lower than what's normal for you, your provider may order other tests that check your kidney health. These tests may be ordered with an eGFR or to find the cause of an abnormal eGFR result. They include:
+
+- A protein in urine test. Protein in urine is a sign of kidney damage.
+- A microalbumin creatinine ratio test. This test checks for very small amounts of a protein called albumin in a sample of your urine. Albumin in urine may be one of the first signs of kidney disease.
+- A BUN (blood urea nitrogen) test. BUN is a waste product your kidneys remove from blood. The test checks BUN levels in a sample of your blood.
+- An ultrasound or CT scan of your kidneys. This can help your provider see if there are any problems in your urinary system that are common in people with kidney disease.
+
+The results of an mGFR test are generally the same as those of an eGFR test.
+
+If you're diagnosed with kidney disease, your provider will explain what you can do to protect your kidneys from more damage and help prevent kidney failure.
+
+Learn more about laboratory tests, reference ranges, and understanding results.

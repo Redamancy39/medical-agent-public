@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-28",
+  "batch": "2",
+  "status": "completed_with_small_live_observation",
+  "verification_runs": [
+    {
+      "kind": "joint_offline_regression",
+      "passed": 240,
+      "failed": 0,
+      "elapsed_seconds": 55.59
+    },
+    {
+      "kind": "final_evaluator_status_regression",
+      "passed": 63,
+      "failed": 0,
+      "elapsed_seconds": 6.21,
+      "note": "Overlaps earlier tests; do not add the counts as independent samples."
+    }
+  ],
+  "protected_inputs": {
+    "checked_files": 457,
+    "changed_files": [],
+    "scope": "Existing frontend source, evaluation/training material, and all pre-existing evaluation reports."
+  },
+  "live_observation": {
+    "cases": [
+      "basic-01",
+      "basic-03"
+    ],
+    "dataset_split": "dev",
+    "candidate_answers": 6,
+    "judgments": 6,
+    "requested_model": "deepseek-chat",
+    "observed_response_model": "deepseek-flash",
+    "actual_llm_calls": 27,
+    "total_tokens": 114254,
+    "clinical_review": "not_run",
+    "frozen_cases_executed": 0,
+    "mem0_calls": 0,
+    "summary": {
+      "zero_shot": {
+        "mean_total": 87.5,
+        "mean_latency_seconds": 2.68,
+        "generation_status_counts": {
+          "completed": 2
+        },
+        "judge_success_count": 2
+      },
+      "naive_rag": {
+        "mean_total": 98.0,
+        "mean_latency_seconds": 3.234,
+        "generation_status_counts": {
+          "completed": 2
+        },
+        "judge_success_count": 2
+      },
+      "ours": {
+        "mean_total": 94.5,
+        "mean_latency_seconds": 17.492,
+        "generation_status_counts": {
+          "completed": 2
+        },
+        "judge_success_count": 2
+      }
+    },
+    "artifact_verification": {
+      "status": "passed",
+      "records": 6,
+      "distinct_questions": 2,
+      "answer_and_reason_csv_consistency": "passed",
+      "final_claim_offsets_checked": 40,
+      "original_quote_anchors_checked": 44,
+      "anchor_validation": "passed",
+      "professional_review": "not_run",
+      "code_snapshot_sha256": "32140c38e98d01d3e720cb86d9e20ab79e59d178c5c04090cf67b59a0c3cac2b",
+      "requested_models": [
+        "deepseek-chat"
+      ],
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "actual_llm_calls": 27,
+      "usage_totals": {
+        "generate": {
+          "attempts": 6,
+          "known_token_subtotal": 97634,
+          "unknown_token_attempts": 0,
+          "total_tokens": 97634
+        },
+        "judge": {
+          "attempts": 6,
+          "known_token_subtotal": 16620,
+          "unknown_token_attempts": 0,
+          "total_tokens": 16620
+        }
+      }
+    },
+    "artifacts_directory": "docs\\evaluation\\batch2-live-dev2-20261028",
+    "code_snapshot_note": "Exact source and fixture bytes for this live run were archived before the final report-status-only fix."
+  },
+  "model_documentation": {
+    "official_current_model_list": "https://api-docs.deepseek.com/api/create-chat-completion/",
+    "official_change_log": "https://api-docs.deepseek.com/updates/",
+    "interpretation": "Requests used the legacy chat name; observations returned flash. Do not label these as a pinned historical Chat/V3 model experiment."
+  },
+  "engineering_changes": [
+    "Candidate generators use one configured model, explicit temperature and token budget; provider journals retain requested/response model identifiers.",
+    "Versioned cache binds dataset, model configuration, code, corpus, index and runtime limits. Legacy reports are not silently resumed.",
+    "Same bounded retry policy for all methods; short/partial answers and low scores never cause selective regeneration. All attempts retained.",
+    "401 login retries preserve the same user and request body. Evaluation SQL is isolated; Mem0, background maintenance and web search are disabled.",
+    "Judge API failure is unknown score, not a clinical zero. Enforce finite score dimensions, safety veto and no-source grounding cap.",
+    "Report backend completeness, judge coverage, score denominators, omissions and costs separately; no invented tokens or statistical superiority claims.",
+    "Export question snapshots, full answers, sources, per-dimension score/reasons, traces and every attempt to per-case JSON, JSONL and CSV."
+  ],
+  "remaining_work": [
+    "Trace the three historical low-score cases without modifying or automatically rerunning the frozen benchmark.",
+    "Investigate unnecessary answer expansion and per-stage context overhead; current N=2 is chain acceptance only.",
+    "Same-family judge bias, semantic reference accuracy, and over-deletion require separate calibration/professional review.",
+    "Source hashes establish text identity and positions, not clinical correctness or remote model-weight identity."
+  ]
+}

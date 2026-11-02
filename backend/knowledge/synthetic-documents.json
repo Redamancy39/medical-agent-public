@@ -1,0 +1,5 @@
+[
+  {"id":"synthetic-registration","version":"2026-10-13-v1","title":"合成样本登记流程","url":"local://synthetic/registration","synthetic":true,"text":"此文档是软件流程合成资料，不是医学规范。样本登记先提取项目、样本类型、数量、接收日期和存储区域。缺字段时请求补充；完整字段仅生成草稿。用户可以编辑、明确确认或取消。编辑后旧确认失效。只有明确确认且字段、权限和版本校验通过，登记服务才幂等写入演示记录。取消不得新增记录。"},
+  {"id":"synthetic-conversation","version":"2026-10-13-v1","title":"合成会话与记忆流程","url":"local://synthetic/conversation","synthetic":true,"text":"此文档是软件演示说明。JWT确认当前用户身份，SQL会话按用户与会话隔离，保存完整消息。上下文默认使用最近十轮完整对话，更早对话生成带覆盖序号的摘要。Mem0仅保存用户明确的长期偏好；未验证诊断、助手猜测和登记确认状态不写入长期画像。记忆检索失败与无命中分别显示。"},
+  {"id":"synthetic-evidence","version":"2026-10-13-v1","title":"合成检索与证据规则","url":"local://synthetic/evidence","synthetic":true,"text":"本地检索用独立Milvus知识库与BGE中文向量模型，来源包含文档ID、版本、片段位置和相似度。网络检索使用PubMed公开索引，返回标题、日期和来源链接；检索元数据不等于已阅读全文。资料缺失、来源冲突和工具失败需报告真实状态，不编造医学证据。所有合成资料只能验证软件链路，不用于临床判断。"}
+]

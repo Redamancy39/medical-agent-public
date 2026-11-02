@@ -1,0 +1,515 @@
+{
+  "clinical_review": "not_run",
+  "replays": [
+    {
+      "global_offset": 20,
+      "original_diagnostic": {
+        "stage": "review",
+        "code": "REVIEW_WITNESS_INVALID",
+        "claim_index": 4,
+        "global_claim_index": 24
+      },
+      "rejected_claims": [
+        {
+          "claim_index": 4,
+          "code": "REVIEW_WITNESS_INVALID"
+        }
+      ],
+      "kept_supported_claims": 2,
+      "original_judgments": {
+        "claims": [
+          {
+            "index": 0,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文明确绞窄性肠梗阻须立即急诊手术剖腹探查。",
+            "scope_status": "requested",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e3",
+                "quote": "提示肠管已发生缺血绞窄坏死，必须立即急诊手术剖腹探查！"
+              }
+            ],
+            "evidence_ids": [
+              "e3"
+            ],
+            "policy_rules": []
+          },
+          {
+            "index": 1,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "note": "证据未提及绞窄性可被误判为单纯梗阻。",
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "support_quotes": [],
+            "evidence_ids": [],
+            "policy_rules": []
+          },
+          {
+            "index": 2,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "note": "证据未提及老年、肥胖者肌紧张不典型。",
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "support_quotes": [],
+            "evidence_ids": [],
+            "policy_rules": []
+          },
+          {
+            "index": 3,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文支持突发下腹一侧撕裂样剧痛、腹膜刺激征相对较轻及失血性休克为主。",
+            "scope_status": "requested",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "腹痛特征：突发下腹一侧撕裂样剧痛"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "血压下降等严重失血性休克征象"
+              },
+              {
+                "evidence_id": "e3",
+                "quote": "腹膜刺激征相对较轻（腹肌紧张不如穿孔明显）"
+              }
+            ],
+            "evidence_ids": [
+              "e4",
+              "e3"
+            ],
+            "policy_rules": []
+          },
+          {
+            "index": 4,
+            "kind": "medical_fact",
+            "support_status": "partially_supported",
+            "note": "原文称后穹穿抽暗红不凝血为金标准100%确诊腹腔内出血，非直接确诊异位妊娠破裂。",
+            "scope_status": "requested",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "后穹窿穿刺（后穹穿）抽出暗红色不凝固血液（金标准，100%确诊腹腔内出血）"
+              }
+            ],
+            "evidence_ids": [
+              "e4"
+            ],
+            "policy_rules": []
+          },
+          {
+            "index": 5,
+            "kind": "medical_fact",
+            "support_status": "partially_supported",
+            "note": "原文支持hCG、腹穿等检查及须医生判断，但未明确影像与面诊为确诊依赖。",
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e2",
+                "quote": "是否与妊娠相关（血/尿hCG定性与定量测定）"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "确诊依据：血清β-hCG显著升高；超声宫腔内空虚无孕囊"
+              },
+              {
+                "evidence_id": "e5",
+                "quote": "外科医生的核心思维步骤包括"
+              }
+            ],
+            "evidence_ids": [
+              "e2",
+              "e4",
+              "e5"
+            ],
+            "policy_rules": []
+          }
+        ]
+      },
+      "derived_review": {
+        "claims": [
+          {
+            "index": 0,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "evidence_ids": [
+              "e3"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e3",
+                "quote": "提示肠管已发生缺血绞窄坏死，必须立即急诊手术剖腹探查！"
+              }
+            ],
+            "scope_status": "requested",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文明确绞窄性肠梗阻须立即急诊手术剖腹探查。"
+          },
+          {
+            "index": 1,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "evidence_ids": [],
+            "support_quotes": [],
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "证据未提及绞窄性可被误判为单纯梗阻。"
+          },
+          {
+            "index": 2,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "evidence_ids": [],
+            "support_quotes": [],
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "证据未提及老年、肥胖者肌紧张不典型。"
+          },
+          {
+            "index": 3,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "evidence_ids": [
+              "e4",
+              "e3"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "腹痛特征：突发下腹一侧撕裂样剧痛"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "血压下降等严重失血性休克征象"
+              },
+              {
+                "evidence_id": "e3",
+                "quote": "腹膜刺激征相对较轻（腹肌紧张不如穿孔明显）"
+              }
+            ],
+            "scope_status": "requested",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文支持突发下腹一侧撕裂样剧痛、腹膜刺激征相对较轻及失血性休克为主。"
+          },
+          {
+            "index": 4,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "evidence_ids": [
+              "e4"
+            ],
+            "support_quotes": [],
+            "scope_status": "requested",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文短引句未通过校验（REVIEW_WITNESS_INVALID），本条不保留。原文称后穹穿抽暗红不凝血为金标准100%确诊腹腔内出血，非直接确诊异位妊娠破裂。"
+          },
+          {
+            "index": 5,
+            "kind": "medical_fact",
+            "support_status": "partially_supported",
+            "evidence_ids": [
+              "e2",
+              "e4",
+              "e5"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e2",
+                "quote": "是否与妊娠相关（血/尿hCG定性与定量测定）"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "确诊依据：血清β-hCG显著升高；超声宫腔内空虚无孕囊"
+              },
+              {
+                "evidence_id": "e5",
+                "quote": "外科医生的核心思维步骤包括"
+              }
+            ],
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文支持hCG、腹穿等检查及须医生判断，但未明确影像与面诊为确诊依赖。"
+          }
+        ]
+      }
+    },
+    {
+      "global_offset": 20,
+      "original_diagnostic": {
+        "stage": "review",
+        "code": "REVIEW_WITNESS_INVALID",
+        "claim_index": 0,
+        "global_claim_index": 20
+      },
+      "rejected_claims": [
+        {
+          "claim_index": 0,
+          "code": "REVIEW_WITNESS_INVALID"
+        }
+      ],
+      "kept_supported_claims": 3,
+      "original_judgments": {
+        "claims": [
+          {
+            "index": 0,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文明确绞窄性肠梗阻须立即急诊手术剖腹探查。",
+            "scope_status": "requested",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e3",
+                "quote": "提示肠管已发生缺血绞窄坏死，必须立即急诊手术剖腹探查！"
+              },
+              {
+                "evidence_id": "e6",
+                "quote": "④肠梗阻怀疑发生肠绞窄坏死或出现中毒性肠麻痹者。"
+              }
+            ],
+            "evidence_ids": [
+              "e3",
+              "e6"
+            ],
+            "policy_rules": []
+          },
+          {
+            "index": 1,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文直接写明绞窄性可被误判为单纯梗阻。",
+            "scope_status": "requested",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e3",
+                "quote": "绞窄性肠梗阻（缺血坏死）：腹痛由阵发性转变为持续性剧烈绞痛"
+              }
+            ],
+            "evidence_ids": [
+              "e3"
+            ],
+            "policy_rules": []
+          },
+          {
+            "index": 2,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "note": "证据未提及老年、肥胖者肌紧张不典型。",
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "support_quotes": [],
+            "evidence_ids": [],
+            "policy_rules": []
+          },
+          {
+            "index": 3,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文支持突发下腹一侧撕裂样剧痛、腹膜刺激征较轻及失血性休克为主。",
+            "scope_status": "requested",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "腹痛特征：突发下腹一侧撕裂样剧痛"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "面色苍白、冷汗、脉细速、血压下降等严重失血性休克征象"
+              },
+              {
+                "evidence_id": "e3",
+                "quote": "腹膜刺激征相对较轻（腹肌紧张不如穿孔明显）"
+              }
+            ],
+            "evidence_ids": [
+              "e4",
+              "e3"
+            ],
+            "policy_rules": []
+          },
+          {
+            "index": 4,
+            "kind": "medical_fact",
+            "support_status": "partially_supported",
+            "note": "原文称后穹穿抽暗红不凝血为金标准100%确诊腹腔内出血，非直接确诊异位妊娠破裂。",
+            "scope_status": "requested",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "**后穹窿穿刺（后穹穿）抽出暗红色不凝固血液**（金标准，100%确诊腹腔内出血）"
+              }
+            ],
+            "evidence_ids": [
+              "e4"
+            ],
+            "policy_rules": []
+          },
+          {
+            "index": 5,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "note": "原文列hCG、超声、腹穿等院内检查，并强调先救命及医师判断。",
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "support_quotes": [
+              {
+                "evidence_id": "e2",
+                "quote": "是否与妊娠相关（血/尿hCG定性与定量测定）"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "确诊依据：血清β-hCG显著升高；超声宫腔内空虚无孕囊"
+              },
+              {
+                "evidence_id": "e6",
+                "quote": "③诊断性腹穿抽出不凝血、脓性液体或含食物残渣胆汁者"
+              }
+            ],
+            "evidence_ids": [
+              "e2",
+              "e4",
+              "e6"
+            ],
+            "policy_rules": []
+          }
+        ]
+      },
+      "derived_review": {
+        "claims": [
+          {
+            "index": 0,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "evidence_ids": [
+              "e3",
+              "e6"
+            ],
+            "support_quotes": [],
+            "scope_status": "requested",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文短引句未通过校验（REVIEW_WITNESS_INVALID），本条不保留。原文明确绞窄性肠梗阻须立即急诊手术剖腹探查。"
+          },
+          {
+            "index": 1,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "evidence_ids": [
+              "e3"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e3",
+                "quote": "绞窄性肠梗阻（缺血坏死）：腹痛由阵发性转变为持续性剧烈绞痛"
+              }
+            ],
+            "scope_status": "requested",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文直接写明绞窄性可被误判为单纯梗阻。"
+          },
+          {
+            "index": 2,
+            "kind": "medical_fact",
+            "support_status": "unsupported",
+            "evidence_ids": [],
+            "support_quotes": [],
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "证据未提及老年、肥胖者肌紧张不典型。"
+          },
+          {
+            "index": 3,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "evidence_ids": [
+              "e4",
+              "e3"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "腹痛特征：突发下腹一侧撕裂样剧痛"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "面色苍白、冷汗、脉细速、血压下降等严重失血性休克征象"
+              },
+              {
+                "evidence_id": "e3",
+                "quote": "腹膜刺激征相对较轻（腹肌紧张不如穿孔明显）"
+              }
+            ],
+            "scope_status": "requested",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文支持突发下腹一侧撕裂样剧痛、腹膜刺激征较轻及失血性休克为主。"
+          },
+          {
+            "index": 4,
+            "kind": "medical_fact",
+            "support_status": "partially_supported",
+            "evidence_ids": [
+              "e4"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e4",
+                "quote": "**后穹窿穿刺（后穹穿）抽出暗红色不凝固血液**（金标准，100%确诊腹腔内出血）"
+              }
+            ],
+            "scope_status": "requested",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文称后穹穿抽暗红不凝血为金标准100%确诊腹腔内出血，非直接确诊异位妊娠破裂。"
+          },
+          {
+            "index": 5,
+            "kind": "medical_fact",
+            "support_status": "supported",
+            "evidence_ids": [
+              "e2",
+              "e4",
+              "e6"
+            ],
+            "support_quotes": [
+              {
+                "evidence_id": "e2",
+                "quote": "是否与妊娠相关（血/尿hCG定性与定量测定）"
+              },
+              {
+                "evidence_id": "e4",
+                "quote": "确诊依据：血清β-hCG显著升高；超声宫腔内空虚无孕囊"
+              },
+              {
+                "evidence_id": "e6",
+                "quote": "③诊断性腹穿抽出不凝血、脓性液体或含食物残渣胆汁者"
+              }
+            ],
+            "scope_status": "necessary_context",
+            "scope_note": "",
+            "policy_rules": [],
+            "note": "原文列hCG、超声、腹穿等院内检查，并强调先救命及医师判断。"
+          }
+        ]
+      }
+    }
+  ]
+}

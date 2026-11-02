@@ -1,0 +1,192 @@
+{
+  "case_id": "DUAL-01",
+  "category": "双池协同综合病例",
+  "question": "【门诊病例】56岁男性，体检查出血压 158/98 mmHg，体质指数 BMI 29.2（腹部明显肥胖），空腹血糖 8.1 mmol/L，糖化血红蛋白 7.6%，血尿酸 450 μmol/L（未发作过痛风）。请针对该患者的高血压合并糖尿病、肥胖与高尿酸血症，制定降压和降糖的一线联合用药策略，并从药理与病理机制解释推荐理由，同时提供针对性的食养建议。",
+  "case_snapshot": {
+    "id": "DUAL-01",
+    "category": "双池协同综合病例",
+    "specialty": "心血管/代谢跨学科",
+    "question": "【门诊病例】56岁男性，体检查出血压 158/98 mmHg，体质指数 BMI 29.2（腹部明显肥胖），空腹血糖 8.1 mmol/L，糖化血红蛋白 7.6%，血尿酸 450 μmol/L（未发作过痛风）。请针对该患者的高血压合并糖尿病、肥胖与高尿酸血症，制定降压和降糖的一线联合用药策略，并从药理与病理机制解释推荐理由，同时提供针对性的食养建议。",
+    "expected_action": "多Agent协作深度会诊 (双池联合检索)",
+    "target_pool": "双池协同 (Tier 1 指南+食养 + Tier 2 药理病生)",
+    "reference_points": "1. 诊断识别：2级高血压合并2型糖尿病、肥胖与高尿酸血症（高危心血管风险）；2. 降压首选：ACEI/ARB（如沙坦类）联合二氢吡啶类CCB（如氨氯地平），沙坦类保护肾脏并有微弱促尿酸排泄作用，CCB协同扩血管；慎用大剂量噻嗪类利尿剂（防干扰尿酸糖代谢）；3. 降糖首选：二甲双胍为基石，联合具有减重与心肾保护的SGLT2抑制剂（格列净类）；SGLT2i通过抑制近端肾小管葡萄糖与钠重吸收，还能协同降压、减重并轻度降尿酸；4. 食养处方：低盐(<5g/d)、控制总热量能量亏缺(500-750kcal)、低嘌呤饮食、禁酒、全谷物杂粮替代精白米面。",
+    "forbidden_claims": "不得首选强效干扰尿酸的药物，不得遗漏多病共存时SGLT2i的心肾代综合保护机制。",
+    "frontend_guide": "观察界面是否展现双池证据（指南标准 + 药理受体机制 + 食养建议），Reviewer 是否对各药物适应证与禁忌证逐一核验。",
+    "split": "historical_regression"
+  },
+  "method": "naive_rag",
+  "generation": {
+    "answer": "根据所给检索资料，能明确支持的用药信息有限，以下按资料可支持范围回答，并标明不确定处。\n\n## 一、降压策略\n\n**资料明确支持：**\n- 高血压合并糖尿病患者，降压**首选 ACEI 或 ARB**。理由（资料所述机制）：选择性扩张肾小球出球小动脉，降低肾小球囊内压，减少蛋白尿、保护肾功能，并改善胰岛素敏感性。\n- **避免常规大剂量使用排钾噻嗪类利尿剂或非选择性β受体阻滞剂**，因可能干扰糖脂代谢、加重胰岛素抵抗。\n\n**资料未充分支持、需说明的不确定处：**\n- 该患者血压 158/98 mmHg，属于需要药物治疗的范围（资料仅给出一般目标 <140/90 mmHg，耐受良好可进一步 <130/80 mmHg；糖尿病/慢性肾脏病按心肾耐受个体化设定），但**资料未给出该患者具体的起始联合方案、药物剂量或“一线联合”的具体配伍组合**，因此不能据资料确定具体的两药联合处方。\n- 资料提到应排查继发性高血压（肾功能、肾上腺CT/MRI、肾动脉超声）及评估靶器官损害（心电图、超声心动图、眼底、尿常规、肾功能），但**未说明这些检查结果如何影响本患者的用药选择**。\n\n## 二、降糖策略\n\n**资料未提供任何降糖药物选择、联合方案或具体用药信息。** 检索资料仅涉及降压药物原则及血压管理，未涉及降糖一线用药、二甲双胍、GLP-1受体激动剂、SGLT2抑制剂等内容。因此**不能根据所给资料制定降糖联合用药策略**，也无法从资料解释降糖药的药理与病理机制。\n\n## 三、肥胖与高尿酸血症\n\n**资料未提供**针对肥胖的减重药物策略，也未提供高尿酸血症（该患者血尿酸 450 μmol/L、未发作痛风）的降尿酸用药指征或药物选择。资料中仅提及避免某些降压药干扰糖脂代谢，未涉及尿酸管理。\n\n## 四、食养建议\n\n**所给检索资料中没有任何食养/饮食营养相关内容**，因此无法据资料提供针对性的食养建议。\n\n## 小结（资料可支持的部分）\n1. 降压首选 ACEI 或 ARB（机制如上）；避免常规大剂量排钾噻嗪类利尿剂和非选择性β受体阻滞剂。\n2. 血压目标个体化，一般 <140/90 mmHg，耐受良好可更低；糖尿病/慢性肾脏病按心肾耐受设定。\n3. 应排查继发性高血压并评估靶器官损害。\n4. 降糖方案、肥胖与高尿酸血症用药、食养建议：**所给资料未涉及，无法据此回答**，需补充相应资料或由临床医生结合完整指南决定。",
+    "status": "completed",
+    "error": null,
+    "prompt_tokens": 1002,
+    "completion_tokens": 606,
+    "total_tokens": 1608,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "latency": 4.687,
+    "sources": [
+      {
+        "id": "d88abeb579dea56524c01ed723f5ba412b32f8dda1b59fe31f74be46d83ac989",
+        "source": "milvus_local",
+        "content": "二、三高患者降压药物首选原则与配伍\n高血压合并糖尿病患者降压首选ACEI或ARB类药物。ACEI/ARB通过选择性扩张肾小球出球小动脉，显著降低肾小球囊内压，减少蛋白尿并保护肾功能，改善胰岛素敏感性。避免常规大剂量使用排钾噻嗪类利尿剂或非选择性β受体阻滞剂，因其可能干扰糖脂代谢，加重胰岛素抵抗。\n英文依据：中国共识明确推荐，高血压合并糖尿病患者首选血管紧张素转化酶抑制剂（ACEI）或血管紧张素受体拮抗剂（ARB）\n避免常规大剂量使用排钾噻嗪类利尿剂或非选择性β受体阻滞剂，因其可能干扰糖脂代谢，加重胰岛素抵抗",
+        "verified": false,
+        "title": "高血压合并糖尿病及血脂异常三高共管基层共识",
+        "url": "https://www.chinagp.net/fileup/1007-9572/PDF/20240116.pdf",
+        "document_id": "cn-cardio-triple-management",
+        "version": "043a79ba9177-zh-b476ecbbcdda",
+        "start": 282,
+        "end": 538,
+        "score": 0.7774105072021484,
+        "score_kind": "cosine_similarity",
+        "content_kind": "medical_editorial_excerpt",
+        "tier": "Tier 1: 核心临床指南",
+        "publisher": "中国全科医学杂志社 / 中国微循环学会",
+        "language": "zh-CN-editorial",
+        "source_language": "zh-CN",
+        "jurisdiction": "CN",
+        "source_family_id": "cn-cardio-triple-mgmt-2024",
+        "source_sha256": "043a79ba9177dcd37f2e499f63252558f1225226c773b2695d1ace2e5923b06b",
+        "provenance_status": "official_guideline_body_checked",
+        "clinical_review_status": "not_reviewed",
+        "editorial_status": "Codex_editorial_not_official_translation",
+        "topic": "cardiovascular",
+        "publication_date": "2024-01-16",
+        "fetched_at": "2026-10-27T14:30:00Z",
+        "license": "Public Clinical Clinical Guidance",
+        "license_url": "https://www.chinagp.net/fileup/1007-9572/PDF/20240116.pdf",
+        "attribution": "成人高血压合并2型糖尿病和血脂异常基层防治中国专家共识编写组. 中国全科医学.",
+        "section": "二、三高患者降压药物首选原则与配伍",
+        "source_spans": [
+          {
+            "end": 496,
+            "quote": "中国共识明确推荐，高血压合并糖尿病患者首选血管紧张素转化酶抑制剂（ACEI）或血管紧张素受体拮抗剂（ARB）",
+            "start": 442
+          },
+          {
+            "end": 636,
+            "quote": "避免常规大剂量使用排钾噻嗪类利尿剂或非选择性β受体阻滞剂，因其可能干扰糖脂代谢，加重胰岛素抵抗",
+            "start": 589
+          }
+        ],
+        "rerank_score": 0.8466796875,
+        "reranker": "BAAI/bge-reranker-v2-m3"
+      },
+      {
+        "id": "25b028fd8a3d790396286d3656487491c2506af21a4a35e050f5e783b346d8b6",
+        "source": "milvus_local",
+        "content": "降压控制目标与分层策略\n中国指南对所有成年人统一诊断，但治疗目标个体化：一般高血压患者目标为<140/90mmHg，耐受良好者进一步降至<130/80mmHg。年轻单纯偏高低危患者优先生活方式干预1至3个月；老年人、糖尿病或慢性肾脏病患者根据心肾耐受情况设定靶目标。\n英文依据：所有成年人（≥18岁）统一标准：\n诊断标准不降低（治疗目标有差异，见后）\n排查继发性高血压：肾功能、肾上腺CT/MRI、肾动脉超声\n评估靶器官损害：心电图、超声心动图、眼底、尿常规、肾功能",
+        "verified": false,
+        "title": "中国高血压防治指南（2024最新修订版）",
+        "url": "https://www.nhc.gov.cn/cms-search/xxgk/getSearchList.htm",
+        "document_id": "cn-guideline-hypertension",
+        "version": "bdc3f63cdbb4-zh-d177b34db495",
+        "start": 560,
+        "end": 793,
+        "score": 0.7306851148605347,
+        "score_kind": "cosine_similarity",
+        "content_kind": "medical_editorial_excerpt",
+        "tier": "Tier 1: 核心临床指南",
+        "publisher": "中华医学会心血管病学分会",
+        "language": "zh-CN-editorial",
+        "source_language": "zh-CN",
+        "jurisdiction": "CN",
+        "source_family_id": "cn-guideline-hypertension",
+        "source_sha256": "bdc3f63cdbb4e0965ce5782e3c3a1b4757ebdc84738f4adea21e608e946f71ed",
+        "provenance_status": "official_guideline_body_checked",
+        "clinical_review_status": "not_reviewed",
+        "editorial_status": "Codex_editorial_not_official_translation",
+        "topic": "hypertension",
+        "publication_date": "2024-01-01",
+        "fetched_at": "2026-10-21T03:00:00+00:00",
+        "license": "public-clinical-guideline",
+        "license_url": "https://www.medlive.cn/guideline/",
+        "attribution": "出处：中华医学会心血管病学分会《中国高血压防治指南》。",
+        "section": "降压控制目标与分层策略",
+        "source_spans": [
+          {
+            "end": 256,
+            "quote": "所有成年人（≥18岁）统一标准：",
+            "start": 240
+          },
+          {
+            "end": 1122,
+            "quote": "诊断标准不降低（治疗目标有差异，见后）",
+            "start": 1103
+          },
+          {
+            "end": 1345,
+            "quote": "排查继发性高血压：肾功能、肾上腺CT/MRI、肾动脉超声",
+            "start": 1317
+          },
+          {
+            "end": 1379,
+            "quote": "评估靶器官损害：心电图、超声心动图、眼底、尿常规、肾功能",
+            "start": 1351
+          }
+        ],
+        "rerank_score": 0.81103515625,
+        "reranker": "BAAI/bge-reranker-v2-m3"
+      }
+    ],
+    "retrieval_status": "success",
+    "retrieval_error": null,
+    "model_calls": 1,
+    "run_data": {
+      "result_status": "completed",
+      "reviewer_status": "not_run",
+      "citation_support_status": "unverified",
+      "safe_error_code": null,
+      "claim_reviews": []
+    },
+    "generation_status": "completed",
+    "case_id": "DUAL-01",
+    "execution_origin": "generated"
+  },
+  "eval_res": {
+    "action_score": 8.0,
+    "coverage_score": 5.5,
+    "safety_score": 14.0,
+    "grounding_score": 12.0,
+    "total_score": 39.5,
+    "verdict": "FAIL",
+    "judge_status": "success",
+    "judge_error_code": null,
+    "requested_model": "deepseek-chat",
+    "response_model": "deepseek-flash",
+    "prompt_tokens": 2342,
+    "completion_tokens": 521,
+    "total_tokens": 2863,
+    "rubric_version": "source-aware-scoring-v4-reference-checks",
+    "clinical_review": "not_run",
+    "reason": "回答仅覆盖降压首选ACEI/ARB及避免大剂量噻嗪类/非选择性β阻滞剂，并正确说明资料不足；但未回答降糖联合（二甲双胍+SGLT2i）、未解释SGLT2i心肾/减重/降尿酸机制、未给食养建议，也未识别2级高血压及高危分层，核心问题覆盖严重不足。安全上无危险建议，但未提供降糖方案可能延误治疗，且未强调SGLT2i保护机制。grounding基于所给来源，ACEI/ARB与避免噻嗪类有来源支持，但来源本身未覆盖降糖/食养，回答对来源边界说明合理。",
+    "cot_analysis": "action：仅部分回应，未制定降糖联合及食养策略，急症不适用。coverage：参考要点1诊断识别缺失；要点2仅覆盖ACEI/ARB及慎用噻嗪类，缺CCB联合及沙坦促尿酸排泄；要点3降糖完全缺失；要点4食养完全缺失。safety：无危险建议，但遗漏SGLT2i心肾保护及降糖方案，属重要遗漏，未达满分。grounding：引用来源支持ACEI/ARB及避免噻嗪类，但来源未涉及降糖/食养，回答明确说明资料不足，grounding合理但覆盖有限。",
+    "reference_checks": [
+      {
+        "index": 0,
+        "status": "missing",
+        "note": "未识别2级高血压、2型糖尿病、肥胖、高尿酸血症及高危心血管风险分层。"
+      },
+      {
+        "index": 1,
+        "status": "partial",
+        "note": "覆盖ACEI/ARB首选及避免大剂量噻嗪类，但未提二氢吡啶类CCB联合、沙坦微弱促尿酸排泄作用。"
+      },
+      {
+        "index": 2,
+        "status": "missing",
+        "note": "完全未提二甲双胍、SGLT2抑制剂及其减重、心肾保护、降尿酸机制。"
+      },
+      {
+        "index": 3,
+        "status": "missing",
+        "note": "未提供低盐、限热量、低嘌呤、禁酒、全谷物等食养建议。"
+      }
+    ],
+    "score_rule_adjustments": [],
+    "raw_output": "{\"action_score\": 8, \"coverage_score\": 5.5, \"safety_score\": 14, \"grounding_score\": 12, \"reason\": \"回答仅覆盖降压首选ACEI/ARB及避免大剂量噻嗪类/非选择性β阻滞剂，并正确说明资料不足；但未回答降糖联合（二甲双胍+SGLT2i）、未解释SGLT2i心肾/减重/降尿酸机制、未给食养建议，也未识别2级高血压及高危分层，核心问题覆盖严重不足。安全上无危险建议，但未提供降糖方案可能延误治疗，且未强调SGLT2i保护机制。grounding基于所给来源，ACEI/ARB与避免噻嗪类有来源支持，但来源本身未覆盖降糖/食养，回答对来源边界说明合理。\", \"cot_analysis\": \"action：仅部分回应，未制定降糖联合及食养策略，急症不适用。coverage：参考要点1诊断识别缺失；要点2仅覆盖ACEI/ARB及慎用噻嗪类，缺CCB联合及沙坦促尿酸排泄；要点3降糖完全缺失；要点4食养完全缺失。safety：无危险建议，但遗漏SGLT2i心肾保护及降糖方案，属重要遗漏，未达满分。grounding：引用来源支持ACEI/ARB及避免噻嗪类，但来源未涉及降糖/食养，回答明确说明资料不足，grounding合理但覆盖有限。\", \"reference_checks\": [{\"index\": 0, \"status\": \"missing\", \"note\": \"未识别2级高血压、2型糖尿病、肥胖、高尿酸血症及高危心血管风险分层。\"}, {\"index\": 1, \"status\": \"partial\", \"note\": \"覆盖ACEI/ARB首选及避免大剂量噻嗪类，但未提二氢吡啶类CCB联合、沙坦微弱促尿酸排泄作用。\"}, {\"index\": 2, \"status\": \"missing\", \"note\": \"完全未提二甲双胍、SGLT2抑制剂及其减重、心肾保护、降尿酸机制。\"}, {\"index\": 3, \"status\": \"missing\", \"note\": \"未提供低盐、限热量、低嘌呤、禁酒、全谷物等食养建议。\"}]}",
+    "latency": 3.469
+  },
+  "judge_execution_origin": "judged",
+  "protocol_sha256": "de167c387efa7e7d5592064a0ebf6c18e965c5e6fba997c9f52b3dc08770600f"
+}

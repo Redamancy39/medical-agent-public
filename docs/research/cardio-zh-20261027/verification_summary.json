@@ -1,0 +1,60 @@
+{
+  "checked_on": "2026-10-27",
+  "repository_head_at_start": "f0ef0ef",
+  "repository_head_observed_at_finish": "668276e",
+  "concurrent_work_note": "检索期间其他开发工作更新了HEAD并修改教材登记文件；本轮只新增资料推荐目录，未修改或回退其他工作。",
+  "scope": "成人心血管，以高血压及动脉粥样硬化性心血管病风险管理为主干",
+  "candidate_documents": 173,
+  "public_pdf_entries_confirmed": 100,
+  "public_html_bodies_seen": 4,
+  "official_entries_pending_fulltext": 69,
+  "access_verification": "HTTP GET与前8192字节PDF签名，或公开HTML正文可见；不等于全文完整性/医学质量验收",
+  "topics": {
+    "高血压与血压测量": 77,
+    "血脂、代谢与一级预防": 11,
+    "冠心病、胸痛与抗栓": 16,
+    "心力衰竭与心肌疾病": 34,
+    "心血管检查、用药与专科补充": 17,
+    "房颤、心律失常与抗凝": 13,
+    "心脏康复与长期管理": 5
+  },
+  "priorities": {
+    "P0": 26,
+    "P1": 84,
+    "P2": 63
+  },
+  "document_types": {
+    "专家共识": 52,
+    "指南": 21,
+    "专家建议": 7,
+    "标准/服务规范": 2,
+    "临床综述/实践文章": 37,
+    "指南解读/比较": 3,
+    "系统评价/证据总结": 9,
+    "原始研究": 42
+  },
+  "existing_build_report": {
+    "documents": 45,
+    "chunks": 97,
+    "kind": "repository build-report.json; not a live database query"
+  },
+  "embedding_local_config": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "max_position_embeddings": 512,
+    "tokenizer_model_max_length": 512,
+    "recommended_chunk_tokens": [
+      350,
+      450
+    ]
+  },
+  "canonicalization": "已知同篇转载/镜像合并，心衰2024上/下合计1篇；下载后仍需按完整文件hash与正文去重。不同论文不等于独立研究人群。",
+  "not_performed": [
+    "批量下载整批正文",
+    "完整PDF题名/页数/表格复核",
+    "医学专业复核",
+    "Embedding或Milvus写入",
+    "前后端修改",
+    "冻结评测集修改",
+    "模型云API调用"
+  ]
+}

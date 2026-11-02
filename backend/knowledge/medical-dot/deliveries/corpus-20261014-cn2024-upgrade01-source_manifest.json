@@ -1,0 +1,183 @@
+{
+  "schema_version": "medical-source-manifest-v1-provisional",
+  "source_id": "cn-hypertension-guideline-2024-en-jgc2025",
+  "source_family": "cn-hypertension-guideline-2024",
+  "family_count_delta": 0,
+  "family_relation": "Published English manifestation of existing 2024 guideline family; do not count translation or text parts as new sources. Existing candidate may be upgraded to deliverable-body status only after QA and verified cloud upload/readback.",
+  "original_url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+  "doi": "10.26599/1671-5411.2025.01.008",
+  "title": "Chinese Guidelines for the Prevention and Treatment of Hypertension (2024 revision)",
+  "language": "en",
+  "version": "2024 revision; English journal manifestation published 2025",
+  "publication_date": "2025-01-28",
+  "date_evidence": {
+    "url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+    "locator": "Article History expanded panel",
+    "quote": "Published: 28 January 2025",
+    "access_status": "opened"
+  },
+  "journal": "Journal of Geriatric Cardiology",
+  "journal_citation": "2025, 22(1): 1-149",
+  "named_author": "Ji-Guang WANG",
+  "compiling_units": [
+    "Task Force of the Chinese Hypertension Guidelines",
+    "Chinese Hypertension League",
+    "Hypertension Branch of the China International Exchange and Promotive Association for Medical and Health Care",
+    "Hypertension Branch of the Chinese Geriatrics Society",
+    "Hypertension Branch of the Chinese Aging Well Association",
+    "Chinese Stroke Association",
+    "Chronic and Non-communicable Disease Control and Prevention Center of the Chinese Center for Disease Control and Prevention"
+  ],
+  "compiling_units_evidence": {
+    "url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+    "locator": "article title/byline affiliation block immediately below Ji-Guang WANG",
+    "access_status": "opened"
+  },
+  "publisher_legal_entity": null,
+  "publishing_evidence_note": "Journal title and ©2025 JGC observed; SciOpen hosting and Tsinghua University Press footer are not sufficient alone to assert the guideline compiler or legal publisher entity.",
+  "jurisdiction": "China",
+  "population": "Hypertension populations; adult sections directly relevant, but full work also includes children/adolescents and pregnancy sections. Do not generalize special-population recommendations to general adults.",
+  "accessed_at": "2026-10-14T05:58:20Z",
+  "environment": "own cloud browser cdp, no user/local computer",
+  "access_status": "opened",
+  "body_status": "readback_verified",
+  "reuse_status": "verified",
+  "reuse_license": "CC BY 4.0",
+  "reuse_evidence": {
+    "url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+    "locator": "Expanded Rights and Permissions panel",
+    "quote": "This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.",
+    "license_href_as_observed": "http://creativecommons.org/licenses/by/4.0/",
+    "copyright_quote": "© 2025 JGC All rights reserved",
+    "access_status": "opened"
+  },
+  "license_urls_opened": [
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://creativecommons.org/licenses/by/4.0/legalcode.en"
+  ],
+  "reuse_conditions": [
+    "Retain author, title, journal citation, DOI/source link, copyright notice and license link with delivery.",
+    "Indicate technical extraction, LF normalization and removal of browser control labels; no medical wording intentionally changed.",
+    "Do not imply author, journal or institution endorsement; no professional medical review completed.",
+    "CC license covers only rights licensor can grant; separately credited material requires separate checks. All eight embedded images/media are omitted."
+  ],
+  "rights_exception_check": {
+    "method": "Read article license/copyright panels; searched actual rendered prose for permission/copyright/reproduced/adapted-from notices; inspected image-neighborhood text.",
+    "explicit_textual_exception_notices_found": 0,
+    "image_count_omitted": 8,
+    "image_rights_individually_cleared": false,
+    "caveat": "No blanket legal guarantee for unmarked third-party rights. Text-only extraction is not a reproduction of the eight figures; captions remain original text."
+  },
+  "raw_http_bytes_sha256": null,
+  "raw_http_bytes_location": null,
+  "raw_http_hash_reason": "Rendered-browser DOM extraction only. No PDF or original HTTP response bytes downloaded; DOM serialization or text hash must not be labelled raw-byte hash.",
+  "rendered_snapshot_sha256": "240605e6b3ac42ed65db218ea2b38f7bf767a3a3d470d895fe5c50eeb2d3731f",
+  "rendered_snapshot_bytes": 675430,
+  "working_snapshot": "working_rendered_text_snapshot.txt",
+  "normalized_text_sha256": "2a5d5edc9dd208c883fe3cf47e691ff5a2ee433a406ce9f9bc1436062791ddc2",
+  "normalized_text_bytes": 675078,
+  "normalization": "Rendered innerText of #insert_content; CRLF/CR to LF; removed exactly eight lines equal to View original image Download original image; no translations, answers or review conclusions inserted. Split at line boundaries; concatenate parts in filename order without added separators to recover normalized text.",
+  "extraction_scope": {
+    "rendered_container": "#insert_content",
+    "main_sections": "1–15 plus introduction, committee and References",
+    "heading_count": 263,
+    "table_count": 38,
+    "last_reference_number": 765,
+    "pdf_pages_read": null,
+    "pdf_downloaded": false,
+    "pdf_page_mapping_verified": false,
+    "visually_or_textually_inspected": "Introduction and recommendation/evidence category tables 1–2; publication/license panels; section-heading coverage; selected figure-neighborhood text and output start/end.",
+    "mechanical_capture": "All rendered text in the article container, not a claim that all clinical statements have been individually read or verified.",
+    "professional_review": "pending"
+  },
+  "table_extraction": "Plain text retains tab/newline order; companion row/cell JSON retains original table ids, cell text, rowspan and colspan. No inferred header/value relationships or reconstructed images. Some HTML spacing/word joins may reflect site rendering; use source table for medical interpretation.",
+  "files": [
+    {
+      "path": "cn-hypertension-guideline-2024_en2025_part-01.txt",
+      "byte_size": 229861,
+      "sha256": "7e366d574983b8e5a7c7d594852057ab72da487716fbb44e907c751950defa99",
+      "encoding": "UTF-8",
+      "line_endings": "LF",
+      "library_reference": "library-file:fde1_bGliZmlsZV9UdXo4Q0h6UTItN2tXcjFaX3R5ZENn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "readback_verified": true,
+      "readback_sha256": "7e366d574983b8e5a7c7d594852057ab72da487716fbb44e907c751950defa99"
+    },
+    {
+      "path": "cn-hypertension-guideline-2024_en2025_part-02.txt",
+      "byte_size": 229976,
+      "sha256": "5659f011d0cec9e1e042cfd1f781b8a5e0430d21478eae1a2488b2c760df2548",
+      "encoding": "UTF-8",
+      "line_endings": "LF",
+      "library_reference": "library-file:fde1_bGliZmlsZV85aXR2YUFZWlJoc0U5WlcwQkdkNXpn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "readback_verified": true,
+      "readback_sha256": "5659f011d0cec9e1e042cfd1f781b8a5e0430d21478eae1a2488b2c760df2548"
+    },
+    {
+      "path": "cn-hypertension-guideline-2024_en2025_part-03.txt",
+      "byte_size": 215241,
+      "sha256": "4928c11b98363ed17da58985735806fe920a553344e4e509c7b99882d8051b5b",
+      "encoding": "UTF-8",
+      "line_endings": "LF",
+      "library_reference": "library-file:fde1_bGliZmlsZV93dkxHcjFuTzdFT21hOGcyS1dCZjdn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "readback_verified": true,
+      "readback_sha256": "4928c11b98363ed17da58985735806fe920a553344e4e509c7b99882d8051b5b"
+    },
+    {
+      "path": "rendered_headings_01.json",
+      "byte_size": 28256,
+      "sha256": "e10066022e47057c88ee4c65fa6bb6893e1eb4af4b2fd51ddef88255e085196e",
+      "encoding": "UTF-8",
+      "line_endings": "LF",
+      "library_reference": "library-file:fde1_bGliZmlsZV9XTGNYVlRyZmhxWVdnTm5qUndzY2ZB_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "readback_verified": true,
+      "readback_sha256": "e10066022e47057c88ee4c65fa6bb6893e1eb4af4b2fd51ddef88255e085196e"
+    },
+    {
+      "path": "rendered_tables_01.json",
+      "byte_size": 169894,
+      "sha256": "097802fb99c51bd7694ba28f3f77ec0f8e8f4f77cb8ad8bdee19d39db8c7f577",
+      "encoding": "UTF-8",
+      "line_endings": "LF",
+      "library_reference": "library-file:fde1_bGliZmlsZV9NRC1RM1phaHlwM2szenVVeUJRVktB_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "readback_verified": true,
+      "readback_sha256": "097802fb99c51bd7694ba28f3f77ec0f8e8f4f77cb8ad8bdee19d39db8c7f577"
+    },
+    {
+      "path": "rendered_tables_02.json",
+      "byte_size": 90823,
+      "sha256": "1ad0793be50a31f4ff16c4bf73685a33b362f4c731028ecd917101e4c3d85e53",
+      "encoding": "UTF-8",
+      "line_endings": "LF",
+      "library_reference": "library-file:fde1_bGliZmlsZV9pWnhOczR0SHNkRkxxdFZua0k5TVRn_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "readback_verified": true,
+      "readback_sha256": "1ad0793be50a31f4ff16c4bf73685a33b362f4c731028ecd917101e4c3d85e53"
+    },
+    {
+      "path": "source_locators_and_rights.json",
+      "byte_size": 26500,
+      "sha256": "77efd3f45e4c63df2fdaa4e9fff43d4cfbd7a80263e3dbc3dd6912672283d9ee",
+      "encoding": "UTF-8",
+      "line_endings": "LF",
+      "library_reference": "library-file:fde1_bGliZmlsZV9vX0FTUHhfcS1JQVZYWE10T1d3Z0tR_FileDrive_bc65bce1a9088191958be314f94df2de",
+      "readback_verified": true,
+      "readback_sha256": "77efd3f45e4c63df2fdaa4e9fff43d4cfbd7a80263e3dbc3dd6912672283d9ee"
+    }
+  ],
+  "working_only_files_not_for_page_upload": [
+    "rendered_structure.json",
+    "working_rendered_text_snapshot.txt"
+  ],
+  "formal_knowledge_base_changed": false,
+  "test40_read": false,
+  "source_bodies_contain_audits_or_questions": false,
+  "batch_id": "corpus-20261014-cn2024-upgrade01",
+  "source_family_id": "cn-hypertension-guideline-2024",
+  "delivery_status": "readback_verified",
+  "new_candidate_family_delta": 0,
+  "first_body_family_delta": 1,
+  "target_eligible": true,
+  "quarantine_for_clinical_rule_use": false,
+  "original_body_document_count": 1,
+  "text_part_file_count": 3,
+  "local_receipt_status": "not_received"
+}

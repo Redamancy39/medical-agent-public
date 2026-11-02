@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-15",
+  "offline_tests": {
+    "passed": 206,
+    "seconds": 45.49
+  },
+  "final_quality": {
+    "final_same_code_dev_cases": 4,
+    "reference_points": 12,
+    "reference_coverage_counts": {
+      "met": 11,
+      "partial": 1
+    },
+    "result_status_counts": {
+      "completed": 2,
+      "partial": 2
+    },
+    "reviewer_completed": 4,
+    "trace_input_hash_checks": 8,
+    "trace_source_anchor_checks": 578,
+    "final_validator_replay_of_successful_real_batches": 16,
+    "final_pilot_http_attempts": 41,
+    "final_pilot_tokens": 438017,
+    "dev20_same_code_full_retest": "not_run",
+    "test40_evaluation": "not_run",
+    "clinical_review": "not_run",
+    "clinical_accuracy": null
+  },
+  "calibration": {
+    "report": "20261015-002117-0f189d46",
+    "cases": 18,
+    "false_rejections": 0,
+    "false_acceptances": 0,
+    "kind_matches": 18,
+    "http_attempts": 2,
+    "fixture_sha256": "1ad260e3d41e8d929a53854d5b553add562169860711c792414da1d80b947ed2",
+    "clinical_review": "not_run",
+    "generalization": "not_established",
+    "test40": "not_run"
+  },
+  "pilots": [
+    {
+      "report": "20261015-001216-f7e3062c",
+      "mode": "real_lead_auto",
+      "cases": 2,
+      "completed": 1,
+      "partial": 1,
+      "failed": 0,
+      "reviewer_completed": 2,
+      "http_attempts": 16,
+      "answer_quality": "pending_review",
+      "clinical_review": "not_run",
+      "mem0": "disabled",
+      "web": "disabled",
+      "test_split": "not_run"
+    },
+    {
+      "report": "20261015-001736-ad67612b",
+      "mode": "real_lead_auto",
+      "cases": 2,
+      "completed": 0,
+      "partial": 2,
+      "failed": 0,
+      "reviewer_completed": 0,
+      "http_attempts": 12,
+      "answer_quality": "pending_review",
+      "clinical_review": "not_run",
+      "mem0": "disabled",
+      "web": "disabled",
+      "test_split": "not_run"
+    },
+    {
+      "report": "20261015-002102-e3360d1f",
+      "mode": "real_lead_auto",
+      "cases": 2,
+      "completed": 2,
+      "partial": 0,
+      "failed": 0,
+      "reviewer_completed": 2,
+      "http_attempts": 19,
+      "answer_quality": "pending_review",
+      "clinical_review": "not_run",
+      "mem0": "disabled",
+      "web": "disabled",
+      "test_split": "not_run"
+    },
+    {
+      "report": "20261015-002318-89f19327",
+      "mode": "real_lead_auto",
+      "cases": 2,
+      "completed": 0,
+      "partial": 2,
+      "failed": 0,
+      "reviewer_completed": 2,
+      "http_attempts": 22,
+      "answer_quality": "pending_review",
+      "clinical_review": "not_run",
+      "mem0": "disabled",
+      "web": "disabled",
+      "test_split": "not_run"
+    }
+  ],
+  "new_http_attempts": 71,
+  "new_tokens": 681280,
+  "protected_file_hashes": {
+    "checked": 210,
+    "changed": 0
+  },
+  "reference_files": {
+    "checked": 153,
+    "changed": 0
+  },
+  "old_sql_rows_preserved": 674,
+  "frozen_dataset": "unchanged",
+  "dot_candidates": "unchanged",
+  "frontend": "unchanged",
+  "original_demo_service": "not_restarted",
+  "mem0": "disabled",
+  "web_tools": "disabled",
+  "vectorization": "not_run",
+  "historical_M_basic07_exact_atom": "unavailable_not_reconstructed",
+  "classification_root": "narrow policy/risk caution falsely matched the broad represent-word gate; controlled reproduction",
+  "clinical_review": "not_run"
+}

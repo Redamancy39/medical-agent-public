@@ -1,0 +1,50 @@
+{
+  "fda-glucose-monitoring-devices": {
+    "attribution": "Source: U.S. Food and Drug Administration. Blood Glucose Monitoring Devices; https://www.fda.gov/medical-devices/in-vitro-diagnostics/blood-glucose-monitoring-devices; accessed2026-10-14.",
+    "no_endorsement": "Reuse and links do not imply agency or US Government endorsement or professional review of this project. Not for advertising/product endorsement.",
+    "free_original": "Original material is available at the source URL.",
+    "changes": "Formatting and non-content UI removal only; original clinical prose unchanged."
+  },
+  "nei-diabetic-retinopathy": {
+    "attribution": "Courtesy: National Eye Institute, National Institutes of Health (NEI/NIH). Diabetic Retinopathy; https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy; accessed2026-10-14.",
+    "no_endorsement": "Reuse and links do not imply agency or US Government endorsement or professional review of this project. Not for advertising/product endorsement.",
+    "free_original": "Original material is available at the source URL.",
+    "changes": "Formatting and non-content UI removal only; original clinical prose unchanged."
+  },
+  "nidcr-diabetes-oral-health": {
+    "attribution": "Source: National Institute of Dental and Craniofacial Research, National Institutes of Health. Diabetes & Oral Health; https://www.nidcr.nih.gov/health-info/diabetes; accessed2026-10-14.",
+    "no_endorsement": "Reuse and links do not imply agency or US Government endorsement or professional review of this project. Not for advertising/product endorsement.",
+    "free_original": "Original material is available at the source URL.",
+    "changes": "Formatting and non-content UI removal only; original clinical prose unchanged."
+  },
+  "fda-safe-glucose-meters": {
+    "attribution": "Source: U.S. Food and Drug Administration. How to Safely Use Glucose Meters and Test Strips for Diabetes; https://www.fda.gov/consumers/consumer-updates/how-safely-use-glucose-meters-and-test-strips-diabetes; accessed2026-10-14.",
+    "no_endorsement": "Reuse and links do not imply agency or US Government endorsement or professional review of this project. Not for advertising/product endorsement.",
+    "free_original": "Original material is available at the source URL.",
+    "changes": "Formatting and non-content UI removal only; original clinical prose unchanged."
+  },
+  "fda-diabetes-overview": {
+    "attribution": "Source: U.S. Food and Drug Administration. Diabetes; https://www.fda.gov/consumers/health-education-resources/diabetes; accessed2026-10-14.",
+    "no_endorsement": "Reuse and links do not imply agency or US Government endorsement or professional review of this project. Not for advertising/product endorsement.",
+    "free_original": "Original material is available at the source URL.",
+    "changes": "Formatting and non-content UI removal only; original clinical prose unchanged."
+  },
+  "cdc-continuous-glucose-monitors": {
+    "attribution": "Source: CDC. Materials developed by the Centers for Disease Control and Prevention.",
+    "no_endorsement": "Use of these materials and links does not imply endorsement by CDC, ATSDR, HHS, or the United States Government of this project, its user, products, services, or enterprise.",
+    "free_original": "The original materials are freely available on the CDC website at the original URLs in this manifest.",
+    "conditions": "Original prose retained without substantive changes. Images, logos, navigation, and external linked works are not reproduced. International copyright laws may differ; downstream use must retain these notices and assess applicable requirements."
+  },
+  "fda-diabetes-sharps-safety": {
+    "attribution": "Source: U.S. Food and Drug Administration. Safely Using Sharps (Needles and Syringes) at Home, at Work and on Travel; https://www.fda.gov/medical-devices/consumer-products/safely-using-sharps-needles-and-syringes-home-work-and-travel; accessed2026-10-14.",
+    "no_endorsement": "Reuse and links do not imply agency or US Government endorsement or professional review of this project. Not for advertising/product endorsement.",
+    "free_original": "Original material is available at the source URL.",
+    "changes": "Formatting and non-content UI removal only; original clinical prose unchanged."
+  },
+  "fda-insulin-pump-safety": {
+    "attribution": "Source: U.S. Food and Drug Administration. Insulin Pumps: Tips for Using Your Insulin Pump at Home; https://www.fda.gov/medical-devices/infusion-pumps/insulin-pumps-tips-using-your-insulin-pump-home; accessed2026-10-14.",
+    "no_endorsement": "Reuse and links do not imply agency or US Government endorsement or professional review of this project. Not for advertising/product endorsement.",
+    "free_original": "Original material is available at the source URL.",
+    "changes": "Formatting and non-content UI removal only; original clinical prose unchanged."
+  }
+}

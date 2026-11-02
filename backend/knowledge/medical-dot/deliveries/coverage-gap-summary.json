@@ -1,0 +1,574 @@
+{
+  "schema_version": "medical-corpus-coverage-gaps-v1",
+  "created_at": "2026-10-14T06:34:50.054649+00:00",
+  "count_snapshot": {
+    "target_source_families": 100,
+    "baseline_families": 20,
+    "new_delivered_documents": 83,
+    "new_delivered_families": 82,
+    "cumulative_delivered_documents": 103,
+    "cumulative_unique_delivered_source_families": 102,
+    "remaining_to_target": 0,
+    "previous_metadata_only_candidates_not_counted_as_new_bodies": 7,
+    "original_txt_candidates_not_counted_as_valid_bodies": 4,
+    "delivered_synthetic_candidate_questions": 60,
+    "candidate_question_target": 60,
+    "dev_cases_exported": 20,
+    "dev_export_audit_rows": 60,
+    "dev_reference_points_expected": 60,
+    "new_candidate_only_families_since_baseline": 9,
+    "existing_candidate_metadata_upgrades_not_new_families": 1,
+    "candidate_family_count": 59,
+    "clinically_validated_source_families": null,
+    "clinical_validation_status": "pending_professional_review",
+    "clinical_rule_quarantined_sources": 2,
+    "target_eligible_source_families": 100,
+    "retained_reviewable_families": 102,
+    "target_counting_revision": "2026-10-14: Exclude two newly quarantined source families from the 100-source target; preserve earlier retained-body counts as historical observations.",
+    "original_body_document_count": 103,
+    "physical_body_file_count": 105,
+    "new_target_eligible_families": 80
+  },
+  "family_jurisdiction_counts": {
+    "US": 100,
+    "China": 1,
+    "Global; not China-specific clinical guidance": 1
+  },
+  "document_language_counts": {
+    "en-US": 20,
+    "en": 83
+  },
+  "partial_series_family_ids": [
+    "nhlbi-dash-eating-plan",
+    "nhlbi-high-blood-pressure",
+    "niddk-diabetes-management",
+    "niddk-preventing-diabetes-problems",
+    "niddk-what-is-diabetes"
+  ],
+  "partial_series_caution": "Complete self-contained pages are delivered but not the complete multichapter work. Chapters remain one source family and no claim of entire-series review is made.",
+  "gaps": [
+    {
+      "type": "regional_coverage",
+      "detail": "Delivered source families: US100, China1 English manifestation, WHO global1 selected-chapter prose. Among100 target-eligible families, US98+China1+WHO1; two US families clinical-rule-quarantined and excluded. England and Chinese-language body coverage remain absent."
+    },
+    {
+      "type": "permission",
+      "detail": "WHO general web policy not a blanket full-body license. Item-level CC BY-NC-SA 3.0 IGO may allow noncommercial reuse only under applicable conditions. China CDC Weekly footer CC BY-NC 4.0 route is noncommercial-only and requires item-level verification; not transferable to NHC or ChinaCDC main site."
+    },
+    {
+      "type": "permission",
+      "detail": "NHC full-body grant unconfirmed; ChinaCDC main-site policy insufficiently unambiguous; NHS underlying OGL access failed and applicable conditions incomplete. Register candidates/necessary short quotations only until resolved."
+    },
+    {
+      "type": "raw_hash",
+      "detail": "Original HTTP bytes unavailable for current web-extracted sources and baseline. Null is retained; supplied snapshot raw-byte hashes and normalized text hashes are different concepts."
+    },
+    {
+      "type": "professional_review",
+      "detail": "All corpus and question materials await medical professional review; candidate answers are not gold standards."
+    },
+    {
+      "type": "scope",
+      "detail": "Some general public pages include children/type1/pregnancy or other conditions; source original population often null, adult project scope does not validate every passage."
+    },
+    {
+      "type": "dates",
+      "detail": "Review/update dates do not establish publication date or guideline version; unknown fields remain null."
+    },
+    {
+      "type": "delivery_acceptance",
+      "detail": "Receipt L confirms local source batches01/02 (18 body files/17 new families), dev20/60 and first10 candidate questions staged, not medically/legally accepted or ingested. Later body batches and remaining50 candidates not confirmed received."
+    },
+    {
+      "type": "long_guideline_review_scope",
+      "detail": "China guideline all rendered article text mechanically captured and delivered as three parts, but only listed sections/layout/license inspected. Full clinical statement-by-statement review and PDF page mapping not done. CC BY 4.0 item-level license verified; not subject to the separate CC BY-NC routes described above."
+    },
+    {
+      "type": "noncommercial_partial_work",
+      "detail": "WHO2020 BP device specifications: Chapter5 prose only, printedpp25–29/PDFpp37–41; Figure6/Table7 excluded, no fullbook or visual review claim. CC BY-NC-SA3.0IGO current noncommercial research only; no commercial clearance."
+    }
+  ],
+  "reuse_policy_evidence_files": [
+    "health_audit/corpus_expansion/reuse_routes.json",
+    "health_audit/corpus_expansion/reuse_routes_supplement.json"
+  ],
+  "verification_errors": [],
+  "next_start": {
+    "corpus_batch": null,
+    "candidate_batch": null,
+    "dev_work": "Already delivered export, do not repeat review",
+    "test40": "paused",
+    "candidate_work": "complete_60_stop_expansion",
+    "corpus_work": "target100_eligible_reached_stop_expansion"
+  },
+  "candidate_only_access_gaps": {
+    "batch_registers": [
+      {
+        "batch_id": "corpus-20261014-04",
+        "evidence_file": "health_audit/corpus_expansion/batch04/candidate_gaps.json",
+        "sources": [
+          {
+            "source_id": "china-primary-diabetes-2025",
+            "source_family_id": "china-primary-diabetes-2025",
+            "title": "Guidelines on primary healthcare for type 2 diabetes in China, 2025",
+            "original_url": "https://fmch.bmj.com/content/13/4/e003765",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "unavailable",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Original journal returned 403; PMC mirror displayed CAPTCHA. No bypass. Title is discovery metadata, not verified clinical evidence.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-clinical-practice-hypertension",
+            "source_family_id": "china-clinical-practice-hypertension",
+            "title": "Clinical practice guideline for the management of hypertension in China",
+            "original_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11706600/",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "unavailable",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "PMC displayed CAPTCHA. Title from discovery search only; no actual body read.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-htn-burden-2020",
+            "source_family_id": "china-htn-burden-2020",
+            "title": "Growing Burden of Hypertension in China: Causes, Challenges, and Opportunities",
+            "original_url": "https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2020.210",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Article metadata opened, full-text section remained Loading. Relevance must be checked; pure prevalence content will not count.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-t2d-modifiable-risk-2023",
+            "source_family_id": "china-t2d-modifiable-risk-2023",
+            "title": "Modifiable Risk Factors in the Prevention and Management of Type 2 Diabetes: Implications and Future Directions for China",
+            "original_url": "https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2023.187",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Article metadata opened, full-text section Loading; issue PDF read returned 400 Timeout.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "china-t2d-cardiovascular-risk-2023",
+            "source_family_id": "china-t2d-cardiovascular-risk-2023",
+            "title": "Risk Factors for Diabetes and Cardiovascular Complications in the Chinese Population",
+            "original_url": "https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2023.191",
+            "publisher": null,
+            "compiler": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Metadata or access-error only; no medical body reviewed.",
+            "reuse_status": "unconfirmed",
+            "reuse_evidence": null,
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "candidate_only",
+            "professional_review": "pending",
+            "new_candidate_family": true,
+            "blocker": "Article metadata opened, full-text section Loading; relevance not yet verified from medical body.",
+            "restoration_requirement": "Authorized accessible full original clinical body plus per-article reuse/third-party exception verification. No restoration date known. No repeated permission or CAPTCHA bypass.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "cn-hypertension-guideline-2024",
+            "source_family_id": "cn-hypertension-guideline-2024",
+            "title": "Chinese Guidelines for the Prevention and Treatment of Hypertension (2024 revision)",
+            "original_url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+            "publisher": null,
+            "publisher_evidence": null,
+            "compiler": "Task Force of the Chinese Hypertension Guidelines; Chinese Hypertension League; Hypertension Branch of the China International Exchange and Promotive Association for Medical and Health Care; Hypertension Branch of the Chinese Geriatrics Society; Hypertension Branch of the Chinese Aging Well Association; Chinese Stroke Association; Chronic and Non-communicable Disease Control and Prevention Center of the Chinese Center for Disease Control and Prevention",
+            "compiler_evidence": {
+              "locator": "Author-group line 130",
+              "quote": "Task Force of the Chinese Hypertension Guidelines; Chinese Hypertension League"
+            },
+            "publication_date": "2025-01-28",
+            "version": "2024 revision, English edition",
+            "jurisdiction": "CN",
+            "population": null,
+            "language": "en",
+            "accessed_at": "2026-10-14T05:38:30Z",
+            "access_status": "metadata_only",
+            "read_scope": "Article landing-page metadata and license only; none of 149 clinical pages read.",
+            "reuse_status": "verified",
+            "reuse_evidence": {
+              "url": "https://www.sciopen.com/article/10.26599/1671-5411.2025.01.008",
+              "locator": "Article copyright notice lines 209-212",
+              "quote": "This is an open access article under the terms of the Creative Commons Attribution License",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "license_version_verified_by_opened_link": true,
+              "caveat": "Clinical PDF assets and third-party exclusions not inspected; no body delivered."
+            },
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "delivery_status": "existing_candidate_metadata_upgrade",
+            "professional_review": "pending",
+            "new_candidate_family": false,
+            "blocker": "Landing page exposes PDF button but no resolved PDF URL in accessible representation. No medical body extracted.",
+            "restoration_requirement": "Accessible original PDF through an authorized route, then per-page extraction/rights check.",
+            "date_note": "2025 is publication of English edition; revision remains 2024. Same source family as existing Chinese edition; do not rename original TXT or infer any recommendation evidence grade.",
+            "journal": "Journal of Geriatric Cardiology",
+            "journal_evidence": {
+              "locator": "Article citation",
+              "quote": "Journal of Geriatric Cardiology, 2025, 22(1): 1-149"
+            },
+            "compiler_note": "Listed author groups, not separately verified guideline issuing authority.",
+            "current_state": "upgraded_to_body_delivered_by_corpus-20261014-cn2024-upgrade01",
+            "candidate_only_current": false
+          }
+        ]
+      },
+      {
+        "batch_id": "corpus-20261014-07",
+        "evidence_file": "health_audit/corpus_expansion/batch07/candidate_exclusions.json",
+        "sources": [
+          {
+            "source_id": "fda-meter-brochure-2003",
+            "source_family_id": "fda-meter-brochure-2003",
+            "title": "Home Healthcare Medical Devices: Blood Glucose Meters - Getting the Most Out of Your Meter",
+            "original_url": "https://www.fda.gov/medical-devices/home-health-and-consumer-devices/home-healthcare-medical-devices-blood-glucose-meters-getting-most-out-your-meter",
+            "pdf_url": "https://www.fda.gov/media/70916/download",
+            "publisher": "U.S. Food and Drug Administration",
+            "publication_date": "2003-09",
+            "version": null,
+            "version_evidence": "PDF page2: September2003",
+            "jurisdiction": "US",
+            "population": null,
+            "language": "en",
+            "access_status": "opened",
+            "read_scope": "HTML explanatory body and PDF text extraction pages1-2; no screenshots or image review.",
+            "reuse_status": "verified",
+            "reuse_evidence_url": "https://www.fda.gov/media/70916/download",
+            "reuse_short_quote": "The contents of this brochure is not copyrighted",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Older2003 brochure; HTML has unfinished sentence even if incorrect teststrip fits. PDF contains full sentence. Keep historical candidate only rather than inflate corpus with redundant older guidance.",
+            "candidate_only_current": true
+          },
+          {
+            "source_id": "fda-high-blood-pressure-medicines-2021",
+            "source_family_id": "fda-high-blood-pressure-medicines-2021",
+            "title": "High Blood Pressure",
+            "original_url": "https://www.fda.gov/consumers/womens-health-topics/high-blood-pressure",
+            "publisher": "U.S. Food and Drug Administration, Office of Women's Health",
+            "publication_date": null,
+            "version": "Medicine and risk information current as of February2021",
+            "version_evidence": "Final guide disclaimer line645",
+            "jurisdiction": "US",
+            "population": "Women; page also includes general adult medicine information",
+            "language": "en",
+            "access_status": "opened",
+            "read_scope": "HTML medical prose lines87-646; no linked medicine labels or PDF read.",
+            "reuse_status": "verified",
+            "reuse_evidence_url": "https://www.fda.gov/about-fda/about-website/website-policies",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Explicit2021 medicine information, not treated as current2026 formulary. Retain historical candidate pending updated version and professional review.",
+            "candidate_only_current": true
+          }
+        ]
+      },
+      {
+        "batch_id": "corpus-20261014-08",
+        "evidence_file": "health_audit/corpus_expansion/batch08/candidate_exclusions.json",
+        "sources": [
+          {
+            "source_id": "who-hypertension-pharmacological-2021",
+            "source_family_id": "who-hypertension-pharmacological-2021",
+            "title": "Guideline for the pharmacological treatment of hypertension in adults",
+            "original_url": "https://www.ncbi.nlm.nih.gov/books/NBK573631/",
+            "publisher": null,
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "Global",
+            "population": null,
+            "language": "en",
+            "access_status": "unavailable",
+            "reuse_status": "unconfirmed",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Opened Bookshelf page returned Checking your browser - reCAPTCHA, not medical body. Stop route; no CAPTCHA solved and no alternate fulltext route attempted. Metadata from search not verified. Restore only through authorized access without bypass.",
+            "candidate_only_current": true
+          }
+        ]
+      },
+      {
+        "batch_id": "corpus-20261014-09",
+        "evidence_file": "health_audit/corpus_expansion/batch09/candidate_exclusions.json",
+        "sources": [
+          {
+            "source_id": "cdc-diabetes-care-schedule",
+            "source_family_id": "cdc-diabetes-care-schedule",
+            "title": "Your Diabetes Care Schedule",
+            "original_url": "https://www.cdc.gov/diabetes/treatment/your-diabetes-care-schedule.html",
+            "publisher": "Centers for Disease Control and Prevention",
+            "publication_date": null,
+            "version": null,
+            "jurisdiction": "US",
+            "population": null,
+            "language": "en",
+            "access_status": "opened",
+            "reuse_status": "verified",
+            "reuse_evidence_url": "https://www.cdc.gov/other/agencymaterials.html",
+            "read_scope": "Complete medical prose logical lines26–76 read; no linked vaccine guidance reviewed.",
+            "body_file": null,
+            "raw_bytes_sha256": null,
+            "normalized_text_sha256": null,
+            "target_eligible": false,
+            "reason": "Candidate only: fixed pneumococcal vaccine schedule in Just once needs version-specific professional review. No current vaccination review undertaken because outside present knowledge scope. Not classified as confirmedmedicalerror and no body delivery/count.",
+            "necessary_short_quote": "You'll need two more doses when you're 65 or older.",
+            "candidate_only_current": true
+          }
+        ]
+      }
+    ],
+    "new_candidate_only_families_excluding_original7": 9,
+    "original7_note": "Seven previously received metadata entries remain separate historical metadata, not seven new bodies. China2024 HTN and NIDDK hypoglycemia subsequently upgraded to delivered bodies, counted once in body index. Other original candidates retain permission/access gaps."
+  },
+  "clinical_use_quarantine": [
+    {
+      "source_id": "cdc-hypertension-risk",
+      "reason": "Direct source classification/boundary discrepancy pending professional adjudication. Do not ingest problematic excerpts as clinical rules."
+    },
+    {
+      "source_id": "cdc-diabetes-testing",
+      "reason": "Direct source classification/boundary discrepancy pending professional adjudication. Do not ingest problematic excerpts as clinical rules."
+    }
+  ],
+  "target_counting_note": "Count baseline provided bodies plus only reusable bodies with actual Page readback receipts and matching local bytes. Source families deduplicate chapters, versions, mirrors and formats. Page delivery is not local Codex acceptance. Prepared-only files excluded. Counts describe reviewable original-body delivery, NOT clinically validated knowledge. Explicitly quarantined conflicts remain reviewable source evidence but must not be adopted as clinical rules. Conservative goal eligibility excludes new clinical-rule-quarantined source families; target eligibility is still NOT medical professional approval. User-accepted baseline20 remains counted with its known HbA1c >6.5% vs >=6.5% conflict explicitly pending adjudication.",
+  "baseline_dispute_note": "User-accepted 20-source baseline remains counted; known HbA1c >6.5% versus >=6.5% source discrepancy preserved, professional adjudication pending. This is not fresh clinical validation.",
+  "local_receipt_summary": {
+    "receipt_id": "L",
+    "observed_sequence": 24,
+    "observed_at": "2026-10-14T06:20:12.189960+00:00",
+    "source_batches_received": [
+      "corpus-20261014-01",
+      "corpus-20261014-02"
+    ],
+    "new_body_files_received": 18,
+    "new_source_families_received": 17,
+    "baseline_plus_received_families": 37,
+    "local_body_sha256_all_passed": true,
+    "json_raw_hash_matches_reported": 8,
+    "dev_cases_received": 20,
+    "dev_audit_points_received": 60,
+    "dev_status": "staged_for_review",
+    "candidate_questions_received": 10,
+    "candidate_reference_points_received": 31,
+    "candidate_acceptance_caveats": "Basic fields/body hashes/quotes/policy consistency checked; full schema, frozen-set family isolation, professional review and independent licensing not accepted. Later50 candidate receipt not established.",
+    "later_body_batch_receipt": "not_established",
+    "formal_corpus_changed": false,
+    "no_embedding_no_milvus_no_model_eval": true,
+    "evidence_file": "local_receipt_L_evidence.json",
+    "scope": "Read-only reliance on actual local receipt in shared ledger; no local computer access performed."
+  },
+  "partial_work_source_families": [
+    "who-bp-device-specifications-2020"
+  ],
+  "topic_coverage": {
+    "method": "Non-exclusive source-title/ID keyword organization for browsing only; no clinical adequacy assessment. Broad guideline can cover more topics than this conservative title index. Counts overlap and must not be summed.",
+    "groups": {
+      "blood_pressure_hypertension": {
+        "retained_family_count": 14,
+        "target_eligible_family_count": 13,
+        "source_ids": [
+          "nlm-hypertension",
+          "nlm-bp-prevention",
+          "nlm-bp-medicines",
+          "nlm-bp-test",
+          "niddk-high-blood-pressure-kidney",
+          "nhlbi-high-blood-pressure",
+          "nhlbi-dash-eating-plan",
+          "cdc-blood-pressure-measurement",
+          "cdc-hypertension-about",
+          "cdc-hypertension-prevention",
+          "cdc-hypertension-risk",
+          "cdc-hypertension-management",
+          "cn-hypertension-guideline-2024-en-jgc2025",
+          "who-bp-device-specifications-2020"
+        ]
+      },
+      "glucose_hba1c_and_measurement": {
+        "retained_family_count": 17,
+        "target_eligible_family_count": 16,
+        "source_ids": [
+          "nlm-blood-glucose",
+          "nlm-diabetes-tests",
+          "nlm-fasting-test",
+          "nlm-insulin-test",
+          "nlm-a1c-test",
+          "nlm-glucose-test",
+          "niddk-a1c-test",
+          "niddk-continuous-glucose-monitoring",
+          "niddk-low-blood-glucose-hypoglycemia",
+          "nlm-c-peptide-test",
+          "nlm-glucose-in-urine-test",
+          "cdc-diabetes-testing",
+          "cdc-blood-sugar-monitoring",
+          "cdc-a1c-test",
+          "fda-glucose-monitoring-devices",
+          "fda-safe-glucose-meters",
+          "cdc-continuous-glucose-monitors"
+        ]
+      },
+      "medicines_general": {
+        "retained_family_count": 5,
+        "target_eligible_family_count": 5,
+        "source_ids": [
+          "nlm-bp-medicines",
+          "nlm-diabetes-medicines",
+          "cdc-insulin-types",
+          "nccih-diabetes-supplements",
+          "cdc-diabetes-medicine-literacy"
+        ]
+      },
+      "hypoglycemia_and_acute_safety": {
+        "retained_family_count": 5,
+        "target_eligible_family_count": 5,
+        "source_ids": [
+          "nlm-hypoglycemia",
+          "niddk-low-blood-glucose-hypoglycemia",
+          "cdc-diabetes-low-blood-sugar-treatment",
+          "cdc-diabetic-ketoacidosis",
+          "cdc-diabetes-sick-days"
+        ]
+      },
+      "lifestyle_and_management": {
+        "retained_family_count": 21,
+        "target_eligible_family_count": 21,
+        "source_ids": [
+          "nlm-bp-prevention",
+          "nlm-diabetes-prevention",
+          "nlm-diabetic-diet",
+          "nlm-sodium",
+          "nlm-carbohydrates",
+          "nhlbi-dash-eating-plan",
+          "nlm-sodium-blood-test",
+          "cdc-diabetes-physical-activity",
+          "cdc-diabetes-healthy-eating-budget",
+          "cdc-diabetes-meal-planning",
+          "cdc-living-with-diabetes",
+          "cdc-carb-counting",
+          "cdc-hypertension-prevention",
+          "cdc-hypertension-management",
+          "cdc-prediabetes-prevention",
+          "cdc-diabetes-shift-work",
+          "cdc-diabetes-travel",
+          "cdc-diabetes-smoking",
+          "cdc-diabetes-eating-out",
+          "cdc-diabetes-healthy-weight",
+          "cdc-diabetes-kidney-diet"
+        ]
+      },
+      "complications_foundations": {
+        "retained_family_count": 24,
+        "target_eligible_family_count": 24,
+        "source_ids": [
+          "nlm-diabetes-complications",
+          "nlm-diabetic-eye-problems",
+          "nlm-diabetic-foot",
+          "nlm-diabetic-nerve-problems",
+          "nlm-diabetic-kidney-problems",
+          "nlm-diabetic-heart-disease",
+          "niddk-high-blood-pressure-kidney",
+          "nlm-diabetic-foot-exam",
+          "nlm-creatinine-test",
+          "nlm-bun-blood-urea-nitrogen",
+          "nlm-cholesterol-levels",
+          "nlm-triglycerides-test",
+          "nlm-potassium-blood-test",
+          "nlm-electrolyte-panel",
+          "cdc-diabetes-foot-care",
+          "cdc-diabetes-heart",
+          "cdc-diabetes-vision-loss",
+          "cdc-diabetes-kidney",
+          "cdc-diabetes-oral-health",
+          "nidcr-diabetes-oral-health",
+          "cdc-diabetes-nerve-damage",
+          "cdc-diabetes-skin",
+          "cdc-diabetes-ear-health",
+          "cdc-diabetes-kidney-diet"
+        ]
+      }
+    }
+  }
+}

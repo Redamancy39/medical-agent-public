@@ -1,0 +1,1061 @@
+{
+  "copyright_text": "© 2025 JGC All rights reserved",
+  "history_text": "Published: 28 January 2025",
+  "license_links": [
+    {
+      "text": "Creative Commons Attribution",
+      "url": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "rights_text": "This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.",
+  "sections": [
+    {
+      "heading": "",
+      "id": "s00"
+    },
+    {
+      "heading": "1 CURRENT STATUS OF HYPERTENSION PREVALENCE AND CONTROL IN THE CHINESE POPULATION",
+      "id": "s01"
+    },
+    {
+      "heading": "1.1 Prevalence, Incidence, and Trends of Hypertension in the Chinese Population",
+      "id": "s01-01"
+    },
+    {
+      "heading": "1.2 Awareness, Treatment, and Control Rates of Hypertension in China",
+      "id": "s01-02"
+    },
+    {
+      "heading": "1.3 Major Risk Factors for Hypertension in the Chinese Population",
+      "id": "s01-03"
+    },
+    {
+      "heading": "1.3.1 High sodium and low potassium diets",
+      "id": "s01-03-01"
+    },
+    {
+      "heading": "1.3.2 Overweight and obesity",
+      "id": "s01-03-02"
+    },
+    {
+      "heading": "1.3.3 Aging",
+      "id": "s01-03-03"
+    },
+    {
+      "heading": "1.3.4 Smoking",
+      "id": "s01-03-04"
+    },
+    {
+      "heading": "1.3.5 Excessive Alcohol Consumption",
+      "id": "s01-03-05"
+    },
+    {
+      "heading": "1.3.6 Psychosocial factors",
+      "id": "s01-03-06"
+    },
+    {
+      "heading": "1.3.7 Air pollution",
+      "id": "s01-03-07"
+    },
+    {
+      "heading": "1.3.8 Cancer treatment",
+      "id": "s01-03-08"
+    },
+    {
+      "heading": "1.3.9 High altitude",
+      "id": "s01-03-09"
+    },
+    {
+      "heading": "1.3.10 Other Risk Factors",
+      "id": "s01-03-10"
+    },
+    {
+      "heading": "1.4 Hypertension Prevention and Control Programs and Projects in China",
+      "id": "s01-04"
+    },
+    {
+      "heading": "2 HYPERTENSION AND CARDIOVASCULAR RISK",
+      "id": "s02"
+    },
+    {
+      "heading": "2.1 The Relationship Between Blood Pressure and Cardiovascular Risk",
+      "id": "s02-01"
+    },
+    {
+      "heading": "2.1.1 Office blood pressure and cardiovascular risk",
+      "id": "s02-01-01"
+    },
+    {
+      "heading": "2.1.2 Out-of-office blood pressure and cardiovascular risk",
+      "id": "s02-01-02"
+    },
+    {
+      "heading": "2.1.3 Central arterial pressure and cardiovascular risk",
+      "id": "s02-01-03"
+    },
+    {
+      "heading": "2.1.4 Blood pressure variability and cardiovascular risk",
+      "id": "s02-01-04"
+    },
+    {
+      "heading": "2.2 Clustering of Multiple Risk Factors in Hypertension and Cardiovascular Risk",
+      "id": "s02-02"
+    },
+    {
+      "heading": "2.3 Characteristics of Cardiovascular Risk in Hypertensive Populations in China",
+      "id": "s02-03"
+    },
+    {
+      "heading": "3 BLOOD PRESSURE MEASUREMENT",
+      "id": "s03"
+    },
+    {
+      "heading": "3.1 Office Blood Pressure Measurement",
+      "id": "s03-01"
+    },
+    {
+      "heading": "3.1.1 Office Blood Pressure Measurement",
+      "id": "s03-01-01"
+    },
+    {
+      "heading": "3.1.2 Automated office blood pressure measurement (AOBP)",
+      "id": "s03-01-02"
+    },
+    {
+      "heading": "3.2 Out-of-Office Blood Pressure Measurement",
+      "id": "s03-02"
+    },
+    {
+      "heading": "3.2.1 Ambulatory blood pressure monitoring (ABPM)",
+      "id": "s03-02-01"
+    },
+    {
+      "heading": "3.2.2 Home Blood Pressure Monitoring (HBPM)",
+      "id": "s03-02-02"
+    },
+    {
+      "heading": "3.3 Blood Pressure Kiosk Measurement",
+      "id": "s03-03"
+    },
+    {
+      "heading": "3.4 Wearable Blood Pressure Measurement",
+      "id": "s03-04"
+    },
+    {
+      "heading": "3.5 Central Arterial Blood Pressure Measurement",
+      "id": "s03-05"
+    },
+    {
+      "heading": "3.6 Four-Limb Blood Pressure Measurement",
+      "id": "s03-06"
+    },
+    {
+      "heading": "3.7 Blood Pressure Measurement in Hypertension Screening",
+      "id": "s03-07"
+    },
+    {
+      "heading": "4 DIAGNOSTIC EVALUATION",
+      "id": "s04"
+    },
+    {
+      "heading": "4.1 Medical History",
+      "id": "s04-01"
+    },
+    {
+      "heading": "4.2 Physical Examination",
+      "id": "s04-02"
+    },
+    {
+      "heading": "4.3 Laboratory Tests",
+      "id": "s04-03"
+    },
+    {
+      "heading": "4.4 Assessment of Target Organ Damage",
+      "id": "s04-04"
+    },
+    {
+      "heading": "4.4.1 Heart",
+      "id": "s04-04-01"
+    },
+    {
+      "heading": "4.4.2 Kidneys",
+      "id": "s04-04-02"
+    },
+    {
+      "heading": "4.4.3 Brain",
+      "id": "s04-04-03"
+    },
+    {
+      "heading": "4.4.4 Fundus",
+      "id": "s04-04-04"
+    },
+    {
+      "heading": "4.4.5 Large Arteries",
+      "id": "s04-04-05"
+    },
+    {
+      "heading": "4.5 Blood Pressure Classification and Cardiovascular Risk Stratification",
+      "id": "s04-05"
+    },
+    {
+      "heading": "4.5.1 Classification and Grading by Blood Pressure Level",
+      "id": "s04-05-01"
+    },
+    {
+      "heading": "4.5.2 Cardiovascular Risk Stratification",
+      "id": "s04-05-02"
+    },
+    {
+      "heading": "5 TREATMENT OF HYPERTENSION",
+      "id": "s05"
+    },
+    {
+      "heading": "5.1 Strategies for Antihypertensive Treatment",
+      "id": "s05-01"
+    },
+    {
+      "heading": "5.1.1 Populations benefiting from antihypertensive treatment",
+      "id": "s05-01-01"
+    },
+    {
+      "heading": "5.1.2 Timing of initiating antihypertensive drug treatment",
+      "id": "s05-01-02"
+    },
+    {
+      "heading": "5.1.3 Goals of antihypertensive treatment",
+      "id": "s05-01-03"
+    },
+    {
+      "heading": "5.1.3.1 Office blood pressure targets",
+      "id": "s05-01-03-01"
+    },
+    {
+      "heading": "5.1.3.2 Blood pressure targets beyond office blood pressure",
+      "id": "s05-01-03-02"
+    },
+    {
+      "heading": "5.1.3.3 Time to achieve target blood pressure",
+      "id": "s05-01-03-03"
+    },
+    {
+      "heading": "5.2 Methods of Antihypertensive Treatment",
+      "id": "s05-02"
+    },
+    {
+      "heading": "5.2.1 Therapeutic Lifestyle Interventions",
+      "id": "s05-02-01"
+    },
+    {
+      "heading": "5.2.1.1 Reducing sodium intake and increasing potassium intake",
+      "id": "s05-02-01-01"
+    },
+    {
+      "heading": "5.2.1.2 Balanced diet",
+      "id": "s05-02-01-02"
+    },
+    {
+      "heading": "5.2.1.3 Weight Management",
+      "id": "s05-02-01-03"
+    },
+    {
+      "heading": "5.2.1.4 Smoking cessation",
+      "id": "s05-02-01-04"
+    },
+    {
+      "heading": "5.2.1.5 Limiting alcohol consumption",
+      "id": "s05-02-01-05"
+    },
+    {
+      "heading": "5.2.1.6 Exercise intervention",
+      "id": "s05-02-01-06"
+    },
+    {
+      "heading": "5.2.1.7 Reducing mental stress",
+      "id": "s05-02-01-07"
+    },
+    {
+      "heading": "5.2.1.8 Maintaining healthy sleep",
+      "id": "s05-02-01-08"
+    },
+    {
+      "heading": "5.2.2 Pharmacological treatment of hypertension",
+      "id": "s05-02-02"
+    },
+    {
+      "heading": "5.2.2.1 Clinical trial evidence for antihypertensive treatment",
+      "id": "s05-02-02-01"
+    },
+    {
+      "heading": "5.2.2.2 Basic Principles for the Use of Antihypertensive Drugs",
+      "id": "s05-02-02-02"
+    },
+    {
+      "heading": "5.2.2.3 Classification of Antihypertensive Drugs",
+      "id": "s05-02-02-03"
+    },
+    {
+      "heading": "5.2.2.4 Combination use of antihypertensive drugs",
+      "id": "s05-02-02-04"
+    },
+    {
+      "heading": "5.2.2.5 Adverse reactions of antihypertensive drugs",
+      "id": "s05-02-02-05"
+    },
+    {
+      "heading": "5.2.2.6 Health Economics of antihypertensive drug treatment",
+      "id": "s05-02-02-06"
+    },
+    {
+      "heading": "5.2.3 Device-based treatment for hypertension",
+      "id": "s05-02-03"
+    },
+    {
+      "heading": "5.2.4 Application of traditional chinese medicine in antihypertensive treatment",
+      "id": "s05-02-04"
+    },
+    {
+      "heading": "5.2.4.1 TCM Understanding of Hypertension",
+      "id": "s05-02-04-01"
+    },
+    {
+      "heading": "5.2.4.2 Recommended Chinese medicines for treating hypertension",
+      "id": "s05-02-04-02"
+    },
+    {
+      "heading": "5.2.4.3 Recommendations for appropriate techniques in traditional Chinese medicine (TCM) for treating hypertension",
+      "id": "s05-02-04-03"
+    },
+    {
+      "heading": "5.2.4.4 Prospects for Traditional Chinese Medicine (TCM) in the prevention and treatment of hypertension",
+      "id": "s05-02-04-04"
+    },
+    {
+      "heading": "5.3 Management of Related Cardiovascular Risk Factors",
+      "id": "s05-03"
+    },
+    {
+      "heading": "5.3.1 Blood glucose control",
+      "id": "s05-03-01"
+    },
+    {
+      "heading": "5.3.2 Lipid-lowering therapy",
+      "id": "s05-03-02"
+    },
+    {
+      "heading": "5.3.3 Antiplatelet Therapy",
+      "id": "s05-03-03"
+    },
+    {
+      "heading": "5.3.4 Anticoagulant therapy for atrial fibrillation",
+      "id": "s05-03-04"
+    },
+    {
+      "heading": "5.3.5 Heart rate control",
+      "id": "s05-03-05"
+    },
+    {
+      "heading": "5.3.6 Uric Acid-Lowering Therapy",
+      "id": "s05-03-06"
+    },
+    {
+      "heading": "5.3.7 Comprehensive intervention for multiple risk factors",
+      "id": "s05-03-07"
+    },
+    {
+      "heading": "5.4 Improvement and Reversal of Hypertension-Induced Target Organ Damage",
+      "id": "s05-04"
+    },
+    {
+      "heading": "5.5 Follow-up for Hypertension Treatment",
+      "id": "s05-05"
+    },
+    {
+      "heading": "5.5.1 Purpose of follow-up",
+      "id": "s05-05-01"
+    },
+    {
+      "heading": "5.5.2 Content of Follow-up",
+      "id": "s05-05-02"
+    },
+    {
+      "heading": "5.5.3 Follow-up Interval",
+      "id": "s05-05-03"
+    },
+    {
+      "heading": "6 Hypertension with Special Phenotypes",
+      "id": "s06"
+    },
+    {
+      "heading": "6.1 White Coat Hypertension",
+      "id": "s06-01"
+    },
+    {
+      "heading": "6.1.1 Prevalence and clinical characteristics",
+      "id": "s06-01-01"
+    },
+    {
+      "heading": "6.1.2 Definition and diagnosis",
+      "id": "s06-01-02"
+    },
+    {
+      "heading": "6.1.3 Target organ damage and cardiovascular prognosis",
+      "id": "s06-01-03"
+    },
+    {
+      "heading": "6.1.4 Treatment principles",
+      "id": "s06-01-04"
+    },
+    {
+      "heading": "6.2 Masked Hypertension",
+      "id": "s06-02"
+    },
+    {
+      "heading": "6.2.1 Prevalence and Clinical Characteristics",
+      "id": "s06-02-01"
+    },
+    {
+      "heading": "6.2.2 Definition and classification",
+      "id": "s06-02-02"
+    },
+    {
+      "heading": "6.2.3 Target organ damage and cardiovascular prognosis",
+      "id": "s06-02-03"
+    },
+    {
+      "heading": "6.2.4 Treatment principles",
+      "id": "s06-02-04"
+    },
+    {
+      "heading": "6.3 Morning Hypertension",
+      "id": "s06-03"
+    },
+    {
+      "heading": "6.3.1 Definition and Epidemiology",
+      "id": "s06-03-01"
+    },
+    {
+      "heading": "6.3.2 Assessment methods",
+      "id": "s06-03-02"
+    },
+    {
+      "heading": "6.3.3 Target organ damage and cardiovascular prognosis",
+      "id": "s06-03-03"
+    },
+    {
+      "heading": "6.3.4 Treatment Principles",
+      "id": "s06-03-04"
+    },
+    {
+      "heading": "6.4 Nocturnal Hypertension",
+      "id": "s06-04"
+    },
+    {
+      "heading": "6.4.1 Definition and epidemiology",
+      "id": "s06-04-01"
+    },
+    {
+      "heading": "6.4.2 Diagnosis and detection methods",
+      "id": "s06-04-02"
+    },
+    {
+      "heading": "6.4.3 Target organ damage and cardiovascular prognosis",
+      "id": "s06-04-03"
+    },
+    {
+      "heading": "6.4.4 Treatment principles",
+      "id": "s06-04-04"
+    },
+    {
+      "heading": "6.5 Isolated Systolic Hypertension (ISH)",
+      "id": "s06-05"
+    },
+    {
+      "heading": "6.5.1 Diagnosis of ISH in the elderly",
+      "id": "s06-05-01"
+    },
+    {
+      "heading": "6.5.2 Cardiovascular prognosis of elderly ISH",
+      "id": "s06-05-02"
+    },
+    {
+      "heading": "6.5.3 Blood pressure targets for elderly ISH",
+      "id": "s06-05-03"
+    },
+    {
+      "heading": "6.5.4 Pharmacological treatment of elderly ISH",
+      "id": "s06-05-04"
+    },
+    {
+      "heading": "6.5.5 ISH in adolescents",
+      "id": "s06-05-05"
+    },
+    {
+      "heading": "6.6 Isolated Diastolic Hypertension (IDH)",
+      "id": "s06-06"
+    },
+    {
+      "heading": "6.6.1 Definition and epidemiology",
+      "id": "s06-06-01"
+    },
+    {
+      "heading": "6.6.2 Cardiovascular Prognosis",
+      "id": "s06-06-02"
+    },
+    {
+      "heading": "6.6.3 Antihypertensive Treatment",
+      "id": "s06-06-03"
+    },
+    {
+      "heading": "7 HYPERTENSION IN SPECIAL POPULATIONS",
+      "id": "s07"
+    },
+    {
+      "heading": "7.1 Hypertension in the Elderly",
+      "id": "s07-01"
+    },
+    {
+      "heading": "7.1.1 Clinical characteristics",
+      "id": "s07-01-01"
+    },
+    {
+      "heading": "7.1.2 Clinical Assessment",
+      "id": "s07-01-02"
+    },
+    {
+      "heading": "7.1.3 Antihypertensive Treatment",
+      "id": "s07-01-03"
+    },
+    {
+      "heading": "7.1.4 Hypertension in the very elderly",
+      "id": "s07-01-04"
+    },
+    {
+      "heading": "7.2 Hypertension in Children and Adolescents",
+      "id": "s07-02"
+    },
+    {
+      "heading": "7.2.1 Epidemiology and influencing factors",
+      "id": "s07-02-01"
+    },
+    {
+      "heading": "7.2.2 Diagnosis and Assessment",
+      "id": "s07-02-02"
+    },
+    {
+      "heading": "7.2.3 Comprehensive intervention",
+      "id": "s07-02-03"
+    },
+    {
+      "heading": "7.3 Hypertensive Disorders in Pregnancy (HDP)",
+      "id": "s07-03"
+    },
+    {
+      "heading": "7.3.1 Classification of HDP",
+      "id": "s07-03-01"
+    },
+    {
+      "heading": "7.3.2 Pre-pregnancy evaluation and intervention for patients with chronic hypertension",
+      "id": "s07-03-02"
+    },
+    {
+      "heading": "7.3.3 Prevention of preeclampsia",
+      "id": "s07-03-03"
+    },
+    {
+      "heading": "7.3.4 Timing of antihypertensive therapy initiation and blood pressure targets",
+      "id": "s07-03-04"
+    },
+    {
+      "heading": "7.3.5 Antihypertensive treatment",
+      "id": "s07-03-05"
+    },
+    {
+      "heading": "7.3.6 Postpartum blood pressure management and long-term cardiovascular disease prevention",
+      "id": "s07-03-06"
+    },
+    {
+      "heading": "8 HYPERTENSION COMPLICATED BY CARDIOVASCULAR AND CEREBROVASCULAR DISEASES AND OTHER CLINICAL CONDITIONS",
+      "id": "s08"
+    },
+    {
+      "heading": "8.1 Hypertension Combined with Stroke",
+      "id": "s08-01"
+    },
+    {
+      "heading": "8.1.1 Acute phase blood pressure management in stroke",
+      "id": "s08-01-01"
+    },
+    {
+      "heading": "8.1.2 Blood pressure management in stable stroke",
+      "id": "s08-01-02"
+    },
+    {
+      "heading": "8.2 Hypertension and Cognitive Impairment",
+      "id": "s08-02"
+    },
+    {
+      "heading": "8.2.1 The relationship between hypertension and cognitive impairment",
+      "id": "s08-02-01"
+    },
+    {
+      "heading": "8.2.2 Blood pressure targets",
+      "id": "s08-02-02"
+    },
+    {
+      "heading": "8.2.3 Pharmacological treatment",
+      "id": "s08-02-03"
+    },
+    {
+      "heading": "8.3 Hypertension Combined with Coronary Heart Disease",
+      "id": "s08-03"
+    },
+    {
+      "heading": "8.3.1 Blood pressure targets",
+      "id": "s08-03-01"
+    },
+    {
+      "heading": "8.3.2 Antihypertensive Treatment",
+      "id": "s08-03-02"
+    },
+    {
+      "heading": "8.4 Hypertension Combined with Heart Failure",
+      "id": "s08-04"
+    },
+    {
+      "heading": "8.4.1 Epidemiological characteristics",
+      "id": "s08-04-01"
+    },
+    {
+      "heading": "8.4.2 Clinical Benefits of Antihypertensive Therapy",
+      "id": "s08-04-02"
+    },
+    {
+      "heading": "8.4.3 Blood pressure targets",
+      "id": "s08-04-03"
+    },
+    {
+      "heading": "8.4.4 Management of hypertension combined with chronic heart failure",
+      "id": "s08-04-04"
+    },
+    {
+      "heading": "8.4.5 Management of Hypertension Combined with Acute Heart Failure",
+      "id": "s08-04-05"
+    },
+    {
+      "heading": "8.5 Hypertension Complicated with Peripheral Arterial Disease (PAD)",
+      "id": "s08-05"
+    },
+    {
+      "heading": "8.5.1 Epidemiological characteristics and benefits of antihypertensive treatment",
+      "id": "s08-05-01"
+    },
+    {
+      "heading": "8.5.2 Blood pressure targets",
+      "id": "s08-05-02"
+    },
+    {
+      "heading": "8.5.3 Choice of antihypertensive drugs",
+      "id": "s08-05-03"
+    },
+    {
+      "heading": "8.5.4 Hypertension complicated by carotid artery stenosis",
+      "id": "s08-05-04"
+    },
+    {
+      "heading": "8.6 Hypertension Complicated with Kidney Disease",
+      "id": "s08-06"
+    },
+    {
+      "heading": "8.6.1 Blood pressure targets",
+      "id": "s08-06-01"
+    },
+    {
+      "heading": "8.6.2 Principles of antihypertensive drug use",
+      "id": "s08-06-02"
+    },
+    {
+      "heading": "8.6.3 Antihypertensive treatment in ESRD dialysis patients",
+      "id": "s08-06-03"
+    },
+    {
+      "heading": "8.7 Hypertension Complicated with Diabetes",
+      "id": "s08-07"
+    },
+    {
+      "heading": "8.7.1 Blood pressure targets",
+      "id": "s08-07-01"
+    },
+    {
+      "heading": "8.7.2 Antihypertensive treatment",
+      "id": "s08-07-02"
+    },
+    {
+      "heading": "8.8 Hypertension Complicated with Obesity",
+      "id": "s08-08"
+    },
+    {
+      "heading": "8.8.1 Antihypertensive Treatment",
+      "id": "s08-08-01"
+    },
+    {
+      "heading": "8.8.2 Other interventions",
+      "id": "s08-08-02"
+    },
+    {
+      "heading": "8.9 Hypertension Complicated with Metabolic Syndrome",
+      "id": "s08-09"
+    },
+    {
+      "heading": "8.9.1 Diagnostic Criteria and Risks",
+      "id": "s08-09-01"
+    },
+    {
+      "heading": "8.9.2 Interventions",
+      "id": "s08-09-02"
+    },
+    {
+      "heading": "8.10 Antitumor Therapy and Hypertension",
+      "id": "s08-10"
+    },
+    {
+      "heading": "8.10.1 Diagnosis and assessment",
+      "id": "s08-10-01"
+    },
+    {
+      "heading": "8.10.2 Treatment Initiation Thresholds and Blood Pressure Targets",
+      "id": "s08-10-02"
+    },
+    {
+      "heading": "8.10.3 Antihypertensive Treatment",
+      "id": "s08-10-03"
+    },
+    {
+      "heading": "8.11 Hypertension Complicated with Chronic Obstructive Pulmonary Disease (COPD)",
+      "id": "s08-11"
+    },
+    {
+      "heading": "8.12 Hypertension and immune system diseases",
+      "id": "s08-12"
+    },
+    {
+      "heading": "8.12.1 Diffuse toxic goiter",
+      "id": "s08-12-01"
+    },
+    {
+      "heading": "8.12.2 Systemic lupus erythematosus (SLE)",
+      "id": "s08-12-02"
+    },
+    {
+      "heading": "8.12.3 Rheumatoid arthritis",
+      "id": "s08-12-03"
+    },
+    {
+      "heading": "8.12.4 Systemic sclerosis",
+      "id": "s08-12-04"
+    },
+    {
+      "heading": "8.12.5 Immunotherapy-induced hypertension",
+      "id": "s08-12-05"
+    },
+    {
+      "heading": "8.13 Management of Perioperative Hypertension",
+      "id": "s08-13"
+    },
+    {
+      "heading": "8.13.1 Definition and causes",
+      "id": "s08-13-01"
+    },
+    {
+      "heading": "8.13.2 Principles and Goals of Blood Pressure Control",
+      "id": "s08-13-02"
+    },
+    {
+      "heading": "8.13.3 Pharmacological Treatment",
+      "id": "s08-13-03"
+    },
+    {
+      "heading": "8.14 Psychological Disorders and Hypertension",
+      "id": "s08-14"
+    },
+    {
+      "heading": "8.14.1 Treatment with anxiolytics and antidepressants",
+      "id": "s08-14-01"
+    },
+    {
+      "heading": "8.14.2 Hypertension with Insomnia Disorder",
+      "id": "s08-14-02"
+    },
+    {
+      "heading": "9 RESISTANT HYPERTENSION",
+      "id": "s09"
+    },
+    {
+      "heading": "9.1 Definition",
+      "id": "s09-01"
+    },
+    {
+      "heading": "9.2 Excluding Pseudo-Resistant Hypertension",
+      "id": "s09-02"
+    },
+    {
+      "heading": "9.3 Screening for Secondary Causes",
+      "id": "s09-03"
+    },
+    {
+      "heading": "9.4 Comprehensive Assessment",
+      "id": "s09-04"
+    },
+    {
+      "heading": "9.5 Management Principles",
+      "id": "s09-05"
+    },
+    {
+      "heading": "10 SECONDARY HYPERTENSION",
+      "id": "s10"
+    },
+    {
+      "heading": "10.1 Renal Parenchymal Hypertension",
+      "id": "s10-01"
+    },
+    {
+      "heading": "10.2 Renovascular Hypertension and Hypertension Caused by Other Vascular Diseases",
+      "id": "s10-02"
+    },
+    {
+      "heading": "10.2.1 Renovascular hypertension",
+      "id": "s10-02-01"
+    },
+    {
+      "heading": "10.2.1.1 Diagnostic evaluation",
+      "id": "s10-02-01-01"
+    },
+    {
+      "heading": "10.2.1.2 Treatment",
+      "id": "s10-02-01-02"
+    },
+    {
+      "heading": "10.2.2 Aortic stenosis",
+      "id": "s10-02-02"
+    },
+    {
+      "heading": "10.3 Obstructive Sleep Apnea Syndrome (OSAS)",
+      "id": "s10-03"
+    },
+    {
+      "heading": "10.3.1 Screening and Diagnosis",
+      "id": "s10-03-01"
+    },
+    {
+      "heading": "10.3.2 Treatment",
+      "id": "s10-03-02"
+    },
+    {
+      "heading": "10.4 Drug-Induced Hypertension",
+      "id": "s10-04"
+    },
+    {
+      "heading": "10.5 Primary Aldosteronism",
+      "id": "s10-05"
+    },
+    {
+      "heading": "10.5.1 Epidemiology and clinical characteristics",
+      "id": "s10-05-01"
+    },
+    {
+      "heading": "10.5.2 Diagnostic process",
+      "id": "s10-05-02"
+    },
+    {
+      "heading": "10.5.3 Treatment",
+      "id": "s10-05-03"
+    },
+    {
+      "heading": "10.6 Pheochromocytoma and Paraganglioma",
+      "id": "s10-06"
+    },
+    {
+      "heading": "10.6.1 Definition, prevalence, and genetic mechanisms",
+      "id": "s10-06-01"
+    },
+    {
+      "heading": "10.6.2 Clinical manifestations",
+      "id": "s10-06-02"
+    },
+    {
+      "heading": "10.6.3 Screening",
+      "id": "s10-06-03"
+    },
+    {
+      "heading": "10.6.4 Qualitative and Localization Examinations and Genetic Testing",
+      "id": "s10-06-04"
+    },
+    {
+      "heading": "10.6.5 Treatment",
+      "id": "s10-06-05"
+    },
+    {
+      "heading": "10.6.6 Prognosis and follow-up",
+      "id": "s10-06-06"
+    },
+    {
+      "heading": "10.7 Other Endocrine Hypertension",
+      "id": "s10-07"
+    },
+    {
+      "heading": "10.7.1 Cushing's syndrome",
+      "id": "s10-07-01"
+    },
+    {
+      "heading": "10.7.2 Thyroid disorders",
+      "id": "s10-07-02"
+    },
+    {
+      "heading": "10.7.3 Congenital adrenal hyperplasia",
+      "id": "s10-07-03"
+    },
+    {
+      "heading": "10.7.4 Rare endocrine hypertension",
+      "id": "s10-07-04"
+    },
+    {
+      "heading": "10.8 Monogenic Hypertension",
+      "id": "s10-08"
+    },
+    {
+      "heading": "10.9 Connective Tissue Disease (CTD) and Hypertension",
+      "id": "s10-09"
+    },
+    {
+      "heading": "10.10 Hematological Diseases and Hypertension",
+      "id": "s10-10"
+    },
+    {
+      "heading": "11 HYPERTENSIVE EMERGENCIES AND URGENCIES",
+      "id": "s11"
+    },
+    {
+      "heading": "11.1 Definition and Assessment of Hypertensive Emergencies and Urgencies",
+      "id": "s11-01"
+    },
+    {
+      "heading": "11.1.1 Hypertensive emergencies",
+      "id": "s11-01-01"
+    },
+    {
+      "heading": "11.1.2 Hypertensive urgencies",
+      "id": "s11-01-02"
+    },
+    {
+      "heading": "11.1.3 Distinguishing between hypertensive emergencies and urgencies",
+      "id": "s11-01-03"
+    },
+    {
+      "heading": "11.1.4 Assessment of target organ damage",
+      "id": "s11-01-04"
+    },
+    {
+      "heading": "11.2 Treatment of Hypertensive Emergencies and Urgencies",
+      "id": "s11-02"
+    },
+    {
+      "heading": "11.2.1 Treatment of hypertensive emergencies",
+      "id": "s11-02-01"
+    },
+    {
+      "heading": "11.2.2 Treatment of hypertensive urgencies",
+      "id": "s11-02-02"
+    },
+    {
+      "heading": "12 COMMUNITY STRATEGIES FOR HYPERTENSION PREVENTION AND STANDARDIZED MANAGEMENT",
+      "id": "s12"
+    },
+    {
+      "heading": "12.1 Community Strategies for Hypertension Prevention",
+      "id": "s12-01"
+    },
+    {
+      "heading": "12.1.1 General population strategy",
+      "id": "s12-01-01"
+    },
+    {
+      "heading": "12.1.2 Strategies for hypertension-prone populations",
+      "id": "s12-01-02"
+    },
+    {
+      "heading": "12.1.3 Strategies for high-risk cardiovascular disease populations",
+      "id": "s12-01-03"
+    },
+    {
+      "heading": "12.2 Community-Based Standardized Management of Hypertensive Patients",
+      "id": "s12-02"
+    },
+    {
+      "heading": "12.2.1 Screening and registration of hypertensive patients",
+      "id": "s12-02-01"
+    },
+    {
+      "heading": "12.2.2 Evaluation and Follow-up of Newly Diagnosed Hypertensive Patients",
+      "id": "s12-02-02"
+    },
+    {
+      "heading": "12.2.3 Graded management and classification intervention in community-based standardized management",
+      "id": "s12-02-03"
+    },
+    {
+      "heading": "12.2.4 Health Education in Community-Based Hypertension Management",
+      "id": "s12-02-04"
+    },
+    {
+      "heading": "12.2.5 Remote management of hypertensive patients",
+      "id": "s12-02-05"
+    },
+    {
+      "heading": "12.2.6 Team Building and Facility, Medication Provision",
+      "id": "s12-02-06"
+    },
+    {
+      "heading": "12.2.7 Graded Diagnosis and Treatment of Hypertensive Patients",
+      "id": "s12-02-07"
+    },
+    {
+      "heading": "12.2.8 Family-based community management of hypertension",
+      "id": "s12-02-08"
+    },
+    {
+      "heading": "12.2.9 Work indicators",
+      "id": "s12-02-09"
+    },
+    {
+      "heading": "13 Internet-Based Medical Care for Hypertension",
+      "id": "s13"
+    },
+    {
+      "heading": "13.1 Research Evidence in Internet-Based Medical Care for Hypertension",
+      "id": "s13-01"
+    },
+    {
+      "heading": "13.2 Advantages of Internet-Based Medical Care for Hypertension",
+      "id": "s13-02"
+    },
+    {
+      "heading": "13.3 Exploration of Internet-Based Medical Care for Hypertension in China",
+      "id": "s13-03"
+    },
+    {
+      "heading": "14 HYPERTENSION PREVENTION AND CONTROL POLICIES AND HEALTHCARE SERVICE SYSTEM",
+      "id": "s14"
+    },
+    {
+      "heading": "14.1 Prevention and Control Policies",
+      "id": "s14-01"
+    },
+    {
+      "heading": "14.2 Healthcare Service System",
+      "id": "s14-02"
+    },
+    {
+      "heading": "15 RESEARCH OUTLOOK",
+      "id": "s15"
+    }
+  ]
+}
